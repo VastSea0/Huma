@@ -1,6 +1,6 @@
 # Anka Web Tarayıcısı
 
-Anka, Pardus kullanıcıları için özel olarak tasarlanmış açık kaynaklı bir web tarayıcısıdır.
+Anka, Pardus kullanıcıları için özel olarak tasarlanmış açık kaynaklı bir web tarayıcısıdır. İşte türklerin ilk web tarayıcısı ANKA!
 
 ## Hakkında
 
