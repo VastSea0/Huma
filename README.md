@@ -15,9 +15,11 @@ Anka, gizlilik odaklı tasarımıyla dikkat çeker ve kullanıcıların çevrimi
 - Instagram Hesabı: [@vastseaofficial](https://www.instagram.com/vastseaofficial/)
 
 ## Kurulum
-
-1. Debian dosyasını [buradan - Google Drive](https://drive.google.com/file/d/1fh1Mk9E17GOdE3dMvNICU-XK5NORnegn/view?usp=sharing) indirin.
+### Pardus
+1. Debian dosyasını [buradan - Google Drive](https://drive.google.com/file/d/1fh1Mk9E17GOdE3dMvNICU-XK5NORnegn/view?usp=sharing) [Yandex Dİsk](https://disk.yandex.com.tr/d/WziS0kAY7WSVhw) .indirin.
 2. Pardus Deb kurucu ile dosyayı açın ve kurulumu tamamlayın.
+### Windows
+1. Buradan İndirin (henüz gelmedi)
 
 **Not:** Kaynak kodları yakında gelecektir.
 
