@@ -16,7 +16,7 @@ Anka, gizlilik odaklı tasarımıyla dikkat çeker ve kullanıcıların çevrimi
 
 ## Kurulum
 
-1. Debian dosyasını buradan indirin.
+1. Debian dosyasını [buradan - Google Drive](https://drive.google.com/file/d/1fh1Mk9E17GOdE3dMvNICU-XK5NORnegn/view?usp=sharing) indirin.
 2. Pardus Deb kurucu ile dosyayı açın ve kurulumu tamamlayın.
 
 **Not:** Kaynak kodları yakında gelecektir.
