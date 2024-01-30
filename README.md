@@ -20,3 +20,8 @@ Anka, gizlilik odaklı tasarımıyla dikkat çeker ve kullanıcıların çevrimi
 2. Pardus Deb kurucu ile dosyayı açın ve kurulumu tamamlayın.
 
 **Not:** Kaynak kodları yakında gelecektir.
+
+## Sürüm notları:
+-1...: Hata ayıklamaları ve genel özelleştirmeler
+daha sonra gelmesi planlan sürümler
+-2... Eklenti desteği ve Temalar
