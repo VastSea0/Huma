@@ -1,1 +1,46 @@
-...
+Bu lisans, Egehan Kahraman tarafından geliştirilen Hüma Web Tarayıcısının ("Yazılım") kullanım şartlarını belirler.
+
+1. Tanımlar:
+
+Telif Sahibi: Egehan Kahraman
+Kullanıcı: Yazılımı kullanan herhangi bir kişi veya kuruluş
+Dağıtım: Yazılımın bir kopyasını herhangi bir şekilde Kullanıcıya aktarılması
+2. Telif Hakkı:
+
+Yazılımın tüm telif hakları Telif Sahibine aittir.
+
+3. Lisans:
+
+Telif Sahibi, Kullanıcıya Yazılımı aşağıdaki koşullara tabi olarak kullanma, kopyalama, değiştirme, dağıtma ve satma lisansı verir:
+
+3.1. Kullanım:
+
+Kullanıcı, Yazılımı herhangi bir amaçla kullanabilir.
+Kullanıcı, Yazılımı ticari amaçlarla kullanabilir.
+3.2. Kopyalama:
+
+Kullanıcı, Yazılımın bir veya birden fazla kopyasını oluşturabilir.
+Kullanıcı, Yazılımın kopyalarını dağıtabilir.
+3.3. Değiştirme:
+
+Kullanıcı, Yazılımı değiştirebilir.
+Kullanıcı, Yazılımın değiştirilmiş sürümlerini dağıtabilir.
+3.4. Dağıtım:
+
+Kullanıcı, Yazılımı GPL 3.0 lisansı altında dağıtmalıdır.
+Kullanıcı, Yazılımı herhangi bir ücret karşılığında veya ücretsiz olarak dağıtabilir.
+4. Sorumluluk Reddi:
+
+Yazılım "olduğu gibi" sağlanır. Telif Sahibi, Yazılımın işlevselliği veya hatasızlığı hakkında hiçbir garanti vermez. Telif Sahibi, Yazılımın kullanımıyla ilgili herhangi bir doğrudan veya dolaylı zarardan sorumlu tutulamaz.
+
+5. Yürürlük:
+
+Bu lisans, Kullanıcı Yazılımı kullandıkça yürürlükte kalacaktır.
+
+6. Uyuşmazlık Çözümü:
+
+Bu lisansla ilgili herhangi bir uyuşmazlık, Türkiye Cumhuriyeti yasalarına göre çözümlenecektir.
+
+7. İletişim:
+
+Bu lisansla ilgili herhangi bir sorunuz veya yorumunuz varsa, lütfen Egehan Kahraman ile vastseaoffical0@outlook.com adresinden iletişime geçebilirsiniz.
