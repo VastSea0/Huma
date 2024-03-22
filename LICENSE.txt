@@ -1,3 +1,6 @@
+  GNU GENERAL PUBLIC LICENSE
+    Version 3, 29 June 2007
+
 Bu lisans, Egehan Kahraman tarafından geliştirilen Hüma Web Tarayıcısının ("Yazılım") kullanım şartlarını belirler.
 
 1. Tanımlar:
