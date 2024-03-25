@@ -24,7 +24,7 @@ Betik dosyaları "JS" ve "MAİN" klasörlerinde bulunur "MAİN" daha az dosya bu
 Tarayıcı içi statik sayfalar "PAGES" klasöründe bulunur bunlara kendi sayfalarını ekleyebilirsin veya değiştirebilirsin
 
 Tarayıcıyı derlemek için "humagelistirmebaslatici.sh" betiğini çalıştırabilirsin
-
+**Not kaynak Kodlar En Erken Haziran Ayında Bu Depoda Paylaşılacaktır**
 **İletişim:** 
 - Instagram: [@marsstakiuzayliyim](https://www.instagram.com/marsstakiuzayliyim/)
 - Web Sitesi: [vastsea.com.tr](https://vastsea.com.tr)
