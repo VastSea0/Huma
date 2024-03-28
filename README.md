@@ -5,7 +5,7 @@ Hüma, Pardus kullanıcıları için özel olarak tasarlanmış açık kaynaklı
 ## Hakkında
 
 Hüma, gizlilik odaklı tasarımıyla dikkat çeker ve kullanıcıların çevrimiçi gizliliğini korur. Hızlı, hafif ve özelleştirilebilir arayüzüyle Türk topluluğunun ihtiyaçlarını karşılar.
-Hüma Egehan KAHRAMAN tarafından 2024 yılının ocak ayında araştırılmaya başlanmıştır. Şubat ayında Başarısız olan Füze Paket Yükleyicisi projesinin iptali ile bu fikri gerçeğe dökmek üzere çalışmalara başlamıştır. Yaklaşık 2 aylık araştırma ve geliştirme sonucunda İlk sürüm ortaya çıkmıştır. Ne kadar FireFox tabanı kullanılmak istensede tek kişilik geliştirme ortamı, yetersiz zaman ve düşük donanımdan dolayı FireFox tabanı kullanılmamıştır.
+Hüma Egehan KAHRAMAN tarafından 2024 yılının ocak ayında araştırılmaya başlanmıştır. Şubat ayında Başarısız olan Füze Paket Yükleyicisi projesinin iptali ile bu fikri gerçeğe dökmek üzere çalışmalara başlamıştır. Yaklaşık 2 aylık araştırma ve geliştirme sonucunda İlk sürüm ortaya çıkmıştır. 27 Mart 2024 tarihinde ise temel gayesi olan Firefox çatalı olma yolunda ilk adımını atarak Firefox tarayıcısının bir çatalı olarak yeniden geliştirilmeye başlanmıştır. 
 **Yazan:** Egehan KAHRAMAN
  
 Hüma Web Tarayıcısı özgür yazılım felsefesini benimsemiş tamamen açık kaynak ve özgür bir yazılımdır. Egehan KAHRAMAN tarafından 'Türklerin ilk Web Tarayıcısı' konsepti ile yazılmış olan bu yazılım Chromium tabanını kullanmıştır ( FireFox tabanlı olabilir) İçerisinde bir çok özelliğin bulunduğu bu tarayıcı sizin verilerinizi her hangi bir yere göndermez, dağıtmaz veya satmazdır. Verileriniz sizinle güvendedir...
