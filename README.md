@@ -1,4 +1,4 @@
- Hüma Web Tarayıcısı
+# Hüma Web Tarayıcısı
 
 Hüma Tarayıcısı, ilk yerli web tarayıcısı olma hedefiyle özgür yazılım prensiplerine bağlı kalarak Pardus ekosistemine katkıda bulunmak için geliştirilmiş bir web tarayıcısıdır.
 
@@ -18,25 +18,25 @@ Sürümler:
 
 Kurulum:
 
-    Projeyi klonlayın:
+Projeyi klonlayın:
 
-git clone https://github.com/VastSea0/Huma.git
+    git clone https://github.com/VastSea0/Huma.git
 
-    Ön yükleme yapın:
+Ön yükleme yapın:
 
-./mach bootstrap
+    ./mach bootstrap
 
-    Derleme:
+Derleme:
 
-./mach build
+    ./mach build
 
-    Paketleme:
+Paketleme:
 
-./mach package
+    ./mach package
 
-    Çalıştırma:
+Çalıştırma:
 
-./mach run
+    ./mach run
 
 Daha Fazla Bilgi:
 

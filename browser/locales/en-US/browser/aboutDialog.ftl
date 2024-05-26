@@ -65,6 +65,7 @@ community-2 = { -brand-short-name }, <label data-l10n-name="community-mozillaLin
 helpus = Yardım etmek ister misiniz? <label data-l10n-name="helpus-donateLink">Bağış yapın</label> veya <label data-l10n-name="helpus-getInvolvedLink">aramıza katılın!</label>
 
 bottomLinks-license = Lisans Bilgileri
+bottomLinks-huma = Hüma Hakkında
 bottomLinks-rights = Son Kullanıcı Hakları
 bottomLinks-privacy = Gizlilik İlkesi
 

@@ -10,15 +10,15 @@
 # instead of BrandFullName and typically should not be modified.
 !define BrandFullNameInternal "Huma"
 !define BrandFullName         "Huma"
-!define CompanyName           "vastseablog.com"
+!define CompanyName           "Egehan"
 !define URLInfoAbout          "https://vastseablog.com"
-!define HelpLink              "https://vastseablog.com"
+!define HelpLink              "https://github.com/VastSea0/Huma/wiki/H%C3%BCma--Wiki"
 
 !define URLStubDownloadX86 "https://download.mozilla.org/?os=win&lang=${AB_CD}&product=firefox-nightly-latest"
 !define URLStubDownloadAMD64 "https://download.mozilla.org/?os=win64&lang=${AB_CD}&product=firefox-nightly-latest"
 !define URLStubDownloadAArch64 "https://download.mozilla.org/?os=win64-aarch64&lang=${AB_CD}&product=firefox-nightly-latest"
 !define URLManualDownload "https://www.mozilla.org/${AB_CD}/firefox/installer-help/?channel=nightly&installer_lang=${AB_CD}"
-!define URLSystemRequirements "https://www.mozilla.org/firefox/system-requirements/"
+!define URLSystemRequirements "https://github.com/VastSea0/Huma/wiki/Sistem-gereksinimleri"
 !define Channel "kararsiz"
 
 # The installer's certificate name and issuer expected by the stub installer
