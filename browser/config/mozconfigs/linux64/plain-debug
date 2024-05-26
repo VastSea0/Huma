@@ -1,0 +1,6 @@
+. "$topsrcdir/browser/config/mozconfigs/linux64/plain-opt"
+
+ac_add_options --enable-debug
+
+ac_add_options --with-app-basename=huma
+ac_add_options --with-app-name=huma

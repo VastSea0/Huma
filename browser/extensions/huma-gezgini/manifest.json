@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Hüma Gezgini",
+  "version": "1.2",
+  "description": "Hüma Web Tarayıcısı için Hüma Gezgini",
+  "icons": {
+    "48": "images/logo.png",
+    "128": "images/logo.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "images/logo.png",
+      "32": "images/logo.png"
+    },
+
+    "theme_icons": [
+      {
+        "light": "images/logo.png",
+        "dark": "images/logo.png",
+        "size": 16
+      },
+      {
+        "light": "images/logo.png",
+        "dark": "images/logo.png",
+        "size": 32
+      }
+    ],
+
+    "default_title": "humaGezgini",
+    "default_popup": "popup/popup.html"
+  },
+
+  "background": {
+    "scripts": ["popup/popup.js"]
+  },
+
+  "permissions": [
+    "activeTab", "tabs"
+  ]
+}

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+
+Name: manifest.json
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: pQ7DNkFQfkUVsYRgSzeWVaPCW40=
+SHA256-Digest: YK7MB7yHYPWZ83+ttypRnz+iu2Uu/tAMPYkAnNBbpvE=
+
+Name: 1.png
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: cmHLYJYo3yPoftOqgyvucbLyWZ8=
+SHA256-Digest: PoJpylHxHn8PLhPQHQ6N02NTVP/Y+NnoAas/stWcR0E=
+
+Name: 0.png
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: gofM9LGLPAIdhO4nEkbe24M4Op4=
+SHA256-Digest: 2DF3WrbK8gqO1iwNui8G3tGId+AOppMO6pfXEyheAYU=
+

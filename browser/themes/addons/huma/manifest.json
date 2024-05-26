@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "name": "H\u00fcma Browser Theme 2.0",
+    "theme": {
+      "images": {
+        "additional_backgrounds": [
+          "0.png",
+          "1.png"
+        ]
+      },
+      "properties": {
+        "additional_backgrounds_alignment": [
+          "right center",
+          "right center"
+        ],
+        "additional_backgrounds_tiling": [
+          "no-repeat",
+          "no-repeat"
+        ]
+      },
+      "colors": {
+        "toolbar": "rgb(65, 137, 111)",
+        "toolbar_text": "rgb(255, 255, 255)",
+        "frame": "rgb(4, 251, 251)",
+        "tab_background_text": "rgb(255, 255, 255)",
+        "toolbar_field": "rgb(12, 159, 170)",
+        "toolbar_field_text": "rgb(255, 255, 255)",
+        "tab_line": "rgb(28, 34, 83)",
+        "popup": "rgb(177, 44, 36)",
+        "popup_text": "rgb(255, 255, 255)",
+        "ntp_background": "rgb(97, 218, 178)",
+        "tab_loading": "rgb(28, 34, 83)"
+      }
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "{1c31d37f-f45b-4d85-8b3e-1f649fdc2f66}"
+      }
+    }
+  }

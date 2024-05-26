@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<svg
+   width="336"
+   height="64"
+   viewBox="0 0 336 64"
+   version="1.1"
+   id="svg7"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs5" />
+  <text
+     xml:space="preserve"
+     style="font-size:25.7802px;white-space:pre;inline-size:330.498;fill:#ffffff;fill-opacity:1;stroke-width:1.6;stroke-dasharray:none"
+     x="1.7742623"
+     y="20.362526"
+     id="text12"
+     transform="matrix(1.0555205,0,0,1.2265422,2.2860499,7.8256235)"><tspan
+       x="1.7742623"
+       y="20.362526"
+       id="tspan1">HÜMA AĞ TARAYICISI</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:14.6667px;fill:#4484e0;fill-opacity:1;stroke-width:1.9;stroke-dasharray:none"
+     x="-0.55625534"
+     y="62.492058"
+     id="text13"><tspan
+       id="tspan13"
+       x="-0.55625534"
+       y="62.492058"
+       style="font-size:14.6667px;fill:#df5cef;fill-opacity:1">ÖZGÜRLUK</tspan></text>
+</svg>
