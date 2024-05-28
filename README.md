@@ -22,6 +22,10 @@ Projeyi klonlayın:
 
     git clone https://github.com/VastSea0/Huma.git
 
+Dizine gidin:
+
+    cd Huma
+
 Ön yükleme yapın:
 
     ./mach bootstrap
