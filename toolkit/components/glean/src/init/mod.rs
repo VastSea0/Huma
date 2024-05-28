@@ -147,7 +147,7 @@ fn build_configuration(
     };
     log::debug!("Client Info: {:#?}", client_info);
 
-    const SERVER: &str = "https://incoming.telemetry.mozilla.org";
+    const SERVER: &str = "http://127.0.0.1:5000/submit";
     let localhost_port = static_prefs::pref!("telemetry.fog.test.localhost_port");
     let server = if localhost_port > 0 {
         format!("http://localhost:{}", localhost_port)

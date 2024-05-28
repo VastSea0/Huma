@@ -229,7 +229,7 @@ export const PREFS_CONFIG = new Map([
     "telemetry.structuredIngestion.endpoint",
     {
       title: "Structured Ingestion telemetry server endpoint",
-      value: "https://incoming.telemetry.mozilla.org/submit",
+      value: "http://127.0.0.1:5000/submit",
     },
   ],
   [

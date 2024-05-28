@@ -145,7 +145,7 @@ VIAddVersionKey "ProductVersion"  "${AppVersion}"
 !define APPROXIMATE_REQUIRED_SPACE_MB "145"
 
 # Constants for parts of the telemetry submission URL
-!define TELEMETRY_BASE_URL https://incoming.telemetry.mozilla.org/submit
+!define TELEMETRY_BASE_URL http://127.0.0.1:5000/submit
 !define TELEMETRY_NAMESPACE Huma-installer
 !define TELEMETRY_INSTALL_PING_VERSION 1
 !define TELEMETRY_INSTALL_PING_DOCTYPE install

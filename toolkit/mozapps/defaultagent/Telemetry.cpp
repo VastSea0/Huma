@@ -32,7 +32,7 @@
 #include "mozilla/WinHeaderOnlyUtils.h"
 #include "nsStringFwd.h"
 
-#define TELEMETRY_BASE_URL "https://incoming.telemetry.mozilla.org/submit"
+#define TELEMETRY_BASE_URL "http://127.0.0.1:5000/submit"
 #define TELEMETRY_NAMESPACE "default-browser-agent"
 #define TELEMETRY_PING_VERSION "1"
 #define TELEMETRY_PING_DOCTYPE "default-browser"

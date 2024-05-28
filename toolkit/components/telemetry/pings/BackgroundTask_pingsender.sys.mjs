@@ -21,7 +21,10 @@ export async function runBackgroundTask(commandLine) {
 // unrelated malware running on the same system. It's unclear whether a gecko-
 // based pingsender would be similarly desirable for that use-case, but it's
 // easy enough to implement an allowlist here as well.
-const ALLOWED_ENDPOINTS = ["localhost", "incoming.telemetry.mozilla.org"];
+// Uzak Ölçüm sunucusu için izin verilen alan adları
+// Egehan'dan not:
+// Mozilla Uzak Ölçüm sunucuları kapatıldı...
+const ALLOWED_ENDPOINTS = ["localhost", "http://127.0.0.1:5000/submit" ];
 
 async function sendPing(endpoint, path) {
   console.log(`pingsender: sending ${path} to ${endpoint}`);

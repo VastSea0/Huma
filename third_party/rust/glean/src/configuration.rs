@@ -9,7 +9,7 @@ use crate::net::PingUploader;
 use std::path::PathBuf;
 
 /// The default server pings are sent to.
-pub(crate) const DEFAULT_GLEAN_ENDPOINT: &str = "https://incoming.telemetry.mozilla.org";
+pub(crate) const DEFAULT_GLEAN_ENDPOINT: &str = "http://127.0.0.1:5000/submit";
 
 /// The Glean configuration.
 ///
