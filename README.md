@@ -55,7 +55,16 @@ Teşekkürler!
 
 Hüma Tarayıcısı'nı kullanmayı seçtiğiniz için teşekkür ederiz. Herhangi bir sorunuz veya öneriniz varsa, lütfen bizimle iletişime geçmekten çekinmeyin.
 
-# Hüma Web Tarayıcısı: İlk yerli Türk yapımı web tarayıcı!
+# Ekran Görüntüleri
+
+![image](https://github.com/VastSea0/Huma/assets/144556903/517245a7-d9a0-4efe-93ae-2d6a0c509126)
+![image](https://github.com/VastSea0/Huma/assets/144556903/c9e96df5-c06f-413c-8659-880c8c8323b2)
+![image](https://github.com/VastSea0/Huma/assets/144556903/7d36524b-cf12-4136-9ea4-3064923d2ec8)
+![image](https://github.com/VastSea0/Huma/assets/144556903/8b557b31-84f5-4cbb-89be-6aaf30a359f0)
+![image](https://github.com/VastSea0/Huma/assets/144556903/686ea2cb-4cb3-49f2-894f-e82c663ddcda)
+
+
+# Hüma Ağ Tarayıcısı: İlk yerli Türk yapımı web tarayıcı!
 
 Hüma, Pardus kullanıcıları için özel olarak tasarlanmış açık kaynaklı bir web tarayıcısıdır. İşte Türklerin ilk web tarayıcısı Hüma!
 
