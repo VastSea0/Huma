@@ -1,6 +1,23 @@
 # Hüma Web Tarayıcısı
 
-Hüma Tarayıcısı, ilk yerli web tarayıcısı olma hedefiyle özgür yazılım prensiplerine bağlı kalarak Pardus ekosistemine katkıda bulunmak için geliştirilmiş bir web tarayıcısıdır.
+Hüma Tarayıcısı, ilk yerli web tarayıcısı olma hedefiyle özgür yazılım prensiplerine bağlı kalarak Pardus yazılım ağına(ekosistem,) katkıda bulunmak için geliştirilmiş bir web tarayıcısıdır.
+
+## Hakkında
+
+Hüma, gizlilik odaklı tasarımıyla dikkat çeker ve kullanıcıların çevrimiçi gizliliğini korur. Hızlı, hafif ve özelleştirilebilir arayüzüyle Türk topluluğunun ihtiyaçlarını karşılar.
+
+Hüma projesi, Egehan'ın 2022 yılında Python ile QtWebEngine motorunu kullanarak ilk web tarayıcısını yapmasıyla başladı. "VastSea Browser" olarak adlandırılan bu tarayıcı, basit ve deneysel bir proje olduğundan günlük kullanıma uygun değildi. İlerleyen zamanlarda çeşitli deneysel projeler geliştirildi, ancak bunlar daha küçük ve karmaşık olmayan yapılardı. 2023 yılında Teknofest yarışmalarında Pardus için bir yarışma olduğunu öğrenen Egehan, Pardus için güçlü bir tarayıcı yapma fikrini düşündü. Ancak, Chromium projesi ile bir tarayıcı geliştirmek zorluğundan dolayı ertelendi. Bu süreçte "Füze Paket Yükleyicisi" adında bir proje geliştirdi, fakat teknik sorunlar nedeniyle proje askıya alındı. Bu esnada Hüma fikri tekrar doğdu.
+
+Hüma Egehan KAHRAMAN tarafından 2024 yılının Ocak ayında araştırılmaya başlanmıştır. Şubat ayında, başarısız olan Füze Paket Yükleyicisi projesinin iptali ile bu fikri gerçeğe dönüştürmek üzere çalışmalara başladı. İlk olarak Electron çerçevesi ile yazılan sürüm geliştirildi, ancak bunun yeterli olmayacağını düşünerek eş zamanlı olarak Firefox tabanlı bir tarayıcı yapmayı kavramaya çalıştı. Yaklaşık iki aylık araştırma ve geliştirme sonucunda, kaynak koddan derlenen ilk Firefox sürümü Şubat 2024'te ortaya çıktı. 27 Mart 2024 tarihinde ise temel gayesi olan Firefox çatalı olma yolunda ilk adımını atarak Firefox tarayıcısının bir çatalı olarak yeniden geliştirilmeye başlandı.
+
+Mayıs 2024 itibarıyla, Hüma'nın kararlı ve özgün olabilmesi için Egehan tüm gayretiyle çalışmakta ve bu projeyi Pardus ekosistemine kazandırmayı hedeflemektedir. Aynı zamanda Türklerin ilk web tarayıcısı olma misyon ve vizyonuna sahip olan bu tarayıcı, yüksek hedefleri benimseyerek durmadan gelişimini sürdürmektedir.
+
+### Hüma Destanı
+Hüma, Türk mitolojisinde önemli bir yere sahip efsanevi bir kuştur. Hüma'nın kanatları altında ebedi mutluluk ve sonsuz hayat sembolize edilir. Hüma'nın görüldüğüne inanılan kişi, sonsuz yaşam ve mutluluk vaadiyle dolu bir geleceğe sahip olacağına inanılırdı.
+
+Hüma Web Tarayıcısı özgür yazılım felsefesini benimsemiş tamamen açık kaynak ve özgür bir yazılımdır. Egehan KAHRAMAN tarafından 'Türklerin ilk Web Tarayıcısı' konsepti ile yazılmış olan bu yazılım Chromium tabanını kullanmıştır (Şu anda geliştirilen FireFox tabanını kullanır) İçerisinde bir çok özelliğin bulunduğu bu tarayıcı sizin verilerinizi her hangi bir yere göndermez, dağıtmaz veya satmazdır. Verileriniz sizinle güvenli kalır...
+
+Hüma Web Tarayıcı özgür yazılımları tamamen destekler ve geliştirilmesine katkıda bulunmayı amaçlar bu nedenle GPL lisansı altında Kamuya açık olarak paylaşılmış bir yazılımdır.
 
 Özellikler:
 
@@ -64,23 +81,8 @@ Hüma Tarayıcısı'nı kullanmayı seçtiğiniz için teşekkür ederiz. Herhan
 ![image](https://github.com/VastSea0/Huma/assets/144556903/686ea2cb-4cb3-49f2-894f-e82c663ddcda)
 
 
-# Hüma Ağ Tarayıcısı: İlk yerli Türk yapımı web tarayıcı!
 
-Hüma, Pardus kullanıcıları için özel olarak tasarlanmış açık kaynaklı bir web tarayıcısıdır. İşte Türklerin ilk web tarayıcısı Hüma!
-
-## Hakkında
-
-Hüma, gizlilik odaklı tasarımıyla dikkat çeker ve kullanıcıların çevrimiçi gizliliğini korur. Hızlı, hafif ve özelleştirilebilir arayüzüyle Türk topluluğunun ihtiyaçlarını karşılar.
-Hüma Egehan KAHRAMAN tarafından 2024 yılının ocak ayında araştırılmaya başlanmıştır. Şubat ayında Başarısız olan Füze Paket Yükleyicisi projesinin iptali ile bu fikri gerçeğe dökmek üzere çalışmalara başlamıştır. Yaklaşık 2 aylık araştırma ve geliştirme sonucunda İlk sürüm ortaya çıkmıştır. 27 Mart 2024 tarihinde ise temel gayesi olan Firefox çatalı olma yolunda ilk adımını atarak Firefox tarayıcısının bir çatalı olarak yeniden geliştirilmeye başlanmıştır. 
-**Yazan:** Egehan KAHRAMAN
- 
-Hüma Web Tarayıcısı özgür yazılım felsefesini benimsemiş tamamen açık kaynak ve özgür bir yazılımdır. Egehan KAHRAMAN tarafından 'Türklerin ilk Web Tarayıcısı' konsepti ile yazılmış olan bu yazılım Chromium tabanını kullanmıştır ( FireFox tabanlı olabilir) İçerisinde bir çok özelliğin bulunduğu bu tarayıcı sizin verilerinizi her hangi bir yere göndermez, dağıtmaz veya satmazdır. Verileriniz sizinle güvendedir...
-
-Hüma Web Tarayıcı özgür yazılımları tamamen destekler ve geliştirilmesine katkıda bulunmayı amaçlar bu nedenle GPL lisansı altında Kamuya açık olarak paylaşılmış bir yazılımdır.
-
-Hüma Web Tarayıcı Min tarayıcısının bir forku olarak yolculuğuna başlamıştır ve FireFox tabanına geçen ilk kararlı sürümden itibaren Min'in bir çatalı olmaktan çıkıp FireFox çatalı olarak yolculuğuna devam edecektir
-
-### Geliştiriciler için
+### Geliştiriciler Bu Sürüm Şu Anda Desteklenmediğinden Yeni Sürümler Gelmeyecektir
 Merhaba geliştirici veya meraklı her hangi bir kişi, işte karşında Tarayıcıyı geliştirmek veya kendi çatalını yapmak için oluşturduğum bu belge sana yardımcı olacaktır... Olaylar çok basit eğer JavaScript bilgin ve Electronjs bilgin varsa işler çook basit olacaktır. hadi başlayalım!
 
 Stil dosyaları "CSS" klasöründe bulunur ama sadece  bunla sınırlı değildir tarayıcı sayfalarında bolca stil dosyaları kullanılmıştır. Bazı hayati öneme sahip stilleri değiştirmen önerilmez ancak eğer ne yaptığını biliyorsan veya sadece denemek istiyorsan bakabilirsin, eğlenceli bir deneyim olsa gerek.
@@ -90,14 +92,14 @@ Betik dosyaları "JS" ve "MAİN" klasörlerinde bulunur "MAİN" daha az dosya bu
 Tarayıcı içi statik sayfalar "PAGES" klasöründe bulunur bunlara kendi sayfalarını ekleyebilirsin veya değiştirebilirsin
 
 Tarayıcıyı derlemek için "humagelistirmebaslatici.sh" betiğini çalıştırabilirsin
-**Not kaynak Kodlar En Erken Haziran Ayında Bu Depoda Paylaşılacaktır**
+ 
 **İletişim:** 
 - Instagram: [@marsstakiuzayliyim](https://www.instagram.com/marsstakiuzayliyim/)
 - Web Sitesi: [vastsea.com.tr](https://vastsea.com.tr)
 - Blog Sitesi: [vastseablog.com](https://vastseablog.com)
 - Instagram Hesabı: [@vastseaofficial](https://www.instagram.com/vastseaofficial/)
 
-## Kurulum
+## Kurulum Bu Sürüm Şu Anda Desteklenmediğinden Yeni Sürümler Gelmeyecektir
 ### Pardus
 1. Debian dosyasını sürüm listesinden indirin.
 2. Pardus Deb kurucu ile dosyayı açın ve kurulumu tamamlayın.
