@@ -61,9 +61,9 @@ Paketleme:
 
 Daha Fazla Bilgi:
 
-    Proje Deposu: https://github.com/VastSea0/Huma
-    Mozilla Geliştirici Belgeleri: https://developer.mozilla.org/en-US/
-
+    Proje Deposu: [https://github.com/VastSea0/Huma](https://github.com/VastSea0/Huma)
+    Mozilla Geliştirici Belgeleri: [https://developer.mozilla.org/en-US/](https://firefox-source-docs.mozilla.org)
+    
 Projeye Katkı Sağlamak:
 
 Hüma Tarayıcısı'nın gelişmesine katkıda bulunmak istiyorsanız, lütfen projenin GitHub deposuna göz atın ve açık sorunlara bakın. Her türlü katkı açıktır.
@@ -79,19 +79,6 @@ Hüma Tarayıcısı'nı kullanmayı seçtiğiniz için teşekkür ederiz. Herhan
 ![image](https://github.com/VastSea0/Huma/assets/144556903/7d36524b-cf12-4136-9ea4-3064923d2ec8)
 ![image](https://github.com/VastSea0/Huma/assets/144556903/8b557b31-84f5-4cbb-89be-6aaf30a359f0)
 ![image](https://github.com/VastSea0/Huma/assets/144556903/686ea2cb-4cb3-49f2-894f-e82c663ddcda)
-
-
-
-### Geliştiriciler Bu Sürüm Şu Anda Desteklenmediğinden Yeni Sürümler Gelmeyecektir
-Merhaba geliştirici veya meraklı her hangi bir kişi, işte karşında Tarayıcıyı geliştirmek veya kendi çatalını yapmak için oluşturduğum bu belge sana yardımcı olacaktır... Olaylar çok basit eğer JavaScript bilgin ve Electronjs bilgin varsa işler çook basit olacaktır. hadi başlayalım!
-
-Stil dosyaları "CSS" klasöründe bulunur ama sadece  bunla sınırlı değildir tarayıcı sayfalarında bolca stil dosyaları kullanılmıştır. Bazı hayati öneme sahip stilleri değiştirmen önerilmez ancak eğer ne yaptığını biliyorsan veya sadece denemek istiyorsan bakabilirsin, eğlenceli bir deneyim olsa gerek.
-
-Betik dosyaları "JS" ve "MAİN" klasörlerinde bulunur "MAİN" daha az dosya bulundururken "JS" klasörü oldukça fazla dosya bulundurur bunlar sekmeleri web görüntülülerini ayarları ve daha bir çok şeyi ayarlamak için yazılmış betiklerdir
-
-Tarayıcı içi statik sayfalar "PAGES" klasöründe bulunur bunlara kendi sayfalarını ekleyebilirsin veya değiştirebilirsin
-
-Tarayıcıyı derlemek için "humagelistirmebaslatici.sh" betiğini çalıştırabilirsin
  
 **İletişim:** 
 - Instagram: [@marsstakiuzayliyim](https://www.instagram.com/marsstakiuzayliyim/)
@@ -99,23 +86,5 @@ Tarayıcıyı derlemek için "humagelistirmebaslatici.sh" betiğini çalıştır
 - Blog Sitesi: [vastseablog.com](https://vastseablog.com)
 - Instagram Hesabı: [@vastseaofficial](https://www.instagram.com/vastseaofficial/)
 
-## Kurulum Bu Sürüm Şu Anda Desteklenmediğinden Yeni Sürümler Gelmeyecektir
-### Pardus
-1. Debian dosyasını sürüm listesinden indirin.
-2. Pardus Deb kurucu ile dosyayı açın ve kurulumu tamamlayın.
-### Windows
-1. Buradan İndirin (henüz gelmedi)
-
-**Not:** Kaynak kodları yakında gelecektir.
-
-## Sürüm notları:
-- 1.0.0 ila 2.0.0 arası sürümler Hata ayıklamaları ve genel özelleştirmeler
-- 1.0.1: Genel tarama özellikleri
-- 1.0.5: HümaGO geliştirme ortamı, Hüma kızıl teması.
-- 1.0.9: Önceki sürümlerin hata ayıklamaları. HümaGO'nun güncellenmesi
-- 1.0.10: Hata ayıklamaları, yeni sayfalar, Temalar ve daha fazlası
-- 1.0.11: Eklentiler, sayfa düzenlemeleri, stil düzenlemeleri, Hüma sayfaları, Hüma Betik dili ve daha fazlası
-- 1.0.12: **YENİ GELECEK SÜRÜM TAHMİNİ TARİH: NİSAN 2024** Özgünleştirilmiş, Güçlendirilmiş, Üst düzey kullanıcı deneyimi sunan Tarayıcı.
-
-
+ 
 
