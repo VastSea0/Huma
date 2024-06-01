@@ -5,7 +5,6 @@ toolkit.jar:
    content/global/autocomplete.css
    content/global/aboutAbout.js
    content/global/aboutAbout.html
-   content/global/aboutHuma.html
    content/global/aboutLogging.js
    content/global/aboutLogging.html
    content/global/aboutNetError.mjs
@@ -42,6 +41,11 @@ toolkit.jar:
    content/global/aboutTelemetry.js
    content/global/aboutTelemetry.xhtml
    content/global/aboutTelemetry.css
+   content/global/aboutHuma.css
+   content/global/aboutMozilla.css
+   content/global/jquery-3.5.1.min.js
+   content/global/bootstrap.bundle.min.js
+   content/global/huma.js
    content/global/aboutUrlClassifier.js
    content/global/aboutUrlClassifier.xhtml
    content/global/aboutUrlClassifier.css
@@ -56,8 +60,7 @@ toolkit.jar:
    content/global/customElements.js
    content/global/globalOverlay.js
    content/global/mozilla.html
-  
-   content/global/aboutMozilla.css
+   content/global/huma.html
    content/global/preferencesBindings.js
    content/global/process-content.js
    content/global/resetProfile.css

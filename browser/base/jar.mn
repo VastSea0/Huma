@@ -11,6 +11,7 @@ browser.jar:
         content/browser/aboutRestartRequired.js       (content/aboutRestartRequired.js)
         content/browser/aboutRestartRequired.xhtml    (content/aboutRestartRequired.xhtml)
         content/browser/aboutRobots.xhtml             (content/aboutRobots.xhtml)
+        
         content/browser/aboutRobots.js                (content/aboutRobots.js)
         content/browser/aboutRobots.css               (content/aboutRobots.css)
         content/browser/logos/etp-mobile.svg          (content/logos/etp-mobile.svg)
@@ -33,6 +34,7 @@ browser.jar:
         content/browser/aboutTabCrashed.js            (content/aboutTabCrashed.js)
         content/browser/aboutTabCrashed.xhtml         (content/aboutTabCrashed.xhtml)
         content/browser/blanktab.html                 (content/blanktab.html)
+        content/browser/huma.html                     (content/huma.html)
         content/browser/browser.css                   (content/browser.css)
         content/browser/browser.js                    (content/browser.js)
 *       content/browser/browser.xhtml                 (content/browser.xhtml)

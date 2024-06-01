@@ -5,6 +5,7 @@
 <!-- Home panel -->
 
 <script src="chrome://browser/content/preferences/home.js"/>
+ 
 <html:template id="template-paneHome">
 <hbox id="firefoxHomeCategory"
       class="subcategory"
@@ -88,5 +89,20 @@
       </menulist>
     </vbox>
   </hbox>
+ 
+  <hbox id="firefoxHomeCategory" style="display: flex; flex-direction: column;">
+  <html:h1>Hüma Özel Sayfaları</html:h1>
+  <html:h2 data-l10n-id="pane-home-title"></html:h2>
+  <html:p data-l10n-id="huma-tarih-ilk-beyit"></html:p>
+  <button 
+      id="showHumaPagesH"
+      is="highlightable-button"
+      class="accessory-button"
+      preference="browser.humapages.history.enabled"
+      data-l10n-id="home-newtabs-mode-label-huma"
+  />
+ 
+</hbox>
+
 </groupbox>
 </html:template>

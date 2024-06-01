@@ -5,11 +5,11 @@
 
 ## These strings are used in the about:preferences moreFromMozilla page
 
-more-from-moz-title = Diğer { -vendor-short-name } Ürünleri
+more-from-moz-title = Diğer { -vendor-short-name } Sayfları
 more-from-moz-category =
-    .tooltiptext = Diğer { -vendor-short-name } Ürünleri
+    .tooltiptext = Diğer { -vendor-short-name } sayfaları
 
-more-from-moz-subtitle = Sağlıklı bir interneti destekleyen diğer { -vendor-short-name } ürünlerine göz atın.
+more-from-moz-subtitle = Sağlıklı bir interneti destekleyen diğer { -vendor-short-name } sayfalarına göz atın.
 
 more-from-moz-firefox-mobile-title = { -brand-product-name } Mobil
 more-from-moz-firefox-mobile-description = Gizliliğinizi ilk sıraya koyan mobil tarayıcı.

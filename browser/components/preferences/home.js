@@ -26,7 +26,23 @@ Preferences.addAll([
   { id: "pref.browser.homepage.disable_button.bookmark_page", type: "bool" },
   { id: "pref.browser.homepage.disable_button.restore_default", type: "bool" },
   { id: "browser.newtabpage.enabled", type: "bool" },
+  { id: "browser.humapages.history.enabled", type: "bool" },
 ]);
+
+
+
+
+function showContent(contentId) {
+  alert("helo")
+  var contents = document.querySelectorAll('.content');
+  contents.forEach(function(content) { 
+      if (content.id === contentId) { 
+          content.style.display = 'block';
+      } else {
+          content.style.display = 'none';
+      }
+  });
+}
 
 const HOMEPAGE_OVERRIDE_KEY = "homepage_override";
 const URL_OVERRIDES_TYPE = "url_overrides";
@@ -279,6 +295,23 @@ var gHomePane = {
       Services.prefs.removeObserver(this.NEWTAB_ENABLED_PREF, observer);
     });
   },
+
+  _showHumaPagesH() {
+   /*
+   Burada init fonksiyonunda bu fonksiyon başlangıç için çağrılır
+   bkz. satır 715 civarı
+  "setEventListener()" bu komut ile showHumaPagesH kimlikli vericiden 
+  click sinyalini dinler ve this.showHumaPagesH ile diğer fonksiyonu çağırır
+  bkz. satır 630 civarı
+   */
+    setEventListener("showHumaPagesH", "click", this.showHumaPagesH);
+  },
+  /*
+  Kendimi çok zeki hissediyorum...
+  */
+
+
+
 
   /**
    * _renderCustomSettings: Hides or shows the UI for setting a custom
@@ -593,6 +626,16 @@ var gHomePane = {
       rv
     );
   },
+/*
+Diyaloğu aç... 
+*/
+
+  showHumaPagesH() {
+    //alert("helo");
+    gSubDialog.open(
+      "chrome://browser/content/preferences/dialogs/huma.pdf"
+    );
+  },
 
   restoreDefaultHomePage() {
     HomePage.reset();
@@ -675,6 +718,7 @@ var gHomePane = {
     // Setup the add-on options for the new tab section before registering the
     // listener.
     this._updateMenuInterface();
+    this._showHumaPagesH();
     document
       .getElementById("newTabMode")
       .addEventListener("command", this.syncToNewTabPref.bind(this));

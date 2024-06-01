@@ -2,34 +2,167 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-html {
-  background: maroon radial-gradient( circle, #a01010 0%, #800000 80%) center center / cover no-repeat;
-  color: white;
-  font-style: italic;
-  text-rendering: optimizeLegibility;
-  min-height: 100%;
-}
-
-#moztext {
-  margin-top: 15%;
-  font-size: 1.1em;
-  font-family: serif;
-  text-align: center;
-  line-height: 1.5;
-}
-
-#from {
-  font-size: 1.95em;
-  font-family: serif;
-  text-align: end;
-}
-
-em {
-  font-size: 1.3em;
-  line-height: 0;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
+ body {
+  margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #4a90e2, #14567a);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .header .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0.5em 0;
+            letter-spacing: 2px;
+        }
+        .header p.lead {
+            font-size: 1.2em;
+            font-weight: 300;
+            margin: 0.5em 0;
+        }
+         .versions, .installation, .more-info, .contribute, .footer {
+            padding: 2rem 0;
+        }
+        .features {
+            padding: 60px 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .features .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .features h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            color: #333;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features ul li {
+            font-size: 1.2em;
+            padding: 0.5em 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .features ul li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            margin-bottom: 0.5em;
+            color: #4a90e2;
+            font-size: 2em;
+        }
+        .features ul li:hover {
+            background-color: #f0f8ff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .features ul li span {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 0.5em;
+            max-width: 700px;
+        }
+        .bg-light {
+            background-color: #f8f9fa !important;
+        }
+        .lead {
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            padding: 40px 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .footer .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer p {
+            font-size: 1em;
+            color: #666;
+        }
+        .footer .social-links {
+            margin-top: 20px;
+        }
+        .footer .social-links a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .footer .social-links a:hover {
+            color: #4a90e2;
+        }
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            color: #333;
+        }
+        p {
+            font-size: 1em;
+            color: #666;
+        }
+        .btn-container {
+            margin-top: 20px;
+        }
+        .btn-container button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #4a90e2;
+            color: #fff;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-container button:hover {
+            background-color: #14567a;
+        }
+        .back-btn {
+            margin-top: 20px;
+        }
+        .back-btn button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #ccc;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .back-btn button:hover {
+            background-color: #999;
+        }
+        .hidden {
+            display: none;
+        }
+  

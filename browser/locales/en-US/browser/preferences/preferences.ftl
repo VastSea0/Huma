@@ -649,6 +649,10 @@ home-new-windows-tabs-description2 = Giriş sayfanızı, yeni pencereleri ve yen
 home-homepage-mode-label = Giriş sayfası ve yeni pencereler
 
 home-newtabs-mode-label = Yeni sekmeler
+home-newtabs-mode-label-huma = Hüma Türk Tarihi Kitabı
+
+huma-tarih = Hüma Tarih ve Mitoloji Kütüphanesi
+huma-tarih-ilk-beyit = Türk tarihi, Orta Asya'dan başlayarak günümüze kadar uzanan köklü bir geçmişe sahiptir. Türkler, tarih boyunca çeşitli medeniyetlere ev sahipliği yapmış ve kendilerine özgü bir kültür ve yaşam tarzı geliştirmişlerdir.
 
 home-restore-defaults =
     .label = Varsayılanları geri yükle

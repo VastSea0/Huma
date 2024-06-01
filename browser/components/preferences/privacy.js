@@ -413,6 +413,9 @@ var gPrivacyPane = {
    * Hide the "Change Block List" link for trackers/tracking content in the
    * custom Content Blocking/ETP panel. By default, it will not be visible.
    */
+  /*
+  Çözdüm glb
+  */
   _showCustomBlockList() {
     let prefValue = Services.prefs.getBoolPref(
       "browser.contentblocking.customBlockList.preferences.ui.enabled"
@@ -2285,6 +2288,7 @@ var gPrivacyPane = {
    * Displays the available block lists for tracking protection.
    */
   showBlockLists() {
+    
     gSubDialog.open(
       "chrome://browser/content/preferences/dialogs/blocklists.xhtml"
     );

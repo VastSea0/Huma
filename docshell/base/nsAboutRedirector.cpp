@@ -86,7 +86,7 @@ class CrashChannel final : public nsBaseChannel {
  */
 static const RedirEntry kRedirMap[] = {
     {"about", "chrome://global/content/aboutAbout.html", 0},
-    {"humabrowser", "chrome://global/content/huma.html", 0},
+     
     {"addons", "chrome://mozapps/content/extensions/aboutaddons.html",
      nsIAboutModule::ALLOW_SCRIPT | nsIAboutModule::IS_SECURE_CHROME_UI},
     {"buildconfig", "chrome://global/content/buildconfig.html",
@@ -122,6 +122,13 @@ static const RedirEntry kRedirMap[] = {
     {"license", "chrome://global/content/license.html",
      nsIAboutModule::URI_SAFE_FOR_UNTRUSTED_CONTENT |
          nsIAboutModule::IS_SECURE_CHROME_UI},
+     {"mozilla", "chrome://global/content/mozilla.html",
+      nsIAboutModule::IS_SECURE_CHROME_UI |
+         nsIAboutModule::ALLOW_SCRIPT},
+    {"licensehuma", "chrome://global/content/license.html",
+     nsIAboutModule::URI_SAFE_FOR_UNTRUSTED_CONTENT |
+         nsIAboutModule::IS_SECURE_CHROME_UI | nsIAboutModule::ALLOW_SCRIPT},
+    
     {"logging", "chrome://global/content/aboutLogging.html",
      nsIAboutModule::ALLOW_SCRIPT},
 
@@ -140,10 +147,7 @@ static const RedirEntry kRedirMap[] = {
          nsIAboutModule::URI_CAN_LOAD_IN_PRIVILEGEDABOUT_PROCESS |
          nsIAboutModule::IS_SECURE_CHROME_UI},
          
-    {"huma", "chrome://global/content/mozilla.html",
-     nsIAboutModule::URI_SAFE_FOR_UNTRUSTED_CONTENT},
-
-      
+   
 
 #if !defined(ANDROID) && !defined(XP_WIN)
     {"webauthn", "chrome://global/content/aboutWebauthn.html",
