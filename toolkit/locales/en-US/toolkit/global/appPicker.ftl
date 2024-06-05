@@ -3,8 +3,8 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 app-picker-browse-button =
-    .buttonlabelextra2 = Browse…
+    .buttonlabelextra2 = Gözat…
 app-picker-send-msg =
-    .value = Send this item to:
+    .value = Bu öğeyi buraya gönder:
 app-picker-no-app-found =
-    .value = No applications were found for this file type.
+    .value = Bu dosya türüyle ilişkilendirilmiş uygulama bulunamadı.

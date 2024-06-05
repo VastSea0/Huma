@@ -4,140 +4,107 @@
 
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
-cert-error-intro = { $hostname } uses an invalid security certificate.
-
-cert-error-mitm-intro = Websites prove their identity via certificates, which are issued by certificate authorities.
-
-cert-error-mitm-mozilla = { -brand-short-name } is backed by the non-profit Mozilla, which administers a completely open certificate authority (CA) store. The CA store helps ensure that certificate authorities are following best practices for user security.
-
-cert-error-mitm-connection = { -brand-short-name } uses the Mozilla CA store to verify that a connection is secure, rather than certificates supplied by the user’s operating system. So, if an antivirus program or a network is intercepting a connection with a security certificate issued by a CA that is not in the Mozilla CA store, the connection is considered unsafe.
-
-cert-error-trust-unknown-issuer-intro = Someone could be trying to impersonate the site and you should not continue.
-
+cert-error-intro = { $hostname } geçersiz bir güvenlik sertifikası kullanıyor.
+cert-error-mitm-intro = Web siteleri, kimliklerini kanıtlamak için sertifika makamları tarafından verilen sertifikaları kullanır.
+cert-error-mitm-mozilla = Kâr amacı gütmeyen Mozilla tarafından desteklenen { -brand-short-name }, tamamen açık bir sertifika makamı (CA) deposunu yönetmektedir. CA deposu, sertifika makamlarının kullanıcı güvenliğini sağlamak için en iyi uygulamaları izleyip izlemediğini kontrol eder.
+cert-error-mitm-connection = { -brand-short-name } bir bağlantının güvenli olup olmadığını doğrulamak için işletim sisteminiz tarafından sağlanan sertifikaları değil, Mozilla CA deposunu kullanır. Dolayısıyla, bir antivirüs programı veya bir ağ, Mozilla CA deposunda bulunmayan bir CA tarafından verilen bir güvenlik sertifikasını kullanarak bağlantınızı dinlerse bağlantı güvensiz kabul edilir.
+cert-error-trust-unknown-issuer-intro = Birisi bu siteyi taklit etmeye çalışıyor olabilir. Devam etmemelisiniz.
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
-cert-error-trust-unknown-issuer = Websites prove their identity via certificates. { -brand-short-name } does not trust { $hostname } because its certificate issuer is unknown, the certificate is self-signed, or the server is not sending the correct intermediate certificates.
-
-cert-error-trust-cert-invalid = The certificate is not trusted because it was issued by an invalid CA certificate.
-
-cert-error-trust-untrusted-issuer = The certificate is not trusted because the issuer certificate is not trusted.
-
-cert-error-trust-signature-algorithm-disabled = The certificate is not trusted because it was signed using a signature algorithm that was disabled because that algorithm is not secure.
-
-cert-error-trust-expired-issuer = The certificate is not trusted because the issuer certificate has expired.
-
-cert-error-trust-self-signed = The certificate is not trusted because it is self-signed.
-
-cert-error-trust-symantec = Certificates issued by GeoTrust, RapidSSL, Symantec, Thawte, and VeriSign are no longer considered safe because these certificate authorities failed to follow security practices in the past.
-
-cert-error-untrusted-default = The certificate does not come from a trusted source.
-
+cert-error-trust-unknown-issuer = Web siteleri, kimliklerini kanıtlamak için sertifikaları kullanır. { -brand-short-name } { $hostname } sitesine güvenmiyor çünkü sertifika sağlayıcısı tanınmıyor, sertifika kendi kendine imzalanmış veya sunucu doğru ara sertifikaları göndermiyor.
+cert-error-trust-cert-invalid = Sertifikaya güvenilmiyor çünkü geçersiz bir sertifika makamı sertifikası tarafından verilmiş.
+cert-error-trust-untrusted-issuer = Yayıncısının sertifikasına güvenilmediği için bu sertifikaya güvenilmiyor.
+cert-error-trust-signature-algorithm-disabled = Güvenli olmadığı için devre dışı bırakılmış bir imza algoritması ile imzalandığından, bu sertifikaya güvenilmiyor.
+cert-error-trust-expired-issuer = Sertifikaya güvenilmiyor çünkü yayıncı sertifikasının süresi dolmuş.
+cert-error-trust-self-signed = Bu sertifika kendi kendine imzalandığı için sertifikaya güvenilmiyor.
+cert-error-trust-symantec = GeoTrust, RapidSSL, Symantec, Thawte ve VeriSign tarafından düzenlenen sertifikalar; bu sertifika makamları geçmişte güvenlik prosedürlerini yerine getiremediği için artık güvenli kabul edilmemektedir.
+cert-error-untrusted-default = Sertifika güvenilir bir kaynaktan gelmiyor.
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
-cert-error-domain-mismatch = Websites prove their identity via certificates. { -brand-short-name } does not trust this site because it uses a certificate that is not valid for { $hostname }.
-
+cert-error-domain-mismatch = Web siteleri, kimliklerini kanıtlamak için sertifikaları kullanır. { $hostname } bu site için geçerli olmayan bir sertifika kullandığından { -brand-short-name } bu siteye güvenmiyor.
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
 #   $alt-name (string) - Alternate domain name for which the cert is valid.
-cert-error-domain-mismatch-single = Websites prove their identity via certificates. { -brand-short-name } does not trust this site because it uses a certificate that is not valid for { $hostname }. The certificate is only valid for <a data-l10n-name="domain-mismatch-link">{ $alt-name }</a>.
-
+cert-error-domain-mismatch-single = Web siteleri, kimliklerini kanıtlamak için sertifikaları kullanır. { $hostname } bu site için geçerli olmayan bir sertifika kullandığından { -brand-short-name } bu siteye güvenmiyor. Sertifika yalnızca <a data-l10n-name="domain-mismatch-link">{ $alt-name }</a> için geçerli.
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
 #   $alt-name (string) - Alternate domain name for which the cert is valid.
-cert-error-domain-mismatch-single-nolink = Websites prove their identity via certificates. { -brand-short-name } does not trust this site because it uses a certificate that is not valid for { $hostname }. The certificate is only valid for { $alt-name }.
-
+cert-error-domain-mismatch-single-nolink = Web siteleri, kimliklerini kanıtlamak için sertifikaları kullanır. { $hostname } bu site için geçerli olmayan bir sertifika kullandığından { -brand-short-name } bu siteye güvenmiyor. Sertifika yalnızca { $alt-name } için geçerli.
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
 #   $subject-alt-names (string) - Alternate domain names for which the cert is valid.
-cert-error-domain-mismatch-multiple = Websites prove their identity via certificates. { -brand-short-name } does not trust this site because it uses a certificate that is not valid for { $hostname }. The certificate is only valid for the following names: { $subject-alt-names }
-
+cert-error-domain-mismatch-multiple = Web siteleri, kimliklerini kanıtlamak için sertifikaları kullanır. { $hostname } bu site için geçerli olmayan bir sertifika kullandığından { -brand-short-name } bu siteye güvenmiyor. Sertifika yalnızca şu alan adları için geçerli: { $subject-alt-names }
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
 #   $not-after-local-time (Date) - Certificate is not valid after this time.
-cert-error-expired-now = Websites prove their identity via certificates, which are valid for a set time period. The certificate for { $hostname } expired on { $not-after-local-time }.
-
+cert-error-expired-now = Web siteleri, kimliklerini kanıtlamak için sertifikaları kullanır. Bu sertifikalar belli bir süre boyunca geçerlidir. { $hostname } sertifikasının süresi { $not-after-local-time } tarihinde dolmuş.
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
 #   $not-before-local-time (Date) - Certificate is not valid before this time.
-cert-error-not-yet-valid-now = Websites prove their identity via certificates, which are valid for a set time period. The certificate for { $hostname } will not be valid until { $not-before-local-time }.
-
+cert-error-not-yet-valid-now = Web siteleri, kimliklerini kanıtlamak için sertifikaları kullanır. Bu sertifikalar belli bir süre boyunca geçerlidir. { $hostname } sertifikası { $not-before-local-time } tarihine kadar geçerli olmayacak.
 # Variables:
 #   $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
-cert-error-code-prefix = Error code: { $error }
-
+cert-error-code-prefix = Hata kodu: { $error }
 # Variables:
 #   $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
-cert-error-code-prefix-link = Error code: <a data-l10n-name="error-code-link">{ $error }</a>
-
+cert-error-code-prefix-link = Hata kodu: <a data-l10n-name="error-code-link">{ $error }</a>
 # Variables:
 #   $hostname (string) - Hostname of the website with SSL error.
 #   $errorMessage (string) - Error message corresponding to the type of error we are experiencing.
-cert-error-ssl-connection-error = An error occurred during a connection to { $hostname }. { $errorMessage }
-
+cert-error-ssl-connection-error = { $hostname } bağlantısı sırasında bir hata oluştu. { $errorMessage }
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
-cert-error-symantec-distrust-description = Websites prove their identity via certificates, which are issued by certificate authorities. Most browsers no longer trust certificates issued by GeoTrust, RapidSSL, Symantec, Thawte, and VeriSign. { $hostname } uses a certificate from one of these authorities and so the website’s identity cannot be proven.
-
-cert-error-symantec-distrust-admin = You may notify the website’s administrator about this problem.
-
-cert-error-old-tls-version = This website might not support the TLS 1.2 protocol, which is the minimum version supported by { -brand-short-name }.
-
+cert-error-symantec-distrust-description = Web siteleri, kimliklerini kanıtlamak için sertifika makamlarının düzenlediği sertifikaları kullanır. Çoğu tarayıcı GeoTrust, RapidSSL, Symantec, Thawte ve VeriSign tarafından düzenlenen sertifikalara artık güvenmeme kararı almıştır. { $hostname } bu makamlardan birine ait bir sertifika kullandığı için sitenin kimliğini doğrulayamıyoruz.
+cert-error-symantec-distrust-admin = Web sitesinin sahibine bu sorunla ilgili bilgi vermeyi deneyebilirsiniz.
+cert-error-old-tls-version = Bu web sitesi TLS 1.2 protokolünü desteklemiyor olabilir. { -brand-short-name } tarafından desteklenen en düşük sürüm TLS 1.2’dir.
 # Variables:
 #   $hasHSTS (Boolean) - Indicates whether HSTS header is present.
 cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
-
 # Variables:
 #   $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
-
-cert-error-details-cert-chain-label = Certificate chain:
-
-open-in-new-window-for-csp-or-xfo-error = Open Site in New Window
-
+cert-error-details-cert-chain-label = Sertifika zinciri:
+open-in-new-window-for-csp-or-xfo-error = Siteyi yeni pencerede aç
 # Variables:
 #   $hostname (string) - Hostname of the website blocked by csp or xfo error.
-csp-xfo-blocked-long-desc = To protect your security, { $hostname } will not allow { -brand-short-name } to display the page if another site has embedded it. To see this page, you need to open it in a new window.
+csp-xfo-blocked-long-desc = Bu sayfayı başka bir site gömdüyse { $hostname } güvenliğinizi korumak için  { -brand-short-name } tarayıcınızın sayfayı görüntülemesine izin vermez. Bu sayfayı görmek için yeni bir pencerede açmanız gerekir.
 
 ## Messages used for certificate error titles
 
-connectionFailure-title = Unable to connect
-deniedPortAccess-title = This address is restricted
+connectionFailure-title = Bağlanılamadı
+deniedPortAccess-title = Bu adrese erişim kısıtlanmış
 # "Hmm" is a sound made when considering or puzzling over something.
 # You don't have to include it in your translation if your language does not have a written word like this.
-dnsNotFound-title = Hmm. We’re having trouble finding that site.
-
-dns-not-found-trr-only-title2 =
-  Possible security risk looking up this domain
-dns-not-found-native-fallback-title2 =
-  Possible security risk looking up this domain
-
-fileNotFound-title = File not found
-fileAccessDenied-title = Access to the file was denied
-generic-title = Oops.
-captivePortal-title = Log in to network
+dnsNotFound-title = Aradığınız siteyi bulamıyoruz.
+dns-not-found-trr-only-title2 = Bu alan adının sorgulanması güvenlik riski taşıyabilir
+dns-not-found-native-fallback-title2 = Bu alan adının sorgulanması güvenlik riski taşıyabilir
+fileNotFound-title = Dosya bulunamadı
+fileAccessDenied-title = Dosyaya erişim reddedildi
+generic-title = Hata oluştu.
+captivePortal-title = Ağa giriş yap
 # "Hmm" is a sound made when considering or puzzling over something.
 # You don't have to include it in your translation if your language does not have a written word like this.
-malformedURI-title = Hmm. That address doesn’t look right.
-netInterrupt-title = The connection was interrupted
-notCached-title = Document Expired
-netOffline-title = Offline mode
-contentEncodingError-title = Content Encoding Error
-unsafeContentType-title = Unsafe File Type
-netReset-title = The connection was reset
-netTimeout-title = The connection has timed out
-unknownProtocolFound-title = The address wasn’t understood
-proxyConnectFailure-title = The proxy server is refusing connections
-proxyResolveFailure-title = Unable to find the proxy server
-redirectLoop-title = The page isn’t redirecting properly
-unknownSocketType-title = Unexpected response from server
-nssFailure2-title = Secure Connection Failed
-csp-xfo-error-title = { -brand-short-name } Can’t Open This Page
-corruptedContentError-title = Corrupted Content Error
-sslv3Used-title = Unable to Connect Securely
-inadequateSecurityError-title = Your connection is not secure
-blockedByPolicy-title = Blocked Page
-clockSkewError-title = Your Computer Clock is Wrong
-networkProtocolError-title = Network Protocol Error
-nssBadCert-title = Warning: Potential Security Risk Ahead
-nssBadCert-sts-title = Did Not Connect: Potential Security Issue
-certerror-mitm-title = Software is Preventing { -brand-short-name } From Safely Connecting to This Site
+malformedURI-title = Bu adres gözümüze düzgün görünmedi.
+netInterrupt-title = Bağlantı kesildi
+notCached-title = Belge zaman aşımına uğradı
+netOffline-title = Çevrimdışı kip
+contentEncodingError-title = İçerik kodlama hatası
+unsafeContentType-title = Güvensiz dosya türü
+netReset-title = Bağlantı sıfırlandı
+netTimeout-title = Bağlantı zaman aşımına uğradı
+unknownProtocolFound-title = Adres anlaşılamadı
+proxyConnectFailure-title = Vekil sunucu bağlantı kabul etmiyor
+proxyResolveFailure-title = Vekil sunucu bulunamadı
+redirectLoop-title = Sayfa doğru bir şekilde yönlendirilmiyor
+unknownSocketType-title = Sunucudan beklenmeyen yanıt
+nssFailure2-title = Güvenli bağlantı kurulamadı
+csp-xfo-error-title = { -brand-short-name } bu sayfayı açamıyor
+corruptedContentError-title = Hasarlı içerik hatası
+sslv3Used-title = Güvenli bağlantı kurulamadı
+inadequateSecurityError-title = Bağlantınız güvenli değil
+blockedByPolicy-title = Engellenmiş sayfa
+clockSkewError-title = Bilgisayarınızın saati yanlış
+networkProtocolError-title = Ağ Protokolü Hatası
+nssBadCert-title = Uyarı: Güvenlik riskiyle karşılaşabilirsiniz
+nssBadCert-sts-title = Bağlanılmadı: Olası Güvenlik Sorunu
+certerror-mitm-title = { -brand-short-name } başka bir yazılım nedeniyle bu siteye güvenli bağlantı kuramıyor

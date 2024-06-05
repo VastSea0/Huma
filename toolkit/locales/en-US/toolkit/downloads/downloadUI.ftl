@@ -2,50 +2,50 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-download-ui-confirm-title = Cancel All Downloads?
+download-ui-confirm-title = Tüm indirmeler iptal edilsin mi?
 
 ## Variables:
 ##   $downloadsCount (Number): The current downloads count.
 
 download-ui-confirm-quit-cancel-downloads =
     { $downloadsCount ->
-        [1] If you exit now, 1 download will be canceled. Are you sure you want to exit?
-       *[other] If you exit now, { $downloadsCount } downloads will be canceled. Are you sure you want to exit?
+        [1] Şimdi çıkarsanız 1 dosyanın indirilmesinden vazgeçilecek. Çıkmak istediğinizden emin misiniz?
+       *[other] Şimdi çıkarsanız { $downloadsCount } dosyanın indirilmesinden vazgeçilecek. Çıkmak istediğinizden emin misiniz?
     }
 download-ui-confirm-quit-cancel-downloads-mac =
     { $downloadsCount ->
-        [1] If you quit now, 1 download will be canceled. Are you sure you want to quit?
-       *[other] If you quit now, { $downloadsCount } downloads will be canceled. Are you sure you want to quit?
+        [1] Şimdi çıkarsanız 1 dosyanın indirilmesinden vazgeçilecek. Çıkmak istediğinizden emin misiniz?
+       *[other] Şimdi çıkarsanız { $downloadsCount } dosyanın indirilmesinden vazgeçilecek. Çıkmak istediğinizden emin misiniz?
     }
 download-ui-dont-quit-button =
     { PLATFORM() ->
-        [mac] Don’t Quit
-       *[other] Don’t Exit
+        [mac] Hayır, indirmeye devam et
+       *[other] Hayır, indirmeye devam et
     }
 
 download-ui-confirm-offline-cancel-downloads =
     { $downloadsCount ->
-        [1] If you go offline now, 1 download will be canceled. Are you sure you want to go offline?
-       *[other] If you go offline now, { $downloadsCount } downloads will be canceled. Are you sure you want to go offline?
+        [1] Şimdi çevrimdışı olursanız indirilen 1 dosyadan vazgeçilecek. Çevrimdışı olmak istediğinizden emin misiniz?
+       *[other] Şimdi çevrimdışı olursanız indirilen { $downloadsCount } dosyadan vazgeçilecek. Çevrimdışı olmak istediğinizden emin misiniz?
     }
-download-ui-dont-go-offline-button = Stay Online
+download-ui-dont-go-offline-button = Çevrimiçi kal
 
 download-ui-confirm-leave-private-browsing-windows-cancel-downloads =
     { $downloadsCount ->
-        [1] If you close all Private Browsing windows now, 1 download will be canceled. Are you sure you want to leave Private Browsing?
-       *[other] If you close all Private Browsing windows now, { $downloadsCount } downloads will be canceled. Are you sure you want to leave Private Browsing?
+        [1] Tüm Gizli Gezinti pencerelerini şimdi kapatırsanız 1 indirme işlemi iptal edilecek. Gizli Gezinti’den çıkmak istediğinize emin misiniz?
+       *[other] Tüm Gizli Gezinti pencerelerini şimdi kapatırsanız { $downloadsCount } indirme işlemi iptal edilecek. Gizli Gezinti’den çıkmak istediğinize emin misiniz?
     }
-download-ui-dont-leave-private-browsing-button = Stay in Private Browsing
+download-ui-dont-leave-private-browsing-button = Gizli Gezinti’yi sürdür
 
 download-ui-cancel-downloads-ok =
     { $downloadsCount ->
-        [1] Cancel 1 Download
-       *[other] Cancel { $downloadsCount } Downloads
+        [1] Evet, indirmekten vazgeç
+       *[other] Evet, { $downloadsCount } dosyayı indirmekten vazgeç
     }
 
 ##
 
-download-ui-file-executable-security-warning-title = Open Executable File?
+download-ui-file-executable-security-warning-title = Çalıştırılabilir dosya açılsın mı?
 # Variables:
 #   $executable (String): The executable file to be opened.
-download-ui-file-executable-security-warning = “{ $executable }” is an executable file. Executable files may contain viruses or other malicious code that could harm your computer. Use caution when opening this file. Are you sure you want to launch “{ $executable }”?
+download-ui-file-executable-security-warning = “{ $executable }” çalıştırılabilen bir dosyadır. Çalıştırılabilen dosyalar virüs veya bilgisayarınıza zarar verebilecek kodlar içerebilir. Bu dosyayı açarken dikkatli olun. “{ $executable }” dosyasını çalıştırmak istediğinizden emin misiniz?

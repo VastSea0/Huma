@@ -2,27 +2,28 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 ## Names of the default containers in Firefox.
 ## See https://support.mozilla.org/kb/how-use-firefox-containers
 
 user-context-personal =
-    .label = Personal
-    .accesskey = P
+    .label = Kişisel
+    .accesskey = K
 user-context-work =
-    .label = Work
-    .accesskey = W
+    .label = İş
+    .accesskey = İ
 user-context-banking =
-    .label = Banking
+    .label = Banka
     .accesskey = B
 user-context-shopping =
-    .label = Shopping
-    .accesskey = S
+    .label = Alışveriş
+    .accesskey = A
 
 ##
 
 user-context-none =
-    .label = No Container
-    .accesskey = N
+    .label = Kapsayıcı yok
+    .accesskey = a
 user-context-manage-containers =
-    .label = Manage containers
-    .accesskey = o
+    .label = Kapsayıcıları yönet
+    .accesskey = K

@@ -2,59 +2,59 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-about-telemetry-ping-data-source = Ping data source:
-about-telemetry-show-current-data = Current data
-about-telemetry-show-archived-ping-data = Archived ping data
-about-telemetry-show-subsession-data = Show subsession data
-about-telemetry-choose-ping = Choose ping:
-about-telemetry-archive-ping-type = Ping Type
+about-telemetry-ping-data-source = Ping verisi kaynağı:
+about-telemetry-show-current-data = Güncel veriler
+about-telemetry-show-archived-ping-data = Arşivlenmiş ping verileri
+about-telemetry-show-subsession-data = Alt oturum verilerini göster
+about-telemetry-choose-ping = Ping’i seçin:
+about-telemetry-archive-ping-type = Ping türü
 about-telemetry-archive-ping-header = Ping
-about-telemetry-option-group-today = Today
-about-telemetry-option-group-yesterday = Yesterday
-about-telemetry-option-group-older = Older
+about-telemetry-option-group-today = Bugün
+about-telemetry-option-group-yesterday = Dün
+about-telemetry-option-group-older = Daha eski
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
-about-telemetry-page-title = Telemetry Data
-about-telemetry-current-store = Current Store:
-about-telemetry-more-information = Looking for more information?
-about-telemetry-firefox-data-doc = The <a data-l10n-name="data-doc-link">Hüma Data Documentation</a> contains guides about how to work with our data tools.
-about-telemetry-telemetry-client-doc = The <a data-l10n-name="client-doc-link">Hüma Telemetry client documentation</a> includes definitions for concepts, API documentation and data references.
-about-telemetry-telemetry-dashboard = The <a data-l10n-name="dashboard-link">Telemetry dashboards</a> allow you to visualize the data Mozilla receives via Telemetry.
-about-telemetry-telemetry-probe-dictionary = The <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a> provides details and descriptions for the probes collected by Telemetry.
-about-telemetry-show-in-Firefox-json-viewer = Open in the JSON viewer
-about-telemetry-home-section = Home
-about-telemetry-general-data-section = General Data
-about-telemetry-environment-data-section = Environment Data
-about-telemetry-session-info-section = Session Information
-about-telemetry-scalar-section = Scalars
-about-telemetry-keyed-scalar-section = Keyed Scalars
-about-telemetry-histograms-section = Histograms
-about-telemetry-keyed-histogram-section = Keyed Histograms
-about-telemetry-events-section = Events
-about-telemetry-simple-measurements-section = Simple Measurements
-about-telemetry-slow-sql-section = Slow SQL Statements
-about-telemetry-addon-details-section = Add-on Details
-about-telemetry-late-writes-section = Late Writes
-about-telemetry-raw-payload-section = Raw Payload
-about-telemetry-raw = Raw JSON
-about-telemetry-full-sql-warning = NOTE: Slow SQL debugging is enabled. Full SQL strings may be displayed below but they will not be submitted to Telemetry.
-about-telemetry-fetch-stack-symbols = Fetch function names for stacks
-about-telemetry-hide-stack-symbols = Show raw stack data
+about-telemetry-page-title = Telemetri Verileri
+about-telemetry-current-store = Geçerli depo:
+about-telemetry-more-information = Daha fazla bilgi almak mı istiyorsunuz?
+about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox Veri Belgeleri</a>, veri araçlarımızla nasıl çalışabileceğinize dair rehberleri içerir.
+about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Firefox Telemetri istemcisi belgeleri</a> kavram tanımlarını, API belgelerini ve veri referanslarını içerir.
+about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Telemetri panoları</a> Mozilla’nın Telemetri aracılığıyla aldığı verileri görselleştirmenize olanak tanır.
+about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Sonda sözlüğü</a> Telemetri’nin topladığı sondalarla ilgili ayrıntıları ve açıklamaları içerir.
+about-telemetry-show-in-Firefox-json-viewer = JSON görüntüleyicide aç
+about-telemetry-home-section = Ana Sayfa
+about-telemetry-general-data-section = Genel Veriler
+about-telemetry-environment-data-section = Ortam Verileri
+about-telemetry-session-info-section = Oturum Bilgisi
+about-telemetry-scalar-section = Skalerler
+about-telemetry-keyed-scalar-section = Anahtarlı Skalerler
+about-telemetry-histograms-section = Histogramlar
+about-telemetry-keyed-histogram-section = Anahtarlı Histogramlar
+about-telemetry-events-section = Olaylar
+about-telemetry-simple-measurements-section = Basit Ölçümler
+about-telemetry-slow-sql-section = Yavaş SQL Deyimleri
+about-telemetry-addon-details-section = Eklenti Ayrıntıları
+about-telemetry-late-writes-section = Geç Yazmalar
+about-telemetry-raw-payload-section = Ham yük
+about-telemetry-raw = Ham JSON
+about-telemetry-full-sql-warning = NOT: Yavaş SQL hata ayıklaması etkin durumda. Tam SQL dizgileri aşağıda gösterilebilir ama Telemetri’ye gönderilmezler.
+about-telemetry-fetch-stack-symbols = Yığınların fonksiyon adlarını getir
+about-telemetry-hide-stack-symbols = Ham yığın verilerini göster
 # Selects the correct release version
 # Variables:
 #   $channel (string) - Represents the corresponding release data string
 about-telemetry-data-type =
     { $channel ->
-        [release] release data
-       *[prerelease] pre-release data
+        [release] yayın verilerini
+       *[prerelease] yayın öncesi verileri
     }
 # Selects the correct upload string
 # Variables:
 #   $uploadcase (string) - Represents a corresponding upload string
 about-telemetry-upload-type =
     { $uploadcase ->
-        [enabled] enabled
-       *[disabled] disabled
+        [enabled] açık
+       *[disabled] kapalı
     }
 # Example Output: 1 sample, average = 0, sum = 0
 # Variables:
@@ -63,74 +63,74 @@ about-telemetry-upload-type =
 #   $sum (number) - Sum of histogram samples
 about-telemetry-histogram-stats =
     { $sampleCount ->
-        [one] { $sampleCount } sample, average = { $prettyAverage }, sum = { $sum }
-       *[other] { $sampleCount } samples, average = { $prettyAverage }, sum = { $sum }
+        [one] { $sampleCount } örnek, ortalama = { $prettyAverage }, toplam = { $sum }
+       *[other] { $sampleCount } örnek, ortalama = { $prettyAverage }, toplam = { $sum }
     }
 # Variables:
 #   $telemetryServerOwner (string) - the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-page-subtitle = This page shows the information about performance, hardware, usage and customizations collected by Telemetry. This information is submitted to { $telemetryServerOwner } to help improve { -brand-full-name }.
-about-telemetry-settings-explanation = Telemetry is collecting { about-telemetry-data-type } and upload is <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
+about-telemetry-page-subtitle = Bu sayfa; Telemetri tarafından toplanan performans, donanım, kullanım ve özelleştirme bilgilerini gösterir. Bu bilgiler { -brand-full-name } tarayıcısının gelişimine yardımcı olmaları için { $telemetryServerOwner } sunucularına gönderilir.
+about-telemetry-settings-explanation = Telemetri { about-telemetry-data-type } topluyor ve veri gönderimi <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
 # Variables:
 #   $name (string) - Ping name, e.g. “saved-session”
 #   $timestamp (string) - Ping localized timestamp, e.g. “2017/07/08 10:40:46”
-about-telemetry-ping-details = Each piece of information is sent bundled into “<a data-l10n-name="ping-link">pings</a>”. You are looking at the { $name }, { $timestamp } ping.
-about-telemetry-data-details-current = Each piece of information is sent bundled into “<a data-l10n-name="ping-link">pings</a>“. You are looking at the current data.
+about-telemetry-ping-details = Her bilgi parçası “<a data-l10n-name="ping-link">ping</a>” paketleri halinde gönderilir. Şu anda { $name } { $timestamp } ping’ine bakıyorsunuz.
+about-telemetry-data-details-current = Her bilgi parçası  “<a data-l10n-name="ping-link">ping</a>“ denilen paketler halinde gönderilir. Şu anda güncel verilere bakıyorsunuz.
 # string used as a placeholder for the search field
 # More info about it can be found here:
 # https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $selectedTitle (string) - The section name from the structure of the ping.
 about-telemetry-filter-placeholder =
-    .placeholder = Find in { $selectedTitle }
+    .placeholder = { $selectedTitle } içinde ara
 about-telemetry-filter-all-placeholder =
-    .placeholder = Find in all sections
+    .placeholder = Tüm bölümlerde ara
 # Variables:
 #   $searchTerms (string) - The searched terms
-about-telemetry-results-for-search = Results for “{ $searchTerms }”
+about-telemetry-results-for-search = “{ $searchTerms }” sonuçları
 # More info about it can be found here: https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
 # Variables:
 #   $sectionName (string) - The section name from the structure of the ping.
 #   $currentSearchText (string) - The current text in the search input
-about-telemetry-no-search-results = Sorry! There are no results in { $sectionName } for “{ $currentSearchText }”
+about-telemetry-no-search-results = Kusura bakmayın, { $sectionName } içinde “{ $currentSearchText }” ile ilgili bir sonuç bulamadık
 # Variables:
 #   $searchTerms (string) - The searched terms
-about-telemetry-no-search-results-all = Sorry! There are no results in any sections for “{ $searchTerms }”
+about-telemetry-no-search-results-all = Kusura bakmayın, hiçbir bölümde “{ $searchTerms }” ile ilgili bir sonuç bulamadık
 # This message is displayed when a section is empty.
 # Variables:
 #   $sectionName (string) - Is replaced by the section name.
-about-telemetry-no-data-to-display = Sorry! There is currently no data available in “{ $sectionName }”
+about-telemetry-no-data-to-display = Kusura bakmayın, şu anda “{ $sectionName }” bölümünde hiç veri yok
 # used as a tooltip for the “current” ping title in the sidebar
-about-telemetry-current-data-sidebar = current data
+about-telemetry-current-data-sidebar = güncel veriler
 # used in the “Ping Type” select
-about-telemetry-telemetry-ping-type-all = all
+about-telemetry-telemetry-ping-type-all = tümü
 # button label to copy the histogram
-about-telemetry-histogram-copy = Copy
+about-telemetry-histogram-copy = Kopyala
 # these strings are used in the “Slow SQL Statements” section
-about-telemetry-slow-sql-main = Slow SQL Statements on Main Thread
-about-telemetry-slow-sql-other = Slow SQL Statements on Helper Threads
-about-telemetry-slow-sql-hits = Hits
-about-telemetry-slow-sql-average = Avg. Time (ms)
-about-telemetry-slow-sql-statement = Statement
+about-telemetry-slow-sql-main = Ana parçacıkta yavaş SQL deyimleri
+about-telemetry-slow-sql-other = Yardımcı parçacıklarda yavaş SQL deyimleri
+about-telemetry-slow-sql-hits = Hit
+about-telemetry-slow-sql-average = Ort. süre (ms)
+about-telemetry-slow-sql-statement = İfade
 # these strings are used in the “Add-on Details” section
-about-telemetry-addon-table-id = Add-on ID
-about-telemetry-addon-table-details = Details
+about-telemetry-addon-table-id = Eklenti kimliği
+about-telemetry-addon-table-details = Ayrıntılar
 # Variables:
 #   $addonProvider (string) - The name of an Add-on Provider (e.g. “XPI”, “Plugin”)
-about-telemetry-addon-provider = { $addonProvider } Provider
-about-telemetry-keys-header = Property
-about-telemetry-names-header = Name
-about-telemetry-values-header = Value
+about-telemetry-addon-provider = { $addonProvider } sağlayıcısı
+about-telemetry-keys-header = Özellik
+about-telemetry-names-header = Adı
+about-telemetry-values-header = Değer
 # Variables:
 #   $lateWriteCount (number) - The number of the late writes
-about-telemetry-late-writes-title = Late Write #{ $lateWriteCount }
-about-telemetry-stack-title = Stack:
-about-telemetry-memory-map-title = Memory map:
-about-telemetry-error-fetching-symbols = An error occurred while fetching symbols. Check that you are connected to the Internet and try again.
-about-telemetry-time-stamp-header = timestamp
-about-telemetry-category-header = category
-about-telemetry-method-header = method
-about-telemetry-object-header = object
-about-telemetry-extra-header = extra
+about-telemetry-late-writes-title = Geç yazma #{ $lateWriteCount }
+about-telemetry-stack-title = Yığın:
+about-telemetry-memory-map-title = Bellek haritası:
+about-telemetry-error-fetching-symbols = Sembolleri getirirken bir hata oluştu. Lütfen internete bağlı olduğunuzu kontrol edip yeniden deneyin.
+about-telemetry-time-stamp-header = zaman damgası
+about-telemetry-category-header = kategori
+about-telemetry-method-header = yöntem
+about-telemetry-object-header = nesne
+about-telemetry-extra-header = ekstra
 # Variables:
 #  $process (string) - Type of process in subsection headers ( e.g. "content", "parent" )
-about-telemetry-process = { $process } process
+about-telemetry-process = { $process } işlemi

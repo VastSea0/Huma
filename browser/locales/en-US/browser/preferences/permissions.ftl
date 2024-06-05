@@ -5,81 +5,62 @@
 permissions-window2 =
     .title = İstisnalar
     .style = min-width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Site adresi
     .accesskey = d
-
 permissions-block =
     .label = Engelle
     .accesskey = E
-
 permissions-disable-etp =
     .label = Ayrıcalık tanı…
     .accesskey = A
-
 permissions-session =
     .label = Oturum boyunca izin ver
     .accesskey = r
-
 permissions-allow =
     .label = İzin ver
     .accesskey = z
-
 permissions-button-off =
     .label = Kapat
     .accesskey = K
-
 permissions-button-off-temporarily =
     .label = Geçici olarak kapat
     .accesskey = G
-
 permissions-site-name =
     .label = Web sitesi
-
 permissions-status =
     .label = Durum
-
 permissions-remove =
     .label = Siteyi sil
     .accesskey = S
-
 permissions-remove-all =
     .label = Tüm siteleri sil
     .accesskey = e
-
 permission-dialog =
     .buttonlabelaccept = Değişiklikleri kaydet
     .buttonaccesskeyaccept = D
-
-permissions-autoplay-menu = Tüm web siteler için varsayılan:
-
+permissions-autoplay-menu = Tüm web siteleri için varsayılan:
 permissions-searchbox =
     .placeholder = Web sitesi ara
-
 permissions-capabilities-autoplay-allow =
     .label = Ses ve videoya izin ver
 permissions-capabilities-autoplay-block =
     .label = Sesi engelle
 permissions-capabilities-autoplay-blockall =
     .label = Ses ve videoyu engelle
-
 permissions-capabilities-allow =
     .label = İzin ver
 permissions-capabilities-block =
     .label = Engelle
 permissions-capabilities-prompt =
     .label = Her zaman sor
-
 permissions-capabilities-listitem-allow =
     .value = İzin ver
 permissions-capabilities-listitem-block =
     .value = Engelle
 permissions-capabilities-listitem-allow-session =
     .value = Oturum boyunca izin ver
-
 permissions-capabilities-listitem-off =
     .value = Kapalı
 permissions-capabilities-listitem-off-temporarily =
@@ -110,6 +91,7 @@ permissions-exceptions-https-only-window2 =
     .title = İstisnalar - Yalnızca HTTPS Modu
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Belirli web siteleri için yalnızca HTTPS modunu kapatabilirsiniz. Böylece { -brand-short-name }, bu sitelerde HTTPS güvenliğini sağlamak üzere bağlantıyı yükseltme girişiminde bulunmaz. İstisnalar gizli pencerelerde geçerli değildir.
+permissions-exceptions-https-only-desc2 = Belirli web siteleri için yalnızca HTTPS modunu kapatabilirsiniz. Böylece { -brand-short-name }, bu sitelerde HTTPS güvenliğini sağlamak üzere bağlantıyı yükseltme girişiminde bulunmaz.
 
 ## Exceptions - Pop-ups
 
@@ -124,6 +106,13 @@ permissions-exceptions-saved-logins-window2 =
     .title = İstisnalar - Kayıtlı Hesaplar
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = Aşağıdaki sitelere giriş bilgileri kaydedilmeyecek
+
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = İstisnalar - Kayıtlı Parolalar
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = { -brand-short-name } bu listedeki sitelerin parolalarını kaydetmeyecektir.
 
 ## Exceptions - Add-ons
 
@@ -194,29 +183,23 @@ permissions-site-microphone-disable-desc = Yukarıdaki listede bulunmayan hiçbi
 ## "Speaker" refers to an audio output device.
 
 permissions-site-speaker-window =
-    .title = Ayarlar - Hoparlör İzinleri
+    .title = Ayarlar - Ses Aygıtı İzinleri
     .style = { permissions-window2.style }
 permissions-site-speaker-desc = Aşağıdaki siteler ses çıkış cihazını seçmek istedi. Hangi sitelerin ses çıkış cihazını seçebileceğini belirtebilirsiniz.
-
 permissions-exceptions-doh-window =
     .title = HTTPS üzerinden DNS için web sitesi istisnaları
     .style = { permissions-window2.style }
 permissions-exceptions-manage-doh-desc = { -brand-short-name }, bu sitelerde ve alt alan adlarında güvenli DNS kullanmayacaktır.
-
 permissions-doh-entry-field = Web sitesinin alan adını yazın
     .accesskey = W
-
 permissions-doh-add-exception =
     .label = Ekle
     .accesskey = E
-
 permissions-doh-col =
     .label = Alan adı
-
 permissions-doh-remove =
     .label = Kaldır
     .accesskey = K
-
 permissions-doh-remove-all =
     .label = Tümünü kaldır
     .accesskey = T

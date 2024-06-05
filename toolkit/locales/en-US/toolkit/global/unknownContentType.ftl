@@ -3,40 +3,40 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 unknowncontenttype-handleinternally =
-    .label = Open with { -brand-short-name }
+    .label = { -brand-short-name } ile aç
     .accesskey = e
 
 unknowncontenttype-settingschange =
     .value =
         { PLATFORM() ->
-            [windows] Settings can be changed in { -brand-short-name }’s Options.
-           *[other] Settings can be changed in { -brand-short-name }’s Preferences.
+            [windows] { -brand-short-name } Seçenekler bölümünden ayarlarınızı değiştirebilirsiniz.
+           *[other] { -brand-short-name } Tercihler bölümünden ayarlarınızı değiştirebilirsiniz.
         }
 
-unknowncontenttype-intro = You have chosen to open:
-unknowncontenttype-which-is = which is:
-unknowncontenttype-from = from:
-unknowncontenttype-prompt = Would you like to save this file?
-unknowncontenttype-action-question = What should { -brand-short-name } do with this file?
+unknowncontenttype-intro = Şunu açmayı seçtiniz:
+unknowncontenttype-which-is = türü:
+unknowncontenttype-from = nereden:
+unknowncontenttype-prompt = Bu dosyayı kaydetmek ister misiniz?
+unknowncontenttype-action-question = { -brand-short-name } bu dosya ile ne yapsın?
 unknowncontenttype-open-with =
-    .label = Open with
-    .accesskey = O
+    .label = Birlikte aç
+    .accesskey = B
 unknowncontenttype-other =
-    .label = Other…
+    .label = Diğer…
 unknowncontenttype-choose-handler =
     .label =
         { PLATFORM() ->
-            [macos] Choose…
-           *[other] Browse…
+            [macos] Seçin…
+           *[other] Gözat…
         }
     .accesskey =
         { PLATFORM() ->
-            [macos] C
-           *[other] B
+            [macos] S
+           *[other] t
         }
 unknowncontenttype-save-file =
-    .label = Save File
-    .accesskey = S
+    .label = Dosyayı kaydet
+    .accesskey = D
 unknowncontenttype-remember-choice =
-    .label = Do this automatically for files like this from now on.
-    .accesskey = a
+    .label = Bu tür dosyalar indirilirken hep bu işlemi gerçekleştir.
+    .accesskey = t

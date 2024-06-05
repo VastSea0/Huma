@@ -2,16 +2,16 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-label-disable = Disable
-label-enable = Enable
-label-interventions = Interventions
+label-disable = Devre dışı bırak
+label-enable = Etkinleştir
+label-interventions = Müdahaleler
 # Variables:
 #   $bug (string) - Bug number
-label-more-information = More Information: Bug { $bug }
-label-overrides = User Agent Overrides
-text-disabled-in-about-config = This feature has been disabled in about:config
-text-no-interventions = No interventions are being used
-text-no-overrides = No UA overrides are being used
+label-more-information = Daha fazla bilgi: Bug { $bug }
+label-overrides = User Agent Geçersiz Kılmaları
+text-disabled-in-about-config = Bu özellik about:config’de devre dışı bırakılmış
+text-no-interventions = Hiçbir müdahale kullanılmıyor
+text-no-overrides = Hiçbir UA geçersiz kılması kullanılmıyor
 text-title = about:compat
 
 ## Do not translate "SmartBlock". For reference, SmartBlock is a feature
@@ -20,5 +20,5 @@ text-title = about:compat
 ## breakage. SmartBlock also contains special fixes for sites broken by
 ## Firefox's Total Cookie Protection feature.
 
-label-smartblock = SmartBlock Fixes
-text-no-smartblock = No SmartBlock fixes are being used
+label-smartblock = SmartBlock Düzeltmeleri
+text-no-smartblock = Hiç SmartBlock düzeltmesi kullanılmıyor

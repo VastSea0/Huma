@@ -27,6 +27,7 @@ Preferences.addAll([
   { id: "pref.browser.homepage.disable_button.restore_default", type: "bool" },
   { id: "browser.newtabpage.enabled", type: "bool" },
   { id: "browser.humapages.history.enabled", type: "bool" },
+  { id: "browser.humapages.history.new.tab.enabled", type: "bool" },
 ]);
 
 
@@ -49,6 +50,7 @@ const URL_OVERRIDES_TYPE = "url_overrides";
 const NEW_TAB_KEY = "newTabURL";
 
 const BLANK_HOMEPAGE_URL = "chrome://browser/content/blanktab.html";
+const BLANK_HUMAPAGES_TARİH_URL = "chrome://browser/content/preferences/dialogs/huma.pdf";
 
 var gHomePane = {
   HOME_MODE_FIREFOX_HOME: "0",
@@ -309,6 +311,20 @@ var gHomePane = {
   /*
   Kendimi çok zeki hissediyorum...
   */
+
+  _showHumaPagesOnNewTabH() {
+    /*
+    Burada init fonksiyonunda bu fonksiyon başlangıç için çağrılır
+    bkz. satır 715 civarı
+   "setEventListener()" bu komut ile showHumaPagesOnNewTabH kimlikli vericiden 
+   click sinyalini dinler ve this.showHumaPagesOnNewTabH ile diğer fonksiyonu çağırır
+   bkz. satır 630 civarı
+    */
+     setEventListener("showHumaPagesOnNewTabH", "click", this.showHumaPagesOnNewTabH);
+   },
+   /*
+   Kendimi çok zeki hissediyorum...
+   */
 
 
 
@@ -588,6 +604,10 @@ var gHomePane = {
    * Sets the home page to the URL(s) of any currently opened tab(s),
    * updating about:preferences#home UI to reflect this.
    */
+
+
+  
+
   setHomePageToCurrent() {
     let tabs = this._getTabsForHomePage();
     function getTabURI(t) {
@@ -635,6 +655,17 @@ Diyaloğu aç...
     gSubDialog.open(
       "chrome://browser/content/preferences/dialogs/huma.pdf"
     );
+  },
+
+  showHumaPagesOnNewTabH() {
+    //alert("helo");
+    /*
+    gSubDialog.open(
+      "chrome://browser/content/preferences/dialogs/huma.pdf"
+    );
+    */
+    //return url == "chrome://browser/content/preferences/dialogs/huma.pdf" || url == BLANK_HUMAPAGES_TARİH_URL;
+    //console.log("yeni sekmede aciliyor");
   },
 
   restoreDefaultHomePage() {
@@ -717,8 +748,11 @@ Diyaloğu aç...
 
     // Setup the add-on options for the new tab section before registering the
     // listener.
+
     this._updateMenuInterface();
-    this._showHumaPagesH();
+    // Hüma listenner ekle
+    this._showHumaPagesH(); // Bkz.
+    this._showHumaPagesOnNewTabH(); // Bkz.
     document
       .getElementById("newTabMode")
       .addEventListener("command", this.syncToNewTabPref.bind(this));

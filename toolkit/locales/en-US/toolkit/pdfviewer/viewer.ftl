@@ -2,147 +2,135 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 ## Main toolbar buttons (tooltips and alt text for images)
 
 pdfjs-previous-button =
-    .title = Previous Page
-pdfjs-previous-button-label = Previous
+    .title = Önceki sayfa
+pdfjs-previous-button-label = Önceki
 pdfjs-next-button =
-    .title = Next Page
-pdfjs-next-button-label = Next
-
+    .title = Sonraki sayfa
+pdfjs-next-button-label = Sonraki
 # .title: Tooltip for the pageNumber input.
 pdfjs-page-input =
-    .title = Page
-
+    .title = Sayfa
 # Variables:
 #   $pagesCount (Number) - the total number of pages in the document
 # This string follows an input field with the number of the page currently displayed.
-pdfjs-of-pages = of { $pagesCount }
-
+pdfjs-of-pages = / { $pagesCount }
 # Variables:
 #   $pageNumber (Number) - the currently visible page
 #   $pagesCount (Number) - the total number of pages in the document
-pdfjs-page-of-pages = ({ $pageNumber } of { $pagesCount })
-
+pdfjs-page-of-pages = ({ $pageNumber } / { $pagesCount })
 pdfjs-zoom-out-button =
-    .title = Zoom Out
-pdfjs-zoom-out-button-label = Zoom Out
+    .title = Uzaklaştır
+pdfjs-zoom-out-button-label = Uzaklaştır
 pdfjs-zoom-in-button =
-    .title = Zoom In
-pdfjs-zoom-in-button-label = Zoom In
+    .title = Yakınlaştır
+pdfjs-zoom-in-button-label = Yakınlaştır
 pdfjs-zoom-select =
-    .title = Zoom
+    .title = Yakınlaştırma
 pdfjs-presentation-mode-button =
-    .title = Switch to Presentation Mode
-pdfjs-presentation-mode-button-label = Presentation Mode
+    .title = Sunum moduna geç
+pdfjs-presentation-mode-button-label = Sunum modu
 pdfjs-open-file-button =
-    .title = Open File
-pdfjs-open-file-button-label = Open
+    .title = Dosya aç
+pdfjs-open-file-button-label = Aç
 pdfjs-print-button =
-    .title = Print
-pdfjs-print-button-label = Print
+    .title = Yazdır
+pdfjs-print-button-label = Yazdır
 pdfjs-save-button =
-    .title = Save
-pdfjs-save-button-label = Save
-
+    .title = Kaydet
+pdfjs-save-button-label = Kaydet
 # Used in Firefox for Android as a tooltip for the download button (“download” is a verb).
 pdfjs-download-button =
-    .title = Download
-
+    .title = İndir
 # Used in Firefox for Android as a label for the download button (“download” is a verb).
 # Length of the translation matters since we are in a mobile context, with limited screen estate.
-pdfjs-download-button-label = Download
-
+pdfjs-download-button-label = İndir
 pdfjs-bookmark-button =
-    .title = Current Page (View URL from Current Page)
-pdfjs-bookmark-button-label = Current Page
+    .title = Geçerli sayfa (geçerli sayfanın adresini görüntüle)
+pdfjs-bookmark-button-label = Geçerli sayfa
 
 ##  Secondary toolbar and context menu
 
 pdfjs-tools-button =
-    .title = Tools
-
-pdfjs-tools-button-label = Tools
+    .title = Araçlar
+pdfjs-tools-button-label = Araçlar
 pdfjs-first-page-button =
-    .title = Go to First Page
-pdfjs-first-page-button-label = Go to First Page
+    .title = İlk sayfaya git
+pdfjs-first-page-button-label = İlk sayfaya git
 pdfjs-last-page-button =
-    .title = Go to Last Page
-pdfjs-last-page-button-label = Go to Last Page
+    .title = Son sayfaya git
+pdfjs-last-page-button-label = Son sayfaya git
 pdfjs-page-rotate-cw-button =
-    .title = Rotate Clockwise
-pdfjs-page-rotate-cw-button-label = Rotate Clockwise
+    .title = Saat yönünde döndür
+pdfjs-page-rotate-cw-button-label = Saat yönünde döndür
 pdfjs-page-rotate-ccw-button =
-    .title = Rotate Counterclockwise
-pdfjs-page-rotate-ccw-button-label = Rotate Counterclockwise
+    .title = Saat yönünün tersine döndür
+pdfjs-page-rotate-ccw-button-label = Saat yönünün tersine döndür
 pdfjs-cursor-text-select-tool-button =
-    .title = Enable Text Selection Tool
-pdfjs-cursor-text-select-tool-button-label = Text Selection Tool
+    .title = Metin seçme aracını etkinleştir
+pdfjs-cursor-text-select-tool-button-label = Metin seçme aracı
 pdfjs-cursor-hand-tool-button =
-    .title = Enable Hand Tool
-pdfjs-cursor-hand-tool-button-label = Hand Tool
+    .title = El aracını etkinleştir
+pdfjs-cursor-hand-tool-button-label = El aracı
 pdfjs-scroll-page-button =
-    .title = Use Page Scrolling
-pdfjs-scroll-page-button-label = Page Scrolling
+    .title = Sayfa kaydırmayı kullan
+pdfjs-scroll-page-button-label = Sayfa kaydırma
 pdfjs-scroll-vertical-button =
-    .title = Use Vertical Scrolling
-pdfjs-scroll-vertical-button-label = Vertical Scrolling
+    .title = Dikey kaydırmayı kullan
+pdfjs-scroll-vertical-button-label = Dikey kaydırma
 pdfjs-scroll-horizontal-button =
-    .title = Use Horizontal Scrolling
-pdfjs-scroll-horizontal-button-label = Horizontal Scrolling
+    .title = Yatay kaydırmayı kullan
+pdfjs-scroll-horizontal-button-label = Yatay kaydırma
 pdfjs-scroll-wrapped-button =
-    .title = Use Wrapped Scrolling
-pdfjs-scroll-wrapped-button-label = Wrapped Scrolling
+    .title = Yan yana kaydırmayı kullan
+pdfjs-scroll-wrapped-button-label = Yan yana kaydırma
 pdfjs-spread-none-button =
-    .title = Do not join page spreads
-pdfjs-spread-none-button-label = No Spreads
+    .title = Yan yana sayfaları birleştirme
+pdfjs-spread-none-button-label = Birleştirme
 pdfjs-spread-odd-button =
-    .title = Join page spreads starting with odd-numbered pages
-pdfjs-spread-odd-button-label = Odd Spreads
+    .title = Yan yana sayfaları tek numaralı sayfalardan başlayarak birleştir
+pdfjs-spread-odd-button-label = Tek numaralı
 pdfjs-spread-even-button =
-    .title = Join page spreads starting with even-numbered pages
-pdfjs-spread-even-button-label = Even Spreads
+    .title = Yan yana sayfaları çift numaralı sayfalardan başlayarak birleştir
+pdfjs-spread-even-button-label = Çift numaralı
 
 ## Document properties dialog
 
 pdfjs-document-properties-button =
-    .title = Document Properties…
-pdfjs-document-properties-button-label = Document Properties…
-pdfjs-document-properties-file-name = File name:
-pdfjs-document-properties-file-size = File size:
-
+    .title = Belge özellikleri…
+pdfjs-document-properties-button-label = Belge özellikleri…
+pdfjs-document-properties-file-name = Dosya adı:
+pdfjs-document-properties-file-size = Dosya boyutu:
 # Variables:
 #   $size_kb (Number) - the PDF file size in kilobytes
 #   $size_b (Number) - the PDF file size in bytes
-pdfjs-document-properties-kb = { $size_kb } KB ({ $size_b } bytes)
-
+pdfjs-document-properties-kb = { $size_kb } KB ({ $size_b } bayt)
 # Variables:
 #   $size_mb (Number) - the PDF file size in megabytes
 #   $size_b (Number) - the PDF file size in bytes
-pdfjs-document-properties-mb = { $size_mb } MB ({ $size_b } bytes)
-
-pdfjs-document-properties-title = Title:
-pdfjs-document-properties-author = Author:
-pdfjs-document-properties-subject = Subject:
-pdfjs-document-properties-keywords = Keywords:
-pdfjs-document-properties-creation-date = Creation Date:
-pdfjs-document-properties-modification-date = Modification Date:
-
+pdfjs-document-properties-mb = { $size_mb } MB ({ $size_b } bayt)
+pdfjs-document-properties-title = Başlık:
+pdfjs-document-properties-author = Yazar:
+pdfjs-document-properties-subject = Konu:
+pdfjs-document-properties-keywords = Anahtar kelimeler:
+pdfjs-document-properties-creation-date = Oluşturma tarihi:
+pdfjs-document-properties-modification-date = Değiştirme tarihi:
 # Variables:
 #   $date (Date) - the creation/modification date of the PDF file
 #   $time (Time) - the creation/modification time of the PDF file
-pdfjs-document-properties-date-string = { $date }, { $time }
-
-pdfjs-document-properties-creator = Creator:
-pdfjs-document-properties-producer = PDF Producer:
-pdfjs-document-properties-version = PDF Version:
-pdfjs-document-properties-page-count = Page Count:
-pdfjs-document-properties-page-size = Page Size:
-pdfjs-document-properties-page-size-unit-inches = in
+pdfjs-document-properties-date-string = { $date } { $time }
+pdfjs-document-properties-creator = Oluşturan:
+pdfjs-document-properties-producer = PDF üreticisi:
+pdfjs-document-properties-version = PDF sürümü:
+pdfjs-document-properties-page-count = Sayfa sayısı:
+pdfjs-document-properties-page-size = Sayfa boyutu:
+pdfjs-document-properties-page-size-unit-inches = inç
 pdfjs-document-properties-page-size-unit-millimeters = mm
-pdfjs-document-properties-page-size-orientation-portrait = portrait
-pdfjs-document-properties-page-size-orientation-landscape = landscape
+pdfjs-document-properties-page-size-orientation-portrait = dikey
+pdfjs-document-properties-page-size-orientation-landscape = yatay
 pdfjs-document-properties-page-size-name-a-three = A3
 pdfjs-document-properties-page-size-name-a-four = A4
 pdfjs-document-properties-page-size-name-letter = Letter
@@ -162,257 +150,247 @@ pdfjs-document-properties-page-size-dimension-name-string = { $width } × { $hei
 
 # The linearization status of the document; usually called "Fast Web View" in
 # English locales of Adobe software.
-pdfjs-document-properties-linearized = Fast Web View:
-pdfjs-document-properties-linearized-yes = Yes
-pdfjs-document-properties-linearized-no = No
-pdfjs-document-properties-close-button = Close
+pdfjs-document-properties-linearized = Hızlı web görünümü:
+pdfjs-document-properties-linearized-yes = Evet
+pdfjs-document-properties-linearized-no = Hayır
+pdfjs-document-properties-close-button = Kapat
 
 ## Print
 
-pdfjs-print-progress-message = Preparing document for printing…
-
+pdfjs-print-progress-message = Belge yazdırılmaya hazırlanıyor…
 # Variables:
 #   $progress (Number) - percent value
-pdfjs-print-progress-percent = { $progress }%
-
-pdfjs-print-progress-close-button = Cancel
-pdfjs-printing-not-supported = Warning: Printing is not fully supported by this browser.
-pdfjs-printing-not-ready = Warning: The PDF is not fully loaded for printing.
+pdfjs-print-progress-percent = %{ $progress }
+pdfjs-print-progress-close-button = İptal
+pdfjs-printing-not-supported = Uyarı: Yazdırma bu tarayıcı tarafından tam olarak desteklenmemektedir.
+pdfjs-printing-not-ready = Uyarı: PDF tamamen yüklenmedi ve yazdırmaya hazır değil.
 
 ## Tooltips and alt text for side panel toolbar buttons
 
 pdfjs-toggle-sidebar-button =
-    .title = Toggle Sidebar
+    .title = Kenar çubuğunu aç/kapat
 pdfjs-toggle-sidebar-notification-button =
-    .title = Toggle Sidebar (document contains outline/attachments/layers)
-pdfjs-toggle-sidebar-button-label = Toggle Sidebar
+    .title = Kenar çubuğunu aç/kapat (Belge ana hat/ekler/katmanlar içeriyor)
+pdfjs-toggle-sidebar-button-label = Kenar çubuğunu aç/kapat
 pdfjs-document-outline-button =
-    .title = Show Document Outline (double-click to expand/collapse all items)
-pdfjs-document-outline-button-label = Document Outline
+    .title = Belge ana hatlarını göster (Tüm öğeleri genişletmek/daraltmak için çift tıklayın)
+pdfjs-document-outline-button-label = Belge ana hatları
 pdfjs-attachments-button =
-    .title = Show Attachments
-pdfjs-attachments-button-label = Attachments
+    .title = Ekleri göster
+pdfjs-attachments-button-label = Ekler
 pdfjs-layers-button =
-    .title = Show Layers (double-click to reset all layers to the default state)
-pdfjs-layers-button-label = Layers
+    .title = Katmanları göster (tüm katmanları varsayılan duruma sıfırlamak için çift tıklayın)
+pdfjs-layers-button-label = Katmanlar
 pdfjs-thumbs-button =
-    .title = Show Thumbnails
-pdfjs-thumbs-button-label = Thumbnails
+    .title = Küçük resimleri göster
+pdfjs-thumbs-button-label = Küçük resimler
 pdfjs-current-outline-item-button =
-    .title = Find Current Outline Item
-pdfjs-current-outline-item-button-label = Current Outline Item
+    .title = Mevcut ana hat öğesini bul
+pdfjs-current-outline-item-button-label = Mevcut ana hat öğesi
 pdfjs-findbar-button =
-    .title = Find in Document
-pdfjs-findbar-button-label = Find
-pdfjs-additional-layers = Additional Layers
+    .title = Belgede bul
+pdfjs-findbar-button-label = Bul
+pdfjs-additional-layers = Ek katmanlar
 
 ## Thumbnails panel item (tooltip and alt text for images)
 
 # Variables:
 #   $page (Number) - the page number
 pdfjs-thumb-page-title =
-    .title = Page { $page }
-
+    .title = Sayfa { $page }
 # Variables:
 #   $page (Number) - the page number
 pdfjs-thumb-page-canvas =
-    .aria-label = Thumbnail of Page { $page }
+    .aria-label = { $page }. sayfanın küçük hâli
 
 ## Find panel button title and messages
 
 pdfjs-find-input =
-    .title = Find
-    .placeholder = Find in document…
+    .title = Bul
+    .placeholder = Belgede bul…
 pdfjs-find-previous-button =
-    .title = Find the previous occurrence of the phrase
-pdfjs-find-previous-button-label = Previous
+    .title = Önceki eşleşmeyi bul
+pdfjs-find-previous-button-label = Önceki
 pdfjs-find-next-button =
-    .title = Find the next occurrence of the phrase
-pdfjs-find-next-button-label = Next
-pdfjs-find-highlight-checkbox = Highlight All
-pdfjs-find-match-case-checkbox-label = Match Case
-pdfjs-find-match-diacritics-checkbox-label = Match Diacritics
-pdfjs-find-entire-word-checkbox-label = Whole Words
-pdfjs-find-reached-top = Reached top of document, continued from bottom
-pdfjs-find-reached-bottom = Reached end of document, continued from top
-
+    .title = Sonraki eşleşmeyi bul
+pdfjs-find-next-button-label = Sonraki
+pdfjs-find-highlight-checkbox = Tümünü vurgula
+pdfjs-find-match-case-checkbox-label = Büyük-küçük harfe duyarlı
+pdfjs-find-match-diacritics-checkbox-label = Fonetik işaretleri bul
+pdfjs-find-entire-word-checkbox-label = Tam sözcükler
+pdfjs-find-reached-top = Belgenin başına ulaşıldı, sonundan devam edildi
+pdfjs-find-reached-bottom = Belgenin sonuna ulaşıldı, başından devam edildi
 # Variables:
 #   $current (Number) - the index of the currently active find result
 #   $total (Number) - the total number of matches in the document
 pdfjs-find-match-count =
     { $total ->
-        [one] { $current } of { $total } match
-       *[other] { $current } of { $total } matches
+        [one] { $total } eşleşmeden { $current }. eşleşme
+       *[other] { $total } eşleşmeden { $current }. eşleşme
     }
-
 # Variables:
 #   $limit (Number) - the maximum number of matches
 pdfjs-find-match-count-limit =
     { $limit ->
-        [one] More than { $limit } match
-       *[other] More than { $limit } matches
+        [one] { $limit } eşleşmeden fazla
+       *[other] { $limit } eşleşmeden fazla
     }
-
-pdfjs-find-not-found = Phrase not found
+pdfjs-find-not-found = Eşleşme bulunamadı
 
 ## Predefined zoom values
 
-pdfjs-page-scale-width = Page Width
-pdfjs-page-scale-fit = Page Fit
-pdfjs-page-scale-auto = Automatic Zoom
-pdfjs-page-scale-actual = Actual Size
-
+pdfjs-page-scale-width = Sayfa genişliği
+pdfjs-page-scale-fit = Sayfayı sığdır
+pdfjs-page-scale-auto = Otomatik yakınlaştır
+pdfjs-page-scale-actual = Gerçek boyut
 # Variables:
 #   $scale (Number) - percent value for page scale
-pdfjs-page-scale-percent = { $scale }%
+pdfjs-page-scale-percent = %{ $scale }
 
 ## PDF page
 
 # Variables:
 #   $page (Number) - the page number
 pdfjs-page-landmark =
-    .aria-label = Page { $page }
+    .aria-label = Sayfa { $page }
 
 ## Loading indicator messages
 
-pdfjs-loading-error = An error occurred while loading the PDF.
-pdfjs-invalid-file-error = Invalid or corrupted PDF file.
-pdfjs-missing-file-error = Missing PDF file.
-pdfjs-unexpected-response-error = Unexpected server response.
-pdfjs-rendering-error = An error occurred while rendering the page.
+pdfjs-loading-error = PDF yüklenirken bir hata oluştu.
+pdfjs-invalid-file-error = Geçersiz veya bozulmuş PDF dosyası.
+pdfjs-missing-file-error = PDF dosyası eksik.
+pdfjs-unexpected-response-error = Beklenmeyen sunucu yanıtı.
+pdfjs-rendering-error = Sayfa yorumlanırken bir hata oluştu.
 
 ## Annotations
 
 # Variables:
 #   $date (Date) - the modification date of the annotation
 #   $time (Time) - the modification time of the annotation
-pdfjs-annotation-date-string = { $date }, { $time }
-
+pdfjs-annotation-date-string = { $date } { $time }
 # .alt: This is used as a tooltip.
 # Variables:
 #   $type (String) - an annotation type from a list defined in the PDF spec
 # (32000-1:2008 Table 169 – Annotation types).
 # Some common types are e.g.: "Check", "Text", "Comment", "Note"
 pdfjs-text-annotation-type =
-    .alt = [{ $type } Annotation]
+    .alt = [{ $type } işareti]
 
 ## Password
 
-pdfjs-password-label = Enter the password to open this PDF file.
-pdfjs-password-invalid = Invalid password. Please try again.
-pdfjs-password-ok-button = OK
-pdfjs-password-cancel-button = Cancel
-pdfjs-web-fonts-disabled = Web fonts are disabled: unable to use embedded PDF fonts.
+pdfjs-password-label = Bu PDF dosyasını açmak için parolasını yazın.
+pdfjs-password-invalid = Geçersiz parola. Lütfen yeniden deneyin.
+pdfjs-password-ok-button = Tamam
+pdfjs-password-cancel-button = İptal
+pdfjs-web-fonts-disabled = Web fontları devre dışı: Gömülü PDF fontları kullanılamıyor.
 
 ## Editing
 
 pdfjs-editor-free-text-button =
-    .title = Text
-pdfjs-editor-free-text-button-label = Text
+    .title = Metin
+pdfjs-editor-free-text-button-label = Metin
 pdfjs-editor-ink-button =
-    .title = Draw
-pdfjs-editor-ink-button-label = Draw
+    .title = Çiz
+pdfjs-editor-ink-button-label = Çiz
 pdfjs-editor-stamp-button =
-    .title = Add or edit images
-pdfjs-editor-stamp-button-label = Add or edit images
+    .title = Resim ekle veya düzenle
+pdfjs-editor-stamp-button-label = Resim ekle veya düzenle
 pdfjs-editor-highlight-button =
-    .title = Highlight
-pdfjs-editor-highlight-button-label = Highlight
+    .title = Vurgula
+pdfjs-editor-highlight-button-label = Vurgula
+pdfjs-highlight-floating-button =
+    .title = Vurgula
 pdfjs-highlight-floating-button1 =
-    .title = Highlight
-    .aria-label = Highlight
-pdfjs-highlight-floating-button-label = Highlight
+    .title = Vurgula
+    .aria-label = Vurgula
+pdfjs-highlight-floating-button-label = Vurgula
 
 ## Remove button for the various kind of editor.
 
 pdfjs-editor-remove-ink-button =
-    .title = Remove drawing
+    .title = Çizimi kaldır
 pdfjs-editor-remove-freetext-button =
-    .title = Remove text
+    .title = Metni kaldır
 pdfjs-editor-remove-stamp-button =
-    .title = Remove image
+    .title = Resmi kaldır
 pdfjs-editor-remove-highlight-button =
-    .title = Remove highlight
+    .title = Vurgulamayı kaldır
 
 ##
 
 # Editor Parameters
-pdfjs-editor-free-text-color-input = Color
-pdfjs-editor-free-text-size-input = Size
-pdfjs-editor-ink-color-input = Color
-pdfjs-editor-ink-thickness-input = Thickness
-pdfjs-editor-ink-opacity-input = Opacity
+pdfjs-editor-free-text-color-input = Renk
+pdfjs-editor-free-text-size-input = Boyut
+pdfjs-editor-ink-color-input = Renk
+pdfjs-editor-ink-thickness-input = Kalınlık
+pdfjs-editor-ink-opacity-input = Saydamlık
 pdfjs-editor-stamp-add-image-button =
-    .title = Add image
-pdfjs-editor-stamp-add-image-button-label = Add image
+    .title = Resim ekle
+pdfjs-editor-stamp-add-image-button-label = Resim ekle
 # This refers to the thickness of the line used for free highlighting (not bound to text)
-pdfjs-editor-free-highlight-thickness-input = Thickness
+pdfjs-editor-free-highlight-thickness-input = Kalınlık
 pdfjs-editor-free-highlight-thickness-title =
-    .title = Change thickness when highlighting items other than text
-
+    .title = Metin dışındaki öğeleri vurgularken kalınlığı değiştir
 pdfjs-free-text =
-    .aria-label = Text Editor
-pdfjs-free-text-default-content = Start typing…
+    .aria-label = Metin düzenleyicisi
+pdfjs-free-text-default-content = Yazmaya başlayın…
 pdfjs-ink =
-    .aria-label = Draw Editor
+    .aria-label = Çizim düzenleyicisi
 pdfjs-ink-canvas =
-    .aria-label = User-created image
+    .aria-label = Kullanıcı tarafından oluşturulan resim
 
 ## Alt-text dialog
 
 # Alternative text (alt text) helps when people can't see the image.
-pdfjs-editor-alt-text-button-label = Alt text
-
-pdfjs-editor-alt-text-edit-button-label = Edit alt text
-pdfjs-editor-alt-text-dialog-label = Choose an option
-pdfjs-editor-alt-text-dialog-description = Alt text (alternative text) helps when people can’t see the image or when it doesn’t load.
-pdfjs-editor-alt-text-add-description-label = Add a description
-pdfjs-editor-alt-text-add-description-description = Aim for 1-2 sentences that describe the subject, setting, or actions.
-pdfjs-editor-alt-text-mark-decorative-label = Mark as decorative
-pdfjs-editor-alt-text-mark-decorative-description = This is used for ornamental images, like borders or watermarks.
-pdfjs-editor-alt-text-cancel-button = Cancel
-pdfjs-editor-alt-text-save-button = Save
-pdfjs-editor-alt-text-decorative-tooltip = Marked as decorative
-
+pdfjs-editor-alt-text-button-label = Alternatif metin
+pdfjs-editor-alt-text-edit-button-label = Alternatif metni düzenle
+pdfjs-editor-alt-text-dialog-label = Bir seçenek seçin
+pdfjs-editor-alt-text-dialog-description = Alternatif metin, insanlar resmi göremediğinde veya resim yüklenmediğinde işe yarar.
+pdfjs-editor-alt-text-add-description-label = Açıklama ekle
+pdfjs-editor-alt-text-add-description-description = Konuyu, ortamı veya eylemleri tanımlayan bir iki cümle yazmaya çalışın.
+pdfjs-editor-alt-text-mark-decorative-label = Dekoratif olarak işaretle
+pdfjs-editor-alt-text-mark-decorative-description = Kenarlıklar veya filigranlar gibi dekoratif resimler için kullanılır.
+pdfjs-editor-alt-text-cancel-button = Vazgeç
+pdfjs-editor-alt-text-save-button = Kaydet
+pdfjs-editor-alt-text-decorative-tooltip = Dekoratif olarak işaretlendi
 # .placeholder: This is a placeholder for the alt text input area
 pdfjs-editor-alt-text-textarea =
-    .placeholder = For example, “A young man sits down at a table to eat a meal”
+    .placeholder = Örneğin, “Genç bir adam yemek yemek için masaya oturuyor”
 
 ## Editor resizers
 ## This is used in an aria label to help to understand the role of the resizer.
 
-pdfjs-editor-resizer-label-top-left = Top left corner — resize
-pdfjs-editor-resizer-label-top-middle = Top middle — resize
-pdfjs-editor-resizer-label-top-right = Top right corner — resize
-pdfjs-editor-resizer-label-middle-right = Middle right — resize
-pdfjs-editor-resizer-label-bottom-right = Bottom right corner — resize
-pdfjs-editor-resizer-label-bottom-middle = Bottom middle — resize
-pdfjs-editor-resizer-label-bottom-left = Bottom left corner — resize
-pdfjs-editor-resizer-label-middle-left = Middle left — resize
+pdfjs-editor-resizer-label-top-left = Sol üst köşe — yeniden boyutlandır
+pdfjs-editor-resizer-label-top-middle = Üst orta — yeniden boyutlandır
+pdfjs-editor-resizer-label-top-right = Sağ üst köşe — yeniden boyutlandır
+pdfjs-editor-resizer-label-middle-right = Orta sağ — yeniden boyutlandır
+pdfjs-editor-resizer-label-bottom-right = Sağ alt köşe — yeniden boyutlandır
+pdfjs-editor-resizer-label-bottom-middle = Alt orta — yeniden boyutlandır
+pdfjs-editor-resizer-label-bottom-left = Sol alt köşe — yeniden boyutlandır
+pdfjs-editor-resizer-label-middle-left = Orta sol — yeniden boyutlandır
 
 ## Color picker
 
 # This means "Color used to highlight text"
-pdfjs-editor-highlight-colorpicker-label = Highlight color
-
+pdfjs-editor-highlight-colorpicker-label = Vurgu rengi
 pdfjs-editor-colorpicker-button =
-    .title = Change color
+    .title = Rengi değiştir
 pdfjs-editor-colorpicker-dropdown =
-    .aria-label = Color choices
+    .aria-label = Renk seçenekleri
 pdfjs-editor-colorpicker-yellow =
-    .title = Yellow
+    .title = Sarı
 pdfjs-editor-colorpicker-green =
-    .title = Green
+    .title = Yeşil
 pdfjs-editor-colorpicker-blue =
-    .title = Blue
+    .title = Mavi
 pdfjs-editor-colorpicker-pink =
-    .title = Pink
+    .title = Pembe
 pdfjs-editor-colorpicker-red =
-    .title = Red
+    .title = Kırmızı
 
 ## Show all highlights
 ## This is a toggle button to show/hide all the highlights.
 
-pdfjs-editor-highlight-show-all-button-label = Show all
+pdfjs-editor-highlight-show-all-button-label = Tümünü göster
 pdfjs-editor-highlight-show-all-button =
-    .title = Show all
+    .title = Tümünü göster

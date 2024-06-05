@@ -5,37 +5,38 @@
 ## Placeholders for date and time inputs
 
 datetime-year-placeholder = yyyy
-datetime-month-placeholder = mm
-datetime-day-placeholder = dd
+datetime-month-placeholder = aa
+datetime-day-placeholder = gg
 datetime-time-placeholder = --
 
 ## Field labels for input type=date
 
 datetime-year =
-    .aria-label = Year
+    .aria-label = Yıl
 datetime-month =
-    .aria-label = Month
+    .aria-label = Ay
 datetime-day =
-    .aria-label = Day
+    .aria-label = Gün
 
 ## Field labels for input type=time
 
 datetime-hour =
-    .aria-label = Hours
+    .aria-label = Saat
 datetime-minute =
-    .aria-label = Minutes
+    .aria-label = Dakika
 datetime-second =
-    .aria-label = Seconds
+    .aria-label = Saniye
 datetime-millisecond =
-    .aria-label = Milliseconds
+    .aria-label = Milisaniye
 datetime-dayperiod =
-    .aria-label = AM/PM
+    .aria-label = ÖÖ/ÖS
 
 ## Calendar button for input type=date
+
 
 # This label is used by screenreaders and other assistive technology
 # to indicate the purpose of a toggle button inside of the <input type="date">
 # field that opens/closes a date picker calendar dialog
 
 datetime-calendar =
-    .aria-label = Calendar
+    .aria-label = Takvim

@@ -20,7 +20,6 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Ara
     .aria-label = Ara
-
 # Variables:
 #   $engine (string) - The name of the user's default search engine
 newtab-search-box-handoff-text = { $engine } ile arama yapın veya adres yazın
@@ -35,7 +34,6 @@ newtab-search-box-handoff-input-no-engine =
     .placeholder = Arama yapın veya adres yazın
     .title = Arama yapın veya adres yazın
     .aria-label = Arama yapın veya adres yazın
-
 newtab-search-box-text = Web’de ara
 newtab-search-box-input =
     .placeholder = Web’de ara
@@ -47,15 +45,14 @@ newtab-topsites-add-search-engine-header = Arama motoru ekle
 newtab-topsites-add-shortcut-header = Yeni kısayol
 newtab-topsites-edit-topsites-header = Sık kullanılan siteyi düzenle
 newtab-topsites-edit-shortcut-header = Kısayolu düzenle
+newtab-topsites-add-shortcut-label = Kısayol ekle
 newtab-topsites-title-label = Başlık
 newtab-topsites-title-input =
     .placeholder = Başlık yazın
-
 newtab-topsites-url-label = Adres
 newtab-topsites-url-input =
     .placeholder = Adres yazın ve yapıştırın
 newtab-topsites-url-validation = Geçerli bir adres gerekli
-
 newtab-topsites-image-url-label = Özel resim adresi
 newtab-topsites-use-image-link = Özel resim kullan…
 newtab-topsites-image-validation = Resim yüklenemedi. Başka bir adres deneyin.
@@ -84,12 +81,10 @@ newtab-topsite-sponsored = Sponsorlu
 newtab-menu-section-tooltip =
     .title = Menüyü aç
     .aria-label = Menüyü aç
-
 # Tooltip for dismiss button
 newtab-dismiss-button-tooltip =
     .title = Kaldır
     .aria-label = Kaldır
-
 # This tooltip is for the context menu of Pocket cards or Topsites
 # Variables:
 #   $title (string) - The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
@@ -158,17 +153,14 @@ newtab-label-removed-bookmark = Yer imi silindi
 newtab-label-recommended = Popüler
 newtab-label-saved = { -pocket-brand-name }’a kaydedildi
 newtab-label-download = İndirildi
-
 # This string is used in the story cards to indicate sponsored content
 # Variables:
 #   $sponsorOrSource (string) - The name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · Sponsorlu
-
 # This string is used at the bottom of story cards to indicate sponsored content
 # Variables:
 #   $sponsor (string) - The name of a sponsor
 newtab-label-sponsored-by = { $sponsor } sponsorluğunda
-
 # This string is used under the image of story cards to indicate source and time to read
 # Variables:
 #   $source (string) - The name of a company or their domain
@@ -203,15 +195,17 @@ newtab-section-header-recent-activity = Son Etkinlikler
 # Variables:
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = { $provider } öneriyor
+newtab-section-header-stories = Merak uyandıran makaleler
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
 newtab-empty-section-highlights = Gezinmeye başlayın. Son zamanlarda baktığınız veya yer imlerinize eklediğiniz bazı güzel makaleleri, videoları ve diğer sayfaları burada göstereceğiz.
-
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
 #   $provider (string) - Name of the content provider for this section, e.g "Pocket".
-newtab-empty-section-topstories = Hepsini bitirdiniz. Yeni { $provider } haberleri için daha fazla yine gelin. Beklemek istemiyor musunuz? İlginç yazılara ulaşmak için popüler konulardan birini seçebilirsiniz.
+newtab-empty-section-topstories = Hepsini bitirdiniz. Yeni { $provider } yazıları için yine gelin. Beklemek istemiyor musunuz? İlginç yazılara ulaşmak için popüler konulardan birini seçebilirsiniz.
+# Ex. When there are no more story recommendations, in the space where there would have been stories, this is shown instead.
+newtab-empty-section-topstories-generic = Hepsini bitirdiniz. Yeni yazılar için daha sonra yine gelin. Beklemek istemiyor musunuz? İlginç yazılara ulaşmak için popüler konulardan birini seçebilirsiniz.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -230,12 +224,8 @@ newtab-pocket-new-topics-title = Daha fazla içeriğe ne dersiniz? { -pocket-bra
 newtab-pocket-more-recommendations = Daha fazla öneri
 newtab-pocket-learn-more = Daha fazla bilgi al
 newtab-pocket-cta-button = { -pocket-brand-name }’ı edinin
-newtab-pocket-cta-text = Sevdiğiniz yazıları { -pocket-brand-name }’a kaydedin, aklınız okumaya değer şeylerle doldurun.
+newtab-pocket-cta-text = Sevdiğiniz yazıları { -pocket-brand-name }’a kaydedin, aklınızı okumaya değer şeylerle doldurun.
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name }, { -brand-product-name } ailesinin bir parçasıdır
-
-## Pocket Final Card Section.
-## This is for the final card in the Pocket grid.
-
 # A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Kaydet
 newtab-pocket-saved = Kaydedildi
@@ -255,6 +245,9 @@ newtab-error-fallback-refresh-link = Yeniden denemek için sayfayı tazeleyin.
 
 newtab-custom-shortcuts-title = Kısayollar
 newtab-custom-shortcuts-subtitle = Kaydettiğiniz veya ziyaret ettiğiniz siteler
+newtab-custom-shortcuts-toggle =
+    .label = Kısayollar
+    .description = Kaydettiğiniz veya ziyaret ettiğiniz siteler
 # Variables
 #   $num (number) - Number of rows to display
 newtab-custom-row-selector =
@@ -265,9 +258,68 @@ newtab-custom-row-selector =
 newtab-custom-sponsored-sites = Sponsorlu kısayollar
 newtab-custom-pocket-title = { -pocket-brand-name } önerileri
 newtab-custom-pocket-subtitle = { -brand-product-name } ailesinin bir parçası olan { -pocket-brand-name }’ın seçtiği harika içerikler
+newtab-custom-stories-toggle =
+    .label = Önerilen makaleler
+    .description = { -brand-product-name } ailesinin seçtiği harika içerikler
 newtab-custom-pocket-sponsored = Sponsorlu haberler
 newtab-custom-pocket-show-recent-saves = Son kaydedilenleri göster
 newtab-custom-recent-title = Son etkinlikler
 newtab-custom-recent-subtitle = Son kullanılan siteler ve içeriklerden bir seçki
+newtab-custom-recent-toggle =
+    .label = Son etkinlikler
+    .description = Son kullanılan siteler ve içeriklerden bir seçki
+newtab-custom-weather-toggle =
+    .label = Hava durumu
+    .description = Bugünkü hava durumu tahmini
 newtab-custom-close-button = Kapat
 newtab-custom-settings = Diğer ayarları yönet
+
+## New Tab Wallpapers
+
+newtab-wallpaper-title = Duvar kâğıtları
+newtab-wallpaper-reset = Varsayılana sıfırla
+newtab-wallpaper-light-red-panda = Kızıl panda
+newtab-wallpaper-light-mountain = Beyaz dağ
+newtab-wallpaper-light-sky = Mor ve pembe bulutlu gökyüzü
+newtab-wallpaper-light-color = Mavi, pembe ve sarı şekiller
+newtab-wallpaper-light-landscape = Mavi sisli dağ manzarası
+newtab-wallpaper-light-beach = Palmiye ağaçlı sahil
+newtab-wallpaper-dark-aurora = Aurora Borealis
+newtab-wallpaper-dark-color = Kırmızı ve mavi şekiller
+newtab-wallpaper-dark-panda = Ormanda saklanan kızıl panda
+newtab-wallpaper-dark-sky = Gece gökyüzüyle şehir manzarası
+newtab-wallpaper-dark-mountain = Manzaralı dağ
+newtab-wallpaper-dark-city = Mor şehir manzarası
+# Variables
+#   $author_string (String) - The name of the creator of the photo.
+#   $webpage_string (String) - The name of the webpage where the photo is located.
+newtab-wallpaper-attribution = Fotoğraf: <a data-l10n-name="name-link">{ $author_string }</a> / <a data-l10n-name="webpage-link">{ $webpage_string }</a>
+
+## New Tab Weather
+
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-see-forecast =
+    .title = { $provider } tahminlerine bak
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-sponsored = { $provider } ∙ Sponsorlu
+newtab-weather-menu-change-location = Konumu değiştir
+newtab-weather-change-location-search-input = Konum ara
+newtab-weather-menu-weather-display = Hava durumu göstergesi
+# Display options are:
+# - Simple: Displays a current weather condition icon and the current temperature
+# - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
+newtab-weather-menu-weather-display-option-simple = Basit
+newtab-weather-menu-change-weather-display-simple = Basit görünüme geç
+newtab-weather-menu-weather-display-option-detailed = Ayrıntılı
+newtab-weather-menu-change-weather-display-detailed = Ayrıntılı görünüme geç
+newtab-weather-menu-temperature-units = Sıcaklık birimi
+newtab-weather-menu-temperature-option-fahrenheit = Fahrenhayt
+newtab-weather-menu-temperature-option-celsius = Celcius
+newtab-weather-menu-change-temperature-units-fahrenheit = Fahrenhayta geç
+newtab-weather-menu-change-temperature-units-celsius = Celsius’a geç
+newtab-weather-menu-hide-weather = Yeni sekmede hava durumunu gizle
+newtab-weather-menu-learn-more = Daha fazla bilgi al
+# This message is shown if user is working offline
+newtab-weather-error-not-available = Hava durumu verileri şu anda mevcut değil.

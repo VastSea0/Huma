@@ -2,82 +2,76 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-third-party-page-title = Third-party Module Information
-third-party-section-title = List of third-party modules in { -brand-short-name }
-
+third-party-page-title = Üçüncü Taraf Modül Bilgileri
+third-party-section-title = { -brand-short-name } tarayıcısındaki üçüncü taraf modüllerin listesi
 third-party-intro =
-    This page shows the third-party modules which were injected into your
-    { -brand-short-name }. Any module that is not signed by Microsoft or
-    { -vendor-short-name } is considered to be a third-party module.
-
-third-party-message-empty = No third-party modules were detected.
-third-party-message-no-duration = Not recorded
-
-third-party-detail-version = File version
-third-party-detail-vendor = Vendor info
-third-party-detail-occurrences = Occurrences
-    .title = How many times this module was loaded.
-third-party-detail-duration = Avg. Blocking time (ms)
-    .title = How long this module blocked the application.
-third-party-detail-app = Application
-third-party-detail-publisher = Publisher
-
-third-party-th-process = Process
-third-party-th-duration = Loading Duration (ms)
-third-party-th-status = Status
-
+    Bu sayfa, { -brand-short-name } tarayıcınıza yüklenmiş üçüncü taraf modülleri
+    gösterir. Microsoft veya { -vendor-short-name } tarafından imzalanmamış
+    herhangi bir modül, üçüncü taraf modül olarak kabul edilir.
+third-party-message-empty = Hiçbir üçüncü taraf modülü algılanmadı.
+third-party-message-no-duration = Kaydedilmedi
+third-party-detail-version = Dosya sürümü
+third-party-detail-vendor = Sağlayıcı bilgileri
+third-party-detail-occurrences = Tekrar
+    .title = Bu modülün kaç kez yüklendiği.
+third-party-detail-duration = Ort. engelleme süresi (ms)
+    .title = Bu modülün uygulamayı ne kadar süreyle engellediği.
+third-party-detail-app = Uygulama
+third-party-detail-publisher = Yayımcı
+third-party-th-process = İşlem
+third-party-th-duration = Yükleme süresi (ms)
+third-party-th-status = Durum
 third-party-tag-ime = IME
+    .title = Bu modül türü, üçüncü taraf IME kullandığınızda yüklenir.
+third-party-tag-shellex = Kabuk uzantısı
+    .title = Bu modül türü, sistem dosyası iletişim kutusunu açtığınızda yüklenir.
+third-party-tag-background = Arka plan
     .title =
-        This type of module is loaded when you use a third-party IME.
-third-party-tag-shellex = Shell Extension
-    .title =
-        This type of module is loaded when you open the system file dialog.
-third-party-tag-background = Background
-    .title =
-        This module did not block the application because it was loaded
-        in the background.
+        Bu modül arka planda yüklendiği için
+        uygulamayı engellemedi.
 third-party-icon-unsigned =
-    .title = This module is not signed
-    .alt = This module is not signed
+    .title = Bu modül imzalanmamış
+    .alt = Bu modül imzalanmamış
 third-party-icon-warning =
-    .title = { -brand-short-name } crashed in code from this module
-    .alt = { -brand-short-name } crashed in code from this module
-
-third-party-status-loaded = Loaded
-third-party-status-blocked = Blocked
-third-party-status-redirected = Redirected
-
-third-party-button-copy-to-clipboard = Copy raw data to clipboard
+    .title = { -brand-short-name } bu modülden gelen kod yüzünden çöktü
+    .alt = { -brand-short-name } bu modülden gelen kod yüzünden çöktü
+third-party-status-loaded = Yüklendi
+third-party-status-blocked = Engellendi
+third-party-status-redirected = Yönlendirildi
+third-party-button-copy-to-clipboard = Ham metni panoya kopyala
 third-party-loading-data =
-    .alt = Loading system information…
-    .title = Loading system information…
-third-party-button-reload = Reload with system info
-    .title = Reload with system information
+    .alt = Sistem bilgileri yükleniyor…
+    .title = Sistem bilgileri yükleniyor…
+third-party-button-reload = Sistem bilgisiyle yeniden yükle
+    .title = Sistem bilgileriyle yeniden yükle
 third-party-button-open =
-    .title = Open file location…
-third-party-button-to-block-module = Block this module
-    .title = Block this module
-    .aria-label = Block this module
-third-party-button-to-unblock-module = Unblock this module
-    .title = Currently blocked. Click to unblock it.
-    .aria-label = Currently blocked. Click to unblock it.
-third-party-button-to-unblock-module-disabled = Unblock this module (blocklist currently disabled)
-    .title =
-        Currently marked as blocked, although the blocklist is disabled for this run
-        of { -brand-short-name }. Click to unblock it.
-    .aria-label =
-        Currently marked as blocked, although the blocklist is disabled for this run
-        of { -brand-short-name }. Click to unblock it.
+    .title = Dosya konumunu aç…
+third-party-button-to-block =
+    .title = Bu modülü engelle
+    .aria-label = Bu modülü engelle
+third-party-button-to-unblock =
+    .title = Engellenmiş durumda. Engeli kaldırmak için tıklayın.
+    .aria-label = Engellenmiş durumda. Engeli kaldırmak için tıklayın.
+third-party-button-to-unblock-disabled =
+    .title = Engellenmiş olarak işaretli, ancak bu { -brand-short-name } oturumu boyunca engelli listesi devre dışı bırakılmış. Engellemeyi kaldırmak için tıklayın.
+    .aria-label = Engellenmiş olarak işaretli, ancak bu { -brand-short-name } oturumu boyunca engelli listesi devre dışı bırakılmış. Engellemeyi kaldırmak için tıklayın.
+third-party-button-to-block-module = Bu modülü engelle
+    .title = Bu modülü engelle
+    .aria-label = Bu modülü engelle
+third-party-button-to-unblock-module = Bu modülün engelini kaldır
+    .title = Şu anda engelli. Engelini kaldırmak için tıklayın.
+    .aria-label = Şu anda engelli. Engelini kaldırmak için tıklayın.
+third-party-button-to-unblock-module-disabled = Bu modülün engelini kaldır (engelleme listesi şu anda devre dışı)
+    .title = Şu anda engelli olarak işaretlenmiş ama bu { -brand-short-name } oturumunda engelleme devre dışı. Engeli kaldırmak için tıklayın.
+    .aria-label = Şu anda engelli olarak işaretlenmiş ama bu { -brand-short-name } oturumunda engelleme devre dışı. Engeli kaldırmak için tıklayın.
 third-party-button-expand =
-    .title = Show detailed information
+    .title = Ayrıntılı bilgileri göster
 third-party-button-collapse =
-    .title = Collapse detailed information
-third-party-blocking-requires-restart =
-    To block a third-party module, { -brand-short-name } must restart.
-third-party-should-restart-title = Restart { -brand-short-name }
-third-party-restart-now = Restart now
-third-party-restart-later = Restart later
-
+    .title = Ayrıntılı bilgileri gizle
+third-party-blocking-requires-restart = Üçüncü taraf modülünü engellemek için { -brand-short-name } yeniden başlatılmalıdır.
+third-party-should-restart-title = { -brand-short-name } tarayıcısını yeniden başlat
+third-party-restart-now = Yeniden başlat
+third-party-restart-later = Daha sonra yeniden başlat
 third-party-blocked-by-builtin =
-    .title = Blocked by { -brand-short-name }
-    .alt = Blocked by { -brand-short-name }
+    .title = { -brand-short-name } tarafından engellendi
+    .alt = { -brand-short-name } tarafından engellendi

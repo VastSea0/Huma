@@ -3,17 +3,16 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 profiledowngrade-window2 =
-    .title = You’ve launched an older version of { -brand-product-name }
+    .title = { -brand-product-name }’un eski bir sürümünü başlattınız
     .style = min-width: 490px;
-
 profiledowngrade-window-create =
-    .label = Create New Profile
-
-profiledowngrade-sync2 = Using an older version of { -brand-product-name } can corrupt bookmarks and browsing history already saved to an existing { -brand-product-name } profile. To protect your information, create a new profile for this installation of { -brand-short-name }. You can always sign in with an account to sync your bookmarks and browsing history between profiles.
-profiledowngrade-nosync = Using an older version of { -brand-product-name } can corrupt bookmarks and browsing history already saved to an existing { -brand-product-name } profile. To protect your information, create a new profile for this installation of { -brand-short-name }.
-
+    .label = Yeni profil oluştur
+profiledowngrade-sync = { -brand-product-name }’un eski sürümlerini kullanmak, mevcut bir { -brand-product-name } profiline kaydedilmiş yer imlerinize ve gezinti geçmişinize zarar verebilir. Bilgilerinizi korumak için bu { -brand-short-name } kurulumuna özel bir profil oluşturun. İstediğiniz zaman { -fxaccount-brand-name } ile giriş yaparak profillerinizdeki yer imlerinizi ve gezinti geçmişinizi eşitleyebilirsiniz.
+profiledowngrade-sync2 = { -brand-product-name }’un eski sürümlerini kullanmak, mevcut bir { -brand-product-name } profiline kaydedilmiş yer imlerinize ve gezinti geçmişinize zarar verebilir. Bilgilerinizi korumak için bu { -brand-short-name } kurulumuna özel bir profil oluşturun. İstediğiniz zaman hesabınıza giriş yaparak profillerinizdeki yer imlerinizi ve gezinti geçmişinizi eşitleyebilirsiniz.
+profiledowngrade-nosync = { -brand-product-name }’un eski sürümlerini kullanmak, mevcut bir { -brand-product-name } profiline kaydedilmiş yer imlerinize ve gezinti geçmişinize zarar verebilir. Bilgilerinizi korumak için bu { -brand-short-name } kurulumuna özel bir profil oluşturun.
 profiledowngrade-quit =
-    .label = { PLATFORM() ->
-                 [windows] Exit
-                *[other] Quit
-             }
+    .label =
+        { PLATFORM() ->
+            [windows] Çık
+           *[other] Çık
+        }

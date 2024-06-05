@@ -204,6 +204,7 @@ function init_all() {
   register_module("paneSearch", gSearchPane);
   register_module("panePrivacy", gPrivacyPane);
   register_module("paneContainers", gContainersPane);
+  register_module("paneHuma", gMoreFromHuma);
 
   if (Services.prefs.getBoolPref("browser.translations.newSettingsUI.enable")) {
     register_module("paneTranslations", gTranslationsPane);
@@ -225,6 +226,15 @@ function init_all() {
       NimbusFeatures.moreFromMozilla.getVariable("template");
     register_module("paneMoreFromMozilla", gMoreFromMozillaPane);
   }
+
+  /*NimbusFeatures.moreFromHuma.recordExposureEvent({ once: true });
+  if (NimbusFeatures.moreFromHuma.getVariable("enabled")) {
+    document.getElementById("category-more-from-huma").hidden = false;
+    gMoreFromHumaPane.option =
+      NimbusFeatures.moreFromHuma.getVariable("template");
+    register_module("paneHuma", gMoreFromHuma);
+  }
+  */
   // The Sync category needs to be the last of the "real" categories
   // registered and inititalized since many tests wait for the
   // "sync-pane-loaded" observer notification before starting the test.

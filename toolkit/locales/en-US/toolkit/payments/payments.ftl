@@ -9,7 +9,7 @@
 # Variables:
 #   $month (String): Numeric month the credit card expires
 #   $year (String): Four-digit year the credit card expires
-credit-card-expiration = Expires on { $month }/{ $year }
+credit-card-expiration = Son kullanma tarihi { $month }/{ $year }
 
 ## These labels serve as a description of a credit card.
 ## The description must include a credit card number, and may optionally
@@ -47,6 +47,5 @@ credit-card-label-number-expiration-2 = { $number }, { credit-card-expiration }
 #   $number (String): Partially-redacted credit card number
 #   $name (String): Cardholder name
 #   $type (String): Credit card type
-credit-card-label-number-name-expiration-2 =
-  { $number }, { $name }, { credit-card-expiration }
+credit-card-label-number-name-expiration-2 = { $number }, { $name }, { credit-card-expiration }
     .aria-label = { $type } { credit-card-label-number-name-expiration-2 }

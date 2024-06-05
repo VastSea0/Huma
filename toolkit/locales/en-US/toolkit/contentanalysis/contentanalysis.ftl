@@ -2,79 +2,87 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-contentanalysis-alert-title = Content Analysis
-
+contentanalysis-alert-title = İçerik analizi
 # Variables:
 #   $content - Description of the content being warned about, such as "clipboard" or "aFile.txt"
-contentanalysis-slow-agent-notification = The Content Analysis tool is taking a long time to respond for resource “{ $content }”
-contentanalysis-slow-agent-dialog-header = Scan in progress
-
+contentanalysis-slow-agent-notification = “{ $content }” kaynağı için içerik analizi aracının yanıt vermesi uzun sürüyor
+contentanalysis-slow-agent-dialog-header = Tarama devam ediyor
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
 #   $filename - Name of the file being analyzed, such as "aFile.txt"
-contentanalysis-slow-agent-dialog-body-file = { $agent } is reviewing “{ $filename }” against your organization’s data policies. This may take a moment.
+contentanalysis-slow-agent-dialog-body-file = { $agent }, “{ $filename }” dosyasını kuruluşunuzun veri ilkelerine göre inceliyor. Bu işlem birkaç saniye sürebilir.
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
-contentanalysis-slow-agent-dialog-body-clipboard = { $agent } is reviewing what you pasted against your organization’s data policies. This may take a moment.
+contentanalysis-slow-agent-dialog-body-clipboard = { $agent }, yapıştırdığınız verileri kuruluşunuzun veri ilkelerine göre inceliyor. Bu işlem birkaç saniye sürebilir.
 # Note that this is shown when the user drag and drops text into the browser.
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
-contentanalysis-slow-agent-dialog-body-dropped-text = { $agent } is reviewing the text you dropped against your organization’s data policies. This may take a moment.
+contentanalysis-slow-agent-dialog-body-dropped-text = { $agent }, sürükleyip bıraktığınız metni kuruluşunuzun veri ilkelerine göre inceliyor. Bu işlem birkaç saniye sürebilir.
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
-contentanalysis-slow-agent-dialog-body-print = { $agent } is reviewing what you printed against your organization’s data policies. This may take a moment.
-contentanalysis-operationtype-clipboard = clipboard
-contentanalysis-operationtype-dropped-text = dropped text
-contentanalysis-operationtype-print = print
+contentanalysis-slow-agent-dialog-body-print = { $agent }, yazdırdığınız verileri kuruluşunuzun veri ilkelerine göre inceliyor. Bu işlem birkaç saniye sürebilir.
+contentanalysis-operationtype-clipboard = pano
+contentanalysis-operationtype-dropped-text = sürüklenip bırakılan metin
+contentanalysis-operationtype-print = yazdır
 #   $filename - The filename associated with the request, such as "aFile.txt"
-contentanalysis-customdisplaystring-description = upload of “{ $filename }”
-
-contentanalysis-warndialogtitle = This content may be unsafe
-
+contentanalysis-customdisplaystring-description = “{ $filename }” yüklemesi
+contentanalysis-warndialogtitle = Bu içerik güvensiz olabilir
 # Variables:
 #   $content - Description of the content being warned about, such as "clipboard" or "aFile.txt"
-contentanalysis-warndialogtext = Your organization uses data-loss prevention software that has flagged this content as unsafe: { $content }. Use it anyway?
-contentanalysis-warndialog-response-allow = Use content
-contentanalysis-warndialog-response-deny = Cancel
-
-contentanalysis-notification-title = Content Analysis
+contentanalysis-warndialogtext = Kuruluşunuz bu içeriği güvensiz olarak işaretleyen bir veri kaybı önleme yazılımı kullanıyor: { $content }. İçerik yine de kullanılsın mı?
+contentanalysis-warndialog-response-allow = İçeriği kullan
+contentanalysis-warndialog-response-deny = Vazgeç
+contentanalysis-notification-title = İçerik analizi
 # Variables:
 #   $content - Description of the content being reported, such as "clipboard" or "aFile.txt"
 #   $response - The response received from the content analysis agent, such as "REPORT_ONLY"
-contentanalysis-genericresponse-message = Content Analysis responded with { $response } for resource: { $content }
+contentanalysis-genericresponse-message = İçerik analizi, şu kaynak için { $response } yanıtını verdi: { $content }
 # Variables:
 #   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
-contentanalysis-block-message = Your organization uses data-loss prevention software that has blocked this content: { $content }.
+contentanalysis-block-message = Kuruluşunuzun kullandığı veri kaybı önleme yazılımı şu içeriği engelledi: { $content }.
+# Variables:
+#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
+contentanalysis-error-message = Veri kaybı önleme yazılımıyla iletişim sırasında bir hata oluştu. Şu kaynak için aktarım reddedildi: { $content }.
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
+contentanalysis-unspecified-error-message = { $agent } ile iletişim sırasında bir hata oluştu. Şu kaynak için aktarım reddedildi: { $content }.
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
+contentanalysis-no-agent-connected-message = { $agent } ile bağlantı kurulamadı. Şu kaynak için aktarım reddedildi: { $content }.
+# Variables:
+#   $agent - The name of the DLP agent doing the analysis
+#   $content - Description of the content being blocked, such as "clipboard" or "aFile.txt"
+contentanalysis-invalid-agent-signature-message = { $agent } için imza doğrulaması başarısız oldu. Şu kaynak için aktarım reddedildi: { $content }.
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
 #   $content - Localized text describing the content being blocked, such as "Paste denied."
-contentanalysis-unspecified-error-message-content = An error occurred in communicating with { $agent }. { $content }
+contentanalysis-unspecified-error-message-content = { $agent } ile iletişim kurulurken bir hata oluştu. { $content }
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
 #   $content - Localized text describing the content being blocked, such as "Paste denied."
-contentanalysis-no-agent-connected-message-content = Unable to connect to { $agent }. { $content }
+contentanalysis-no-agent-connected-message-content = { $agent } ile bağlantı kurulamadı. { $content }
 # Variables:
 #   $agent - The name of the DLP agent doing the analysis
 #   $content - Localized text describing the content being blocked, such as "Paste denied."
-contentanalysis-invalid-agent-signature-message-content = Failed signature verification for { $agent }. { $content }
+contentanalysis-invalid-agent-signature-message-content = { $agent } için imza doğrulanamadı. { $content }
 # Variables:
 #   $filename - Name of the file that was blocked, such as "aFile.txt"
-contentanalysis-error-message-upload-file = Upload of “{ $filename }” denied.
-contentanalysis-error-message-dropped-text = Drag and drop denied.
-contentanalysis-error-message-clipboard = Paste denied.
-contentanalysis-error-message-print = Print denied.
-
-contentanalysis-block-dialog-title-upload-file = You’re not permitted to upload this file
+contentanalysis-error-message-upload-file = “{ $filename }” yüklemesi reddedildi.
+contentanalysis-error-message-dropped-text = Sürükleyip bırakma reddedildi.
+contentanalysis-error-message-clipboard = Yapıştırma reddedildi.
+contentanalysis-error-message-print = Yazdırma reddedildi.
+contentanalysis-block-dialog-title-upload-file = Bu dosyayı yüklemenize izin verilmiyor
 # Variables:
 #   $filename - Name of the file that was blocked, such as "aFile.txt"
-contentanalysis-block-dialog-body-upload-file = Under your organization’s data protection policies, you’re not permitted to upload the file “{ $filename }”. Contact your administrator for more info.
-contentanalysis-block-dialog-title-clipboard = You’re not permitted to paste this content
-contentanalysis-block-dialog-body-clipboard = Under your organization’s data protection policies, you’re not permitted to paste this content. Contact your administrator for more info.
-contentanalysis-block-dialog-title-dropped-text = You’re not permitted to drop this content
-contentanalysis-block-dialog-body-dropped-text = Under your organization’s data protection policies, you’re not permitted to drag and drop this content. Contact your administrator for more info.
-contentanalysis-block-dialog-title-print = You’re not permitted to print this document
-contentanalysis-block-dialog-body-print = Under your organization’s data protection policies, you’re not permitted to print this document. Contact your administrator for more info.
-
-contentanalysis-inprogress-quit-title = Quit { -brand-shorter-name }?
-contentanalysis-inprogress-quit-message = Several actions are in progress. If you quit { -brand-shorter-name }, these actions will not be completed.
-contentanalysis-inprogress-quit-yesbutton = Yes, quit
+contentanalysis-block-dialog-body-upload-file = Kuruluşunuzun veri koruma ilkelerine göre “{ $filename }” dosyasını yükleme izniniz bulunmuyor. Daha fazla bilgi için yöneticinizle iletişime geçin.
+contentanalysis-block-dialog-title-clipboard = Bu içeriği yapıştırmanıza izin verilmiyor
+contentanalysis-block-dialog-body-clipboard = Kuruluşunuzun veri koruma ilkelerine göre bu içeriği yapıştırma izniniz bulunmuyor. Daha fazla bilgi için yöneticinizle iletişime geçin.
+contentanalysis-block-dialog-title-dropped-text = Bu içeriği sürükleyip bırakmanıza izin verilmiyor
+contentanalysis-block-dialog-body-dropped-text = Kuruluşunuzun veri koruma ilkelerine göre bu içeriği sürükleyip bırakma izniniz bulunmuyor. Daha fazla bilgi için yöneticinizle iletişime geçin.
+contentanalysis-block-dialog-title-print = Bu belgeyi yazdırmanıza izin verilmiyor
+contentanalysis-block-dialog-body-print = Kuruluşunuzun veri koruma ilkelerine göre bu belgeyi yazdırma izniniz bulunmuyor. Daha fazla bilgi için yöneticinizle iletişime geçin.
+contentanalysis-inprogress-quit-title = { -brand-shorter-name } uygulamasından çıkılsın mı?
+contentanalysis-inprogress-quit-message = Devam eden birkaç işlem var. { -brand-shorter-name } uygulamasından çıkarsanız bu işlemler tamamlanmayacaktır.
+contentanalysis-inprogress-quit-yesbutton = Evet, çık

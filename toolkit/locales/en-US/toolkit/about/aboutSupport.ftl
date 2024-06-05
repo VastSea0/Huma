@@ -2,224 +2,222 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-page-title = Troubleshooting Information
+page-title = Sorun giderme bilgileri
 page-subtitle =
-    This page contains technical information that might be useful when you’re
-    trying to solve a problem. If you are looking for answers to common questions
-    about { -brand-short-name }, check out our <a data-l10n-name="support-link">support website</a>.
-
-crashes-title = Crash Reports
-crashes-id = Report ID
-crashes-send-date = Submitted
-crashes-all-reports = All Crash Reports
-crashes-no-config = This application has not been configured to display crash reports.
-support-addons-title = Add-ons
-support-addons-name = Name
-support-addons-type = Type
-support-addons-enabled = Enabled
-support-addons-version = Version
-support-addons-id = ID
-legacy-user-stylesheets-title = Legacy User Stylesheets
-legacy-user-stylesheets-enabled = Active
-legacy-user-stylesheets-stylesheet-types = Stylesheets
-legacy-user-stylesheets-no-stylesheets-found = No stylesheets found
-security-software-title = Security Software
-security-software-type = Type
-security-software-name = Name
-security-software-antivirus = Antivirus
+    Bu sayfa, bir sorunu gidermeye çalışırken işinize yarayabilecek teknik bilgiler içerir.
+    { -brand-short-name } hakkında genel sorularla ilgili yanıt arıyorsanız
+    <a data-l10n-name="support-link">destek sitemizi</a> ziyaret edin.
+crashes-title = Çökme Raporları
+crashes-id = Rapor numarası
+crashes-send-date = Gönderilme tarihi
+crashes-all-reports = Tüm çökme raporları
+crashes-no-config = Bu uygulama, çökme raporlarını görüntülemek için yapılandırılmamış.
+support-addons-title = Eklentiler
+support-addons-name = Adı
+support-addons-type = Tür
+support-addons-enabled = Etkin
+support-addons-version = Sürüm
+support-addons-id = Kimlik
+legacy-user-stylesheets-title = Eski kullanıcı stil sayfaları
+legacy-user-stylesheets-enabled = Etkin
+legacy-user-stylesheets-stylesheet-types = Stil sayfaları
+legacy-user-stylesheets-no-stylesheets-found = Stil sayfası bulunamadı
+security-software-title = Güvenlik yazılımları
+security-software-type = Türü
+security-software-name = Adı
+security-software-antivirus = Antivirüs
 security-software-antispyware = Antispyware
-security-software-firewall = Firewall
-features-title = { -brand-short-name } Features
-features-name = Name
-features-version = Version
-features-id = ID
-processes-title = Remote Processes
-processes-type = Type
-processes-count = Count
-app-basics-title = Application Basics
-app-basics-name = Name
-app-basics-version = Version
-app-basics-build-id = Build ID
-app-basics-distribution-id = Distribution ID
-app-basics-update-channel = Update Channel
+security-software-firewall = Güvenlik duvarı
+features-title = { -brand-short-name } özellikleri
+features-name = Adı
+features-version = Sürüm
+features-id = Kimlik
+processes-title = Uzak işlemler
+processes-type = Tür
+processes-count = Sayaç
+app-basics-title = Uygulama temelleri
+app-basics-name = Adı
+app-basics-version = Sürüm
+app-basics-build-id = Yapı numarası
+app-basics-distribution-id = Dağıtım kimliği
+app-basics-update-channel = Güncelleme kanalı
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
-        [linux] Update Directory
-       *[other] Update Folder
+        [linux] Güncelleme dizini
+       *[other] Güncelleme klasörü
     }
-app-basics-update-history = Update History
-app-basics-show-update-history = Show Update History
+app-basics-update-history = Güncelleme geçmişi
+app-basics-show-update-history = Güncelleme geçmişini göster
 # Represents the path to the binary used to start the application.
-app-basics-binary = Application Binary
+app-basics-binary = Çalıştırılabilir uygulama dosyası
 app-basics-profile-dir =
     { PLATFORM() ->
-        [linux] Profile Directory
-       *[other] Profile Folder
+        [linux] Profil dizini
+       *[other] Profil klasörü
     }
-app-basics-build-config = Build Configuration
-app-basics-user-agent = User Agent
-app-basics-os = OS
-app-basics-os-theme = OS Theme
+app-basics-enabled-plugins = Devredeki yan uygulamalar
+app-basics-build-config = Yapılandırma
+app-basics-user-agent = Kullanıcı istemcisi
+app-basics-os = İşletim sistemi
+app-basics-os-theme = İşletim sistemi teması
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = Rosetta Translated
-app-basics-memory-use = Memory Use
-app-basics-performance = Performance
-app-basics-service-workers = Registered Service Workers
-app-basics-third-party = Third-party Modules
-app-basics-profiles = Profiles
-app-basics-launcher-process-status = Launcher Process
-app-basics-multi-process-support = Multiprocess Windows
-app-basics-fission-support = Fission Windows
-app-basics-remote-processes-count = Remote Processes
-app-basics-enterprise-policies = Enterprise Policies
-app-basics-location-service-key-google = Google Location Service Key
-app-basics-safebrowsing-key-google = Google Safebrowsing Key
-app-basics-key-mozilla = Mozilla Location Service Key
-app-basics-safe-mode = Safe Mode
-app-basics-memory-size = Memory Size (RAM)
-app-basics-disk-available = Disk Space Available
-app-basics-pointing-devices = Pointing Devices
-
+app-basics-memory-use = Bellek kullanımı
+app-basics-performance = Performans
+app-basics-service-workers = Kayıtlı Service Worker’lar
+app-basics-third-party = Üçüncü taraf modülleri
+app-basics-profiles = Profiller
+app-basics-launcher-process-status = Başlatıcı işlemi
+app-basics-multi-process-support = Çok işlemli pencereler
+app-basics-fission-support = Fission pencereleri
+app-basics-remote-processes-count = Uzak işlemler
+app-basics-enterprise-policies = Kurumsal ilkeler
+app-basics-location-service-key-google = Google Konum Hizmeti anahtarı
+app-basics-safebrowsing-key-google = Google Safebrowsing anahtarı
+app-basics-key-mozilla = Mozilla Konum Hizmeti anahtarı
+app-basics-safe-mode = Güvenli kip
+app-basics-memory-size = Bellek boyutu (RAM)
+app-basics-disk-available = Kullanılabilir disk alanı
+app-basics-pointing-devices = İşaretleme aygıtları
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
 app-basics-data-size = { $value } { $unit }
-
 show-dir-label =
     { PLATFORM() ->
-        [macos] Show in Finder
-        [windows] Open Folder
-       *[other] Open Directory
+        [macos] Finder'da göster
+        [windows] Klasörü aç
+       *[other] Dizini aç
     }
-environment-variables-title = Environment Variables
-environment-variables-name = Name
-environment-variables-value = Value
-experimental-features-title = Experimental Features
-experimental-features-name = Name
-experimental-features-value = Value
-modified-key-prefs-title = Important Modified Preferences
-modified-prefs-name = Name
-modified-prefs-value = Value
-user-js-title = user.js Preferences
-user-js-description = Your profile folder contains a <a data-l10n-name="user-js-link">user.js file</a>, which includes preferences that were not created by { -brand-short-name }.
-locked-key-prefs-title = Important Locked Preferences
-locked-prefs-name = Name
-locked-prefs-value = Value
-graphics-title = Graphics
-graphics-features-title = Features
-graphics-diagnostics-title = Diagnostics
-graphics-failure-log-title = Failure Log
+environment-variables-title = Ortam değişkenleri
+environment-variables-name = Adı
+environment-variables-value = Değer
+experimental-features-title = Deneysel özellikler
+experimental-features-name = Adı
+experimental-features-value = Değer
+modified-key-prefs-title = Değiştirilmiş önemli tercihler
+modified-prefs-name = Adı
+modified-prefs-value = Değer
+user-js-title = user.js tercihleri
+user-js-description = Profil klasörünüz { -brand-short-name } tarafından oluşturulmamış tercihler içeren bir <a data-l10n-name="user-js-link">user.js dosyası</a> içeriyor.
+locked-key-prefs-title = Kilitlenmiş önemli tercihler
+locked-prefs-name = Adı
+locked-prefs-value = Değer
+graphics-title = Grafikler
+graphics-features-title = Özellikler
+graphics-diagnostics-title = Tanılama
+graphics-failure-log-title = Hata günlüğü
 graphics-gpu1-title = GPU #1
 graphics-gpu2-title = GPU #2
-graphics-decision-log-title = Decision Log
-graphics-crash-guards-title = Crash Guard Disabled Features
-graphics-workarounds-title = Workarounds
-graphics-device-pixel-ratios = Window Device Pixel Ratios
+graphics-decision-log-title = Karar günlüğü
+graphics-crash-guards-title = Çökme koruyucusu tarafından kapatılan özellikler
+graphics-workarounds-title = Çözümler
+graphics-device-pixel-ratios = Pencere cihaz piksel oranları
 # Windowing system in use on Linux (e.g. X11, Wayland).
-graphics-window-protocol = Window Protocol
+graphics-window-protocol = Pencere protokolü
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
-graphics-desktop-environment = Desktop Environment
-place-database-title = Places Database
-place-database-stats = Statistics
-place-database-stats-show = Show Statistics
-place-database-stats-hide = Hide Statistics
-place-database-stats-entity = Entity
-place-database-stats-count = Count
-place-database-stats-size-kib = Size (KiB)
-place-database-stats-size-perc = Size (%)
-place-database-stats-efficiency-perc = Efficiency (%)
-place-database-stats-sequentiality-perc = Sequentiality (%)
-place-database-integrity = Integrity
-place-database-verify-integrity = Verify Integrity
-a11y-title = Accessibility
-a11y-activated = Activated
-a11y-force-disabled = Prevent Accessibility
-a11y-handler-used = Accessible Handler Used
-a11y-instantiator = Accessibility Instantiator
-library-version-title = Library Versions
-copy-text-to-clipboard-label = Copy text to clipboard
-copy-raw-data-to-clipboard-label = Copy raw data to clipboard
+graphics-desktop-environment = Masaüstü ortamı
+place-database-title = Places veritabanı
+place-database-stats = İstatistikler
+place-database-stats-show = İstatistikleri göster
+place-database-stats-hide = İstatistikleri gizle
+place-database-stats-entity = Varlık
+place-database-stats-count = Sayaç
+place-database-stats-size-kib = Boyut (KiB)
+place-database-stats-size-perc = Boyut (%)
+place-database-stats-efficiency-perc = Verimlilik (%)
+place-database-stats-sequentiality-perc = Sıralılık (%)
+place-database-integrity = Bütünlük
+place-database-verify-integrity = Bütünlüğü doğrula
+a11y-title = Erişilebilirlik
+a11y-activated = Etkinleştirildi mi?
+a11y-force-disabled = Erişilebilirliği engelle
+a11y-handler-used = Erişilebilir işleyici kullanımı
+a11y-instantiator = Erişilebilirlik temsilcisi
+library-version-title = Kitaplık sürümleri
+copy-text-to-clipboard-label = Metni panoya kopyala
+copy-raw-data-to-clipboard-label = Ham metni panoya kopyala
 sandbox-title = Sandbox
-sandbox-sys-call-log-title = Rejected System Calls
+sandbox-sys-call-log-title = Reddedilen sistem çağrıları
 sandbox-sys-call-index = #
-sandbox-sys-call-age = Seconds Ago
+sandbox-sys-call-age = saniye önce
 sandbox-sys-call-pid = PID
 sandbox-sys-call-tid = TID
-sandbox-sys-call-proc-type = Process Type
-sandbox-sys-call-number = Syscall
-sandbox-sys-call-args = Arguments
-troubleshoot-mode-title = Diagnose issues
-restart-in-troubleshoot-mode-label = Troubleshoot Mode…
-clear-startup-cache-title = Try clearing the startup cache
-clear-startup-cache-label = Clear startup cache…
-startup-cache-dialog-title2 = Restart { -brand-short-name } to clear startup cache?
-startup-cache-dialog-body2 = This will not change your settings or remove extensions.
-restart-button-label = Restart
+sandbox-sys-call-proc-type = İşlem türü
+sandbox-sys-call-number = Sistem çağrısı
+sandbox-sys-call-args = Parametreler
+troubleshoot-mode-title = Sorunları tanılayın
+restart-in-troubleshoot-mode-label = Sorun giderme modu…
+clear-startup-cache-title = Başlangıç önbelleğini temizlemeyi deneyin
+clear-startup-cache-label = Başlangıç önbelleğini temizle…
+startup-cache-dialog-title2 = Başlangıç önbelleğini temizlemek için { -brand-short-name } yeniden başlatılsın mı?
+startup-cache-dialog-body2 = Bu işlem, ayarlarınızı değiştirmez ve uzantılarınızı kaldırmaz.
+restart-button-label = Yeniden başlat
 
 ## Media titles
 
-audio-backend = Audio Backend
-max-audio-channels = Max Channels
-sample-rate = Preferred Sample Rate
-roundtrip-latency = Roundtrip latency (standard deviation)
-media-title = Media
-media-output-devices-title = Output Devices
-media-input-devices-title = Input Devices
-media-device-name = Name
-media-device-group = Group
-media-device-vendor = Vendor
-media-device-state = State
-media-device-preferred = Preferred
-media-device-format = Format
-media-device-channels = Channels
-media-device-rate = Rate
-media-device-latency = Latency
-media-capabilities-title = Media Capabilities
-media-codec-support-info = Codec Support Information
+audio-backend = Ses arka ucu
+max-audio-channels = En fazla kanal
+sample-rate = Tercih edilen örnekleme hızı
+roundtrip-latency = Gidiş dönüş gecikmesi (standart sapma)
+media-title = Ortam
+media-output-devices-title = Çıktı cihazları
+media-input-devices-title = Girdi cihazları
+media-device-name = Adı
+media-device-group = Grup
+media-device-vendor = Sağlayıcı
+media-device-state = Durumu
+media-device-preferred = Tercih edilen
+media-device-format = Biçim
+media-device-channels = Kanallar
+media-device-rate = Hız
+media-device-latency = Gecikme
+media-capabilities-title = Çoku ortam yetenekleri
+media-codec-support-info = Codec destek bilgileri
 # List all the entries of the database.
-media-capabilities-enumerate = Enumerate database
+media-capabilities-enumerate = Veritabanını numaralandır
 
 ## Codec support table
 
-media-codec-support-sw-decoding = Software Decoding
-media-codec-support-hw-decoding = Hardware Decoding
-media-codec-support-codec-name = Codec Name
-media-codec-support-supported = Supported
-media-codec-support-unsupported = Unsupported
-media-codec-support-error = Codec support information unavailable. Try again after playing back a media file.
-media-codec-support-lack-of-extension = Install extension
+media-codec-support-sw-decoding = Yazılımsal çözme
+media-codec-support-hw-decoding = Donanımsal çözme
+media-codec-support-codec-name = Codec adı
+media-codec-support-supported = Destekleniyor
+media-codec-support-unsupported = Desteklenmiyor
+media-codec-support-error = Codec destek bilgisi mevcut değil. Bir medya dosyasını oynattıktan sonra tekrar deneyin.
+media-codec-support-lack-of-extension = Uzantı yükle
 
 ## Media Content Decryption Modules (CDM)
 ## See EME Spec for more explanation for following technical terms
 ## https://w3c.github.io/encrypted-media/
 
-media-content-decryption-modules-title = Content Decryption Modules Information
-media-key-system-name = Key System Name
-media-video-robustness = Video Robustness
-media-audio-robustness = Audio Robustness
-media-cdm-capabilities = Capabilities
+media-content-decryption-modules-title = İçerik çözme modülleri bilgileri
+media-key-system-name = Anahtar sistemi adı
+media-video-robustness = Video sağlamlığı
+media-audio-robustness = Ses sağlamlığı
+media-cdm-capabilities = Yetenekler
 # Clear Lead isn't defined in the spec, which means the the first few seconds
 # are not encrypted. It allows playback to start without having to wait for
 # license response, improving video start time and user experience.
 media-cdm-clear-lead = Clear Lead
 # We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
 # HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
-media-hdcp-22-compatible = HDCP 2.2 Compatible
+media-hdcp-22-compatible = HDCP 2.2 uyumlu
 
 ##
 
-intl-title = Internationalization & Localization
-intl-app-title = Application Settings
-intl-locales-requested = Requested Locales
-intl-locales-available = Available Locales
-intl-locales-supported = App Locales
-intl-locales-default = Default Locale
-intl-os-title = Operating System
-intl-os-prefs-system-locales = System Locales
-intl-regional-prefs = Regional Preferences
+intl-title = Uluslararasılaştırma ve yerelleştirme
+intl-app-title = Uygulama ayarları
+intl-locales-requested = İstenen diller
+intl-locales-available = Mevcut diller
+intl-locales-supported = Uygulama dilleri
+intl-locales-default = Varsayılan dil
+intl-os-title = İşletim sistemi
+intl-os-prefs-system-locales = Sistem dilleri
+intl-regional-prefs = Bölgesel tercihler
 
 ## Remote Debugging
 ##
@@ -230,8 +228,8 @@ intl-regional-prefs = Regional Preferences
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
 
-remote-debugging-title = Remote Debugging (Chromium Protocol)
-remote-debugging-accepting-connections = Accepting Connections
+remote-debugging-title = Uzaktan hata ayıklama (Chromium protokolü)
+remote-debugging-accepting-connections = Bağlantılar kabul ediliyor mu?
 remote-debugging-url = URL
 
 ##
@@ -240,151 +238,134 @@ remote-debugging-url = URL
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
     { $days ->
-        [one] Crash Reports for the Last { $days } Day
-       *[other] Crash Reports for the Last { $days } Days
+        [one] Son { $days } günün çökme raporları
+       *[other] Son { $days } günün çökme raporları
     }
-
 # Variables
 # $minutes (integer) - Number of minutes since crash
 crashes-time-minutes =
     { $minutes ->
-        [one] { $minutes } minute ago
-       *[other] { $minutes } minutes ago
+        [one] { $minutes } dakika önce
+       *[other] { $minutes } dakika önce
     }
-
 # Variables
 # $hours (integer) - Number of hours since crash
 crashes-time-hours =
     { $hours ->
-        [one] { $hours } hour ago
-       *[other] { $hours } hours ago
+        [one] { $hours } saat önce
+       *[other] { $hours } saat önce
     }
-
 # Variables
 # $days (integer) - Number of days since crash
 crashes-time-days =
     { $days ->
-        [one] { $days } day ago
-       *[other] { $days } days ago
+        [one] { $days } gün önce
+       *[other] { $days } gün önce
     }
-
 # Variables
 # $reports (integer) - Number of pending reports
 pending-reports =
     { $reports ->
-        [one] All Crash Reports (including { $reports } pending crash in the given time range)
-       *[other] All Crash Reports (including { $reports } pending crashes in the given time range)
+        [one] Tüm çökme raporları (belirtilen zaman aralığındaki { $reports } bekleyen çökme dahil)
+       *[other] Tüm çökme raporları (belirtilen zaman aralığındaki { $reports } bekleyen çökme dahil)
     }
-
-raw-data-copied = Raw data copied to clipboard
-text-copied = Text copied to clipboard
+raw-data-copied = Ham veriler panoya kopyalandı
+text-copied = Metin panoya kopyalandı
 
 ## The verb "blocked" here refers to a graphics feature such as "Direct2D" or "OpenGL layers".
 
-blocked-driver = Blocked for your graphics driver version.
-blocked-gfx-card = Blocked for your graphics card because of unresolved driver issues.
-blocked-os-version = Blocked for your operating system version.
-blocked-mismatched-version = Blocked for your graphics driver version mismatch between registry and DLL.
+blocked-driver = Grafik kartı sürücüsü sürümünüz için engellenmiştir.
+blocked-gfx-card = Çözülemeyen sürücü sorunları nedeniyle grafik kartınız için engellenmiştir.
+blocked-os-version = İşletim sistemi sürümünüz için engellenmiştir.
+blocked-mismatched-version = Kayıt defteriyle DLL arasındaki grafik sürücüsü uyumsuzluğunuz nedeniyle engellendi.
 # Variables
 # $driverVersion - The graphics driver version string
-try-newer-driver = Blocked for your graphics driver version. Try updating your graphics driver to version { $driverVersion } or newer.
-
+try-newer-driver = Grafik kartı sürücüsü sürümünüz için engellenmiştir. Grafik kartı sürücünüzü { $driverVersion } veya daha yeni bir sürüme güncellemeyi deneyin.
 # "ClearType" is a proper noun and should not be translated. Feel free to leave English strings if
 # there are no good translations, these are only used in about:support
-clear-type-parameters = ClearType Parameters
-
-compositing = Compositing
-support-font-determination = Font Visibility Debug Info
-hardware-h264 = Hardware H264 Decoding
-main-thread-no-omtc = main thread, no OMTC
-yes = Yes
-no = No
-unknown = Unknown
-virtual-monitor-disp = Virtual Monitor Display
+clear-type-parameters = ClearType parametreleri
+compositing = Çizici
+support-font-determination = Yazı tipi görünürlüğü hata ayıklama bilgileri
+hardware-h264 = Donanımsal H264 çözme
+main-thread-no-omtc = ana işlem parçacığı, OMTC yok
+yes = Evet
+no = Hayır
+unknown = Bilinmiyor
+virtual-monitor-disp = Sanal monitör ekranı
 
 ## The following strings indicate if an API key has been found.
 ## In some development versions, it's expected for some API keys that they are
 ## not found.
 
-found = Found
-missing = Missing
-
+found = Bulundu
+missing = Eksik
 gpu-process-pid = GPUProcessPid
 gpu-process = GPUProcess
-gpu-description = Description
-gpu-vendor-id = Vendor ID
-gpu-device-id = Device ID
-gpu-subsys-id = Subsys ID
-gpu-drivers = Drivers
+gpu-description = Tanım
+gpu-vendor-id = Sağlayıcı numarası
+gpu-device-id = Aygıt numarası
+gpu-subsys-id = Subsys numarası
+gpu-drivers = Sürücüler
 gpu-ram = RAM
-gpu-driver-vendor = Driver Vendor
-gpu-driver-version = Driver Version
-gpu-driver-date = Driver Date
-gpu-active = Active
-webgl1-wsiinfo = WebGL 1 Driver WSI Info
-webgl1-renderer = WebGL 1 Driver Renderer
-webgl1-version = WebGL 1 Driver Version
-webgl1-driver-extensions = WebGL 1 Driver Extensions
-webgl1-extensions = WebGL 1 Extensions
-webgl2-wsiinfo = WebGL 2 Driver WSI Info
-webgl2-renderer = WebGL 2 Driver Renderer
-webgl2-version = WebGL 2 Driver Version
-webgl2-driver-extensions = WebGL 2 Driver Extensions
-webgl2-extensions = WebGL 2 Extensions
-webgpu-default-adapter = WebGPU Default Adapter
-webgpu-fallback-adapter = WebGPU Fallback Adapter
-
+gpu-driver-vendor = Sürücü sağlayıcı
+gpu-driver-version = Sürücü sürümü
+gpu-driver-date = Sürücü tarihi
+gpu-active = Etkin
+webgl1-wsiinfo = WebGL 1 sürücü WSI bilgileri
+webgl1-renderer = WebGL 1 sürücü renderer’ı
+webgl1-version = WebGL 1 sürücü sürümü
+webgl1-driver-extensions = WebGL 1 sürücü uzantıları
+webgl1-extensions = WebGL 1 uzantıları
+webgl2-wsiinfo = WebGL 2 sürücü WSI bilgileri
+webgl2-renderer = WebGL 2 sürücü renderer’ı
+webgl2-version = WebGL 2 sürücü sürümü
+webgl2-driver-extensions = WebGL 2 sürücü uzantıları
+webgl2-extensions = WebGL 2 uzantıları
+webgpu-default-adapter = Varsayılan WebGPU bağdaştırıcısı
+webgpu-fallback-adapter = Yedek WebGPU bağdaştırıcısı
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
-support-blocklisted-bug = Blocklisted due to known issues: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
-
+support-blocklisted-bug = Bilinen sorunlar nedeniyle engellendi: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
-unknown-failure = Blocklisted; failure code { $failureCode }
-
-d3d11layers-crash-guard = D3D11 Compositor
+unknown-failure = Engellendi. Hata kodu { $failureCode }
+d3d11layers-crash-guard = D3D11 compositor
 glcontext-crash-guard = OpenGL
-wmfvpxvideo-crash-guard = WMF VPX Video Decoder
-
-reset-on-next-restart = Reset on Next Restart
-gpu-process-kill-button = Terminate GPU Process
-gpu-device-reset = Device Reset
-gpu-device-reset-button = Trigger Device Reset
-uses-tiling = Uses Tiling
-content-uses-tiling = Uses Tiling (Content)
-off-main-thread-paint-enabled = Off Main Thread Painting Enabled
-off-main-thread-paint-worker-count = Off Main Thread Painting Worker Count
-target-frame-rate = Target Frame Rate
-
-min-lib-versions = Expected minimum version
-loaded-lib-versions = Version in use
-
-has-seccomp-bpf = Seccomp-BPF (System Call Filtering)
-has-seccomp-tsync = Seccomp Thread Synchronization
-has-user-namespaces = User Namespaces
-has-privileged-user-namespaces = User Namespaces for privileged processes
-can-sandbox-content = Content Process Sandboxing
-can-sandbox-media = Media Plugin Sandboxing
-content-sandbox-level = Content Process Sandbox Level
-effective-content-sandbox-level = Effective Content Process Sandbox Level
-content-win32k-lockdown-state = Win32k Lockdown State for Content Process
-support-sandbox-gpu-level = GPU Process Sandbox Level
-sandbox-proc-type-content = content
-sandbox-proc-type-file = file content
-sandbox-proc-type-media-plugin = media plugin
-sandbox-proc-type-data-decoder = data decoder
-
-startup-cache-title = Startup Cache
-startup-cache-disk-cache-path = Disk Cache Path
-startup-cache-ignore-disk-cache = Ignore Disk Cache
-startup-cache-found-disk-cache-on-init = Found Disk Cache on Init
-startup-cache-wrote-to-disk-cache = Wrote to Disk Cache
-
-launcher-process-status-0 = Enabled
-launcher-process-status-1 = Disabled due to failure
-launcher-process-status-2 = Disabled forcibly
-launcher-process-status-unknown = Unknown status
-
+wmfvpxvideo-crash-guard = WMF VPX video çözücüsü
+reset-on-next-restart = Sonraki yeniden başlatmada sıfırla
+gpu-process-kill-button = GPU işlemini sonlandır
+gpu-device-reset = Aygıtı sıfırla
+gpu-device-reset-button = Aygıt sıfırlamayı tetikle
+uses-tiling = Tiling kullanımı
+content-uses-tiling = Tiling kullanımı (içerik)
+off-main-thread-paint-enabled = Off main thread painting etkin
+off-main-thread-paint-worker-count = Off main thread painting işçi sayısı
+target-frame-rate = Hedef kare hızı
+min-lib-versions = Beklenen minimum sürüm
+loaded-lib-versions = Kullanılan sürüm
+has-seccomp-bpf = Seccomp-BPF (sistem çağrısı filtreleme)
+has-seccomp-tsync = Seccomp işlem senkronizasyonu
+has-user-namespaces = Kullanıcı isim uzayları
+has-privileged-user-namespaces = Ayrıcalıklı işlemler için kullanıcı isim uzayları
+can-sandbox-content = İçerik işlemi sandbox’ı
+can-sandbox-media = Ortam yan uygulaması sandbox’ı
+content-sandbox-level = İçerik işlemi sandbox düzeyi
+effective-content-sandbox-level = Etkin içerik işlemi sandbox düzeyi
+content-win32k-lockdown-state = İçerik işlemi için Win32k kilitleme durumu
+support-sandbox-gpu-level = GPU işlemi sandbox düzeyi
+sandbox-proc-type-content = içerik
+sandbox-proc-type-file = dosya içeriği
+sandbox-proc-type-media-plugin = ortam yan uygulaması
+sandbox-proc-type-data-decoder = veri çözücü
+startup-cache-title = Başlangıç önbelleği
+startup-cache-disk-cache-path = Disk önbellek yolu
+startup-cache-ignore-disk-cache = Disk önbelleğini yok say
+startup-cache-found-disk-cache-on-init = Başlangıçta disk önbelleği bulundu
+startup-cache-wrote-to-disk-cache = Disk önbelleğine yazıldı
+launcher-process-status-0 = Etkin
+launcher-process-status-1 = Hata nedeniyle devre dışı
+launcher-process-status-2 = Zorla devre dışı bırakıldı
+launcher-process-status-unknown = Bilinmeyen durum
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
@@ -393,74 +374,72 @@ multi-process-windows = { $remoteWindows }/{ $totalWindows }
 # $fissionWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 fission-windows = { $fissionWindows }/{ $totalWindows }
-fission-status-experiment-control = Disabled by experiment
-fission-status-experiment-treatment = Enabled by experiment
-fission-status-disabled-by-e10s-env = Disabled by environment
-fission-status-enabled-by-env = Enabled by environment
-fission-status-disabled-by-env = Disabled by environment
-fission-status-enabled-by-default = Enabled by default
-fission-status-disabled-by-default = Disabled by default
-fission-status-enabled-by-user-pref = Enabled by user
-fission-status-disabled-by-user-pref = Disabled by user
-fission-status-disabled-by-e10s-other = E10s disabled
-fission-status-enabled-by-rollout = Enabled by phased rollout
-
-async-pan-zoom = Asynchronous Pan/Zoom
-apz-none = none
-wheel-enabled = wheel input enabled
-touch-enabled = touch input enabled
-drag-enabled = scrollbar drag enabled
-keyboard-enabled = keyboard enabled
-autoscroll-enabled = autoscroll enabled
-zooming-enabled = smooth pinch-zoom enabled
+fission-status-experiment-control = Deney tarafından kapatıldı
+fission-status-experiment-treatment = Deney tarafından açıldı
+fission-status-disabled-by-e10s-env = Ortam tarafından kapatıldı
+fission-status-enabled-by-env = Ortam tarafından açıldı
+fission-status-disabled-by-env = Ortam tarafından kapatıldı
+fission-status-enabled-by-default = Varsayılan olarak açık
+fission-status-disabled-by-default = varsayılan olarak kapalı
+fission-status-enabled-by-user-pref = kullanıcı tarafından açıldı
+fission-status-disabled-by-user-pref = Kullanıcı tarafından kapatıldı
+fission-status-disabled-by-e10s-other = E10s devre dışı
+fission-status-enabled-by-rollout = Aşamalı dağıtımla etkinleştirildi
+async-pan-zoom = Asenkron kaydır/yakınlaştır
+apz-none = yok
+wheel-enabled = tekerlek girdisi etkin
+touch-enabled = dokunma girdisi etkin
+drag-enabled = kaydırma çubuğu sürükleme etkin
+keyboard-enabled = klavye etkin
+autoscroll-enabled = otomatik kaydırma etkin
+zooming-enabled = yumuşak pinch-zoom etkin
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference
 
-wheel-warning = async wheel input disabled due to unsupported pref: { $preferenceKey }
-touch-warning = async touch input disabled due to unsupported pref: { $preferenceKey }
+wheel-warning = desteklenmeyen tercih nedeniyle asenkron tekerlek girdisi devre dışı bırakıldı: { $preferenceKey }
+touch-warning = desteklenmeyen tercih nedeniyle asenkron dokunma girdisi devre dışı bırakıldı: { $preferenceKey }
 
 ## Strings representing the status of the Enterprise Policies engine.
 
-policies-inactive = Inactive
-policies-active = Active
-policies-error = Error
+policies-inactive = Pasif
+policies-active = Aktif
+policies-error = Hata
 
 ## Printing section
 
-support-printing-title = Printing
-support-printing-troubleshoot = Troubleshooting
-support-printing-clear-settings-button = Clear saved print settings
-support-printing-modified-settings = Modified print settings
-support-printing-prefs-name = Name
-support-printing-prefs-value = Value
+support-printing-title = Yazdırma
+support-printing-troubleshoot = Sorun giderme
+support-printing-clear-settings-button = Kayıtlı yazdırma ayarlarını temizle
+support-printing-modified-settings = Değiştirilmiş yazdırma ayarları
+support-printing-prefs-name = Ad
+support-printing-prefs-value = Değer
 
 ## Normandy sections
 
-support-remote-experiments-title = Remote Experiments
-support-remote-experiments-name = Name
-support-remote-experiments-branch = Experiment Branch
-support-remote-experiments-see-about-studies = See <a data-l10n-name="support-about-studies-link">about:studies</a> for more information, including how to disable individual experiments or to disable { -brand-short-name } from running this type of experiment in the future.
-
-support-remote-features-title = Remote Features
-support-remote-features-name = Name
-support-remote-features-status = Status
+support-remote-experiments-title = Uzak deneyler
+support-remote-experiments-name = Adı
+support-remote-experiments-branch = Deney kolu
+support-remote-experiments-see-about-studies = Daha fazla bilgi için <a data-l10n-name="support-about-studies-link">about:studies</a> sayfasına bakabilirsiniz. O sayfadan deneyleri tek tek kapatabilir veya { -brand-short-name } tarayıcınızın gelecekte bu tür deneyleri çalıştırmasını engelleyebilirsiniz.
+support-remote-features-title = Uzak özellikler
+support-remote-features-name = Adı
+support-remote-features-status = Durum
 
 ## Pointing devices
 
-pointing-device-mouse = Mouse
-pointing-device-touchscreen = Touchscreen
-pointing-device-pen-digitizer = Pen Digitizer
-pointing-device-none = No pointing devices
+pointing-device-mouse = Fare
+pointing-device-touchscreen = Dokunmatik ekran
+pointing-device-pen-digitizer = Kalem sayısallaştırıcı
+pointing-device-none = İşaretleme aygıtı yok
 
 ## Content Analysis (DLP)
 
 # DLP stands for Data Loss Prevention, an industry term for external software
 # that enterprises can set up to prevent sensitive data from being transferred
 # to external websites.
-content-analysis-title = Content Analysis (DLP)
-content-analysis-active = Active
-content-analysis-connected-to-agent = Connected to Agent
-content-analysis-agent-path = Agent Path
-content-analysis-agent-failed-signature-verification = Agent Failed Signature Verification
-content-analysis-request-count = Request Count
+content-analysis-title = İçerik analizi (DLP)
+content-analysis-active = Etkin
+content-analysis-connected-to-agent = İstemciye bağlanıldı
+content-analysis-agent-path = İstemci yolu
+content-analysis-agent-failed-signature-verification = İstemci imza doğrulaması başarısız oldu
+content-analysis-request-count = İstek sayısı

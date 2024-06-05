@@ -3,35 +3,35 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 wizard-macos-button-back =
-  .label = Go Back
-  .accesskey = B
+    .label = Geri dön
+    .accesskey = G
 wizard-linux-button-back =
-  .label = Back
-  .accesskey = B
+    .label = Geri
+    .accesskey = G
 wizard-win-button-back =
-  .label = < Back
-  .accesskey = B
+    .label = < Geri
+    .accesskey = G
 
 wizard-macos-button-next =
-  .label = Continue
-  .accesskey = C
+    .label = İleri
+    .accesskey = l
 wizard-linux-button-next =
-  .label = Next
-  .accesskey = N
+    .label = İleri
+    .accesskey = l
 wizard-win-button-next =
-  .label = Next >
-  .accesskey = N
+    .label = İleri >
+    .accesskey = l
 
 wizard-macos-button-finish =
-  .label = Done
+    .label = Bitir
 wizard-linux-button-finish =
-  .label = Finish
+    .label = Bitir
 wizard-win-button-finish =
-  .label = Finish
+    .label = Bitir
 
 wizard-macos-button-cancel =
-  .label = Cancel
+    .label = Vazgeç
 wizard-linux-button-cancel =
-  .label = Cancel
+    .label = Vazgeç
 wizard-win-button-cancel =
-  .label = Cancel
+    .label = Vazgeç

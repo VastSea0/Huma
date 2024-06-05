@@ -3,4 +3,4 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 # Spoof Accept-Language prompt
-privacy-spoof-english = Changing your language setting to English will make you more difficult to identify and enhance your privacy. Do you want to request English language versions of web pages?
+privacy-spoof-english = Dil ayarınızı İngilizce olarak değştirmek, kimliğinizin belirlenmesini zorlaştırarak gizliliğinizi artırabilir. Web sayfalarının İngilizce sürümlerini görmek ister misiniz?

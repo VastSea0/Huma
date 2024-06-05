@@ -5,13 +5,22 @@
 toolbar-button-firefox-view =
     .label = { -firefoxview-brand-name }
     .tooltiptext = { -firefoxview-brand-name }
+toolbar-button-firefox-view-2 =
+    .label = { -firefoxview-brand-name }
+    .tooltiptext = Tüm pencere ve cihazlarda son gezdiklerinizi görüntüleyin
 menu-tools-firefox-view =
     .label = { -firefoxview-brand-name }
     .accesskey = F
 firefoxview-page-title = { -firefoxview-brand-name }
+firefoxview-page-heading =
+    .heading = { -firefoxview-brand-name }
+firefoxview-page-label =
+    .label = { -firefoxview-brand-name }
 firefoxview-close-button =
     .title = Kapat
     .aria-label = Kapat
+firefoxview-empty-state-icon =
+    .alt = Dikkat:
 # Used instead of the localized relative time when a timestamp is within a minute or so of now
 firefoxview-just-now-timestamp = Az önce
 # This is a headline for an area in the product where users can resume and re-open tabs they have previously viewed on other devices.
@@ -23,12 +32,15 @@ firefoxview-tabpickup-progress-label = %{ $percentValue } tamamlandı
 firefoxview-tabpickup-step-signin-header = Cihazlar arasında kolayca geçiş yapın
 firefoxview-tabpickup-step-signin-description = Telefondaki sekmelerinizi burada görmek için önce giriş yapın veya hesap açın.
 firefoxview-tabpickup-step-signin-primarybutton = Devam et
+firefoxview-syncedtabs-signin-header = Sekmelerinize her yerden ulaşın
+firefoxview-syncedtabs-signin-description = Sekmelerinizi { -brand-product-name } kullandığınız her yerde görmek için hesabınıza giriş yapın. Hesabınız yoksa açmanız için sizi yönlendireceğiz.
 firefoxview-syncedtabs-signin-primarybutton = Giriş yap veya kaydol
 firefoxview-tabpickup-adddevice-header = { -brand-product-name } tarayıcınızı telefonunuz veya tabletinizle eşitleyin
 firefoxview-tabpickup-adddevice-description = Mobil cihazlar için { -brand-product-name }’u indirin ve hesabınıza giriş yapın.
 firefoxview-tabpickup-adddevice-learn-how = Nasıl yapılacağını öğrenin
 firefoxview-tabpickup-adddevice-primarybutton = Mobil cihazlar için { -brand-product-name }’u indir
 firefoxview-syncedtabs-adddevice-header = Diğer cihazlarınızdan { -brand-product-name }’a giriş yapın
+firefoxview-syncedtabs-adddevice-description = { -brand-product-name } kullandığınız her yerdeki sekmelerinizi görmek için tüm cihazlarınızda giriş yapın. <a data-l10n-name="url">Diğer cihazlarınızı bağlamayı</a> öğrenin.
 firefoxview-syncedtabs-adddevice-primarybutton = Mobil cihazlar için { -brand-product-name }’u deneyin
 firefoxview-tabpickup-synctabs-header = Sekme eşitlemeyi açın
 firefoxview-tabpickup-synctabs-description = { -brand-short-name } tarayıcınızın sekmeleri cihazlar arasında paylaşmasına izin verin.
@@ -37,8 +49,11 @@ firefoxview-tabpickup-synctabs-primarybutton = Açık sekmeleri eşitle
 firefoxview-syncedtabs-synctabs-header = Eşitleme ayarlarınızı güncelleyin
 firefoxview-syncedtabs-synctabs-description = Diğer cihazlardaki sekmelerinizi görmek için açık sekmelerinizi eşitlemelisiniz.
 firefoxview-syncedtabs-synctabs-checkbox = Açık sekmelerin eşitlenmesine izin ver
+firefoxview-syncedtabs-loading-header = Eşitleme devam ediyor
+firefoxview-syncedtabs-loading-description = İşlem tamamlandığında diğer cihazlarda açtığınız sekmeleri burada göreceksiniz. Daha sonra tekrar kontrol edin.
 firefoxview-tabpickup-fxa-admin-disabled-header = Kuruluşunuz eşitlemeyi devre dışı bırakmış
 firefoxview-tabpickup-fxa-admin-disabled-description = Yöneticiniz eşitlemeyi devre dışı bıraktığı için { -brand-short-name } sekmeleri cihazlar arasında eşitleyemiyor.
+firefoxview-tabpickup-fxa-disabled-by-policy-description = Kuruluşunuz eşitlemeyi devre dışı bıraktığı için { -brand-short-name }, sekmelerinizi cihazlar arasında eşitleyemiyor.
 firefoxview-tabpickup-network-offline-header = İnternet bağlantınızı kontrol edin
 firefoxview-tabpickup-network-offline-description = Güvenlik duvarı veya vekil sunucu kullanıyorsanız { -brand-short-name } tarayıcısının web’e erişim iznine sahip olup olmadığını kontrol edin.
 firefoxview-tabpickup-network-offline-primarybutton = Yeniden dene
@@ -55,6 +70,7 @@ firefoxview-tabpickup-password-locked-primarybutton = Ana parolayı girin
 firefoxview-syncedtab-password-locked-link = <a data-l10n-name="syncedtab-password-locked-link">Daha fazla bilgi alın</a>
 firefoxview-tabpickup-signed-out-header = Yeniden bağlanmak için giriş yapın
 firefoxview-tabpickup-signed-out-description = Yeniden bağlanıp sekmelerinize ulaşmak için { -fxaccount-brand-name }nıza giriş yapın.
+firefoxview-tabpickup-signed-out-description2 = Yeniden bağlanıp sekmelerinize ulaşmak için hesabınıza giriş yapın.
 firefoxview-tabpickup-signed-out-primarybutton = Giriş yap
 firefoxview-tabpickup-syncing = Sekmeleriniz eşitleniyor. Birkaç saniye bekleyin.
 firefoxview-mobile-promo-header = Telefon veya tabletinizdeki sekmelerinize erişin
@@ -70,7 +86,7 @@ firefoxview-closed-tabs-placeholder-body2 = Bir sekmeyi kapattıktan sonra burad
 # Variables:
 #   $tabTitle (string) - Title of tab being dismissed
 firefoxview-closed-tabs-dismiss-tab =
-    .title = { $tabTitle } sekmesini kapat
+    .title = { $tabTitle } sekmesini kaldır
 # refers to the last tab that was used
 firefoxview-pickup-tabs-badge = Son bakılan
 # Variables:
@@ -136,8 +152,47 @@ firefoxview-opentabs-focus-tab =
     .title = Bu sekmeye geç
 firefoxview-show-more = Daha fazla göster
 firefoxview-show-less = Daha az göster
+firefoxview-show-all = Tümünü göster
+firefoxview-search-text-box-clear-button =
+    .title = Temizle
+# Placeholder for the input field to search in recent browsing ("search" is a verb).
+firefoxview-search-text-box-recentbrowsing =
+    .placeholder = Ara
+# Placeholder for the input field to search in history ("search" is a verb).
+firefoxview-search-text-box-history =
+    .placeholder = Arama geçmişi
+# Placeholder for the input field to search in recently closed tabs ("search" is a verb).
+firefoxview-search-text-box-recentlyclosed =
+    .placeholder = Son kapatılan sekmelerde ara
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-syncedtabs =
+    .placeholder = Eşitlenmiş sekmelerde ara
+# Placeholder for the input field to search in open tabs ("search" is a verb).
+firefoxview-search-text-box-opentabs =
+    .placeholder = Açık sekmelerde ara
+# "Search" is a noun (as in "Results of the search for")
+# Variables:
+#   $query (String) - The search query used for searching through browser history.
+firefoxview-search-results-header = “{ $query }” arama sonuçları
+# Variables:
+#   $count (Number) - The number of visits matching the search query.
+firefoxview-search-results-count =
+    { $count ->
+        [one] { $count } site
+       *[other] { $count } site
+    }
+# Message displayed when a search is performed and no matching results were found.
+# Variables:
+#   $query (String) - The search query.
+firefoxview-search-results-empty = “{ $query }” için sonuç yok
 firefoxview-sort-history-by-date-label = Tarihe göre sırala
 firefoxview-sort-history-by-site-label = Siteye göre sırala
+firefoxview-sort-open-tabs-by-recency-label = Son etkinliğe göre sırala
+firefoxview-sort-open-tabs-by-order-label = Sekme sırasına göre sırala
+# Variables:
+#   $url (string) - URL that will be opened in the new tab
+firefoxview-opentabs-tab-row =
+    .title = { $url } adresine geç
 
 ## Variables:
 ##   $date (string) - Date to be formatted based on locale
@@ -158,7 +213,9 @@ firefoxview-view-more-browsing-history = Daha fazla gezinti geçmişini görünt
 
 ## Message displayed in Firefox View when the user has no history data
 
+firefoxview-history-empty-header = Kaldığınız yere geri dönün
 firefoxview-history-empty-description = Siz gezindikçe, ziyaret ettiğiniz sayfalar burada listelenecektir.
+firefoxview-history-empty-description-two = Yaptığımız işin merkezinde gizliliğinizi korumak var. Bu yüzden, { -brand-short-name } tarayıcınızın hatırlayacağı etkinlikleri <a data-l10n-name="history-settings-url">geçmiş ayarlarınızdan</a> kendiniz seçebilirsiniz.
 
 ##
 
@@ -169,6 +226,8 @@ firefoxview-choose-browser-button = Tarayıcı seç
 ## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Gösterilecek bir şey yok
+firefoxview-dont-remember-history-empty-description = Yaptığımız işin merkezinde gizliliğinizi korumak var. Bu yüzden, { -brand-short-name } tarayıcınızın hatırlayacağı etkinlikleri kendiniz seçebilirsiniz.
+firefoxview-dont-remember-history-empty-description-two = Mevcut ayarlarınıza göre { -brand-short-name } siz internette gezinirken etkinliklerinizi hatırlamıyor. Bunu değiştirmek için <a data-l10n-name="history-settings-url-two">geçmiş ayarlarınızı geçmişinizi hatırlayacak şekilde değiştirebilirsiniz</a>.
 
 ##
 
@@ -179,9 +238,38 @@ firefoxview-import-history-close-button =
 
 ## Text displayed in a dismissable banner to import bookmarks/history from another browser
 
+firefoxview-import-history-header = Geçmişi başka bir tarayıcıdan içe aktarın
+firefoxview-import-history-description = { -brand-short-name }’u varsayılan tarayıcınız yapın. Gezinti geçmişinizi, yer imlerinizi ve daha fazlasını içe aktarın.
 
 ## Message displayed in Firefox View when the user has no recently closed tabs data
 
+firefoxview-recentlyclosed-empty-header = Kapattığınız sekmeye geri dönmek mi istiyorsunuz?
+firefoxview-recentlyclosed-empty-description = Burada yakın zamanda kapattığınız sekmeleri bulacaksınız. Böylece istediğiniz sekmeyi hızlı bir şekilde yeniden açabilirsiniz.
+firefoxview-recentlyclosed-empty-description-two = Daha önceden kapattığınız sekmeleri <a data-l10n-name="history-url">gezinti geçmişinizde</a> bulabilirsiniz.
 
-##
+## This message is displayed below the name of another connected device when it doesn't have any open tabs.
 
+firefoxview-syncedtabs-device-notabs = Bu cihazda açık sekme yok
+firefoxview-syncedtabs-connect-another-device = Başka bir cihaz bağlayın
+firefoxview-pinned-tabs =
+    .title = Sabitlenmiş sekmeler
+firefoxview-tabs =
+    .title = Sekmeler
+
+## These tooltips will be displayed when hovering over a pinned tab on the Open Tabs page
+## Variables:
+##  $tabTitle (string) - Title of pinned tab that will be opened when selected
+
+firefoxview-opentabs-pinned-tab =
+    .title = { $tabTitle } sekmesine geç
+# This tooltip will be shown for a pinned tab whose URL is currently bookmarked.
+firefoxview-opentabs-bookmarked-pinned-tab =
+    .title = { $tabTitle } sekmesine geç (yer imlerinizde)
+
+## These tooltips will be displayed when hovering over an unpinned Open Tab
+## Variables:
+##   $url (string) - URL of tab that will be opened when selected
+
+# This tooltip will be shown for an unpinned tab whose URL is currently bookmarked.
+firefoxview-opentabs-bookmarked-tab =
+    .title = (Yer imlerinizde) { $url }

@@ -3,36 +3,28 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 profile-selection-window =
-  .title = { -brand-short-name } - Choose User Profile
-
+    .title = { -brand-short-name } - Kullanıcı profilini seçin
 profile-selection-button-accept =
-  .label = Start { -brand-short-name }
-
+    .label = { -brand-short-name } tarayıcısını başlat
 profile-selection-button-cancel =
-  .label = Exit
-
+    .label = Çık
 profile-selection-new-button =
-  .label = Create Profile…
-  .accesskey = C
-
+    .label = Profil oluştur…
+    .accesskey = o
 profile-selection-rename-button =
-  .label = Rename Profile…
-  .accesskey = R
-
+    .label = Profil adını değiştir…
+    .accesskey = d
 profile-selection-delete-button =
-  .label = Delete Profile…
-  .accesskey = D
-
-profile-selection-conflict-message = Another copy of { -brand-product-name } has made changes to profiles. You must restart { -brand-short-name } before making more changes.
+    .label = Profili sil…
+    .accesskey = s
+profile-selection-conflict-message = Başka bir { -brand-product-name } kopyası profillerde değişiklik yaptı. Daha fazla değişiklik yapmadan önce { -brand-short-name } tarayıcınızı yeniden başlatmalısınız.
 
 ## Messages used in the profile manager
 
-profile-manager-description = { -brand-short-name } stores information about your settings, preferences, and other user items in your user profile.
-
+profile-manager-description = { -brand-short-name }; ayarlarınız, tercihleriniz ve diğer kullanıcı öğelerinizle ilgili bilgileri kullanıcı profilinizde depolar.
 profile-manager-work-offline =
-  .label = Work offline
-  .accesskey = o
-
+    .label = Çevrimdışı çalış
+    .accesskey = e
 profile-manager-use-selected =
-  .label = Use the selected profile without asking at startup
-  .accesskey = s
+    .label = Başlangıçta sormadan seçili profili kullan
+    .accesskey = k

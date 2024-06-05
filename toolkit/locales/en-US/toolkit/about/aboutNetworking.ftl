@@ -2,67 +2,67 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-about-networking-title = About Networking
+about-networking-title = Ağ Hakkında
 about-networking-http = HTTP
-about-networking-http-clear-cache-button = Clear HTTP Cache
 about-networking-sockets = Sockets
 about-networking-dns = DNS
-about-networking-dns-clear-cache-button = Clear DNS Cache
-about-networking-dns-trr-url = DoH URL
-about-networking-dns-trr-mode = DoH Mode
-about-networking-dns-suffix = DNS suffix
+about-networking-dns-clear-cache-button = DNS önbelleğini temizle
+about-networking-dns-trr-url = DoH URL’si
+about-networking-dns-trr-mode = DoH modu
+about-networking-dns-suffix = DNS soneki
 about-networking-websockets = WebSockets
-about-networking-refresh = Refresh
-about-networking-auto-refresh = Autorefresh every 3 seconds
-about-networking-hostname = Hostname
+about-networking-refresh = Yenile
+about-networking-auto-refresh = 3 saniyede bir otomatik yenile
+about-networking-hostname = Makine adı
 about-networking-port = Port
-about-networking-http-version = HTTP Version
+about-networking-http-version = HTTP sürümü
 about-networking-ssl = SSL
-about-networking-active = Active
-about-networking-idle = Idle
-about-networking-host = Host
-about-networking-type = Type
-about-networking-sent = Sent
-about-networking-received = Received
-about-networking-family = Family
+about-networking-active = Etkin
+about-networking-idle = Beklemede
+about-networking-host = Ana makine
+about-networking-type = Tür
+about-networking-sent = Gönderilen
+about-networking-received = Alınan
+about-networking-family = Aile
 about-networking-trr = TRR
-about-networking-addresses = Addresses
-about-networking-expires = Expires (Seconds)
-about-networking-originAttributesSuffix = Isolation Key
-about-networking-flags = Extra flags
-about-networking-messages-sent = Messages Sent
-about-networking-messages-received = Messages Received
-about-networking-bytes-sent = Bytes Sent
-about-networking-bytes-received = Bytes Received
-about-networking-logging = Logging
-about-networking-dns-lookup = DNS Lookup
-about-networking-dns-lookup-button = Resolve
-about-networking-dns-domain = Domain:
-about-networking-dns-lookup-table-column = IPs
-about-networking-dns-https-rr-lookup-table-column = HTTP RRs
-about-networking-rcwn = RCWN Stats
-about-networking-rcwn-status = RCWN Status
-about-networking-rcwn-cache-won-count = Cache won count
-about-networking-rcwn-net-won-count = Net won count
-about-networking-total-network-requests = Total network request count
-about-networking-rcwn-operation = Cache Operation
-about-networking-rcwn-perf-open = Open
-about-networking-rcwn-perf-read = Read
-about-networking-rcwn-perf-write = Write
-about-networking-rcwn-perf-entry-open = Entry Open
-about-networking-rcwn-avg-short = Short Average
-about-networking-rcwn-avg-long = Long Average
-about-networking-rcwn-std-dev-long = Long Standard Deviation
-about-networking-rcwn-cache-slow = Cache slow count
-about-networking-rcwn-cache-not-slow = Cache not slow count
-about-networking-networkid = Network ID
-about-networking-networkid-id = Network ID
+about-networking-addresses = Adresler
+about-networking-expires = Zaman aşımı (saniye)
+about-networking-originAttributesSuffix = İzolasyon anahtarı
+about-networking-flags = Ek flag’ler
+about-networking-messages-sent = Gönderilen mesajlar
+about-networking-messages-received = Alınan mesajlar
+about-networking-bytes-sent = Gönderilen bayt
+about-networking-bytes-received = Alınan bayt
+about-networking-logging = Log Kaydı
+about-networking-dns-lookup = DNS Çözümleme
+about-networking-dns-lookup-button = Çözümle
+about-networking-dns-domain = Alan adı:
+about-networking-dns-lookup-table-column = IP’ler
+about-networking-dns-https-rr-lookup-table-column = HTTP RR’leri
+about-networking-rcwn = RCWN İstatistikleri
+about-networking-rcwn-status = RCWN durumu
+about-networking-rcwn-cache-won-count = Önbellek kazanım sayısı
+about-networking-rcwn-net-won-count = Net kazanım sayısı
+about-networking-total-network-requests = Toplam ağ isteği sayısı
+about-networking-rcwn-operation = Önbellek operasyonu
+about-networking-rcwn-perf-open = Açma
+about-networking-rcwn-perf-read = Okuma
+about-networking-rcwn-perf-write = Yazma
+about-networking-rcwn-perf-entry-open = Kayıt açma
+about-networking-rcwn-avg-short = Kısa ortalama
+about-networking-rcwn-avg-long = Uzun ortalama
+about-networking-rcwn-std-dev-long = Uzun standart sapma
+about-networking-rcwn-cache-slow = Yavaş önbellek sayısı
+about-networking-rcwn-cache-not-slow = Yavaş olmayan önbellek sayısı
+about-networking-networkid = Ağ Kimliği
+about-networking-networkid-id = Ağ Kimliği
 # Note: do not translate about:logging, as it is a URL.
-about-networking-moved-about-logging = This page has been moved to <a data-l10n-name="about-logging-url">about:logging</a>.
+about-networking-moved-about-logging = Bu sayfa <a data-l10n-name="about-logging-url">about:logging</a>’e taşındı.
 
 ## Link is intended as "network link"
 
-about-networking-networkid-is-up = Link is up
-about-networking-networkid-status-known = Link status is known
+about-networking-networkid-is-up = Bağlantı çalışıyor
+about-networking-networkid-status-known = Bağlantı durumu bilinmiyor
 
 ##
+

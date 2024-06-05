@@ -6,4 +6,4 @@
 # Variables:
 #   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
 moz-five-star-rating =
-  .title = Rated { NUMBER($rating, maximumFractionDigits: 1) } out of 5
+    .title = 5 üzerinden { NUMBER($rating, maximumFractionDigits: 1) } puan

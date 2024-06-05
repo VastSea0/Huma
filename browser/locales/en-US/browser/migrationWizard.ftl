@@ -36,12 +36,31 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge (Eski Sürüm)
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = CSV dosyasındaki parolalar
-migration-wizard-migrator-display-name-file-bookmarks = HTML dosyasından yer imleri
+migration-wizard-migrator-display-name-file-bookmarks = HTML dosyasındaki yer imleri
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = Okuma Listesi (Safari’den)
+migration-imported-edge-reading-list = Okuma Listesi (Edge’den)
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = { -brand-short-name } bu cihazda yüklü olan diğer tarayıcıların profillerine erişemiyor.
+migration-no-permissions-instructions = Başka bir tarayıcıdan veri aktarmaya devam etmek için { -brand-short-name } uygulamasının profil dizinine erişmesine izin verin.
+migration-no-permissions-instructions-step1 = “Devam Et”i seçin
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = Dosya seçicide <code>{ $permissionsPath }</code> dizinine gidip “Seç”e tıklayın
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,6 +76,7 @@ migration-bookmarks-option-label = Yer imleri
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = Sık kullanılanlar
 migration-logins-and-passwords-option-label = Kayıtlı hesaplar ve parolalar
+migration-passwords-option-label = Kayıtlı parolalar
 migration-history-option-label = Gezinti geçmişi
 migration-extensions-option-label = Uzantılar
 migration-form-autofill-option-label = Otomatik form doldurma verileri

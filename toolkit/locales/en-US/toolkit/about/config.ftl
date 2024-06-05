@@ -2,44 +2,45 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 ## These strings appear on the warning you see when first visiting about:config.
 
-about-config-intro-warning-title = Proceed with Caution
-about-config-intro-warning-text = Changing advanced configuration preferences can impact { -brand-short-name } performance or security.
-about-config-intro-warning-checkbox = Warn me when I attempt to access these preferences
-about-config-intro-warning-button = Accept the Risk and Continue
+about-config-intro-warning-title = Dikkatli olun
+about-config-intro-warning-text = Gelişmiş yapılandırma tercihlerini değiştirmek { -brand-short-name } performansını veya güvenliğini etkileyebilir.
+about-config-intro-warning-checkbox = Bu tercihlere erişmeye çalıştığımda beni uyar
+about-config-intro-warning-button = Riski kabul ederek devam et
 
 ##
 
 # This is shown on the page before searching but after the warning is accepted.
-about-config-caution-text = Changing these preferences can impact { -brand-short-name } performance or security.
+about-config-caution-text = Bu tercihleri değiştirmek { -brand-short-name } performansını veya güvenliğini etkileyebilir.
 
-about-config-page-title = Advanced Preferences
+about-config-page-title = Gelişmiş Tercihler
 
 about-config-search-input1 =
-    .placeholder = Search preference name
-about-config-show-all = Show All
+    .placeholder = Tercih adlarında ara
+about-config-show-all = Tümünü göster
 
-about-config-show-only-modified = Show only modified preferences
+about-config-show-only-modified = Yalnızca değiştirilmiş tercihleri göster
 
 about-config-pref-add-button =
-    .title = Add
+    .title = Ekle
 about-config-pref-toggle-button =
-    .title = Toggle
+    .title = Değiştir
 about-config-pref-edit-button =
-    .title = Edit
+    .title = Düzenle
 about-config-pref-save-button =
-    .title = Save
+    .title = Kaydet
 about-config-pref-reset-button =
-    .title = Reset
+    .title = Sıfırla
 about-config-pref-delete-button =
-    .title = Delete
+    .title = Sil
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 
 about-config-pref-add-type-boolean = Boolean
-about-config-pref-add-type-number = Number
-about-config-pref-add-type-string = String
+about-config-pref-add-type-number = Sayı
+about-config-pref-add-type-string = Dizgi
 
 ## Preferences with a non-default value are differentiated visually, and at the
 ## same time the state is made accessible to screen readers using an aria-label
@@ -49,6 +50,6 @@ about-config-pref-add-type-string = String
 ##   $value (String): The full value of the preference.
 
 about-config-pref-accessible-value-default =
-    .aria-label = { $value } (default)
+    .aria-label = { $value } (varsayılan)
 about-config-pref-accessible-value-custom =
-    .aria-label = { $value } (custom)
+    .aria-label = { $value } (özel)

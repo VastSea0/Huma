@@ -3,86 +3,64 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 text-action-undo =
-    .label = Undo
-    .accesskey = U
-
+    .label = Geri al
+    .accesskey = G
 text-action-undo-shortcut =
     .key = Z
-
 text-action-redo =
-    .label = Redo
-    .accesskey = R
-
+    .label = Yinele
+    .accesskey = n
 text-action-redo-shortcut =
     .key = Y
-
 text-action-cut =
-    .label = Cut
-    .accesskey = t
-
+    .label = Kes
+    .accesskey = e
 text-action-cut-shortcut =
     .key = X
-
 text-action-copy =
-    .label = Copy
-    .accesskey = C
-
+    .label = Kopyala
+    .accesskey = K
 text-action-copy-shortcut =
     .key = C
-
 # This command copies the link, removing additional
 # query parameters used to track users across sites.
 text-action-strip-on-share =
-    .label = Copy Without Site Tracking
-    .accesskey = n
-
+    .label = Takip kodunu silerek kopyala
+    .accesskey = s
 text-action-paste =
-    .label = Paste
-    .accesskey = P
-
+    .label = Yapıştır
+    .accesskey = a
 text-action-paste-no-formatting =
-    .label = Paste Without Formatting
+    .label = Biçimlendirme olmadan yapıştır
     .accesskey = m
-
 text-action-paste-shortcut =
     .key = V
-
 text-action-delete =
-    .label = Delete
-    .accesskey = D
-
+    .label = Sil
+    .accesskey = S
 text-action-select-all =
-    .label = Select All
-    .accesskey = A
-
+    .label = Tümünü seç
+    .accesskey = ü
 text-action-select-all-shortcut =
     .key = A
-
 text-action-spell-no-suggestions =
-    .label = No Spelling Suggestions
-
+    .label = Yazım önerisi yok
 text-action-spell-add-to-dictionary =
-    .label = Add to Dictionary
-    .accesskey = o
-
+    .label = Sözlüğe ekle
+    .accesskey = z
 text-action-spell-undo-add-to-dictionary =
-    .label = Undo Add To Dictionary
-    .accesskey = n
-
+    .label = Sözlüğe eklemeyi geri al
+    .accesskey = z
 text-action-spell-check-toggle =
-    .label = Check Spelling
-    .accesskey = g
-
+    .label = Yazımı denetle
+    .accesskey = m
 text-action-spell-add-dictionaries =
-    .label = Add Dictionaries…
-    .accesskey = A
-
+    .label = Sözlükleri ekle…
+    .accesskey = S
 text-action-spell-dictionaries =
-    .label = Languages
-    .accesskey = L
-
+    .label = Diller
+    .accesskey = D
 text-action-search-text-box-clear =
-    .title = Clear
-
+    .title = Temizle
 text-action-highlight-selection =
-    .label = Highlight Selection
+    .label = Seçimi vurgula

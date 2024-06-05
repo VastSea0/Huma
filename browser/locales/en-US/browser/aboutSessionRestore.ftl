@@ -6,7 +6,7 @@ restore-page-tab-title = Oturumu Geri Getir
 
 # The title is intended to be apologetic and disarming, expressing dismay
 # and regret that we are unable to restore the session for the user
-restore-page-error-title = Özür dileriz. Sayfalarınızı geri getirmeyi başaramadık.
+restore-page-error-title = Özür dileriz. Hüma oturuma ait sayfaları geri getiremedi. Yine de üzülmeyin yeni bir oturum başlatabilirsiniz 👽.
 restore-page-problem-desc = Son gezinti oturumunuzu geri getirmeyi başaramadık. Yeniden denemek için “Oturumu geri getir” seçeneğini seçebilirsiniz.
 restore-page-try-this = Yine mi olmadı? Bazen sorun tek bir sekmeden kaynaklanıyor olabilir. Önceki sekmelerinize bir bakın, geri yüklenmesi gerekmeyen sekmelerin işaretini kaldırıp yeniden deneyin.
 

@@ -2,57 +2,59 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 ### This file contains the entities needed to use the Find Bar.
 
 findbar-next =
-    .tooltiptext = Find the next occurrence of the phrase
+    .tooltiptext = Bir sonraki eşleşen kelimeyi bulur
 findbar-previous =
-    .tooltiptext = Find the previous occurrence of the phrase
+    .tooltiptext = Bir önceki eşleşen kelimeyi bulur
 
 findbar-find-button-close =
-    .tooltiptext = Close find bar
+    .tooltiptext = Arama çubuğunu kapat
 
 findbar-highlight-all2 =
-    .label = Highlight All
-    .accesskey = { PLATFORM() ->
-        [macos] l
-       *[other] a
-    }
-    .tooltiptext = Highlight all occurrences of the phrase
+    .label = Tümünü vurgula
+    .accesskey =
+        { PLATFORM() ->
+            [macos] T
+           *[other] T
+        }
+    .tooltiptext = Terimin geçtiği her yeri işaretle
 
 findbar-case-sensitive =
-    .label = Match Case
-    .accesskey = C
-    .tooltiptext = Search with case sensitivity
+    .label = Büyük-küçük harfe duyarlı
+    .accesskey = h
+    .tooltiptext = Büyük-küçük harfe duyarlı ara
 
 findbar-match-diacritics =
-    .label = Match Diacritics
-    .accesskey = i
-    .tooltiptext = Distinguish between accented letters and their base letters (for example, when searching for “resume”, “résumé” will not be matched)
+    .label = Fonetik işaretleri bul
+    .accesskey = F
+    .tooltiptext = Fonetik işaretli harflerle baz harflerini ayrı tut (Örneğin “kar” araması yaptığınızda “kâr” bulunmayacaktır.)
 
 findbar-entire-word =
-    .label = Whole Words
-    .accesskey = W
-    .tooltiptext = Search whole words only
+    .label = Tam sözcükler
+    .accesskey = s
+    .tooltiptext = Yalnızca tam sözcükleri ara
 
-findbar-not-found = Phrase not found
+findbar-not-found = Eşleşme bulunamadı
 
-findbar-wrapped-to-top = Reached end of page, continued from top
-findbar-wrapped-to-bottom = Reached top of page, continued from bottom
+findbar-wrapped-to-top = Sayfanın sonuna gelindi, baştan devam edildi
+findbar-wrapped-to-bottom = Sayfa başına gelindi, sondan devam edildi
 
 findbar-normal-find =
-    .placeholder = Find in page
+    .placeholder = Sayfada bul
 findbar-fast-find =
-    .placeholder = Quick find
+    .placeholder = Çabuk bul
 findbar-fast-find-links =
-    .placeholder = Quick find (links only)
+    .placeholder = Çabuk bul (sadece bağlantılar)
 
 findbar-case-sensitive-status =
-    .value = (Case sensitive)
+    .value = (Büyük-küçük harfe duyarlı)
 findbar-match-diacritics-status =
-    .value = (Matching diacritics)
+    .value = (Fonetik işaretler eşleştiriliyor)
 findbar-entire-word-status =
-    .value = (Whole words only)
+    .value = (Yalnızca tam sözcükler)
 
 # Variables:
 #   $current (Number): Index of the currently selected match
@@ -60,8 +62,8 @@ findbar-entire-word-status =
 findbar-found-matches =
     .value =
         { $total ->
-            [one] { $current } of { $total } match
-           *[other] { $current } of { $total } matches
+            [one] { $total } eşleşmeden { $current }. eşleşme
+           *[other] { $total } eşleşmeden { $current }. eşleşme
         }
 
 # Variables:
@@ -69,6 +71,6 @@ findbar-found-matches =
 findbar-found-matches-count-limit =
     .value =
         { $limit ->
-            [one] More than { $limit } match
-           *[other] More than { $limit } matches
+            [one] { $limit } eşleşmeden fazla
+           *[other] { $limit } eşleşmeden fazla
         }

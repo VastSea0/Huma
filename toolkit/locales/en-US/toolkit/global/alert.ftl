@@ -3,10 +3,10 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 alert-close =
-    .tooltiptext = Close this notification
+    .tooltiptext = Bu bildirimi kapat
 alert-settings-title =
-    .tooltiptext = Settings
+    .tooltiptext = Ayarlar
 
 ## Reminder Notifications
 
-notification-default-dismiss = Dismiss
+notification-default-dismiss = Kapat

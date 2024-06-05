@@ -234,6 +234,10 @@ radio {
 #category-more-from-mozilla > .category-icon {
   list-style-image: url("chrome://browser/skin/preferences/mozilla-logo.svg");
 }
+#category-more-from-huma > .category-icon {
+  list-style-image: url("chrome://browser/skin/preferences/huma-logo.svg");
+}
+
 
 /* All panes */
 

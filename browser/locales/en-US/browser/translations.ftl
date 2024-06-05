@@ -10,6 +10,10 @@ urlbar-translations-button =
 # panel.
 urlbar-translations-button2 =
     .tooltiptext = Bu sayfayı çevir - Beta
+# Note that here "Beta" should not be translated, as it is a reflection of the
+# un-localized BETA icon that is in the panel.
+urlbar-translations-button-intro =
+    .tooltiptext = { -brand-shorter-name }’ta gizli çevirileri deneyin - Beta
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Page translated from: { $fromLanguage }. Current target language: { $toLanguage }`
@@ -43,6 +47,8 @@ translations-panel-settings-always-translate-language =
     .label = { $language } dilini her zaman çevir
 translations-panel-settings-always-translate-unknown-language =
     .label = Bu dili her zaman çevir
+translations-panel-settings-always-offer-translation =
+    .label = Her zaman çevirmeyi teklif et
 # Text displayed for the option to never translate a given language
 # Variables:
 #   $language (string) - The localized display name of the detected language
@@ -65,6 +71,8 @@ translations-panel-translate-button-loading =
 translations-panel-translate-cancel =
     .label = Vazgeç
 translations-panel-learn-more-link = Daha fazla bilgi al
+translations-panel-intro-header = { -brand-shorter-name }’ta gizli çevirileri deneyin
+translations-panel-intro-description = Gizliliğinizi korumak için çeviriler asla cihazınızdan dışarı çıkmaz. Yeni diller ve gelişmeler de yolda!
 translations-panel-error-translating = Çeviri sırasında bir sorun oluştu. Lütfen yeniden deneyin.
 translations-panel-error-load-languages = Diller yüklenemedi
 translations-panel-error-load-languages-hint = İnternet bağlantınızı kontrol edip yeniden deneyin.
@@ -118,19 +126,19 @@ translations-manage-description = Çevrimdışı çeviri için dilleri indir.
 translations-manage-all-language = Tüm diller
 translations-manage-download-button = İndir
 translations-manage-delete-button = Sil
-translations-manage-language-download-button =
-    .label = İndir
-    .accesskey = i
-translations-manage-language-delete-button =
-    .label = Sil
-    .accesskey = S
-translations-manage-error-download = Dil dosyaları indirilirken bir sorun oluştu. Lütfen yeniden deneyin.
-translations-manage-error-delete = Dil dosyaları silinirken bir hata oluştu. Lütfen yeniden deneyin.
+translations-manage-intro = Dil ve site çevirisi tercihlerinizi ayarlayın, çevrimdışı çeviri için yüklenen dilleri yönetin.
 translations-manage-install-description = Çevrimdışı çeviri için dilleri yükle
 translations-manage-language-install-button =
     .label = Yükle
 translations-manage-language-install-all-button =
     .label = Tümünü yükle
+    .accesskey = T
+translations-manage-intro-2 = Dil ve site çevirisi tercihlerinizi ayarlayın, çevrimdışı çeviri için indirilen dilleri yönetin.
+translations-manage-download-description = Çevrimdışı çeviri için dilleri indir
+translations-manage-language-download-button =
+    .label = İndir
+translations-manage-language-download-all-button =
+    .label = Tümünü indir
     .accesskey = T
 translations-manage-language-remove-button =
     .label = Kaldır
@@ -138,6 +146,8 @@ translations-manage-language-remove-all-button =
     .label = Tümünü kaldır
     .accesskey = k
 translations-manage-error-install = Dil dosyaları yüklenirken bir sorun oluştu. Lütfen yeniden deneyin.
+translations-manage-error-download = Dil dosyaları indirilirken bir sorun oluştu. Lütfen yeniden deneyin.
+translations-manage-error-delete = Dil dosyaları silinirken bir hata oluştu. Lütfen yeniden deneyin.
 translations-manage-error-remove = Dil dosyaları kaldırılırken bir hata oluştu. Lütfen yeniden deneyin.
 translations-manage-error-list = Çeviri için mevcut dillerin listesi alınamadı. Yeniden denemek için sayfayı tazeleyin.
 translations-settings-title =
@@ -167,3 +177,75 @@ translations-settings-remove-all-sites-button =
 translations-settings-close-dialog =
     .buttonlabelaccept = Kapat
     .buttonaccesskeyaccept = K
+# Text displayed in the right-click context menu for translating
+# selected text to a yet-to-be-determined language.
+main-context-menu-translate-selection =
+    .label = Seçimi çevir…
+    .accesskey = v
+# Text displayed in the right-click context menu for translating
+# selected text to a target language.
+#
+# Variables:
+#   $language (string) - The localized display name of the target language
+main-context-menu-translate-selection-to-language =
+    .label = Seçimi { $language } diline çevir
+    .accesskey = v
+# Text displayed in the right-click context menu for translating
+# the text of a hyperlink to a yet-to-be-determined language.
+main-context-menu-translate-link-text =
+    .label = Bağlantı metnini çevir…
+    .accesskey = v
+# Text displayed in the right-click context menu for translating
+# the text of a hyperlink to a target language.
+#
+# Variables:
+#   $language (string) - The localized display name of the target language
+main-context-menu-translate-link-text-to-language =
+    .label = Bağlantı metnini { $language } diline çevir
+    .accesskey = v
+# Text displayed in the select translations panel header.
+select-translations-panel-header = Çeviri
+# Text displayed above the from-language dropdown menu.
+select-translations-panel-from-label = Bu dilden
+# Text displayed above the to-language dropdown menu.
+select-translations-panel-to-label = Bu dile
+# Text displayed above the try-another-source-language dropdown menu.
+select-translations-panel-try-another-language-label = Başka bir kaynak dil dene
+select-translations-panel-cancel-button =
+    .label = Vazgeç
+# Text displayed on the copy button before it is clicked.
+select-translations-panel-copy-button =
+    .label = Kopyala
+# Text displayed on the copy button after it is clicked.
+select-translations-panel-copy-button-copied =
+    .label = Kopyalandı
+select-translations-panel-done-button =
+    .label = Tamam
+select-translations-panel-translate-full-page-button =
+    .label = Tüm sayfayı çevir
+select-translations-panel-translate-button =
+    .label = Çevir
+select-translations-panel-try-again-button =
+    .label = Yeniden dene
+# Text displayed as a placeholder when the panel is idle.
+select-translations-panel-idle-placeholder-text = Çevrilen metin burada görünecek.
+# Text displayed as a placeholder when the panel is actively translating.
+select-translations-panel-translating-placeholder-text = Çevriliyor…
+select-translations-panel-init-failure-message =
+    .message = Diller yüklenemedi. İnternet bağlantınızı kontrol edip yeniden deneyin.
+# Text displayed when the translation fails to complete.
+select-translations-panel-translation-failure-message =
+    .message = Çeviri sırasında bir sorun oluştu. Lütfen yeniden deneyin.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support the language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known =
+    .message = Maalesef henüz { $language } dilini desteklemiyoruz.
+select-translations-panel-unsupported-language-message-unknown =
+    .message = Ne yazık ki henüz bu dili desteklemiyoruz.
+# Text displayed on the menuitem that opens the Translation Settings page.
+select-translations-panel-open-translations-settings-menuitem =
+    .label = Çeviri ayarları

@@ -2,32 +2,28 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-history-title = Update History
-history-intro = The following updates have been installed
+history-title = Güncelleme Geçmişi
+history-intro = Aşağıdaki güncellemeler yüklendi
 
 close-button-label =
-    .buttonlabelcancel = Close
-    .title = Update History
+    .buttonlabelcancel = Kapat
+    .title = Güncelleme Geçmişi
 
-no-updates-label = No updates installed yet
-name-header = Update Name
-date-header = Install Date
-type-header = Type
-state-header = State
+no-updates-label = Henüz hiçbir güncelleme yüklenmemiş
+name-header = Güncellemenin Adı
+date-header = Kurulum Tarihi
+type-header = Türü
+state-header = Durumu
 
 # Used to display update history
 #
 # Variables:
-#   $name (string) - Name of the update
-#   $buildID (string) - Build identifier from the local updates.xml
+#   $name (String): name of the update
+#   $buildID (String): build identifier from the local updates.xml
 update-full-build-name = { $name } ({ $buildID })
 
-update-details = Details
+update-details = Ayrıntılar
 
-# Variables:
-#   $date (string) - Date the last update was installed
-update-installed-on = Installed on: { $date }
+update-installed-on = Kurulum tarihi: { $date }
 
-# Variables:
-#   $status (string) - Status of the last update
-update-status = Status: { $status }
+update-status = Durum: { $status }

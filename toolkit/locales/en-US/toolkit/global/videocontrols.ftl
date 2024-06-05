@@ -5,51 +5,46 @@
 # This label is used by screenreaders and other assistive technology to indicate
 # to users how much of the video has been loaded from the network. It will be
 # followed by the percentage of the video that has loaded (e.g. "Loading: 13%").
-videocontrols-buffer-bar-label = Loading:
+videocontrols-buffer-bar-label = Yükleniyor:
 videocontrols-volume-control =
-    .aria-label = Volume
+    .aria-label = Ses
 videocontrols-closed-caption-button =
-    .aria-label = Closed Captions
+    .aria-label = Altyazılar
 
 videocontrols-play-button =
-    .aria-label = Play
+    .aria-label = Oynat
 videocontrols-pause-button =
-    .aria-label = Pause
+    .aria-label = Duraklat
 videocontrols-mute-button =
-    .aria-label = Mute
+    .aria-label = Sesi kapat
 videocontrols-unmute-button =
-    .aria-label = Unmute
+    .aria-label = Sesi aç
 videocontrols-enterfullscreen-button =
-    .aria-label = Full Screen
+    .aria-label = Tam ekran
 videocontrols-exitfullscreen-button =
-    .aria-label = Exit Full Screen
+    .aria-label = Tam ekrandan çık
 videocontrols-casting-button-label =
-    .aria-label = Cast to Screen
-# .offlabel is processed by the video control custom element to be used
-# as a text-track label
+    .aria-label = Ekrana yansıt
 videocontrols-closed-caption-off =
-    .offlabel = Off
+    .offlabel = Kapalı
 
 # This string is used as part of the Picture-in-Picture video toggle button when
 # the mouse is hovering it.
-videocontrols-picture-in-picture-label = Picture-in-Picture
+videocontrols-picture-in-picture-label = Görüntü içinde görüntü
 
 # This string is used as the label for a variation of the Picture-in-Picture video
 # toggle button when the mouse is hovering over the video.
-videocontrols-picture-in-picture-toggle-label2 = Pop out this video
+videocontrols-picture-in-picture-toggle-label2 = Bu videoyu dışarı çıkar
 
-# This string is used as part of a variation of the Picture-in-Picture video toggle
-# button. When using this variation, this string appears below the toggle when the
-# mouse hovers the toggle.
-videocontrols-picture-in-picture-explainer3 = More screens are more fun. Play this video while you do other things.
+videocontrols-picture-in-picture-explainer3 = Daha çok ekran, daha çok eğlence. Başka şeyler yaparken bu videoyu da oynatın.
 
-videocontrols-error-aborted = Video loading stopped.
-videocontrols-error-network = Video playback aborted due to a network error.
-videocontrols-error-decode = Video can’t be played because the file is corrupt.
-videocontrols-error-src-not-supported = Video format or MIME type is not supported.
-videocontrols-error-no-source = No video with supported format and MIME type found.
-videocontrols-error-generic = Video playback aborted due to an unknown error.
-videocontrols-status-picture-in-picture = This video is playing in Picture-in-Picture mode.
+videocontrols-error-aborted = Video yükleme durduruldu.
+videocontrols-error-network = Bir ağ hatası nedeniyle video oynatması iptal edildi.
+videocontrols-error-decode = Dosya hasarlı olduğu için video oynatılamıyor.
+videocontrols-error-src-not-supported = Video biçimi veya MIME türü desteklenmiyor.
+videocontrols-error-no-source = Desteklenen biçimlerde veya MIME türlerinde video bulunamadı.
+videocontrols-error-generic = Bilinmeyen bir hata nedeniyle video oynatma iptal edildi.
+videocontrols-status-picture-in-picture = Bu video, görüntü içinde görüntü modunda oynatılıyor.
 
 # This message shows the current position and total video duration
 #
@@ -72,5 +67,5 @@ videocontrols-position-and-duration-labels = { $position }<span data-l10n-name="
 #   $position (String): The current media position
 #   $duration (String): The total video duration
 videocontrols-scrubber-position-and-duration =
-    .aria-label = Position
+    .aria-label = Konum
     .aria-valuetext = { $position } / { $duration }

@@ -3,23 +3,23 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-profiles-title = About Profiles
-profiles-subtitle = This page helps you to manage your profiles. Each profile is a separate world which contains separate history, bookmarks, settings and add-ons.
-profiles-create = Create a New Profile
-profiles-restart-title = Restart
-profiles-restart-in-safe-mode = Restart with Add-ons Disabled…
-profiles-restart-normal = Restart normally…
-profiles-conflict = Another copy of { -brand-product-name } has made changes to profiles. You must restart { -brand-short-name } before making more changes.
-profiles-flush-fail-title = Changes not saved
+profiles-title = Profiller Hakkında
+profiles-subtitle = Bu sayfa profillerinizi yönetmenize yardımcı olur. Her profil; ayrı bir geçmiş, yer imleri, ayarlar ve eklentiler içeren ayrı birer dünyadır.
+profiles-create = Yeni profil oluştur
+profiles-restart-title = Yeniden başlat
+profiles-restart-in-safe-mode = Eklentileri devre dışı bırakıp yeniden başlat…
+profiles-restart-normal = Normal şekilde yeniden başlat…
+profiles-conflict = Başka bir { -brand-product-name } kopyası profillerde değişiklik yaptı. Daha fazla değişiklik yapmadan önce { -brand-short-name } tarayıcınızı yeniden başlatmalısınız.
+profiles-flush-fail-title = Değişiklikler kaydedilmedi
 profiles-flush-conflict = { profiles-conflict }
-profiles-flush-failed = An unexpected error has prevented your changes from being saved.
-profiles-flush-restart-button = Restart { -brand-short-name }
+profiles-flush-failed = Beklenmeyen bir hata nedeniyle değişiklikleriniz kaydedilemedi.
+profiles-flush-restart-button = { -brand-short-name } tarayıcısını yeniden başlat
 
 # Variables:
 #   $name (String) - Name of the profile
-profiles-name = Profile: { $name }
-profiles-is-default = Default Profile
-profiles-rootdir = Root Directory
+profiles-name = Profil: { $name }
+profiles-is-default = Varsayılan profil mi?
+profiles-rootdir = Kök klasör
 
 # localDir is used to show the directory corresponding to
 # the main profile directory that exists for the purpose of storing data on the
@@ -27,48 +27,48 @@ profiles-rootdir = Root Directory
 # represent critical user data. (e.g., this directory may not be included as
 # part of a backup scheme.)
 # In case localDir and rootDir are equal, localDir is not shown.
-profiles-localdir = Local Directory
-profiles-current-profile = This is the profile in use and it cannot be deleted.
-profiles-in-use-profile = This profile is in use in another application and it cannot be deleted.
+profiles-localdir = Yerel klasör
+profiles-current-profile = Bu profil şu anda kullanıldığı için silinemez.
+profiles-in-use-profile = Bu profil başka bir uygulama tarafından kullanılmakta olduğu için silinemez.
 
-profiles-rename = Rename
-profiles-remove = Remove
-profiles-set-as-default = Set as default profile
-profiles-launch-profile = Launch profile in new browser
+profiles-rename = Adını değiștir
+profiles-remove = Sil
+profiles-set-as-default = Varsayılan profil yap
+profiles-launch-profile = Profili yeni tarayıcıda aç
 
-profiles-cannot-set-as-default-title = Unable to set default
-profiles-cannot-set-as-default-message = The default profile cannot be changed for { -brand-short-name }.
+profiles-cannot-set-as-default-title = Varsayılan olarak ayarlanamadı
+profiles-cannot-set-as-default-message = Varsayılan { -brand-short-name } profili değiştirilemedi.
 
-profiles-yes = yes
-profiles-no = no
+profiles-yes = evet
+profiles-no = hayır
 
-profiles-rename-profile-title = Rename Profile
+profiles-rename-profile-title = Profilin adını değiştir
 # Variables:
 #   $name (String) - Name of the profile
-profiles-rename-profile = Rename profile { $name }
+profiles-rename-profile = { $name } profilinin adını değiştir
 
-profiles-invalid-profile-name-title = Invalid profile name
+profiles-invalid-profile-name-title = Geçersiz profil adı
 # Variables:
 #   $name (String) - Name of the profile
-profiles-invalid-profile-name = The profile name “{ $name }” is not allowed.
+profiles-invalid-profile-name = “{ $name }” şeklindeki profil adına izin verilmiyor.
 
-profiles-delete-profile-title = Delete Profile
+profiles-delete-profile-title = Profili sil
 # Variables:
 #   $dir (String) - Path to be displayed
 profiles-delete-profile-confirm =
-    Deleting a profile will remove the profile from the list of available profiles and cannot be undone.
-    You may also choose to delete the profile data files, including your settings, certificates and other user-related data. This option will delete the folder “{ $dir }” and cannot be undone.
-    Would you like to delete the profile data files?
-profiles-delete-files = Delete Files
-profiles-dont-delete-files = Don’t Delete Files
+    Bir profili silerseniz o profil, kullanılabilir profiller listesinden kaldırılır ve bu eylem geri alınamaz.
+    Dilerseniz ayarlarınızın, sertifikalarınızın ve diğer kullanıcıyla ilişkileri verilerin yer aldığı profil veri dosyalarını da silebilirsiniz. Bu seçenek “{ $dir }” klasörünü siler ve geri alınamaz.
+    Profil veri dosyalarını silmek istiyor musunuz?
+profiles-delete-files = Dosyaları sil
+profiles-dont-delete-files = Dosyaları silme
 
-profiles-delete-profile-failed-title = Error
-profiles-delete-profile-failed-message = There was an error while attempting to delete this profile.
+profiles-delete-profile-failed-title = Hata
+profiles-delete-profile-failed-message = Bu profili silmeye çalışırken bir hata oluştu.
 
 
 profiles-opendir =
     { PLATFORM() ->
-        [macos] Show in Finder
-        [windows] Open Folder
-       *[other] Open Directory
+        [macos] Finder'da göster
+        [windows] Klasörü aç
+       *[other] Dizini aç
     }

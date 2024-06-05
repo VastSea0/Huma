@@ -2,120 +2,121 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-certificate-viewer-certificate-section-title = Certificate
+certificate-viewer-certificate-section-title = Sertifika
 
 ## Error messages
 
-certificate-viewer-error-message = We were unable to find the certificate information, or the certificate is corrupted. Please try again.
-certificate-viewer-error-title = Something went wrong.
+certificate-viewer-error-message = Sertifika bilgilerini bulamadık veya sertifika bozuk. Lütfen yeniden deneyin.
+certificate-viewer-error-title = Yanlış giden bir şeyler var.
 
 ## Certificate information labels
 
-certificate-viewer-algorithm = Algorithm
-certificate-viewer-certificate-authority = Certificate Authority
-certificate-viewer-cipher-suite = Cipher Suite
-certificate-viewer-common-name = Common Name
-certificate-viewer-email-address = Email Address
+certificate-viewer-algorithm = Algoritma
+certificate-viewer-certificate-authority = Sertifika makamı
+certificate-viewer-cipher-suite = Şifre paketi
+certificate-viewer-common-name = Yaygın ad
+certificate-viewer-email-address = E-posta adresi
 # Variables:
 #   $firstCertName (String) - Common Name for the displayed certificate
-certificate-viewer-tab-title = Certificate for { $firstCertName }
+certificate-viewer-tab-title = { $firstCertName } Sertifikası
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
-certificate-viewer-inc-country = Inc. Country
-certificate-viewer-country = Country
-certificate-viewer-curve = Curve
-certificate-viewer-distribution-point = Distribution Point
-certificate-viewer-dns-name = DNS Name
-certificate-viewer-ip-address = IP Address
-certificate-viewer-other-name = Other Name
-certificate-viewer-exponent = Exponent
-certificate-viewer-id = ID
-certificate-viewer-key-exchange-group = Key Exchange Group
-certificate-viewer-key-id = Key ID
-certificate-viewer-key-size = Key Size
+certificate-viewer-inc-country = Kuruluş ülkesi
+certificate-viewer-country = Ülke
+certificate-viewer-curve = Eğri
+certificate-viewer-distribution-point = Dağıtım noktası
+certificate-viewer-dns-name = DNS adı
+certificate-viewer-ip-address = IP adresi
+certificate-viewer-other-name = Diğer adı
+certificate-viewer-exponent = Üs
+certificate-viewer-id = Kimlik
+certificate-viewer-key-exchange-group = Anahtar değişim grubu
+certificate-viewer-key-id = Anahtar kimliği
+certificate-viewer-key-size = Anahtar boyutu
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
-certificate-viewer-inc-locality = Inc. Locality
-certificate-viewer-locality = Locality
-certificate-viewer-location = Location
-certificate-viewer-logid = Log ID
-certificate-viewer-method = Method
-certificate-viewer-modulus = Modulus
-certificate-viewer-name = Name
-certificate-viewer-not-after = Not After
-certificate-viewer-not-before = Not Before
-certificate-viewer-organization = Organization
-certificate-viewer-organizational-unit = Organizational Unit
-certificate-viewer-policy = Policy
-certificate-viewer-protocol = Protocol
-certificate-viewer-public-value = Public Value
-certificate-viewer-purposes = Purposes
-certificate-viewer-qualifier = Qualifier
-certificate-viewer-qualifiers = Qualifiers
-certificate-viewer-required = Required
-certificate-viewer-unsupported = &lt;unsupported&gt;
+certificate-viewer-inc-locality = Kuruluş yeri
+certificate-viewer-locality = Bölge
+certificate-viewer-location = Konum
+certificate-viewer-logid = Log kimliği
+certificate-viewer-method = Yöntem
+certificate-viewer-modulus = Modülüs
+certificate-viewer-name = Adı
+certificate-viewer-not-after = Bitiş
+certificate-viewer-not-before = Başlangıç
+certificate-viewer-organization = Kurum
+certificate-viewer-organizational-unit = Kurum birimi
+certificate-viewer-policy = İlke
+certificate-viewer-protocol = Protokol
+certificate-viewer-public-value = Açık değer
+certificate-viewer-purposes = Amaçlar
+certificate-viewer-qualifier = Niteleyici
+certificate-viewer-qualifiers = Niteleyiciler
+certificate-viewer-required = Gerekli
+certificate-viewer-unsupported = &lt;desteklenmiyor&gt;
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
-certificate-viewer-inc-state-province = Inc. State/Province
-certificate-viewer-state-province = State/Province
+certificate-viewer-inc-state-province = Kuruluş ili
+certificate-viewer-state-province = Eyalet/il
 certificate-viewer-sha-1 = SHA-1
 certificate-viewer-sha-256 = SHA-256
-certificate-viewer-serial-number = Serial Number
-certificate-viewer-signature-algorithm = Signature Algorithm
-certificate-viewer-signature-scheme = Signature Scheme
-certificate-viewer-timestamp = Timestamp
-certificate-viewer-value = Value
-certificate-viewer-version = Version
-certificate-viewer-business-category = Business Category
-certificate-viewer-subject-name = Subject Name
-certificate-viewer-issuer-name = Issuer Name
-certificate-viewer-validity = Validity
-certificate-viewer-subject-alt-names = Subject Alt Names
-certificate-viewer-public-key-info = Public Key Info
-certificate-viewer-miscellaneous = Miscellaneous
-certificate-viewer-fingerprints = Fingerprints
-certificate-viewer-basic-constraints = Basic Constraints
-certificate-viewer-key-usages = Key Usages
-certificate-viewer-extended-key-usages = Extended Key Usages
-certificate-viewer-ocsp-stapling = OCSP Stapling
-certificate-viewer-subject-key-id = Subject Key ID
-certificate-viewer-authority-key-id = Authority Key ID
-certificate-viewer-authority-info-aia = Authority Info (AIA)
-certificate-viewer-certificate-policies = Certificate Policies
-certificate-viewer-embedded-scts = Embedded SCTs
-certificate-viewer-crl-endpoints = CRL Endpoints
+certificate-viewer-serial-number = Seri numarası
+certificate-viewer-signature-algorithm = İmza algoritması
+certificate-viewer-signature-scheme = İmza şeması
+certificate-viewer-timestamp = Zaman damgası
+certificate-viewer-value = Değer
+certificate-viewer-version = Sürüm
+certificate-viewer-business-category = İş kategorisi
+certificate-viewer-subject-name = Özne Adı
+certificate-viewer-issuer-name = Düzenleyenin Adı
+certificate-viewer-validity = Geçerlilik
+certificate-viewer-subject-alt-names = Özne alternatif adları
+certificate-viewer-public-key-info = Açık Anahtar Bilgileri
+certificate-viewer-miscellaneous = Diğer
+certificate-viewer-fingerprints = Parmak İzleri
+certificate-viewer-basic-constraints = Temel Kısıtlamalar
+certificate-viewer-key-usages = Anahtar Kullanımları
+certificate-viewer-extended-key-usages = Genişletilmiş Anahtar Kullanımları
+certificate-viewer-ocsp-stapling = OCSP Zımbalama
+certificate-viewer-subject-key-id = Özne Anahtar Kimliği
+certificate-viewer-authority-key-id = Makam Anahtar Kimliği
+certificate-viewer-authority-info-aia = Makam Bilgileri (AIA)
+certificate-viewer-certificate-policies = Sertifika İlkeleri
+certificate-viewer-embedded-scts = Gömülü SCT’ler
+certificate-viewer-crl-endpoints = CRL uç noktaları
 
 # This message is used as a row header in the Miscellaneous section.
 # The associated data cell contains links to download the certificate.
-certificate-viewer-download = Download
+certificate-viewer-download = İndir
 # This message is used to replace boolean values (true/false) in several certificate fields, e.g. Certificate Authority
 # Variables:
 #   $boolean (String) - true/false value for the specific field
-certificate-viewer-boolean = { $boolean ->
-  [true] Yes
- *[false] No
-}
+certificate-viewer-boolean =
+    { $boolean ->
+        [true] Evet
+       *[false] Hayır
+    }
 
 ## Variables:
 ##   $fileName (String) - The file name to save the PEM data in, derived from the common name from the certificate being displayed.
 
-certificate-viewer-download-pem = PEM (cert)
-  .download = { $fileName }.pem
-certificate-viewer-download-pem-chain = PEM (chain)
-  .download = { $fileName }-chain.pem
+certificate-viewer-download-pem = PEM (sertifika)
+    .download = { $fileName }.pem
+certificate-viewer-download-pem-chain = PEM (zincir)
+    .download = { $fileName }-chain.pem
 
 # The title attribute for Critical Extension icon
 certificate-viewer-critical-extension =
-  .title = This extension has been marked as critical, meaning that clients must reject the certificate if they do not understand it.
-certificate-viewer-export = Export
-  .download = { $fileName }.pem
+    .title = Bu uzantı kritik olarak işaretlenmiş. Yani istemciler sertifikayı anlamadılarsa sertifikayı reddetmeleri gerekir.
+certificate-viewer-export = Dışa aktar
+    .download = { $fileName }.pem
 
 ##
 
 # Label for a tab where we haven't found a better label:
-certificate-viewer-unknown-group-label = (unknown)
+certificate-viewer-unknown-group-label = (bilinmiyor)
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 
-certificate-viewer-tab-mine = Your Certificates
-certificate-viewer-tab-people = People
-certificate-viewer-tab-servers = Servers
-certificate-viewer-tab-ca = Authorities
-certificate-viewer-tab-unkonwn = Unknown
+certificate-viewer-tab-mine = Sertifikalarınız
+certificate-viewer-tab-people = Kişiler
+certificate-viewer-tab-servers = Sunucular
+certificate-viewer-tab-ca = Makamlar
+certificate-viewer-tab-unkonwn = Bilinmeyen

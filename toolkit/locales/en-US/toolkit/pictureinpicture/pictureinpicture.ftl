@@ -2,7 +2,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-pictureinpicture-player-title = Picture-in-Picture
+pictureinpicture-player-title = Görüntü içinde görüntü
+
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
 
 ## Note that this uses .tooltip rather than the standard '.title'
 ## or '.tooltiptext' -  but it has the same effect. Code in the
@@ -13,44 +16,44 @@ pictureinpicture-player-title = Picture-in-Picture
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
 pictureinpicture-pause-btn =
-  .aria-label = Pause
-  .tooltip = Pause (Spacebar)
+    .aria-label = Duraklat
+    .tooltip = Duraklat (Boşluk)
 pictureinpicture-play-btn =
-  .aria-label = Play
-  .tooltip = Play (Spacebar)
+    .aria-label = Oynat
+    .tooltip = Oynat (Boşluk)
 
 pictureinpicture-mute-btn =
-  .aria-label = Mute
-  .tooltip = Mute ({ $shortcut })
+    .aria-label = Sesi kapat
+    .tooltip = Sesi kapat ({ $shortcut })
 pictureinpicture-unmute-btn =
-  .aria-label = Unmute
-  .tooltip = Unmute ({ $shortcut })
+    .aria-label = Sesi aç
+    .tooltip = Sesi aç ({ $shortcut })
 
 pictureinpicture-unpip-btn =
-  .aria-label = Send back to tab
-  .tooltip = Back to tab
+    .aria-label = Sekmeye geri gönder
+    .tooltip = Geri gönder
 
 pictureinpicture-close-btn =
-  .aria-label = Close
-  .tooltip = Close ({ $shortcut })
+    .aria-label = Kapat
+    .tooltip = Kapat ({ $shortcut })
 
 pictureinpicture-subtitles-btn =
-  .aria-label = Subtitles
-  .tooltip = Subtitles
+    .aria-label = Altyazı
+    .tooltip = Altyazı
 
 pictureinpicture-fullscreen-btn2 =
-  .aria-label = Fullscreen
-  .tooltip = Fullscreen (double-click or { $shortcut })
+    .aria-label = Tam ekran
+    .tooltip = Tam ekran (çift tıklayın veya { $shortcut })
 
 pictureinpicture-exit-fullscreen-btn2 =
-  .aria-label = Exit fullscreen
-  .tooltip = Exit fullscreen (double-click or { $shortcut })
+    .aria-label = Tam ekrandan çık
+    .tooltip = Tam ekrandan çık (çift tıklayın veya { $shortcut })
 
 ##
 
 # Keyboard shortcut to toggle fullscreen mode when Picture-in-Picture is open.
 pictureinpicture-toggle-fullscreen-shortcut =
-  .key = F
+    .key = F
 
 ## Note that this uses .tooltip rather than the standard '.title'
 ## or '.tooltiptext' -  but it has the same effect. Code in the
@@ -58,26 +61,26 @@ pictureinpicture-toggle-fullscreen-shortcut =
 ## DOM node that then shows the tooltip.
 
 pictureinpicture-seekbackward-btn =
-  .aria-label = Backward
-  .tooltip = Backward (←)
+    .aria-label = Geri sar
+    .tooltip = Geri sar (←)
 
 pictureinpicture-seekforward-btn =
-  .aria-label = Forward
-  .tooltip = Forward (→)
+    .aria-label = İleri sar
+    .tooltip = İleri sar (→)
 
 ##
 
 # This string is never displayed on the window. Is intended to be announced by
 # a screen reader whenever a user opens the subtitles settings panel
 # after selecting the subtitles button.
-pictureinpicture-subtitles-panel-accessible = Subtitles settings
+pictureinpicture-subtitles-panel-accessible = Altyazı ayarları
 
-pictureinpicture-subtitles-label = Subtitles
+pictureinpicture-subtitles-label = Altyazı
 
-pictureinpicture-font-size-label = Font size
+pictureinpicture-font-size-label = Yazı tipi boyutu
 
-pictureinpicture-font-size-small = Small
+pictureinpicture-font-size-small = Küçük
 
-pictureinpicture-font-size-medium = Medium
+pictureinpicture-font-size-medium = Orta
 
-pictureinpicture-font-size-large = Large
+pictureinpicture-font-size-large = Büyük

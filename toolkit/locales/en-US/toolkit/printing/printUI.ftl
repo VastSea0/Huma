@@ -2,123 +2,123 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-printui-title = Print
+printui-title = Yazdır
 # Dialog title to prompt the user for a filename to save print to PDF.
-printui-save-to-pdf-title = Save As
+printui-save-to-pdf-title = Farklı kaydet
 
 # Variables
 # $sheetCount (integer) - Number of paper sheets
 printui-sheets-count =
     { $sheetCount ->
-        [one] { $sheetCount } sheet of paper
-       *[other] { $sheetCount } sheets of paper
+        [one] { $sheetCount } sayfa
+       *[other] { $sheetCount } sayfa
     }
 
-printui-page-range-all = All
-printui-page-range-current = Current
-printui-page-range-odd = Odd
-printui-page-range-even = Even
-printui-page-range-custom = Custom
-printui-page-range-label = Pages
+printui-page-range-all = Tümü
+printui-page-range-current = Geçerli sayfa
+printui-page-range-odd = Tek
+printui-page-range-even = Çift
+printui-page-range-custom = Özel
+printui-page-range-label = Sayfalar
 printui-page-range-picker =
-  .aria-label = Pick page range
+    .aria-label = Sayfa aralığını seçin
 printui-page-custom-range-input =
-  .aria-label = Enter custom page range
-  .placeholder = e.g. 2-6, 9, 12-16
+    .aria-label = Özel sayfa aralığını yazın
+    .placeholder = örn. 2-6, 9, 12-16
 
 # Section title for the number of copies to print
-printui-copies-label = Copies
+printui-copies-label = Kopya sayısı
 
-printui-orientation = Orientation
-printui-landscape = Landscape
-printui-portrait = Portrait
+printui-orientation = Yönlendirme
+printui-landscape = Yatay
+printui-portrait = Dikey
 
 # Section title for the printer or destination device to target
-printui-destination-label = Destination
-printui-destination-pdf-label = Save to PDF
+printui-destination-label = Hedef
+printui-destination-pdf-label = PDF’e kaydet
 
-printui-more-settings = More settings
-printui-less-settings = Fewer settings
+printui-more-settings = Daha fazla ayar
+printui-less-settings = Daha az ayar
 
-printui-paper-size-label = Paper size
+printui-paper-size-label = Kâğıt boyutu
 
 # Section title (noun) for the print scaling options
-printui-scale = Scale
-printui-scale-fit-to-page-width = Fit to page width
+printui-scale = Ölçek
+printui-scale-fit-to-page-width = Sayfa genişliğine sığdır
 # Label for input control where user can set the scale percentage
-printui-scale-pcent = Scale
+printui-scale-pcent = Ölçeklendir
 
 # Section title (noun) for the two-sided print options
-printui-two-sided-printing = Two-sided printing
-printui-two-sided-printing-off = Off
+printui-two-sided-printing = İki taraflı yazdırma
+printui-two-sided-printing-off = Kapalı
 # Flip the sheet as if it were bound along its long edge.
-printui-two-sided-printing-long-edge = Flip on long edge
+printui-two-sided-printing-long-edge = Uzun kenarından çevir
 # Flip the sheet as if it were bound along its short edge.
-printui-two-sided-printing-short-edge = Flip on short edge
+printui-two-sided-printing-short-edge = Kısa kenarından çevir
 
 # Section title for miscellaneous print options
-printui-options = Options
-printui-headers-footers-checkbox = Print headers and footers
-printui-backgrounds-checkbox = Print backgrounds
+printui-options = Seçenekler
+printui-headers-footers-checkbox = Üst bilgi ve alt bilgileri yazdır
+printui-backgrounds-checkbox = Arka planları yazdır
 
 ## The "Format" section, select a version of the website to print. Radio
 ## options to select between the original page, selected text only, or a version
 ## where the page is processed with "Reader View".
 
 # The section title.
-printui-source-label = Format
+printui-source-label = Biçim
 # Option for printing the original page.
-printui-source-radio = Original
+printui-source-radio = Orijinal
 # Option for printing just the content a user selected prior to printing.
-printui-selection-radio = Selection
+printui-selection-radio = Seçim
 # Option for "simplifying" the page by printing the Reader View version.
-printui-simplify-page-radio = Simplified
+printui-simplify-page-radio = Basitleştirilmiş
 
 ##
 
-printui-color-mode-label = Color mode
-printui-color-mode-color = Color
-printui-color-mode-bw = Black and white
+printui-color-mode-label = Renk modu
+printui-color-mode-color = Renkli
+printui-color-mode-bw = Siyah beyaz
 
-printui-margins = Margins
-printui-margins-default = Default
+printui-margins = Kenar boşlukları
+printui-margins-default = Varsayılan
 printui-margins-min = Minimum
-printui-margins-none = None
-printui-margins-custom-inches = Custom (inches)
-printui-margins-custom-mm = Custom (mm)
-printui-margins-custom-top = Top
-printui-margins-custom-top-inches = Top (inches)
-printui-margins-custom-top-mm = Top (mm)
-printui-margins-custom-bottom = Bottom
-printui-margins-custom-bottom-inches = Bottom (inches)
-printui-margins-custom-bottom-mm = Bottom (mm)
-printui-margins-custom-left = Left
-printui-margins-custom-left-inches = Left (inches)
-printui-margins-custom-left-mm = Left (mm)
-printui-margins-custom-right = Right
-printui-margins-custom-right-inches = Right (inches)
-printui-margins-custom-right-mm = Right (mm)
+printui-margins-none = Yok
+printui-margins-custom-inches = Özel (inç)
+printui-margins-custom-mm = Özel (mm)
+printui-margins-custom-top = Üst
+printui-margins-custom-top-inches = Üst (inç)
+printui-margins-custom-top-mm = Üst (mm)
+printui-margins-custom-bottom = Alt
+printui-margins-custom-bottom-inches = Alt (inç)
+printui-margins-custom-bottom-mm = Alt (mm)
+printui-margins-custom-left = Sol
+printui-margins-custom-left-inches = Sol (inç)
+printui-margins-custom-left-mm = Sol (mm)
+printui-margins-custom-right = Sağ
+printui-margins-custom-right-inches = Sağ (inç)
+printui-margins-custom-right-mm = Sağ (mm)
 
-printui-system-dialog-link = Print using the system dialog…
+printui-system-dialog-link = Sistem iletişim kutusuyla yazdır…
 
-printui-primary-button = Print
-printui-primary-button-save = Save
-printui-cancel-button = Cancel
-printui-close-button = Close
+printui-primary-button = Yazdır
+printui-primary-button-save = Kaydet
+printui-cancel-button = Vazgeç
+printui-close-button = Kapat
 
-printui-loading = Preparing Preview
+printui-loading = Ön izleme hazırlanıyor
 
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
-    .aria-label = Print Preview
+    .aria-label = Yazdırma ön izleme
 
-printui-pages-per-sheet = Pages per sheet
+printui-pages-per-sheet = Yaprak başına sayfa
 
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
-printui-print-progress-indicator = Printing…
-printui-print-progress-indicator-saving = Saving…
+printui-print-progress-indicator = Yazdırılıyor…
+printui-print-progress-indicator-saving = Kaydediliyor…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 
@@ -138,11 +138,11 @@ printui-paper-tabloid = Tabloid
 
 ## Error messages shown when a user has an invalid input
 
-printui-error-invalid-scale = Scale must be a number between 10 and 200.
-printui-error-invalid-margin = Please enter a valid margin for the selected paper size.
-printui-error-invalid-copies = Copies must be a number between 1 and 10000.
+printui-error-invalid-scale = Ölçek, 10 ile 200 arasında bir sayı olmalıdır.
+printui-error-invalid-margin = Lütfen seçilen kâğıt boyutu için geçerli bir kenar boşluğu girin.
+printui-error-invalid-copies = Kopya sayısı 1 ile 10000 arasında olmalıdır.
 
 # Variables
 # $numPages (integer) - Number of pages
-printui-error-invalid-range = Range must be a number between 1 and { $numPages }.
-printui-error-invalid-start-overflow = The “from” page number must be smaller than the “to” page number.
+printui-error-invalid-range = Aralık, 1 ile { $numPages } arasında bir sayı olmalıdır.
+printui-error-invalid-start-overflow = “Başlangıç” sayfa numarası “bitiş” sayfa numarasından küçük olmalıdır.

@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 ## The following feature names must be treated as a brand.
 ##
 ## They cannot be:
@@ -15,6 +16,8 @@
 ## https://mozilla-l10n.github.io/styleguides/mozilla_general/#brands-copyright-and-trademark
 
 -facebook-container-brand-name = Facebook Container
+-lockwise-brand-name = Firefox Lockwise
+-lockwise-brand-short-name = Lockwise
 -monitor-brand-name = Firefox Monitor
 -monitor-brand-short-name = Monitor
 -mozmonitor-brand-name = Mozilla Monitor
@@ -28,21 +31,16 @@
 -relay-brand-name = Firefox Relay
 -relay-brand-short-name = Relay
 -fakespot-brand-name = Fakespot
-
 # Note the name of the website is capitalized.
 -fakespot-website-name = Fakespot.com
-
 # The particle "by" can be localized, "Fakespot" and "Mozilla" should not be localized or transliterated.
--fakespot-brand-full-name = Fakespot by Mozilla
-
+-fakespot-brand-full-name = Mozilla’dan Fakespot
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefox-suggest-brand-name = Firefox Suggest
-
+-firefox-suggest-brand-name = Firefox Önerileri
 # ”Home" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefox-home-brand-name = Firefox Home
-
+-firefox-home-brand-name = Firefox Başlangıç
 # View" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxview-brand-name = Firefox View

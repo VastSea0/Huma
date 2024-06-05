@@ -3,9 +3,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 # Used for data: URLs where we don't have any useful origin information
-browser-utils-url-data = (data)
+browser-utils-url-data = (veri)
 
 # Used for extension URLs
 # Variables:
 #   $extension (string) - Name of the extension that generated the URL
-browser-utils-url-extension = Extension ({ $extension })
+browser-utils-url-extension = Uzantı ({ $extension })

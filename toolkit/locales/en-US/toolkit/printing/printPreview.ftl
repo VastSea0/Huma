@@ -3,70 +3,71 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 printpreview-simplify-page-checkbox =
-    .label = Simplify Page
+    .label = Sayfayı basitleştir
     .accesskey = i
-    .tooltiptext = This page cannot be automatically simplified
+    .tooltiptext = Bu sayfa otomatik olarak basitleştirilemez
 printpreview-simplify-page-checkbox-enabled =
     .label = { printpreview-simplify-page-checkbox.label }
     .accesskey = { printpreview-simplify-page-checkbox.accesskey }
-    .tooltiptext = Change layout for easier reading
+    .tooltiptext = Daha kolay okuma için sayfa düzenini değiştir
 printpreview-close =
-    .label = Close
-    .accesskey = C
+    .label = Kapat
+    .accesskey = K
 printpreview-portrait =
-    .label = Portrait
-    .accesskey = o
+    .label = Dikey
+    .accesskey = k
 printpreview-landscape =
-    .label = Landscape
-    .accesskey = L
+    .label = Yatay
+    .accesskey = t
 printpreview-scale =
-    .value = Scale:
-    .accesskey = S
+    .value = Ölçek:
+    .accesskey = Ö
 printpreview-shrink-to-fit =
-    .label = Shrink To Fit
+    .label = Sayfaya sığdır
 printpreview-custom =
-    .label = Custom…
+    .label = Özel…
 printpreview-print =
-    .label = Print…
-    .accesskey = P
+    .label = Yazdır…
+    .accesskey = Y
 printpreview-of =
-    .value = of
-printpreview-custom-scale-prompt-title = Custom Scale
+    .value = /
+printpreview-custom-scale-prompt-title = Özel Ölçek
 printpreview-page-setup =
-    .label = Page Setup…
-    .accesskey = u
+    .label = Sayfa düzeni…
+    .accesskey = S
 printpreview-page =
-    .value = Page:
-    .accesskey = a
+    .value = Sayfa:
+    .accesskey = f
 
 # Variables
 # $sheetNum (integer) - The current sheet number
 # $sheetCount (integer) - The total number of sheets to print
-printpreview-sheet-of-sheets = { $sheetNum } of { $sheetCount }
+printpreview-sheet-of-sheets = { $sheetNum } / { $sheetCount }
 
 ## Variables
 ## $percent (integer) - menuitem percent label
 ## $arrow (String) - UTF-8 arrow character for navigation buttons
 
 printpreview-percentage-value =
-    .label = { $percent }%
+    .label = %{ $percent }
 printpreview-homearrow =
     .label = { $arrow }
-    .tooltiptext = First page
+    .tooltiptext = İlk sayfa
 printpreview-previousarrow =
     .label = { $arrow }
-    .tooltiptext = Previous page
+    .tooltiptext = Önceki sayfa
 printpreview-nextarrow =
     .label = { $arrow }
-    .tooltiptext = Next page
+    .tooltiptext = Sonraki sayfa
 printpreview-endarrow =
     .label = { $arrow }
-    .tooltiptext = Last page
+    .tooltiptext = Son sayfa
+
 printpreview-homearrow-button =
-    .title = First page
+    .title = İlk sayfa
 printpreview-previousarrow-button =
-    .title = Previous page
+    .title = Önceki sayfa
 printpreview-nextarrow-button =
-    .title = Next page
+    .title = Sonraki sayfa
 printpreview-endarrow-button =
-    .title = Last page
+    .title = Son sayfa

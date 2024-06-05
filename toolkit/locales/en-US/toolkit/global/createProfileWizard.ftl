@@ -3,51 +3,51 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 create-profile-window2 =
-  .title = Create Profile Wizard
-  .style = min-width: 45em; min-height: 32em;
+    .title = Profil Oluşturma Sihirbazı
+    .style = min-width: 45em; min-height: 32em;
 
 ## First wizard page
 
 create-profile-first-page-header2 =
-  { PLATFORM() ->
-    [macos] Introduction
-   *[other] Welcome to the { create-profile-window2.title }
-  }
+    { PLATFORM() ->
+        [macos] Giriş
+       *[other] { create-profile-window2.title } bölümüne hoş geldiniz
+    }
 
-profile-creation-explanation-1 = { -brand-short-name } stores information about your settings and preferences in your personal profile.
+profile-creation-explanation-1 = { -brand-short-name }, ayarlarınız ve tercihlerinizle ilgili bilgileri kişisel profilinizde saklar.
 
-profile-creation-explanation-2 = If you are sharing this copy of { -brand-short-name } with other users, you can use profiles to keep each user’s information separate. To do this, each user should create his or her own profile.
+profile-creation-explanation-2 = Bu { -brand-short-name } tarayıcısını başka kullanıcılarla ortak kullanıyorsanız her kullanıcının bilgilerini birbirinden ayrı tutmak için profilleri kullanabilirsiniz. Bunun için her kullanıcı kendi profilini oluşturmalıdır.
 
-profile-creation-explanation-3 = If you are the only person using this copy of { -brand-short-name }, you must have at least one profile. If you would like, you can create multiple profiles for yourself to store different sets of settings and preferences. For example, you may want to have separate profiles for business and personal use.
+profile-creation-explanation-3 = Bu { -brand-short-name } tarayıcısını kullanan tek kişiyseniz en azından bir profil sahibi olmanız gerekir. İsterseniz farklı zamanlarda kullandığınız farklı ayar ve tercihleri saklamak için birden fazla profil oluşturabilirsiniz. Örneğin iş için ayrı, ev için ayrı birer profil oluşturabilirsiniz.
 
 profile-creation-explanation-4 =
-  { PLATFORM() ->
-    [macos] To begin creating your profile, click Continue.
-   *[other] To begin creating your profile, click Next.
-  }
+    { PLATFORM() ->
+        [macos] Profilinizi oluşturmak için Devam düğmesine basın.
+       *[other] Profilinizi oluşturmaya başlamak için İleri düğmesine tıklayın.
+    }
 
 ## Second wizard page
 
 create-profile-last-page-header2 =
-  { PLATFORM() ->
-    [macos] Conclusion
-   *[other] Completing the { create-profile-window2.title }
-  }
+    { PLATFORM() ->
+        [macos] Bitiş
+       *[other] { create-profile-window2.title } tamamlanıyor
+    }
 
-profile-creation-intro = If you create several profiles you can tell them apart by the profile names. You may use the name provided here or use one of your own.
+profile-creation-intro = Birden fazla profil oluşturursanız bunları profil adlarıyla ayırabilirsiniz. Burada sunulan adı veya kendi seçtiğiniz bir adı kullanabilirsiniz.
 
-profile-prompt = Enter new profile name:
-  .accesskey = E
+profile-prompt = Yeni profil adını yazın:
+    .accesskey = e
 
 profile-default-name =
-  .value = Default User
+    .value = Varsayılan kullanıcı
 
-profile-directory-explanation = Your user settings, preferences and other user-related data will be stored in:
+profile-directory-explanation = Kullanıcı ayarlarınız, yer imleriniz ve parolalarınız burada kayıtlı olacak:
 
 create-profile-choose-folder =
-  .label = Choose Folder…
-  .accesskey = C
+    .label = Klasör seç…
+    .accesskey = s
 
 create-profile-use-default =
-  .label = Use Default Folder
-  .accesskey = U
+    .label = Varsayılan klasörü kullan
+    .accesskey = k

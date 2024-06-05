@@ -5,4 +5,4 @@
 # Variables:
 #   $user (String): the user name (e.g. "Ed")
 #   $system (String): the operating system (e.g. "Android")
-account-client-name = { $user }’s { -brand-short-name } on { $system }
+account-client-name = { $user } - { $system } - { -brand-short-name }
