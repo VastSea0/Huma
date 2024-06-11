@@ -19,6 +19,19 @@ Hüma Web Tarayıcısı özgür yazılım felsefesini benimsemiş tamamen açık
 
 Hüma Web Tarayıcı özgür yazılımları tamamen destekler ve geliştirilmesine katkıda bulunmayı amaçlar bu nedenle GPL lisansı altında Kamuya açık olarak paylaşılmış bir yazılımdır.
 
+# Hüma Özel Sayfaları
+## Hüma Türk Tarihi Web Sayfası
+Türk tarihi, Orta Asya'dan başlayarak günümüze kadar uzanan köklü bir geçmişe sahiptir. Türkler, tarih boyunca çeşitli medeniyetlere ev sahipliği yapmış ve kendilerine özgü bir kültür ve yaşam tarzı geliştirmişlerdir.
+
+# Hüma Gezgini ve Teması
+## Hüma Gezgini
+
+Hüma Gezgini, taraycınızda varsayılan olarak yüklü gelen bir eklentidir. Eklenti, yer imleriniz ve Hüma projesinin bağlantıları arasında gezinmenize yardımcı olurken aynı zamanda size bir tarayıcı rehberi olacaktır. Tarayıcınızda ki sayfalar arasında kolayca gezinebilmenizi sağlar ve özelleştirebilidir. Eklentiye erişebilmek için bilgisayar farenizden sağ tuşa basın ve çıkan menüden "Hüma Gezgini'ni aç" seçeneğini seçin. Kenar Çubuğunda eklentiniz görünecektir. Keyifli kullanmalar!
+
+## Hüma Teması
+
+Hüma Teması, tarayıcınızda varsayılan olarak gelen bir temadır. Hoşunuza gitmediği durumlarda veya sıkıldığınızda yüzlerce tema arasından en uygun temayı bularak tarayıcınızı özgürce kullanabilirsiniz!
+
 Özellikler:
 
     Yerli ve özgün bir web tarayıcısı
@@ -80,7 +93,10 @@ Hüma Tarayıcısı'nı kullanmayı seçtiğiniz için teşekkür ederiz. Herhan
 ![image](https://github.com/VastSea0/Huma/assets/144556903/7d36524b-cf12-4136-9ea4-3064923d2ec8)
 ![image](https://github.com/VastSea0/Huma/assets/144556903/8b557b31-84f5-4cbb-89be-6aaf30a359f0)
 ![image](https://github.com/VastSea0/Huma/assets/144556903/686ea2cb-4cb3-49f2-894f-e82c663ddcda)
- 
+![image](https://github.com/VastSea0/Huma/assets/144556903/2899af51-c05b-43a7-bbd1-fa73e239abd8)
+![image](https://github.com/VastSea0/Huma/assets/144556903/6e774006-e589-4e76-9e62-86d1f7f7be59)
+![image](https://github.com/VastSea0/Huma/assets/144556903/82fa8f29-308a-468f-a7f2-f926762434d1)
+
 **İletişim:** 
 - Instagram: [@marsstakiuzayliyim](https://www.instagram.com/marsstakiuzayliyim/)
 - Web Sitesi: [vastsea.com.tr](https://vastsea.com.tr)
