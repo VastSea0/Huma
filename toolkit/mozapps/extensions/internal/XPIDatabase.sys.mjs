@@ -1703,7 +1703,7 @@ const updatedAddonFluentIds = new Map([
     let formattedMessage;
     // We want to make sure that all built-in themes that are localizable can
     // actually localized, particularly those for thunderbird and desktop.
-    if (
+    /*if (
       (aProp === "name" || aProp === "description") &&
       addon.location.name === KEY_APP_BUILTINS &&
       addon.type === "theme"
@@ -1758,7 +1758,7 @@ const updatedAddonFluentIds = new Map([
       }
 
       return formattedMessage.value;
-    }
+    }*/
 
     let [result, usedRepository] = chooseValue(
       addon,

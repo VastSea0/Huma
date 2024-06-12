@@ -400,6 +400,7 @@ add_task(async function appMenu() {
   });
 });
 
+ 
 add_task(async function devtools() {
   await BrowserTestUtils.withNewTab("https://example.com", async () => {
     Services.telemetry.getSnapshotForKeyedScalars("main", true);
@@ -418,6 +419,8 @@ add_task(async function devtools() {
       "ViewShown"
     );
     await shown;
+
+   
 
     let tabOpen = BrowserTestUtils.waitForNewTab(gBrowser);
     let hidden = BrowserTestUtils.waitForEvent(

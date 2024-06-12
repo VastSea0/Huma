@@ -1,12 +1,14 @@
 {
     "manifest_version": 2,
     "version": "1.0",
-    "name": "H\u00fcma Browser Theme 2.0",
+    "name": "H\u00fcma Tarayici Temasi",
+    "description": "Hüma web tarayıcısı için varsayılan tarayıcı teması",
+    "author": "Egehan",
     "theme": {
       "images": {
         "additional_backgrounds": [
-          "0.png",
-          "1.png"
+          "0.svg",
+          "1.svg"
         ]
       },
       "properties": {
@@ -35,7 +37,7 @@
     },
     "browser_specific_settings": {
       "gecko": {
-        "id": "{1c31d37f-f45b-4d85-8b3e-1f649fdc2f66}"
+        "id": "humatemasi@mozilla.org"
       }
     }
   }

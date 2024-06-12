@@ -26,8 +26,8 @@ Preferences.addAll([
   { id: "pref.browser.homepage.disable_button.bookmark_page", type: "bool" },
   { id: "pref.browser.homepage.disable_button.restore_default", type: "bool" },
   { id: "browser.newtabpage.enabled", type: "bool" },
-  { id: "browser.humapages.history.enabled", type: "bool" },
-  { id: "browser.humapages.history.new.tab.enabled", type: "bool" },
+   
+
 ]);
 
 
@@ -297,7 +297,7 @@ var gHomePane = {
       Services.prefs.removeObserver(this.NEWTAB_ENABLED_PREF, observer);
     });
   },
-
+/*
   _showHumaPagesH() {
    /*
    Burada init fonksiyonunda bu fonksiyon başlangıç için çağrılır
@@ -305,26 +305,26 @@ var gHomePane = {
   "setEventListener()" bu komut ile showHumaPagesH kimlikli vericiden 
   click sinyalini dinler ve this.showHumaPagesH ile diğer fonksiyonu çağırır
   bkz. satır 630 civarı
-   */
+   
     setEventListener("showHumaPagesH", "click", this.showHumaPagesH);
   },
-  /*
+ 
   Kendimi çok zeki hissediyorum...
-  */
+  
 
   _showHumaPagesOnNewTabH() {
-    /*
+   
     Burada init fonksiyonunda bu fonksiyon başlangıç için çağrılır
     bkz. satır 715 civarı
    "setEventListener()" bu komut ile showHumaPagesOnNewTabH kimlikli vericiden 
    click sinyalini dinler ve this.showHumaPagesOnNewTabH ile diğer fonksiyonu çağırır
    bkz. satır 630 civarı
-    */
+   
      setEventListener("showHumaPagesOnNewTabH", "click", this.showHumaPagesOnNewTabH);
    },
-   /*
+   
    Kendimi çok zeki hissediyorum...
-   */
+   
 
 
 
@@ -648,7 +648,7 @@ var gHomePane = {
   },
 /*
 Diyaloğu aç... 
-*/
+ 
 
   showHumaPagesH() {
     //alert("helo");
@@ -659,15 +659,15 @@ Diyaloğu aç...
 
   showHumaPagesOnNewTabH() {
     //alert("helo");
-    /*
+    
     gSubDialog.open(
       "chrome://browser/content/preferences/dialogs/huma.pdf"
     );
-    */
+   
     //return url == "chrome://browser/content/preferences/dialogs/huma.pdf" || url == BLANK_HUMAPAGES_TARİH_URL;
     //console.log("yeni sekmede aciliyor");
   },
-
+*/
   restoreDefaultHomePage() {
     HomePage.reset();
     this._handleHomePageOverrides();
@@ -751,8 +751,8 @@ Diyaloğu aç...
 
     this._updateMenuInterface();
     // Hüma listenner ekle
-    this._showHumaPagesH(); // Bkz.
-    this._showHumaPagesOnNewTabH(); // Bkz.
+   /* this._showHumaPagesH(); // Bkz.
+    this._showHumaPagesOnNewTabH(); // Bkz.*/
     document
       .getElementById("newTabMode")
       .addEventListener("command", this.syncToNewTabPref.bind(this));
@@ -774,3 +774,4 @@ Diyaloğu aç...
     Services.obs.notifyObservers(window, "home-pane-loaded");
   },
 };
+ 

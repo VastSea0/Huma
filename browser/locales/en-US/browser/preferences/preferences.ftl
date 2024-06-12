@@ -531,6 +531,12 @@ home-newtabs-mode-label-huma = Hüma Türk Tarihi Kitabı CLT1 - Deneysel (PDF)
 home-newtabs-mode-label-huma-on-new-tab = Hüma Türk Tarihi Web Sayfası
 huma-tarih = Hüma Tarih ve Mitoloji Kütüphanesi
 huma-tarih-ilk-beyit = Türk tarihi, Orta Asya'dan başlayarak günümüze kadar uzanan köklü bir geçmişe sahiptir. Türkler, tarih boyunca çeşitli medeniyetlere ev sahipliği yapmış ve kendilerine özgü bir kültür ve yaşam tarzı geliştirmişlerdir.
+huma-gezgini-h2 = Hüma Gezgini
+huma-gezgini-p = Hüma Gezgini, taraycınızda varsayılan olarak yüklü gelen bir eklentidir. Eklenti, yer imleriniz ve Hüma projesinin bağlantıları arasında gezinmenize yardımcı olurken aynı zamanda size bir tarayıcı rehberi olacaktır. Tarayıcınızda ki sayfalar arasında kolayca gezinebilmenizi sağlar ve özelleştirebilidir. Eklentiye erişebilmek için bilgisayar farenizden sağ tuşa basın ve çıkan menüden "Hüma Gezgini'ni aç" seçeneğini seçin. Kenar Çubuğunda eklentiniz görünecektir. Keyifli kullanmalar!
+huma-temasi-h2 = Hüma Teması
+huma-temasi-p = Hüma Teması, tarayıcınızda varsayılan olarak gelen bir temadır. Hoşunuza gitmediği durumlarda veya sıkıldığınızda yüzlerce tema arasından en uygun temayı bularak tarayıcınızı özgürce kullanabilirsiniz!
+huma-temasi-a = Hüma Teması'nı görüntüleyin
+huma-temasi-a2 = Ayrıca diğer temaları görüntüleyin
 
 home-restore-defaults =
     .label = Varsayılanları geri yükle

@@ -391,7 +391,20 @@
               <menuitem id="menu_openFirefoxView"
                         oncommand="FirefoxViewHandler.openTab();" data-l10n-id="menu-tools-firefox-view"/>
               <menuseparator id="devToolsSeparator"/>
+              
               <menu id="browserToolsMenu" data-l10n-id="menu-tools-browser-tools">
+                <menupopup id="menuWebDeveloperPopup">
+                  <menuitem id="menu_taskManager"
+                            key="key_aboutProcesses"
+                            command="View:AboutProcesses"
+                            data-l10n-id="menu-tools-task-manager"/>
+                  <menuitem id="menu_pageSource"
+                            key="key_viewSource"
+                            command="View:PageSource" data-l10n-id="menu-tools-page-source"/>
+                </menupopup>
+              </menu>
+
+              <menu id="browserToolsMenu" data-l10n-id="menu-tools-huma-tools">
                 <menupopup id="menuWebDeveloperPopup">
                   <menuitem id="menu_taskManager"
                             key="key_aboutProcesses"
@@ -510,4 +523,16 @@
                           oncommand="openTrustedLinkIn(Services.policies.getSupportMenu().URL.href, 'tab');"/>
               </menupopup>
           </menu>
+          <menu id="humaMenu" data-l10n-id="menu-help">
+            <menupopup id="menu_HumaPopup" onpopupshowing="buildHumaMenu();">
+<!-- Note: Items under here are cloned to the AppMenu Help submenu. The cloned items
+   have their strings defined by appmenu-data-l10n-id. -->
+              <menuitem id="help_reportBrokenSite"
+                        command="cmd_reportBrokenSite"
+                        data-l10n-id="menu-report-broken-site"
+                        hidden="true"
+                        appmenu-data-l10n-id="menu-report-broken-site"/>
+      
+            </menupopup>
+        </menu>
         </menubar>

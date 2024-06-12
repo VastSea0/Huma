@@ -51,6 +51,7 @@ add_task(async function test_updates_post_policy() {
     document.getElementById("appmenu-moreTools"),
     "ViewShown"
   );
+ 
   is(
     document.getElementById("appmenu-developer-tools-view").children.length,
     2,

@@ -10,14 +10,12 @@
      id="defs1" />
   <text
      xml:space="preserve"
-     style="font-size:8.47078px;white-space:pre;inline-size:131.625;fill:#000000;fill-opacity:1;stroke-width:1.9"
-     x="21.395319"
-     y="26.586079"
-     id="text1"
-     transform="matrix(6.5451665,0,0,5.2585537,-142.15907,-98.060314)"><tspan
-       x="21.395319"
-       y="26.586079"
-       id="tspan3"><tspan
-         style="font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono'"
-         id="tspan2">HÜMA</tspan></tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#1a1a1a"
+     x="-1.0021846"
+     y="37.33139"
+     id="text2"><tspan
+       id="tspan1"
+       x="-1.0021846"
+       y="37.33139"
+       style="fill:#ffffff">Hüma</tspan></text>
 </svg>
