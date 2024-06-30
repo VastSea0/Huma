@@ -18,6 +18,23 @@ Hüma, Türk mitolojisinde önemli bir yere sahip efsanevi bir kuştur. Hüma'n�
 Hüma Web Tarayıcısı özgür yazılım felsefesini benimsemiş tamamen açık kaynak ve özgür bir yazılımdır. Egehan KAHRAMAN tarafından 'Türklerin ilk Web Tarayıcısı' konsepti ile yazılmış olan bu yazılım Chromium tabanını kullanmıştır (Şu anda geliştirilen FireFox tabanını kullanır) İçerisinde bir çok özelliğin bulunduğu bu tarayıcı sizin verilerinizi her hangi bir yere göndermez, dağıtmaz veya satmazdır. Verileriniz sizinle güvenli kalır...
 
 Hüma Web Tarayıcı özgür yazılımları tamamen destekler ve geliştirilmesine katkıda bulunmayı amaçlar bu nedenle GPL lisansı altında Kamuya açık olarak paylaşılmış bir yazılımdır.
+## 15 HAZİRAN 2024 HÜMA YAZISI:
+Bu proje, 2022 Aralık ve 2023 Ocak aylarında QtWebEngine kullanan oldukça basit bir deneyseldi. O zamanlar amacım sadece deneysel bir şey yapmak ve Python hakkında biraz daha bilgi edinmekti. 2023 Eylül ayına kadar hiçbir şey eklemedim, fakat daha sonra fark ettim ki Türklerin bir web tarayıcısı yoktu; sadece Android için bir tarayıcı vardı (açık kaynak olduğundan emin değilim, sanırım kapalı kaynak). Bu durumu düşünerek, Türkçe bir tarayıcı yapmak istedim. Bu tarayıcı sadece Türkçe olmayacaktı, aynı zamanda Türk mitolojisi ve tarihini araştırmak isteyenlere internetsiz erişim sağlayacak bir proje olacaktı.
+
+Projeye özgün bir şeyler eklemek konusunda çok titiz davrandım. Sadece Chromium veya Firefox'un adını değiştirip iki logo ekleyerek bir tarayıcı sunmak istemedim. Bu yüzden tarayıcıya çeşitli özellikler eklemeye başladım. İlk olarak Electron kullanan bir tarayıcı vardı, bu tarayıcı Anka adıyla Hüma'nın ilk kararlı sürümü olacaktı. Mart ayına kadar bu sürümü geliştirdim. Ancak, Anka adını Hüma olarak değiştirdim çünkü Anka adı her yerde kullanılmıştı ve herkes tarafından biliniyordu. Hüma ise mitolojimizi araştırırken öğrendiğim, pek duyulmamış bir kuştu. Hüma, cennet kuşu olarak geçer; cennette uçar ve arada insanlara görünür. Hüma'nın üzerinden geçtiği insanların yüceleceğine ve tahta geçeceğine inanılır. Böylece, en sonunda Anka adı Hüma olarak değiştirildi.
+
+Başından beri Firefox tabanlı bir tarayıcı yapmak istemiştim, ancak Electron'dan başlamak daha doğru oldu. Electron tabanlı sürümü geliştirirken Firefox'u derlemeyi denedim. İlk zamanlar hiçbir Firefox çatalını başarılı bir şekilde derleyemedim. Ancak, Electron tabanlı sürüme odaklanmayı bıraktığımda tüm çabamı Firefox'a verdim ve sonunda nasıl derleyeceğimi ve paketleyeceğimi öğrendim. İlerleyen zamanda, Electron tabanlı sürümde olan özellikleri bu sürüme ekledim ve sonunda ilk yerli web tarayıcımızın ilk gösterimlerini başarıyla tamamladım.
+
+Şu anda Hüma'nın başlıca özellikleri şunlardır:
+- **Kendi Teması:** Varsayılan olarak yüklü gelir.
+- **Hüma Gezgini:** Hüma'nın varsayılan eklentisidir. Hüma Gezgini, tarayıcının sayfaları arasında ve Hüma'nın alt projelerinde gezinmek, yer imlerine kolayca erişmek için kullanılır. Takvim, yapılacak listesi ve belki yapay zeka desteği ekleyeceğim.
+- **Hüma Tarih ve Hüma Mitoloji:** Bu sayfalar mitolojimizi ve tarihimiz tanıtan, internetsiz bir ansiklopedidir. Sayfalar tarayıcı içerisinde tutulur.
+- **Hüma Bulut:** Hüma tarayıcısı için geliştirilmiş bir bulut sistemidir. Dosyalar taşıyabilir, şu anda dosya başı sınır 10MB'dir.
+- **Hüma Betik:** Türkçe söz dizimine sahip betik yazmak isteyenler için bir web yorumcusudur. Webde çalışır ve şu anda sadece tek satır yazım biçimini destekler.
+
+Hüma büyük çaplı bir proje olma hedefi güttüğü için şu anda tamamen bitmiş değildir. Hüma, açık kaynak ve özgür yazılımdır. Şu anda resmi bir web sitesi yoktur (yakında tamamlanacak ve yayınlanacak).
+
+Hüma'nın diğer bir alt projesi ise Ak Ana'dır. (Ak Ana, Hüma adından önce düşündüğüm bir isimdi; Ak Ana, tanrıya yaratma fikrini veren bir tanrıçadır.) Ak Ana, örneğin WhatsApp gibi web sitelerini indirmemizi sağlayan PWA yöntemine bir alternatiftir. PWA, şu anda Firefox'ta olmayan bir özelliktir ve ben de Ak Ana ile bu PWA'yı sağlamayı amaçladım.
 
 # Hüma Özel Sayfaları
 ## Hüma Türk Tarihi Web Sayfası
