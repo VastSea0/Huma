@@ -1,0 +1,11 @@
+#filter substitution
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+toolkit.jar:
+  content/global/abouthuma/abouthuma.css     (content/abouthuma.css)
+  content/global/abouthuma/abouthuma.html    (content/abouthuma.html)
+  content/global/abouthuma/abouthuma.js      (content/abouthuma.js)
+  content/global/abouthuma/background.svg      (content/background.svg)
+  content/global/abouthuma/toggle.svg          (content/toggle.svg)

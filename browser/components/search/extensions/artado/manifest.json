@@ -1,0 +1,59 @@
+{
+  "name": "Artado",
+  "description": "Artado Arama Motoru",
+  "manifest_version": 2,
+  "version": "1.6",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "artado@search.mozilla.org"
+    }
+  },
+  "hidden": true,
+  "icons": {
+    "16": "favicon.ico"
+  },
+  "web_accessible_resources": ["favicon.ico"],
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "keyword": "@artado",
+      "name": "Artado",
+      "search_url": "https://www.artadosearch.com/search",
+      "search_form": "https://www.artadosearch.com/search",
+      "search_url_get_params": "&i={searchTerms}",
+      "params": [
+        {
+          "name": "form",
+          "condition": "purpose",
+          "purpose": "contextmenu",
+          "value": "MOZCON"
+        },
+        {
+          "name": "form",
+          "condition": "purpose",
+          "purpose": "searchbar",
+          "value": "MOZSBR"
+        },
+        {
+          "name": "form",
+          "condition": "purpose",
+          "purpose": "homepage",
+          "value": "MOZSPG"
+        },
+        {
+          "name": "form",
+          "condition": "purpose",
+          "purpose": "keyword",
+          "value": "MOZLBR"
+        },
+        {
+          "name": "form",
+          "condition": "purpose",
+          "purpose": "newtab",
+          "value": "MOZTSB"
+        }
+      ],
+      "suggest_url": "https://www.bing.com/osjson.aspx",
+      "suggest_url_get_params": "query={searchTerms}&form=OSDJAS"
+    }
+  }
+}

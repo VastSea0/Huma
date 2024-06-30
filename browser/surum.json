@@ -1,0 +1,10 @@
+{
+    "name": "Hüma Ağ Tarayıcısı",
+    "version": "100.0a8",
+    "description": "Uzak ölçüm(Telemetri) verilerinin Mozilla sunucularına gönderilmesi engellendi",
+    "link":"https://github.com/VastSea0/Huma/releases/download/0a4/firefox-100.0a4.tr.26mayis2024.linux-x86_64.tar.bz2",
+    "os": "Sadece GNU/Linux dağıtımları",
+    "author" : "Egehan KAHRAMAN",
+    "repo":"https://github.com/VastSea0/Huma/"
+}
+  

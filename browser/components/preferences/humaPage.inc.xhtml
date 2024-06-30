@@ -1,0 +1,75 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+<!-- More From Mozilla panel -->
+ 
+<script src="chrome://browser/content/preferences/huma.js"/>
+<html:template  id="template-paneHuma">
+  <div id="humaCategory-header"
+ 
+     
+    hidden="true"
+    data-category="paneHuma">
+    
+  </div>
+
+  <groupbox id="humaPageGroup"
+          data-category="paneHuma"
+          hidden="true">
+  
+
+ 
+  <hbox  style="display: flex; flex-direction: column;">
+    <h1 class="title" data-l10n-id="huma-ozel-sayfalari"/>
+    <p class="subtitle description-deemphasized" data-l10n-id="huma-ozel-sayfalari"/>
+  <html:hr></html:hr>
+  <html:h1>Hüma Özel Sayfaları</html:h1>
+  <html:h2 data-l10n-id="pane-home-title"></html:h2>
+  <html:p data-l10n-id="huma-tarih-ilk-beyit"></html:p>
+    
+  <html:a 
+      id="showHumaPagesOnNewTabH"
+      is="highlightable-button"
+      class="accessory-button"
+      href="chrome://browser/content/preferences/dialogs/tarih.xhtml"
+      preference="browser.humapages.history.new.tab.enabled"
+      data-l10n-id="home-newtabs-mode-label-huma-on-new-tab"
+  ></html:a>
+
+  <html:h1>Hüma Gezgini ve Teması</html:h1>
+  <html:h2 data-l10n-id="huma-gezgini-h2"></html:h2>
+  <html:p data-l10n-id="huma-gezgini-p"></html:p>
+  <html:br></html:br>
+  <html:h2 data-l10n-id="huma-temasi-h2"></html:h2>
+  <html:p data-l10n-id="huma-temasi-p"></html:p>
+  <html:a 
+   
+   is="highlightable-button"
+   class="accessory-button"
+   href="https://addons.mozilla.org/tr/firefox/addon/h%C3%BCma-browser-theme-2-0/"
+
+   data-l10n-id="huma-temasi-a"
+></html:a>
+  <html:a 
+   
+   is="highlightable-button"
+   class="accessory-button"
+   href="https://addons.mozilla.org/tr/firefox/"
+
+   data-l10n-id="huma-temasi-a2"
+></html:a>
+
+  <html:br></html:br>
+ 
+
+  
+ 
+</hbox>
+
+</groupbox>
+ 
+ 
+</html:template>
+
+ 

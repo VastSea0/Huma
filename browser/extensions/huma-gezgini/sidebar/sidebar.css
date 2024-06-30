@@ -1,0 +1,441 @@
+/* Genel gövde stili */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Başlık stili */
+h1 {
+    user-select: none;
+    text-align: center;
+    font-size: 18px;
+    color: #0073e6;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 img.logoMain {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+/* Grid düzeni ve hücre stili */
+.row {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.row:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-1px);
+}
+
+/* Resim stili */
+img.logo {
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+/* Metin stili */
+div.name {
+    padding: 5px;
+    margin-left: 10px;
+    user-select: none;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Footer stili */
+span {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Yer imleri bölümü başlık stili */
+h2 {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Yeni yer imi ekleme formu stili */
+#addBookmarkForm {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#addBookmarkForm h3 {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#addBookmarkForm input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#addBookmarkButton {
+    width: 100%;
+    padding: 8px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#addBookmarkButton:hover {
+    background-color: #005bb5;
+}
+
+/* Not defteri bölümü */
+#notesContainer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#addNoteForm {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#addNoteForm h3 {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#addNoteForm textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+#addNoteButton {
+    width: 100%;
+    padding: 8px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#addNoteButton:hover {
+    background-color: #005bb5;
+}
+
+.note {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.note button:hover {
+    background-color: #ff1a1a;
+}
+
+/* Genel gövde stili */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Ayar butonu stili */
+#settingsButton {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#settingsButton:hover {
+    background-color: #005bb5;
+}
+
+/* Modal stili */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal form stili */
+#settingsModal label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#settingsModal input[type="color"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#saveSettings {
+    width: 100%;
+    padding: 8px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#saveSettings:hover {
+    background-color: #005bb5;
+}
+
+/* Diğer mevcut stiller */
+h1 {
+    user-select: none;
+    text-align: center;
+    font-size: 18px;
+    color: #0073e6;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 img.logoMain {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.row:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-1px);
+}
+
+img.logo {
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+div.name {
+    padding: 5px;
+    margin-left: 10px;
+    user-select: none;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+span {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    color: #777;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#addBookmarkForm {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#addBookmarkForm h3 {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#addBookmarkForm input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#addBookmarkButton {
+    width: 100%;
+    padding: 8px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#addBookmarkButton:hover {
+    background-color: #005bb5;
+}
+
+#bookmarksContainer {
+    margin-top: 20px;
+}
+
+#notesContainer {
+    margin-top: 20px;
+}
+
+#addNoteForm {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#addNoteForm h3 {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#addNoteForm textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#addNoteButton {
+    width: 100%;
+    padding: 8px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#addNoteButton:hover {
+    background-color: #005bb5;
+}
+

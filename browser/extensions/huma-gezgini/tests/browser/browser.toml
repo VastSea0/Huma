@@ -1,0 +1,6 @@
+[DEFAULT]
+support-files = [
+  "test-humagezgini.html",
+]
+
+["browser_humagezgini.js"] 
