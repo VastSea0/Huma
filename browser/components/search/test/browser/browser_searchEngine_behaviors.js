@@ -38,6 +38,23 @@ const SEARCH_ENGINE_DETAILS = [
     name: "Bing",
   },
   {
+    alias: "h",
+    baseURL: SearchUtils.newSearchConfigEnabled
+      ? `https://www.artadosearch.com/search?i=${
+          SearchUtils.MODIFIED_APP_CHANNEL == "esr" ? "MOZR" : "MOZI"
+        }&{code}i=foo`
+      : `https://www.bing.com/search?{code}i=${
+          SearchUtils.MODIFIED_APP_CHANNEL == "esr" ? "MOZR" : "MOZI"
+        }&i=foo`,
+    codes: {
+      context: "form=MOZCON&",
+      keyword: "form=MOZLBR&",
+      newTab: "form=MOZTSB&",
+      submission: "form=MOZSBR&",
+    },
+    name: "Artado",
+  },
+  {
     alias: "d",
     baseURL: `https://duckduckgo.com/?{code}t=${
       SearchUtils.MODIFIED_APP_CHANNEL == "esr" ? "ftsa" : "ffab"

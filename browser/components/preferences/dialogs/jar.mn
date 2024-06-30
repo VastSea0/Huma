@@ -9,6 +9,7 @@ browser.jar:
    content/browser/preferences/dialogs/applicationManager.xhtml
    content/browser/preferences/dialogs/applicationManager.js
    content/browser/preferences/dialogs/blocklists.xhtml
+   content/browser/preferences/dialogs/styles.css
    content/browser/preferences/dialogs/tarih.xhtml
    content/browser/preferences/dialogs/tarih-dizinler.xhtml
    content/browser/preferences/dialogs/huma.pdf

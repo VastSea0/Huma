@@ -43,13 +43,19 @@ update-internal-error2 = Dahili bir hata nedeniyle güncellemeler kontrol edilem
 
 # Variables:
 #   $channel (String): description of the update channel (e.g. "release", "beta", "nightly" etc.)
+
+
 aboutdialog-channel-description = Şu anda <label data-l10n-name="current-channel">{ $channel }</label> güncelleme kanalındasınız.
+
 warningDesc-version = { -brand-short-name } deneyseldir ve kararsız olabilir.
-aboutdialog-help-user = { -brand-product-name } yardımı
+aboutdialog-help-user =
 aboutdialog-submit-feedback = Görüş bildir
-community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> Web’i açık, kamusal ve herkesçe erişilebilir kılmak için birlikte çalışan <label data-l10n-name="community-exp-creditsLink">küresel bir topluluktur</label>.
+
+community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> Pardus'a yerli bir tarayıcı alternatifi olmak üzere geliştirilmiş deneysel bir web tarayıcısıdır
 community-2 = { -brand-short-name }, <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label> tarafından tasarlanmıştır. { -vendor-short-name }, interneti daha iyiye taşımak için birlikte çalışan <label data-l10n-name="community-creditsLink">küresel bir topluluktur</label>.
-helpus = Yardım etmek ister misiniz? <label data-l10n-name="helpus-donateLink">Bağış yapın</label> veya <label data-l10n-name="helpus-getInvolvedLink">aramıza katılın!</label>
+helpus = Hüma projesinin gelişimine katkıda bulunmaya ve geliştiriciye yardım veya teşekkür etmek ister misiniz? <label data-l10n-name="helpus-donateLink">Bağış yapın</label> veya <label data-l10n-name="helpus-getInvolvedLink">aramıza katılın!</label>
+
+
 bottomLinks-license = Lisans Bilgileri
 bottomLinks-huma = Hüma Hakkında
 bottomLinks-rights = Son Kullanıcı Hakları

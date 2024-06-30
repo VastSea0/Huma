@@ -9,6 +9,7 @@ browser.jar:
 
    content/browser/preferences/main.js
    content/browser/preferences/home.js
+   content/browser/preferences/tarih.js
    content/browser/preferences/huma.js
    content/browser/preferences/huma.css
    content/browser/preferences/search.js

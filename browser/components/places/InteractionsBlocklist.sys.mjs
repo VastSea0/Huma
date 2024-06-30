@@ -49,6 +49,10 @@ let HOST_BLOCKLIST = {
     // DuckDuckGo SERP
     "^(https?:\\/\\/)?(www\\.)?duckduckgo\\.com\\/.*(\\?|&)q=.*",
   ],
+  artado: [
+    // Artado SERP
+    "^(https?:\\/\\/)?(www\\.)?artadosearch\\.com\\/search.*(\\?|&)i=.*",
+  ],
   google: [
     // Google SERP
     "^(https?:\\/\\/)?(www\\.)?google\\.(\\w|\\.){2,}\\/search.*(\\?|&)q=.*",

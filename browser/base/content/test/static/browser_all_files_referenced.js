@@ -45,7 +45,7 @@ var gExceptionPaths = [
   // toolkit, see bug 1691821.
   "resource://gre-resources/autofill/",
   // Localization file added programatically in FormAutofillUtils.sys.mjs
-  "resource://gre/localization/en-US/toolkit/formautofill",
+  "resource://gre/localization/tr/toolkit/formautofill",
 
   // Exclude all search-extensions because they aren't referenced by filename
   "resource://search-extensions/",
@@ -74,10 +74,10 @@ var gExceptionPaths = [
   "chrome://browser/content/asrouter/schemas/",
 
   // Localization file added programatically in FeatureCallout.sys.mjs
-  "resource://app/localization/en-US/browser/featureCallout.ftl",
+  "resource://app/localization/tr/browser/featureCallout.ftl",
 
   // Localization file added programatically in ContentAnalysis.sys.mjs
-  "resource://gre/localization/en-US/toolkit/contentanalysis/",
+  "resource://gre/localization/tr/toolkit/contentanalysis/",
 
   // CSS files are referenced inside JS in an html template
   "chrome://browser/content/aboutlogins/components/",
@@ -116,14 +116,14 @@ var allowlist = [
     platforms: ["linux", "win"],
   },
   {
-    file: "resource://gre/localization/en-US/toolkit/printing/printDialogs.ftl",
+    file: "resource://gre/localization/tr/toolkit/printing/printDialogs.ftl",
     platforms: ["linux", "macosx"],
   },
 
   // This file is referenced by the build system to generate the
   // Firefox .desktop entry. See bug 1824327 (and perhaps bug 1526672)
   {
-    file: "resource://app/localization/en-US/browser/linuxDesktopEntry.ftl",
+    file: "resource://app/localization/tr/browser/linuxDesktopEntry.ftl",
   },
 
   // toolkit/content/aboutRights-unbranded.xhtml doesn't use aboutRights.css
@@ -160,43 +160,43 @@ var allowlist = [
   { file: "resource://gre/res/fonts/mathfontUnicode.properties" },
 
   // toolkit/mozapps/extensions/AddonContentPolicy.cpp
-  { file: "resource://gre/localization/en-US/toolkit/global/cspErrors.ftl" },
+  { file: "resource://gre/localization/tr/toolkit/global/cspErrors.ftl" },
 
   // The l10n build system can't package string files only for some platforms.
   {
-    file: "resource://gre/chrome/en-US/locale/en-US/global-platform/mac/accessible.properties",
+    file: "resource://gre/chrome/tr/locale/tr/global-platform/mac/accessible.properties",
     platforms: ["linux", "win"],
   },
   {
-    file: "resource://gre/chrome/en-US/locale/en-US/global-platform/mac/intl.properties",
+    file: "resource://gre/chrome/tr/locale/tr/global-platform/mac/intl.properties",
     platforms: ["linux", "win"],
   },
   {
-    file: "resource://gre/chrome/en-US/locale/en-US/global-platform/mac/platformKeys.properties",
+    file: "resource://gre/chrome/tr/locale/tr/global-platform/mac/platformKeys.properties",
     platforms: ["linux", "win"],
   },
   {
-    file: "resource://gre/chrome/en-US/locale/en-US/global-platform/unix/accessible.properties",
+    file: "resource://gre/chrome/tr/locale/tr/global-platform/unix/accessible.properties",
     platforms: ["macosx", "win"],
   },
   {
-    file: "resource://gre/chrome/en-US/locale/en-US/global-platform/unix/intl.properties",
+    file: "resource://gre/chrome/tr/locale/tr/global-platform/unix/intl.properties",
     platforms: ["macosx", "win"],
   },
   {
-    file: "resource://gre/chrome/en-US/locale/en-US/global-platform/unix/platformKeys.properties",
+    file: "resource://gre/chrome/tr/locale/tr/global-platform/unix/platformKeys.properties",
     platforms: ["macosx", "win"],
   },
   {
-    file: "resource://gre/chrome/en-US/locale/en-US/global-platform/win/accessible.properties",
+    file: "resource://gre/chrome/tr/locale/tr/global-platform/win/accessible.properties",
     platforms: ["linux", "macosx"],
   },
   {
-    file: "resource://gre/chrome/en-US/locale/en-US/global-platform/win/intl.properties",
+    file: "resource://gre/chrome/tr/locale/tr/global-platform/win/intl.properties",
     platforms: ["linux", "macosx"],
   },
   {
-    file: "resource://gre/chrome/en-US/locale/en-US/global-platform/win/platformKeys.properties",
+    file: "resource://gre/chrome/tr/locale/tr/global-platform/win/platformKeys.properties",
     platforms: ["linux", "macosx"],
   },
 
@@ -239,36 +239,36 @@ var allowlist = [
 
   // Bug 1526672
   {
-    file: "resource://app/localization/en-US/browser/touchbar/touchbar.ftl",
+    file: "resource://app/localization/tr/browser/touchbar/touchbar.ftl",
     platforms: ["linux", "win"],
   },
   // Referenced by the webcompat system addon for localization
-  { file: "resource://gre/localization/en-US/toolkit/about/aboutCompat.ftl" },
+  { file: "resource://gre/localization/tr/toolkit/about/aboutCompat.ftl" },
 
   // dom/media/mediacontrol/MediaControlService.cpp
-  { file: "resource://gre/localization/en-US/dom/media.ftl" },
+  { file: "resource://gre/localization/tr/dom/media.ftl" },
 
   // dom/xml/nsXMLPrettyPrinter.cpp
-  { file: "resource://gre/localization/en-US/dom/XMLPrettyPrint.ftl" },
+  { file: "resource://gre/localization/tr/dom/XMLPrettyPrint.ftl" },
 
   // tookit/mozapps/update/BackgroundUpdate.sys.mjs
   {
-    file: "resource://gre/localization/en-US/toolkit/updates/backgroundupdate.ftl",
+    file: "resource://gre/localization/tr/toolkit/updates/backgroundupdate.ftl",
   },
 
   // Bug 1713242 - referenced by aboutThirdParty.html which is only for Windows
   {
-    file: "resource://gre/localization/en-US/toolkit/about/aboutThirdParty.ftl",
+    file: "resource://gre/localization/tr/toolkit/about/aboutThirdParty.ftl",
     platforms: ["linux", "macosx"],
   },
   // Bug 1854618 - referenced by aboutWebauthn.html which is only for Linux and Mac
   {
-    file: "resource://gre/localization/en-US/toolkit/about/aboutWebauthn.ftl",
+    file: "resource://gre/localization/tr/toolkit/about/aboutWebauthn.ftl",
     platforms: ["win", "android"],
   },
   // Bug 1973834 - referenced by aboutWindowsMessages.html which is only for Windows
   {
-    file: "resource://gre/localization/en-US/toolkit/about/aboutWindowsMessages.ftl",
+    file: "resource://gre/localization/tr/toolkit/about/aboutWindowsMessages.ftl",
     platforms: ["linux", "macosx"],
   },
   // Bug 1721741:
@@ -277,7 +277,7 @@ var allowlist = [
   { file: "chrome://browser/content/screenshots/copied-notification.svg" },
 
   // toolkit/xre/MacRunFromDmgUtils.mm
-  { file: "resource://gre/localization/en-US/toolkit/global/run-from-dmg.ftl" },
+  { file: "resource://gre/localization/tr/toolkit/global/run-from-dmg.ftl" },
 
   // Referenced by screenshots extension
   { file: "chrome://browser/content/screenshots/cancel.svg" },
@@ -315,7 +315,7 @@ if (AppConstants.platform != "win") {
   // toolkit/mozapps/defaultagent/BackgroundTask_defaultagent.sys.mjs
   // Bug 1854425 - referenced by default browser agent which is not detected
   allowlist.push({
-    file: "resource://app/localization/en-US/browser/backgroundtasks/defaultagent.ftl",
+    file: "resource://app/localization/tr/browser/backgroundtasks/defaultagent.ftl",
   });
 
   if (AppConstants.NIGHTLY_BUILD) {
@@ -331,7 +331,7 @@ if (AppConstants.platform == "android") {
   // The l10n build system can't package string files only for some platforms.
   // Referenced by aboutGlean.html
   allowlist.push({
-    file: "resource://gre/localization/en-US/toolkit/about/aboutGlean.ftl",
+    file: "resource://gre/localization/tr/toolkit/about/aboutGlean.ftl",
   });
 }
 
@@ -639,10 +639,10 @@ function parseCodeFile(fileUri) {
         if (urls) {
           urls = urls[0];
           let grePrefix = Services.io.newURI(
-            "resource://gre/localization/en-US/"
+            "resource://gre/localization/tr/"
           );
           let appPrefix = Services.io.newURI(
-            "resource://app/localization/en-US/"
+            "resource://app/localization/tr/"
           );
 
           let grePrefixUrl = Services.io.newURI(urls, null, grePrefix).spec;
@@ -934,8 +934,8 @@ add_task(async function checkAllTheFiles() {
     "resource://devtools-highlighter-styles/",
     "resource://app/modules/devtools",
     "resource://gre/modules/devtools",
-    "resource://app/localization/en-US/startup/aboutDevTools.ftl",
-    "resource://app/localization/en-US/devtools/",
+    "resource://app/localization/tr/startup/aboutDevTools.ftl",
+    "resource://app/localization/tr/devtools/",
   ];
   let hasDevtoolsPrefix = uri =>
     devtoolsPrefixes.some(prefix => uri.startsWith(prefix));

@@ -68,6 +68,7 @@ const FAKE_CLASSIFIER_DATA = [
       { sld: "google" },
       { hostname: "bing.com" },
       { hostname: "duckduckgo.com" },
+      { hostname: "artadosearch.com" },
     ],
     weight: 1,
   },

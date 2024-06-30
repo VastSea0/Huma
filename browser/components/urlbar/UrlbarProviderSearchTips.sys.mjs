@@ -66,6 +66,13 @@ ChromeUtils.defineLazyGetter(lazy, "SUPPORTED_ENGINES", () => {
       },
     ],
     [
+      "Artado",
+      {
+        domainPath: /^www\.?artadosearch\.com\/$/,
+        prohibitedSearchParams: ["i"],
+      },
+    ],
+    [
       "Google",
       {
         domainPath: new RegExp(`^www\.google\.(?:${googleTLDs})\/(webhp)?$`),

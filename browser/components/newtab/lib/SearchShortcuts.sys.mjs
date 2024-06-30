@@ -18,11 +18,17 @@ export const SEARCH_SHORTCUTS = [
 // These can be added via the editor but will not be added organically
 export const CUSTOM_SEARCH_SHORTCUTS = [
   ...SEARCH_SHORTCUTS,
-  { keyword: "@bing", shortURL: "bing", url: "https://bing.com" },
+   
   {
     keyword: "@duckduckgo",
     shortURL: "duckduckgo",
     url: "https://duckduckgo.com",
+  },
+  {
+    keyword: "@artado",
+    shortURL: "artado",
+    
+    url: "https://www.artadosearch.com/",
   },
   { keyword: "@ebay", shortURL: "ebay", url: "https://ebay.com" },
   { keyword: "@twitter", shortURL: "twitter", url: "https://twitter.com" },

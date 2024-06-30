@@ -97,6 +97,7 @@ const SEARCH_FILTERS = [
   "bing",
   "ask",
   "duckduckgo",
+  "artado",
 ];
 
 const REMOTE_SETTING_DEFAULTS_PREF = "browser.topsites.useRemoteSetting";
