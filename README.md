@@ -1,4 +1,5 @@
-# Hüma Web Tarayıcısı
+# Hüma Tarayıcısı
+![image](https://github.com/VastSea0/Huma/assets/144556903/13e56ba3-2023-4581-a2c8-0c88fdbb78fd)
 
 Hüma Tarayıcısı, ilk yerli web tarayıcısı olma hedefiyle özgür yazılım prensiplerine bağlı kalarak Pardus yazılım ağına(ekosistem,) katkıda bulunmak için geliştirilmiş bir web tarayıcısıdır.
 
