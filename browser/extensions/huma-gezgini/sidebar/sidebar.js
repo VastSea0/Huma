@@ -25,6 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("egehan").addEventListener("click", () => {
         browser.tabs.create({ url: "https://egehan.netlify.app" });
     });
+    document.getElementById("huma-sekmeleri").addEventListener("click", () => {
+        browser.tabs.create({ url: "https://github.com/VastSea0/Huma-Sekmeleri/releases/download/v0a1/Huma.Sekmeleri.xpi" });
+    });
     document.getElementById("all").addEventListener("click", () => {
         browser.tabs.create({ url: "https://humadosya.netlify.app/" });
         browser.tabs.create({ url: "http://egehan.pythonanywhere.com/" });

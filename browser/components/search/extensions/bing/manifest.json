@@ -1,8 +1,8 @@
 {
   "name": "Artado",
-  "description": "Artado Arama Motoru",
+  "description": "Artado",
   "manifest_version": 2,
-  "version": "1.7",
+  "version": "1.6",
   "browser_specific_settings": {
     "gecko": {
       "id": "artado@search.mozilla.org"
@@ -19,7 +19,7 @@
       "name": "Artado",
       "search_url": "https://www.artadosearch.com/search",
       "search_form": "https://www.artadosearch.com/search",
-      "search_url_get_params": "&i={searchTerms}",
+      "search_url_get_params": "pc=MOZI&q={searchTerms}",
       "params": [
         {
           "name": "form",

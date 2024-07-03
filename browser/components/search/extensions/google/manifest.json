@@ -9,7 +9,7 @@
     }
   },
   "hidden": true,
-  "default_locale": "tr",
+  "default_locale": "en",
   "icons": {
     "16": "favicon.ico"
   },

@@ -1,0 +1,975 @@
+{
+  "extensionName": { "message": "Hüma Sekmeleri" },
+  "extensionDescription": { "message": "Hüma Tarayıcısı için dikey sekmeler" },
+
+  "sidebarTitle": { "message": "Hüma Sekmeleri" },
+  "sidebarToggleDescription": { "message": "  \"Hüma Sekmeleri\" " },
+
+ "command_tabMoveUp":             { "message": "Geçerli Sekmeyi Yukarı Taşı" },
+"command_treeMoveUp":            { "message": "Geçerli Ağacı Yukarı Taşı" },
+"command_tabMoveDown":           { "message": "Geçerli Sekmeyi Aşağı Taşı" },
+"command_treeMoveDown":          { "message": "Geçerli Ağacı Aşağı Taşı" },
+"command_focusPrevious":         { "message": "Önceki Sekmeye Odaklan (ağacı genişlet)" },
+"command_focusPreviousSilently": { "message": "Önceki Sekmeye Odaklan (ağacı genişletmeden)" },
+"command_focusNext":             { "message": "Sonraki Sekmeye Odaklan (ağacı genişlet)" },
+"command_focusNextSilently":     { "message": "Sonraki Sekmeye Odaklan (ağacı genişletmeden)" },
+"command_focusParent":           { "message": "Ebeveyn Sekmeye Odaklan" },
+"command_focusParentOrCollapse": { "message": "Ağacı Daralt veya Ebeveyn Sekmeye Odaklan" },
+"command_focusFirstChild":       { "message": "İlk Alt Sekmeye Odaklan" },
+"command_focusFirstChildOrExpand": { "message": "Ağacı Genişlet veya İlk Alt Sekmeye Odaklan" },
+"command_focusLastChild":        { "message": "Son Alt Sekmeye Odaklan" },
+"command_focusPreviousSibling":  { "message": "Önceki Kardeş Sekmeye Odaklan" },
+"command_focusNextSibling":      { "message": "Sonraki Kardeş Sekmeye Odaklan" },
+"command_simulateUpOnTree":      { "message": "Ağacı Yukarı Taşıma Tuşunu Simüle Et" },
+"command_simulateDownOnTree":    { "message": "Ağacı Aşağı Taşıma Tuşunu Simüle Et" },
+"command_simulateLeftOnTree":    { "message": "Ağacı Sola Taşıma Tuşunu Simüle Et" },
+"command_simulateRightOnTree":   { "message": "Ağacı Sağa Taşıma Tuşunu Simüle Et" },
+"command_tabbarUp":              { "message": "Sekmeleri Satır Satır Yukarı Kaydır" },
+"command_tabbarPageUp":          { "message": "Sekmeleri Sayfa Sayfa Yukarı Kaydır" },
+"command_tabbarHome":            { "message": "Sekmeleri Başa Kaydır" },
+"command_tabbarDown":            { "message": "Sekmeleri Satır Satır Aşağı Kaydır" },
+"command_tabbarPageDown":        { "message": "Sekmeleri Sayfa Sayfa Aşağı Kaydır" },
+"command_tabbarEnd":             { "message": "Sekmeleri Sona Kaydır" },
+"command_toggleTreeCollapsed":   { "message": "Ağacı Daralt veya Genişlet" },
+"command_toggleTreeCollapsedRecursively": { "message": "Ağacı ve Alt Dalları Daralt veya Genişlet" },
+"command_toggleSubPanel":        { "message": "Alt Paneli Aç veya Kapat" },
+"command_switchSubPanel":        { "message": "Alt Panel İçeriğini Değiştir" },
+"command_increaseSubPanel":      { "message": "Alt Panel Boyutunu Artır" },
+"command_decreaseSubPanel":      { "message": "Alt Panel Boyutunu Azalt" },
+
+"tab_closebox_aria_label": { "message": "Sekme #$ID$'yi Kapat",
+  "placeholders": {
+    "id": { "content": "$1", "example": "1" }
+  }},
+"tab_closebox_tab_tooltip": { "message": "Sekmeyi Kapat" },
+"tab_closebox_tab_tooltip_multiselected": { "message": "Sekmeleri Kapat" },
+"tab_closebox_tree_tooltip": { "message": "Ağacı Kapat" },
+"tab_soundButton_aria_label": { "message": "Sekme #$ID$'yi Sessize Al",
+  "placeholders": {
+    "id": { "content": "$1", "example": "1" }
+  }},
+"tab_sharingState_sharingCamera_tooltip": { "message": "Kameranızı paylaşıyorsunuz" },
+"tab_sharingState_sharingMicrophone_tooltip": { "message": "Mikrofonunuzu paylaşıyorsunuz" },
+"tab_sharingState_sharingScreen_tooltip": { "message": "Bir pencere veya ekran paylaşıyorsunuz" },
+"tab_soundButton_muted_tooltip": { "message": "Sekmenin Sessizliğini Kaldır" },
+"tab_soundButton_muted_tooltip_multiselected": { "message": "Sekmelerin Sessizliğini Kaldır" },
+"tab_soundButton_playing_tooltip": { "message": "Sekmeyi Sessize Al" },
+"tab_soundButton_playing_tooltip_multiselected": { "message": "Sekmeleri Sessize Al" },
+"tab_soundButton_autoplayBlocked_tooltip": { "message": "Sekmeyi Oynat" },
+"tab_soundButton_autoplayBlocked_tooltip_multiselected": { "message": "Sekmeleri Oynat" },
+"tab_twisty_aria_label": { "message": "Ağaç #$ID$'yi Değiştir",
+  "placeholders": {
+    "id": { "content": "$1", "example": "1" }
+  }},
+"tab_twisty_expanded_tooltip": { "message": "Ağacı Daralt" },
+"tab_twisty_collapsed_tooltip": { "message": "Ağacı Genişlet" },
+"tab_tree_tooltip": { "message": "$TREE$\n  ...ve $COUNT$ tane daha sekme",
+  "placeholders": {
+    "tree": { "content": "$1", "example": "* Ağaç\n  * Stil\n    * Sekme" },
+    "count": { "content": "$2", "example": "3" }
+  }},
+"tabbar_newTabButton_tooltip": { "message": "Yeni bir sekme aç" },
+"tabbar_newTabAction_tooltip": { "message": "Yeni bir sekme olarak aç…" },
+"tabbar_newTabAction_independent_label": { "message": "&Bağımsız Sekme" },
+"tabbar_newTabAction_independent_command": { "message": "Bağımsız Sekme" },
+"tabbar_newTabAction_child_label": { "message": "&Alt Sekme" },
+"tabbar_newTabAction_child_command": { "message": "Alt Sekme" },
+"tabbar_newTabAction_childTop_command": { "message": "İlk Alt Sekme" },
+"tabbar_newTabAction_childEnd_command": { "message": "Son Alt Sekme" },
+"tabbar_newTabAction_sibling_label": { "message": "&Kardeş Sekme" },
+"tabbar_newTabAction_sibling_command": { "message": "Kardeş Sekme" },
+"tabbar_newTabAction_nextSibling_label": { "message": "&Sonraki Kardeş Sekme" },
+"tabbar_newTabAction_nextSibling_command": { "message": "Sonraki Kardeş Sekme" },
+"tabbar_newTabWithContexualIdentity_tooltip": { "message": "Yeni Kapsayıcı Sekme" },
+"tabbar_newTabWithContexualIdentity_default": { "message": "&Kapsayıcı Yok" },
+"groupTab_label": { "message": "$TITLE$ ve daha fazlası",
+  "placeholders": {
+    "title": { "content": "$1", "example": "başlık" }
+  }},
+"groupTab_label_default": { "message": "Grup" },
+"groupTab_temporary_label": { "message": "Alt sekme kalmadığında bu sekmeyi kapat" },
+"groupTab_temporaryAggressive_label": { "message": "Bir veya daha az alt sekme kaldığında bu sekmeyi kapat" },
+"groupTab_fromPinnedTab_label": { "message": "$TITLE$'dan Sekmeler",
+  "placeholders": {
+    "title": { "content": "$1", "example": "başlık" }
+  }},
+"groupTab_options_label": { "message": "Bu tür sekmenin açılmasını devre dışı bırakmak için bir seçenek var." },
+"groupTab_options_dismiss": { "message": "Bu ipucunu kapat" },
+"bookmarkFolder_label_default": { "message": "%ANY(\"%GROUP%\", \"$TITLE$ ve daha fazlası\")% (%YEAR%.%MONTH%.%DATE%)",
+  "placeholders": {
+    "title": { "content": "$1", "example": "Başlık" }
+  }},
+"bookmark_notification_notPermitted_title": { "message": "İzin hatası" },
+"bookmark_notification_notPermitted_message": { "message": "Yer imleri oluşturma izni alınamadı. Ekstra izinler vermek için buraya tıklayın." },
+"bookmark_notification_notPermitted_message_linux": { "message": "Yer imleri oluşturma izni alınamadı. Ekstra izinler vermek için butona tıklayın." },
+"bookmarkContext_notification_notPermitted_title": { "message": "İzin hatası" },
+"bookmarkContext_notification_notPermitted_message": { "message": "Yer imleri için bağlam menüsü açma izni alınamadı. Ekstra izinler vermek için buraya tıklayın." },
+"bookmarkContext_notification_notPermitted_message_linux": { "message": "Yer imleri için bağlam menüsü açma izni alınamadı. Ekstra izinler vermek için butona tıklayın." },
+"dropLinksOnTabBehavior_message": { "message": "Bunu nasıl açmak istersiniz?" },
+"dropLinksOnTabBehavior_save": { "message": "Bu seçimi bundan sonra da yap" },
+"dropLinksOnTabBehavior_load": { "message": "Bu sekmeye yükle" },
+"dropLinksOnTabBehavior_newtab": { "message": "Yeni alt sekme aç" },
+"tabDragBehaviorNotification_message_duration_single": { "message": "8s" },
+"tabDragBehaviorNotification_message_duration_both": { "message": "16s" },
+"tabDragBehaviorNotification_message_base": { "message": "Yan panelin dışına bırakmak $RESULT$.",
+  "placeholders": {
+    "result": { "content": "$1", "example": "bir şeyler olacak" }
+  }},
+"tabDragBehaviorNotification_message_inverted_base_with_shift": { "message": "Shift tuşu ile sürüklemek $RESULT$.",
+  "placeholders": {
+    "result": { "content": "$1", "example": "bir şeyler olacak" }
+  }},
+"tabDragBehaviorNotification_message_inverted_base_without_shift": { "message": "Shift tuşu olmadan sürüklemek $RESULT$.",
+  "placeholders": {
+    "result": { "content": "$1", "example": "bir şeyler olacak" }
+  }},
+"tabDragBehaviorNotification_message_tree_tearoff": { "message": "sekmeleri pencereden ayır" },
+"tabDragBehaviorNotification_message_tab_tearoff": { "message": "sekmeyi pencereden ayır" },
+"tabDragBehaviorNotification_message_tree_bookmark": { "message": "sekme bırakılan yere bağlantılar veya yer imleri oluştur" },
+"tabDragBehaviorNotification_message_tab_bookmark": { "message": "sekme bırakılan yere bir bağlantı veya yer imi oluştur" },
+"tabsHighlightingNotification_message": { "message": "Sekmeler vurgulanıyor... $PROGRESS$ %",
+  "placeholders": {
+    "progress": { "content": "$1", "example": "50" }
+  }},
+"blank_allUrlsPermissionRequiredMessage": { "message": "Bu mesaj, Firefox'un Tree Style Tab eklentisi tarafından sağlanan bir iletişim kutusunu geri yüklemeye çalışmasından kaynaklanmaktadır. Bu mesajın bir daha görünmesini istemiyorsanız, Tree Style Tab'ın ayrıntılar sayfasındaki \"İzinler\" sekmesi aracılığıyla \"Tüm web siteleri için verilerinize erişim\" iznini verin." },
+"warnOnCloseTabs_title": { "message": "Sekmeleri kapat?" },
+"warnOnCloseTabs_message": { "message": "$NUMBER$ sekmeyi kapatmak üzeresiniz. Devam etmek istediğinizden emin misiniz?",
+  "placeholders": {
+    "NUMBER": { "content": "$1", "example": "10" }
+  }},
+"warnOnCloseTabs_warnAgain": { "message": "Birden fazla sekmeyi kapatmaya çalıştığımda uyar" },
+"warnOnCloseTabs_close": { "message": "Sekmeleri Kapat" },
+"warnOnCloseTabs_cancel": { "message": "İptal" },
+"warnOnCloseTabs_fromOutside_title": { "message": "Alt sekmeleri ile birlikte mi kapatılsın?" },
+"warnOnCloseTabs_fromOutside_message": { "message": "Kapatılan sekmenin $NUMBER$ alt sekmesi vardı. Bunları da kapatmak istediğinizden emin misiniz?\n(*İptal etmek, kapatılan üst sekmeyi geri yükleyecektir.)",
+  "placeholders": {
+    "NUMBER": { "content": "$1", "example": "10" }
+  }},
+"warnOnCloseTabs_notification_message": { "message": "Değilse, işlemi iptal etmek için buraya tıklayın.\nAksi takdirde kalan sekmeler $TIMEOUT$ saniye sonra kapanacaktır.",
+  "placeholders": {
+    "TIMEOUT": { "content": "$1", "example": "10" }
+  }},
+"warnOnCloseTabs_notification_message_linux": { "message": "Değilse, işlemi iptal etmek için butona tıklayın.\nAksi takdirde kalan sekmeler $TIMEOUT$ saniye sonra kapanacaktır.",
+  "placeholders": {
+    "TIMEOUT": { "content": "$1", "example": "10" }
+  }},
+"warnOnAutoGroupNewTabs_title": { "message": "Sekmeleri gruplandır?" },
+"warnOnAutoGroupNewTabs_message": { "message": "$NUMBER$ sekme aynı anda açılıyor. Bunları bir ağaç içinde gruplamak ister misiniz?",
+  "placeholders": {
+    "NUMBER": { "content": "$1", "example": "10" }
+  }},
+"warnOnAutoGroupNewTabs_warnAgain": { "message": "Aynı anda birden fazla sekme açıldığında bana sor" },
+"warnOnAutoGroupNewTabs_close": { "message": "Sekmeleri Grupla" },
+"warnOnAutoGroupNewTabs_cancel": { "message": "Sekmeleri Düz Tut" },
+"bookmarkDialog_dialogTitle_single": { "message": "Yeni Yer İmi" },
+"bookmarkDialog_dialogTitle_multiple": { "message": "Yeni Yer İmleri" },
+"bookmarkDialog_title": { "message": "Ad:" },
+"bookmarkDialog_title_accessKey": { "message": "a" },
+"bookmarkDialog_url": { "message": "Konum:" },
+"bookmarkDialog_url_accessKey": { "message": "k" },
+"bookmarkDialog_parentId": { "message": "Klasör:" },
+"bookmarkDialog_saveContainerRedirectKey": { "message": "Kapsayıcı Bilgilerini Kapsayıcı Yer İmleri İçin Kaydet" },
+"bookmarkDialog_accept": { "message": "Kaydet" },
+"bookmarkDialog_cancel": { "message": "İptal" },
+
+"bookmarkFolderChooser_unspecified":   { "message": "(belirtilmedi)" },
+"bookmarkFolderChooser_blank":         { "message": "(ad yok)" },
+"bookmarkFolderChooser_useThisFolder": { "message": "Bu klasörü kullan" },
+
+"syncDeviceDefaultName": { "message": "$BROWSER$ üzerinde $PLATFORM$",
+  "placeholders": {
+    "PLATFORM": { "content": "$1", "example": "Firefox" },
+    "BROWSER":  { "content": "$2", "example": "Windows" }
+  }},
+"syncDeviceMissingDeviceName": { "message": "isimsiz bir cihaz" },
+"syncDeviceUnknownDevice":     { "message": "bilinmeyen bir cihaz" },
+"syncAvailable_notification_title":   { "message": "Sekmeler artık TST'den diğer cihazlara gönderilebilir." },
+"syncAvailable_notification_message": { "message": "Sekmeler cihazlarınız arasında aktarılabilir. Lütfen bu cihaza tanımlanabilir bir ad vermek için buraya tıklayın." },
+"syncAvailable_notification_message_linux": { "message": "Sekmeler cihazlarınız arasında aktarılabilir. Bu cihaza tanımlanabilir bir ad vermek için butona tıklayın." },
+"sentTabs_notification_title":            { "message": "\u200b" },
+"sentTabs_notification_message":          { "message": "Sekme $DEVICE$ cihazına gönderildi",
+  "placeholders": {
+    "DEVICE": { "content": "$1", "example": "Cihaz X üzerinde Firefox" }
+  }},
+"sentTabs_notification_title_multiple":   { "message": "\u200b" },
+"sentTabs_notification_message_multiple": { "message": "Sekmeler $DEVICE$ cihazına gönderildi",
+  "placeholders": {
+    "DEVICE": { "content": "$1", "example": "Cihaz X üzerinde Firefox" }
+  }},
+"sentTabsToAllDevices_notification_title":            { "message": "\u200b" },
+"sentTabsToAllDevices_notification_message":          { "message": "Sekme tüm cihazlara gönderildi" },
+"sentTabsToAllDevices_notification_title_multiple":   { "message": "\u200b" },
+"sentTabsToAllDevices_notification_message_multiple": { "message": "Sekmeler tüm cihazlara gönderildi" },
+"receiveTabs_notification_title":            { "message": "$DEVICE$ cihazından sekme",
+  "placeholders": {
+    "DEVICE": { "content": "$1", "example": "Cihaz X üzerinde Firefox" }
+  }},
+"receiveTabs_notification_message":          { "message": "$URL$",
+  "placeholders": {
+    "URL": { "content": "$1", "example": "http://ornek.com/" }
+  }},
+"receiveTabs_notification_title_multiple":   { "message": "$DEVICE$ cihazından sekmeler",
+  "placeholders": {
+    "DEVICE": { "content": "$1", "example": "Cihaz X üzerinde Firefox" }
+  }},
+"receiveTabs_notification_message_multiple": { "message": "$URL$\nve $REST$ tane daha sekme",
+  "placeholders": {
+    "URL": { "content": "$1", "example": "http://ornek.com/" },
+    "ALL": { "content": "$2", "example": "4" },
+    "REST": { "content": "$3", "example": "3" }
+  }},
+
+"sidebarPositionRighsideNotification_message":   { "message": "TST, yan panel pozisyonunu \"Sağ Taraf\" olarak algıladı. Mevcut pozisyona uygun görünüme geçmek ister misiniz?" },
+"sidebarPositionRighsideNotification_rightside": { "message": "Sağ Taraf için görünümü uygula" },
+"sidebarPositionRighsideNotification_leftside":  { "message": "Sol Taraf için görünümü koru" },
+
+"sidebarPositionOptionNotification_title":   { "message": "Yan panel pozisyonu için görünüm seçeneği kaydedildi" },
+"sidebarPositionOptionNotification_message": { "message": "Seçeneği değiştirmek isterseniz lütfen Tree Style Tab'ın seçenekler sayfasındaki \"Görünüm\" bölümüne bakın." },
+
+"startup_notification_title_installed":   { "message": "Tree Style Tab yeni kullanıcıları için" },
+"startup_notification_message_installed": { "message": "Daha doğal bir kullanıcı deneyimi için bazı ek izinler gerekmektedir. Lütfen bunları vermek için buraya tıklayın." },
+"startup_notification_message_installed_linux": { "message": "Daha doğal bir kullanıcı deneyimi için bazı ek izinler gerekmektedir. Bunları vermek için butona tıklayın." },
+"startup_notification_title_updated":     { "message": "Tree Style Tab'deki Dikkate Değer Değişiklikler" },
+"startup_notification_message_updated":   { "message": "Bazı değişiklikler kullanımınızı etkileyebilir. Lütfen değişiklik günlüğünü görmek için buraya tıklayın." },
+"startup_notification_message_updated_linux":   { "message": "Bazı değişiklikler kullanımınızı etkileyebilir. Lütfen değişiklik günlüğünü görmek için butona tıklayın." },
+
+"message_startup_description_1": { "message": "Tree Style Tab'ın dikey sekme çubuğu, seçilebilir yan panel seçeneklerinden biridir. Henüz görmüyorsanız," },
+"message_startup_description_key": { "message": "\"F1\" tuşuna" },
+"message_startup_description_2": { "message": " basın veya" },
+"message_startup_description_3": { "message": " düğmesine tıklayın, yan paneli etkinleştirmek için." },
+"message_startup_description_sync_before": { "message": "Sekmeler sadece Firefox Sync aracılığıyla TST yüklü cihazlara gönderilebilir. Öncelikle Firefox'un seçeneklerinden Firefox Sync'i etkinleştirin ve diğer cihazlara da TST'yi yükleyin. Ayrıca," },
+"message_startup_description_sync_link":   { "message": "cihaz adı manuel olarak yapılandırılmalıdır" },
+"message_startup_description_sync_after":  { "message": "." },
+
+"message_startup_history_before":     { "message": "Değiştirilen davranışlar (veya değil) geçici çözümlerle geri getirilebilir. Daha fazla ayrıntı için " },
+"message_startup_history_uri":        { "message": "https://addons.mozilla.org/firefox/addon/tree-style-tab/versions/" },
+ 
+  "message_startup_history_after": { "message": "daha fazla bilgi için." },
+
+  "message_startup_requestPermissions_description": { "message": "⚠Bazı özellikler ekstra izinler gerektirir. Bu özellikleri etkinleştirmek istiyorsanız, izinleri manuel olarak vermeniz gerekmektedir." },
+  "message_startup_requestPermissions_bookmarks": { "message": "\"Bu Ağacı Yer İmi Olarak Kaydet\" sekmelerin bağlam menüsünde, diğer ortamlardan içe aktarılan yer imi iç URL'lerinin otomatik göçü ve yer imlerinden açılan sekmelerin algılanması (yer imlerine erişim gerektirir)" },
+  "message_startup_requestPermissions_allUrls": { "message": "Sekmelerin odaklarını klavye kısayollarıyla değiştirirken, daraltılmış ağacı genişletme ve daraltılmış alt öğeleri atla / kapatılan sekmeleri geri yüklemek için boş bir pencereyi geri yükleme eylemleriyle kapatılan bir pencereyi geri yükleme" },
+  "message_startup_requestPermissions_clipboardRead": { "message": "Panodaki URL'yi \"Yeni Sekme\" düğmesine ortadan tıklayarak yeni bir sekmede açma izni ver (\"dom.events.asyncClipboard.clipboardItem\" seçeneğini etkinleştirmeniz gerekebilir)" },
+
+  "message_startup_userChromeCss_notify": { "message": "Üst sekme çubuğunu ve yan panel başlığını nasıl gizlerim?" },
+  "message_startup_userChromeCss_description_1": { "message": "WebExtensions kısıtlamaları nedeniyle, Tree Style Tab tarayıcının üst sekme çubuğunu ve yan panel başlığını kontrol edemez. Bunları kontrol etmeniz gerekiyorsa, bkz. " },
+  "message_startup_userChromeCss_description_link_label": { "message": "userChrome.css ile kişiselleştirme örnekleri" },
+  "message_startup_userChromeCss_description_link_uri": { "message": "https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#for-userchromecss" },
+  "message_startup_userChromeCss_description_2": { "message": ". Ancak " },
+  "message_startup_userChromeCss_description_note": { "message": "bu çok düşük seviyeli bir özelleştirmedir, dolayısıyla garanti yoktur ve tarayıcının gelecekteki sürümlerinde sorunlara neden olabilir. Lütfen yalnızca ne yaptığınızı biliyorsanız ve bu tür sorunları kendiniz çözebileceğinize güveniyorsanız kendi sorumluluğunuzda deneyin" },
+  "message_startup_userChromeCss_description_3": { "message": "." },
+
+  "api_requestedPermissions_title": { "message": "Ekstra İzin İsteği" },
+  "api_requestedPermissions_message": { "message": "⚠Uzantı \"$NAME$\" şu işlemi gerçekleştirmek istiyor:\n\n$PERMISSIONS$\n\nTree Style Tab'ın API'si aracılığıyla. Bunu onaylamak için buraya tıklayın.",
+    "placeholders": {
+      "NAME": { "content": "$1", "example": "foobar" },
+      "PERMISSIONS": { "content": "$2", "example": "sekme" }
+    }},
+  "api_requestedPermissions_message_linux": { "message": "⚠Uzantı \"$NAME$\" şu işlemi gerçekleştirmek istiyor:\n\n$PERMISSIONS$\n\nTree Style Tab'ın API'si aracılığıyla. Bunu onaylamak için düğmeye tıklayın.",
+    "placeholders": {
+      "NAME": { "content": "$1", "example": "foobar" },
+      "PERMISSIONS": { "content": "$2", "example": "sekme" }
+    }},
+  "api_requestedPermissions_type_activeTab": { "message": "Aktif tarayıcı sekmesine erişim" },
+  "api_requestedPermissions_type_tabs": { "message": "Tarayıcı sekmelerine erişim" },
+  "api_requestedPermissions_type_cookies": { "message": "Tarayıcı sekmelerinin kapsayıcısını algılama" },
+
+
+  "guessNewOrphanTabAsOpenedByNewTabCommandTitle": { "message": "Yeni Sekme|Yeni Gizli Sekme" },
+
+
+  "context_menu_label": { "message": "Sekme ağacı" },
+
+  "context_reloadTree_label": { "message": "&Bu Ağacı Yeniden Yükle" },
+  "context_reloadTree_label_multiselected": { "message": "&Seçilen Ağaçları Yeniden Yükle" },
+  "context_reloadTree_command": { "message": "Bu Ağacı Yeniden Yükle" },
+  "context_reloadDescendants_label": { "message": "Alt Öğeleri &Yeniden Yükle" },
+  "context_reloadDescendants_label_multiselected": { "message": "Seçilen sekmelerin Alt Öğelerini &Yeniden Yükle" },
+  "context_reloadDescendants_command": { "message": "Alt Öğeleri Yeniden Yükle" },
+  "context_toggleMuteTree_label_mute": { "message": "&Bu Ağacı Sessize Al" },
+  "context_toggleMuteTree_label_multiselected_mute": { "message": "&Seçilen Ağaçları Sessize Al" },
+  "context_toggleMuteTree_label_unmute": { "message": "Bu Ağacın Sessizliğini &Kaldır" },
+  "context_toggleMuteTree_label_multiselected_unmute": { "message": "Seçilen Ağaçların Sessizliğini &Kaldır" },
+  "context_toggleMuteTree_command": { "message": "Bu Ağacı Sessize Al/Kaldır" },
+  "context_toggleMuteDescendants_label_mute": { "message": "Alt Öğeleri &Sessize Al" },
+  "context_toggleMuteDescendants_label_multiselected_mute": { "message": "Seçilen sekmelerin Alt Öğelerini &Sessize Al" },
+  "context_toggleMuteDescendants_label_unmute": { "message": "Alt Öğelerin Sessizliğini &Kaldır" },
+  "context_toggleMuteDescendants_label_multiselected_unmute": { "message": "Seçilen sekmelerin Alt Öğelerinin Sessizliğini &Kaldır" },
+  "context_toggleMuteDescendants_command": { "message": "Alt Öğeleri Sessize Al/Kaldır" },
+  "context_unblockAutoplayTree_label": { "message": "Bu Ağacı &Oynat" },
+  "context_unblockAutoplayTree_label_multiselected": { "message": "Seçilen Ağaçları &Oynat" },
+  "context_unblockAutoplayTree_command": { "message": "Bu Ağacı Oynat" },
+  "context_unblockAutoplayDescendants_label": { "message": "Alt Öğeleri &Oynat" },
+  "context_unblockAutoplayDescendants_label_multiselected": { "message": "Seçilen sekmelerin Alt Öğelerini &Oynat" },
+  "context_unblockAutoplayDescendants_command": { "message": "Alt Öğeleri Oynat" },
+  "context_closeTree_label": { "message": "Bu Ağacı &Kapat" },
+  "context_closeTree_label_multiselected": { "message": "Seçilen Ağaçları &Kapat" },
+  "context_closeTree_command": { "message": "Bu Ağacı Kapat" },
+  "context_closeDescendants_label": { "message": "Alt Öğeleri &Kapat" },
+  "context_closeDescendants_label_multiselected": { "message": "Seçilen sekmelerin Alt Öğelerini &Kapat" },
+  "context_closeDescendants_command": { "message": "Alt Öğeleri Kapat" },
+  "context_closeOthers_label": { "message": "Bu Ağaç Hariç Diğer Sekmeleri K&apat" },
+  "context_closeOthers_label_multiselected": { "message": "Seçilen Ağaçlar Hariç Diğer Sekmeleri K&apat" },
+  "context_closeOthers_command": { "message": "Bu Ağaç Hariç Diğer Sekmeleri Kapat" },
+  "context_toggleSticky_label_stick": { "message": "Sekmeyi Kenarlara Ya&pıştır" },
+  "context_toggleSticky_label_multiselected_stick": { "message": "Seçilen Sekmeleri Kenarlara Ya&pıştır" },
+  "context_toggleSticky_label_unstick": { "message": "Sekmeyi Kenarlardan Çı&kar" },
+  "context_toggleSticky_label_multiselected_unstick": { "message": "Seçilen Sekmeleri Kenarlardan Çı&kar" },
+  "context_toggleSticky_command": { "message": "Sekmeyi Kenarlara Yapıştır/Çıkar" },
+  "context_collapseTree_label": { "message": "Bu Ağacı D&aralt" },
+  "context_collapseTree_label_multiselected": { "message": "Seçilen Ağaçları D&aralt" },
+  "context_collapseTree_command": { "message": "Bu Ağacı Daralt" },
+  "context_collapseTreeRecursively_label": { "message": "Bu Ağacı Yeniden D&aralt" },
+  "context_collapseTreeRecursively_label_multiselected": { "message": "Seçilen Ağaçları Yeniden D&aralt" },
+  "context_collapseTreeRecursively_command": { "message": "Bu Ağacı Yeniden Daralt" },
+  "context_collapseAll_label": { "message": "Hepsini D&aralt" },
+  "context_collapseAll_command": { "message": "Hepsini Daralt" },
+  "context_expandTree_label": { "message": "Bu Ağacı Ge&nişlet" },
+  "context_expandTree_label_multiselected": { "message": "Seçilen Ağaçları Ge&nişlet" },
+  "context_expandTree_command": { "message": "Bu Ağacı Genişlet" },
+  "context_expandTreeRecursively_label": { "message": "Bu Ağacı Tekrar Ge&nişlet" },
+  "context_expandTreeRecursively_label_multiselected": { "message": "Seçilen Ağaçları Tekrar Ge&nişlet" },
+  "context_expandTreeRecursively_command": { "message": "Bu Ağacı Tekrar Genişlet" },
+  "context_expandAll_label": { "message": "Hepsini Ge&nişlet" },
+  "context_expandAll_command": { "message": "Hepsini Genişlet" },
+  "context_bookmarkTree_label": { "message": "Bu Ağacı &Yer İmi Olarak Kaydet…" },
+  "context_bookmarkTree_label_multiselected": { "message": "Seçilen Ağaçları &Yer İmi Olarak Kaydet…" },
+  "context_bookmarkTree_command": { "message": "Bu Ağacı Yer İmi Olarak Kaydet…" },
+  "context_sendTreeToDevice_label": { "message": "Bu Ağacı Cihaz&ınıza Gönder" },
+  "context_sendTreeToDevice_label_multiselected": { "message": "Seçilen Ağaçları Cihaz&ınıza Gönder" },
+  "context_sendTreeToDevice_command": { "message": "Bu Ağacı Cihazınıza Gönder" },
+  "context_topLevel_prefix": { "message": "Üst düzey öğe: " },
+ 
+
+ 
+    "context_collapsed_label": { "message": "Daraltılmış (bir onay kutusu türü menü için test amaçlı)" },
+    "context_pinnedTab_label": { "message": "Sabitlemiş (bir radyo türü menü için test amaçlı)" },
+    "context_unpinnedTab_label": { "message": "Sabitlenmemiş (bir radyo türü menü için test amaçlı)" },
+  
+    "context_openAllBookmarksWithStructure_label": { "message": "&Tümünü Ağaç Yapısı Olarak Aç" },
+    "context_openAllBookmarksWithStructureRecursively_label": { "message": "&Tümünü Alt Klasörlerle Birlikte Ağaç Yapısı Olarak Aç" },
+  
+    "config_showTreeCommandsInTabsContextMenuGlobally_label": { "message": "Ağaç yapısındaki sekmeler için komutları küresel olarak sekme bağlam menüsünde göster, örn. yerel sekme çubuğunda" },
+  
+    "config_title": { "message": "Tree Style Tab Seçenekleri" },
+  
+    "config_recommended_choice": { "message": "(Önerilen)" },
+    "config_firefoxCompatible_choice": { "message": "(tarayıcının varsayılan davranışını simüle eder)" },
+  
+    "config_showExpertOptions_label": { "message": "Uzman Seçeneklerini Kilitsiz Hale Getir" },
+    "config_openOptionsInTab_label": { "message": "Bu seçenekler sayfasını daha geniş bir alanda aç" },
+  
+    "config_appearance_caption": { "message": "Görünüm" },
+  
+    "config_sidebarPosition_caption": { "message": "Yan panel pozisyonu için içerik stili:" },
+    "config_sidebarPosition_left": { "message": "Sol taraf" },
+    "config_sidebarPosition_right": { "message": "Sağ taraf" },
+    "config_sidebarPosition_auto": { "message": "Yan panelin gösterildiğini otomatik algıla" },
+    "config_sidebarPosition_description": { "message": "*Bu yapılandırma yan panelin kendisinin pozisyonunu değiştirmez. Yan panel başlığındaki anahtara tıklayıp \"Yan Paneli Sağa Taşı\" seçeneğine manuel olarak tıklamanız gerekmektedir." },
+  
+    "config_style_caption": { "message": "Tema" },
+    "config_style_proton": { "message": "Proton" },
+    "config_style_photon": { "message": "Photon" },
+    "config_style_sidebar": { "message": "Yan Panel" },
+    "config_style_highcontrast": { "message": "Yüksek Kontrast" },
+    "config_style_none": { "message": "Dekorasyon Yok" },
+    "config_style_none_info": { "message": " (*Lütfen her şeyi kendiniz \"Gelişmiş\" => \"Kullanıcı Stil Sayfası\" aracılığıyla süsleyin)" },
+  
+    "config_colorScheme_caption": { "message": "Renk şeması:" },
+    "config_colorScheme_photon": { "message": "Photon" },
+    "config_colorScheme_systemColor": { "message": "Sistem Rengi" },
+  
+    "config_maxTreeLevel_before": { "message": "Sekmeleri iç içe açın" },
+    "config_maxTreeLevel_after": { "message": "seviye(ler) (*Negatif değer \"sonsuz\" anlamına gelir)" },
+  
+    "config_faviconizePinnedTabs_label": { "message": "Sabitlenmiş sekmeleri yalnızca simgeleriyle göster" },
+    "config_maxFaviconizedPinnedTabsInOneRow_label_before": { "message": "Her sıra için en fazla " },
+    "config_maxFaviconizedPinnedTabsInOneRow_label_after": { "message": " veya daha az sekme göster (*0 veya daha az otomatik hesaplama anlamına gelir)" },
+    "config_maxPinnedTabsRowsAreaPercentage_label_before": { "message": "Sabitlenmiş sekmeler için alanın maksimum yüksekliği:" },
+    "config_maxPinnedTabsRowsAreaPercentage_label_after":  { "message": "% of the sidebar" },
+    "config_animation_label": { "message": "Animasyon efektlerini etkinleştir" },
+    "config_animationForce_label": { "message": "Platform ayarlarına bakılmaksızın animasyonları etkinleştir" },
+    "config_showCollapsedDescendantsByTooltip_label": { "message": "Sekme üzerindeki ipucunda daraltılmış alt öğeleri göster" },
+    "config_shiftTabsForScrollbarDistance_label_before": { "message": "Sekmeleri kenar çubuğuna göre şu kadar kaydır " },
+    "config_shiftTabsForScrollbarDistance_label_after": { "message": " otomatik gösterilen kaydırma çubuğuyla örtüşmesini önlemek için sekmelerin içindeki düğmeleri dokunulabilir halde tutmak amacıyla" },
+    "config_shiftTabsForScrollbarDistance_placeholder": { "message": "(CSS uzunluğu)" },
+    "config_shiftTabsForScrollbarOnlyOnHover_label": { "message": "Sekmeleri yalnızca fare imleci kaydırma çubuğuna yakınken kaydır" },
+    "config_suppressGapFromShownOrHiddenToolbar_caption": { "message": "Geçici olarak gösterilen/gizlenen araç çubuklarının aşağıdaki durumlarda yan panel içeriğinde oluşturduğu görsel boşluğu bastır" },
+    "config_suppressGapFromShownOrHiddenToolbarOnFullScreen_label": { "message": "Tam ekran pencerelerde" },
+    "config_suppressGapFromShownOrHiddenToolbarOnNewTab_label": { "message": "Firefox 85 ve sonrası için boş yeni sekmelerde" },
+    "config_suppressGapFromShownOrHiddenToolbarOnlyOnMouseOperation_label": { "message": "Yalnızca yan panelde fare ile tetiklenen işlemlerde" },
+    "config_showDialogInSidebar_label": { "message": "Mümkünse iletişim kutularını yan panelde göster" },
+    "config_outOfScreenTabsRenderingPages_label": { "message": "Önceden oluşturulacak sekmelerin sayfası sayısı:" },
+    "config_outOfScreenTabsRenderingPages_description": { "message": "* \"-1\" tüm sekmeleri daha iyi kaydırma performansı için önceden oluşturur ve bu nedenle başlangıçta daha uzun süre beklemeniz gerekebilir." },
+    "config_renderHiddenTabs_label": { "message": "Diğer uzantılar tarafından gizlenen sekmeleri göster" },
+  
+    "config_context_caption": { "message": "Bağlam Menüsü" },
+    "config_emulateDefaultContextMenu_label": { "message": "Yan panelde Sekme Bağlam Menüsünü simüle et" },
+    "config_extraItems_tabs_caption": { "message": "Ek Sekme Bağlam Menüsü Öğeleri" },
+    "config_extraItems_tabs_topLevel": { "message": "Üst Düzey" },
+    "config_extraItems_tabs_subMenu": { "message": "Alt Menü" },
+    "config_extraItems_tabs_middleClick": { "message": "Orta Tıklama Üzerine Eylem" },
+    "config_extraItems_bookmarks_caption": { "message": "Ek Yer İmi Bağlam Menüsü Öğeleri" },
+    "config_openAllBookmarksWithStructureDiscarded_label": { "message": "Sekmeler aktif hale gelene kadar beklemeye al" },
+    "config_suppressGroupTabForStructuredTabsFromBookmarks_label": { "message": "Açılan sekmeler zaten bir ağaç yapısında organize edilmişse en üst düzey grup sekmesini bastır" },
+  
+    "config_sendTabsToDevice_caption": { "message": "Sekmeleri Firefox Sync aracılığıyla diğer cihazlara bağlam menüsünü kullanarak gönder" },
+    "config_syncRequirements_description": { "message": "Bu özellik Firefox Sync'e bağlıdır ve sekmeler yalnızca TST yüklü cihazlara gönderilebilir. Önce tarayıcının ayarlarından Firefox Sync'i etkinleştirin ve diğer cihazlara da TST yükleyin." },
+    "config_syncDeviceInfo_name_label": { "message": "Bu cihazın adı ve simgesi:" },
+    "config_syncDeviceInfo_name_description_before": { "message": "TST, WebExtensions API'si kısıtlamaları nedeniyle Firefox Sync için yapılandırdığınız bu cihazın adını algılayamaz. Lütfen bu cihaz için tanımlayıcı bir ad manuel olarak belirleyin. (Firefox Sync cihaz adıyla eşleşmesi önerilir " },
+    "config_syncDeviceInfo_name_description_link": { "message": "Firefox Sync için cihaz adı" },
+    "config_syncDeviceInfo_name_description_href": { "message": "https://accounts.firefox.com/settings/clients" },
+    "config_syncDeviceInfo_name_description_after": { "message": ".)" },
+    "config_syncDeviceExpirationDays_label_before": { "message": "Bağlı olmayan cihazları şu süre boyunca otomatik olarak süresi dolduğunda sil:" },
+    "config_syncDeviceExpirationDays_label_after": { "message": " gün (\"0\" \"süresiz\" anlamına gelir)" },
+    "config_syncUnsendableUrlPattern_label": { "message": "Sekmelerin gönderilemez URL'lerini eşleştirme kuralı (*Bu, tarayıcının \"services.sync.engine.tabs.filteredUrls\" ayarıyla senkronize edilmelidir):" },
+    "config_otherDevices_caption": { "message": "Etkin diğer cihazlar:" },
+    "config_removeDeviceButton_label": { "message": "Sil" },
+    "config_removeDeviceButton_tooltip": { "message": "Bu cihazı listeden sil" },
+  
+    "config_autoAttachOnContextNewTabCommand_before": { "message": "\"Yeni Sekme\" bağlam menüsü komutu için, yeni boş sekmeyi aç" },
+    "config_autoAttachOnContextNewTabCommand_noControl": { "message": "(kontrol yok)" },
+    "config_autoAttachOnContextNewTabCommand_independent": { "message": "Bağımsız sekme" },
+    "config_autoAttachOnContextNewTabCommand_childTop": { "message": "Mevcut sekmenin İlk Çocuğu" },
+    "config_autoAttachOnContextNewTabCommand_childEnd": { "message": "Mevcut sekmenin Son Çocuğu" },
+    "config_autoAttachOnContextNewTabCommand_sibling": { "message": "Mevcut sekmenin Kardeşi" },
+    "config_autoAttachOnContextNewTabCommand_nextSibling": { "message": "Mevcut sekmenin Sonraki Kardeşi" },
+    "config_autoAttachOnContextNewTabCommand_nextSiblingWithInheritedContainer": { "message": "Sonraki Kardeş, aynı kap" },
+    "config_autoAttachOnContextNewTabCommand_after": { "message": "\u200b" },
+ 
+  
+
+
+ 
+      "config_newTabWithOwner_caption": { "message": "Mevcut Sekmelerden Açılan Sekmeler" },
+    
+      "config_autoAttachOnOpenedWithOwner_before": { "message": "Mevcut sekmeden açılan bir sekme olduğunda, şunu aç:" },
+      "config_autoAttachOnOpenedWithOwner_noControl": { "message": "(kontrol yok)" },
+      "config_autoAttachOnOpenedWithOwner_independent": { "message": "Bağımsız sekme" },
+      "config_autoAttachOnOpenedWithOwner_childNextToLastRelatedTab": { "message": "Ebeveyn sekmenin çocuğu, en son açılan çocuk yanında" },
+      "config_autoAttachOnOpenedWithOwner_childTop": { "message": "Ebeveyn sekmenin ilk çocuğu" },
+      "config_autoAttachOnOpenedWithOwner_childEnd": { "message": "Ebeveyn sekmenin son çocuğu" },
+      "config_autoAttachOnOpenedWithOwner_sibling": { "message": "Ebeveyn sekmenin kardeşi" },
+      "config_autoAttachOnOpenedWithOwner_nextSibling": { "message": "Ebeveyn sekmenin sonraki kardeşi" },
+      "config_autoAttachOnOpenedWithOwner_after": { "message": "\u200b" },
+    
+      "config_insertNewTabFromFirefoxViewAt_caption": { "message": "Firefox Görünümünden Yeni çocuk sekmelerin ekleme konumu (kök sekmeler olarak görünecektir)" },
+      "config_insertNewTabFromFirefoxViewAt_noControl": { "message": "Kontrol yok (tarayıcı veya diğer sekme uzantıları tarafından karar verileni saygı göster)" },
+      "config_insertNewTabFromFirefoxViewAt_nextToLastRelatedTab": { "message": "Yakın zamanda açılan çocuğun yanında veya açan yakınında" },
+      "config_insertNewTabFromFirefoxViewAt_top": { "message": "Ağacın en üstü (açan yakınında)" },
+      "config_insertNewTabFromFirefoxViewAt_end": { "message": "Ağacın sonu" },
+    
+      "config_autoGroupNewTabsFromFirefoxView_label": { "message": "Firefox Görünümünden açılan sekmeleri otomatik olarak grupla (gruplama için yeni bir sekme, \"... 'den Gelen Sekmeler\" gibi bir başlıkla açılır)" },
+      "config_groupTabTemporaryStateForChildrenOfFirefoxView_label": { "message": "Firefox Görünümünden açılan sekmeler için grup sekmelerinin varsayılan durumu:" },
+    
+      "config_insertNewTabFromPinnedTabAt_caption": { "message": "Sabitlemelerden yeni çocuk sekmelerin ekleme konumu (kök sekmeler olarak görünecektir)" },
+      "config_insertNewTabFromPinnedTabAt_noControl": { "message": "Kontrol yok (tarayıcı veya diğer sekme uzantıları tarafından karar verileni saygı göster)" },
+      "config_insertNewTabFromPinnedTabAt_nextToLastRelatedTab": { "message": "Yakın zamanda açılan çocuğun yanında veya açan yakınında" },
+      "config_insertNewTabFromPinnedTabAt_top": { "message": "Ağacın en üstü (açan yakınında)" },
+      "config_insertNewTabFromPinnedTabAt_end": { "message": "Ağacın sonu" },
+    
+      "config_autoGroupNewTabsFromPinned_label": { "message": "Aynı sabitlenmiş sekmeden açılan sekmeleri otomatik olarak grupla (gruplama için yeni bir sekme, \"... 'den Gelen Sekmeler\" gibi bir başlıkla açılır)" },
+      "config_groupTabTemporaryStateForChildrenOfPinned_label": { "message": "Aynı sabitlenmiş sekmeden açılan sekmeler için grup sekmelerinin varsayılan durumu:" },
+    
+    
+      "config_newTab_caption": { "message": "Mevcut Sekmelerden Olmayan Yeni Sekmeler" },
+    
+      "config_newTabButton_caption": { "message": "\"Yeni Sekme\" düğmesinde özel işlemler" },
+      "config_longPressOnNewTabButton_before":               { "message": "\"Yeni Sekme\" düğmesine uzun basarak " },
+      "config_longPressOnNewTabButton_newTabAction":         { "message": "yeni sekmenin nerede açılacağını belirleyin" },
+      "config_longPressOnNewTabButton_contextualIdentities": { "message": "konteyner seçin" },
+      "config_longPressOnNewTabButton_none":                 { "message": "(hiçbir şey)" },
+      "config_longPressOnNewTabButton_after":                { "message": "\u200b" },
+      "config_showNewTabActionSelector_label":               { "message": "\"Yeni Sekme\" düğmesinde gösterge düğmesini göster, düğme işaretlendiğinde yeni sekmenin nerede açılacağını belirleyin" },
+      "config_showContextualIdentitiesSelector_label":       { "message": "\"Yeni Sekme\" düğmesinde düğme işaretlendiğinde konteyner seçici düğmesini göster" },
+    
+      "config_newTabAction_caption": { "message": "Boş Yeni Sekmeler için Temel Kontrol" },
+      "config_autoAttachOnNewTabCommand_before": { "message": "Yeni boş sekme olarak aç" },
+      "config_autoAttachOnNewTabCommand_noControl": { "message": "(kontrol yok)" },
+      "config_autoAttachOnNewTabCommand_independent": { "message": "Bağımsız sekme" },
+      "config_autoAttachOnNewTabCommand_childTop": { "message": "Mevcut sekmenin ilk çocuğu" },
+      "config_autoAttachOnNewTabCommand_childEnd": { "message": "Mevcut sekmenin son çocuğu" },
+      "config_autoAttachOnNewTabCommand_sibling": { "message": "Mevcut sekmenin kardeşi" },
+      "config_autoAttachOnNewTabCommand_nextSibling": { "message": "Mevcut sekmenin sonraki kardeşi" },
+      "config_autoAttachOnNewTabCommand_after": { "message": "\u200b" },
+      "config_guessNewOrphanTabAsOpenedByNewTabCommandTitle_before": { "message": "Başlığı şu şekilde açıldığında yeni bir sekmenin, \"Yeni Boş Sekme\" eylemiyle açıldığını tahmin edin: " },
+      "config_guessNewOrphanTabAsOpenedByNewTabCommandUrl_before": { "message": " ya da URL'ler " },
+      "config_guessNewOrphanTabAsOpenedByNewTabCommandUrl_after": { "message": "(Birden fazla değeri bir ayırıcıyla listeleyebilirsiniz \"|\")" },
+    
+      "config_autoAttachOnNewTabButtonMiddleClick_before": { "message": "Orta tıklama için, yeni boş sekme olarak aç" },
+      "config_autoAttachOnNewTabButtonMiddleClick_noControl": { "message": "(kontrol yok)" },
+      "config_autoAttachOnNewTabButtonMiddleClick_independent": { "message": "Bağımsız sekme" },
+      "config_autoAttachOnNewTabButtonMiddleClick_childTop": { "message": "Mevcut sekmenin ilk çocuğu" },
+      "config_autoAttachOnNewTabButtonMiddleClick_childEnd": { "message": "Mevcut sekmenin son çocuğu" },
+      "config_autoAttachOnNewTabButtonMiddleClick_sibling": { "message": "Mevcut sekmenin kardeşi" },
+      "config_autoAttachOnNewTabButtonMiddleClick_nextSibling": { "message": "Mevcut sekmenin sonraki kardeşi" },
+      "config_autoAttachOnNewTabButtonMiddleClick_nextSiblingWithInheritedContainer": { "message": "Ctrl-tıklamayla aynı (sonraki kardeş, aynı konteyner)" },
+      "config_autoAttachOnNewTabButtonMiddleClick_after": { "message": "\u200b" },
+    
+      "config_middleClickPasteURLOnNewTabButton_label": { "message": "Panodaki URL ile yeni sekme aç (*\"browser.tabs.searchclipboardfor.middleclick\"=\"true\" tarayıcının yerleşik davranışının simülasyonudur ve \"dom.events.asyncClipboard.clipboardItem\"'ı etkinleştirmeniz gerekebilir)" },
+    
+      "config_autoAttachOnNewTabButtonAccelClick_before": { "message": "Ctrl/⌘-tıklama için, yeni boş sekme olarak aç" },
+      "config_autoAttachOnNewTabButtonAccelClick_noControl": { "message": "(kontrol yok)" },
+      "config_autoAttachOnNewTabButtonAccelClick_independent": { "message": "Bağımsız sekme" },
+      "config_autoAttachOnNewTabButtonAccelClick_childTop": { "message": "Mevcut sekmenin ilk çocuğu" },
+      "config_autoAttachOnNewTabButtonAccelClick_childEnd": { "message": "Mevcut sekmenin son çocuğu" },
+      "config_autoAttachOnNewTabButtonAccelClick_sibling": { "message": "Mevcut sekmenin kardeşi" },
+      "config_autoAttachOnNewTabButtonAccelClick_nextSibling": { "message": "Mevcut sekmenin sonraki kardeşi" },
+      "config_autoAttachOnNewTabButtonAccelClick_nextSiblingWithInheritedContainer": { "message": "Aynı konteynerdeki sonraki kardeş" },
+      "config_autoAttachOnNewTabButtonAccelClick_after": { "message": "\u200b" },
+    
+      "config_autoAttachWithURL_caption": { "message": "Boş olmayan yeni sekmeler" },
+    
+      "config_duplicateTabAction_caption": { "message": "Sekmeleri Çoğalt (\"Yeniden Yükle\" düğmesine orta tıklama, vb.)" },
+    
+      "config_autoAttachOnDuplicated_before": { "message": "Şunu çoğalt:" },
+      "config_autoAttachOnDuplicated_noControl": { "message": "(kontrol yok)" },
+      "config_autoAttachOnDuplicated_independent": { "message": "Bağımsız sekme" },
+      "config_autoAttachOnDuplicated_childTop": { "message": "Mevcut sekmenin ilk çocuğu" },
+      "config_autoAttachOnDuplicated_childEnd": { "message": "Mevcut sekmenin son çocuğu" },
+      "config_autoAttachOnDuplicated_sibling": { "message": "Mevcut sekmenin kardeşi" },
+      "config_autoAttachOnDuplicated_nextSibling": { "message": "Mevcut sekmenin sonraki kardeşi" },
+      "config_autoAttachOnDuplicated_after": { "message": "\u200b" },
+ 
+    
+
+    "config_fromExternal_caption": { "message": "Diğer Uygulamalardan Yeni Sekme" },
+    "config_autoAttachOnOpenedFromExternal_before": { "message": "Aç olarak" },
+    "config_autoAttachOnOpenedFromExternal_noControl": { "message": "(kontrol yok)" },
+    "config_autoAttachOnOpenedFromExternal_independent": { "message": "Bağımsız sekme" },
+    "config_autoAttachOnOpenedFromExternal_childTop": { "message": "Mevcut sekmenin İlk Alt Sekmesi" },
+    "config_autoAttachOnOpenedFromExternal_childEnd": { "message": "Mevcut sekmenin Son Alt Sekmesi" },
+    "config_autoAttachOnOpenedFromExternal_sibling": { "message": "Mevcut sekmenin Kardeş Sekmesi" },
+    "config_autoAttachOnOpenedFromExternal_nextSibling": { "message": "Mevcut sekmenin Bir Sonraki Kardeş Sekmesi" },
+    "config_autoAttachOnOpenedFromExternal_after": { "message": "\u200b" },
+    "config_inheritContextualIdentityToTabsFromExternalMode_label": { "message": "Kapsayıcı:" },
+    "config_inheritContextualIdentityToTabsFromExternalMode_default": { "message": "(kontrol yok)" },
+    "config_inheritContextualIdentityToTabsFromExternalMode_parent": { "message": "Ağaçtaki üst sekmeden devral" },
+    "config_inheritContextualIdentityToTabsFromExternalMode_lastActive": { "message": "Mevcut sekmeden devral" },
+    
+    "config_sameSiteOrphan_caption": { "message": "Adres çubuğundan, yer imlerinden, geçmişten veya diğer durumlarda mevcut sekmeyle aynı web sitesine sahip yeni sekme" },
+    "config_autoAttachSameSiteOrphan_before": { "message": "Aç olarak" },
+    "config_autoAttachSameSiteOrphan_noControl": { "message": "(kontrol yok)" },
+    "config_autoAttachSameSiteOrphan_independent": { "message": "Bağımsız sekme" },
+    "config_autoAttachSameSiteOrphan_childTop": { "message": "Mevcut sekmenin İlk Alt Sekmesi" },
+    "config_autoAttachSameSiteOrphan_childEnd": { "message": "Mevcut sekmenin Son Alt Sekmesi" },
+    "config_autoAttachSameSiteOrphan_sibling": { "message": "Mevcut sekmenin Kardeş Sekmesi" },
+    "config_autoAttachSameSiteOrphan_nextSibling": { "message": "Mevcut sekmenin Bir Sonraki Kardeş Sekmesi" },
+    "config_autoAttachSameSiteOrphan_after": { "message": "\u200b" },
+    "config_inheritContextualIdentityToSameSiteOrphanMode_label": { "message": "Kapsayıcı:" },
+    "config_inheritContextualIdentityToSameSiteOrphanMode_default": { "message": "(kontrol yok)" },
+    "config_inheritContextualIdentityToSameSiteOrphanMode_parent": { "message": "Ağaçtaki üst sekmeden devral" },
+    "config_inheritContextualIdentityToSameSiteOrphanMode_lastActive": { "message": "Mevcut sekmeden devral" },
+  
+    "config_anyOtherTrigger_caption": { "message": "Diğer tüm tetikleyicilerden gelen sekmeler" },
+    "config_autoAttachOnAnyOtherTrigger_before": { "message": "Aç olarak" },
+    "config_autoAttachOnAnyOtherTrigger_noControl": { "message": "(kontrol yok)" },
+    "config_autoAttachOnAnyOtherTrigger_independent": { "message": "Bağımsız sekme" },
+    "config_autoAttachOnAnyOtherTrigger_childTop": { "message": "Mevcut sekmenin İlk Alt Sekmesi" },
+    "config_autoAttachOnAnyOtherTrigger_childEnd": { "message": "Mevcut sekmenin Son Alt Sekmesi" },
+    "config_autoAttachOnAnyOtherTrigger_sibling": { "message": "Mevcut sekmenin Kardeş Sekmesi" },
+    "config_autoAttachOnAnyOtherTrigger_nextSibling": { "message": "Mevcut sekmenin Bir Sonraki Kardeş Sekmesi" },
+    "config_autoAttachOnAnyOtherTrigger_after": { "message": "\u200b" },
+    "config_autoAttachOnAnyOtherTrigger_caution": { "message": "*DİKKAT: Bu seçenek diğer uzantıların davranışını bozma riski taşır." },
+    "config_inheritContextualIdentityToTabsFromAnyOtherTriggerMode_label": { "message": "Kapsayıcı:" },
+    "config_inheritContextualIdentityToTabsFromAnyOtherTriggerMode_default": { "message": "(kontrol yok)" },
+    "config_inheritContextualIdentityToTabsFromAnyOtherTriggerMode_parent": { "message": "Ağaçtaki üst sekmeden devral" },
+    "config_inheritContextualIdentityToTabsFromAnyOtherTriggerMode_lastActive": { "message": "Mevcut sekmeden devral" },
+  
+  
+    
+      "config_inheritContextualIdentityToUnopenableURLTabs_label": { "message": "Sekme, uzantının izniyle açılamayacak bir URL'ye sahip olsa bile, devralınan kapsayıcı ile yeniden aç" },
+    
+      "config_groupTab_caption": { "message": "Sekmelerin otomatik gruplanması" },
+    
+      "config_tabBunchesDetectionTimeout_before": { "message": "Bir yer imi klasöründen açılan sekmeleri şu süre içinde algıla:" },
+      "config_tabBunchesDetectionTimeout_after": { "message": "ms ve:" },
+      "config_autoGroupNewTabsFromBookmarks_label": { "message": "\"... ve daha fazlası\" gibi bir başlığa sahip bir sekmenin altına sekmeleri grupla" },
+      "config_restoreTreeForTabsFromBookmarks_label": { "message": "Ağaç yapısını geri yükle" },
+      "config_requireBookmarksPermission_tooltiptext": { "message": "Bu özellik yer imlerine erişim izni gerektirir. Gerekli izni istemek için buraya tıklayın." },
+      "config_requestPermissions_bookmarks_autoGroupNewTabs_before": { "message": "(" },
+      "config_requestPermissions_bookmarks_autoGroupNewTabs_after": { "message": "Sekmelere karşılık gelen yer imlerini algılamaya izin ver)" },
+      "config_tabsFromSameFolderMinThresholdPercentage_before": { "message": "Tüm yeni sekmeleri bir yer imi klasöründen açılmış gibi kabul et, eğer % " },
+      "config_tabsFromSameFolderMinThresholdPercentage_after": { "message": " sekmelerin karşılık gelen yer imi ortak bir yer imi klasöründe bulunuyorsa" },
+      "config_autoGroupNewTabsFromOthers_label": { "message": "Yer imi dışındaki tetikleyicilerden aynı anda açılan sekmeleri de otomatik olarak grupla" },
+      "config_tabBunchesDetectionDelayOnNewWindow_before": { "message": "Ancak, yeni bir pencere açıldığında ve \"ana sayfa\" olarak açılan sekmelerin bir parçası olduğunda yeni sekmeleri şu süre içinde gruplama:" },
+      "config_tabBunchesDetectionDelayOnNewWindow_after": { "message": "ms" },
+      "config_warnOnAutoGroupNewTabs_label": { "message": "Sekmeleri gruplamak için onay iste" },
+      "config_warnOnAutoGroupNewTabsWithListing_label": { "message": "Onay diyalogunda gruplandırılacak sekmeleri listele" },
+    
+      "config_renderTreeInGroupTabs_label": { "message": "Grup sekmelerinde ağacı render et" },
+    
+      "config_groupTabTemporaryState_caption": { "message": "Her bağlam için grup sekmelerinin varsayılan durumu" },
+      "config_groupTabTemporaryState_option_default": { "message": "Hiçbir şeyi kontrol etme" },
+      "config_groupTabTemporaryState_option_checked_before": { "message": "\"" },
+      "config_groupTabTemporaryState_option_checked_after": { "message": "\" öğesini kontrol et" },
+      "config_groupTabTemporaryStateForNewTabsFromBookmarks_label": { "message": "Yer imlerinden açılan sekmeler için:" },
+      "config_groupTabTemporaryStateForNewTabsFromOthers_label": { "message": "Yer imi dışındaki tetikleyicilerden aynı anda açılan sekmeler için:" },
+      "config_groupTabTemporaryStateForOrphanedTabs_label": { "message": "Kapanan üst sekmenin yerine açılan sekmeler için:" },
+      "config_groupTabTemporaryStateForAPI_label": { "message": "Diğer eklentiler aracılığıyla API kullanılarak gruplanan sekmeler için:" },
+    
+      "config_inheritContextualIdentityToChildTabMode_label": { "message": "Kapsayıcı:" },
+      "config_inheritContextualIdentityToChildTabMode_default": { "message": "(kontrol yok)" },
+      "config_inheritContextualIdentityToChildTabMode_parent": { "message": "Ağaçtaki üst sekmeden devral" },
+      "config_inheritContextualIdentityToChildTabMode_lastActive": { "message": "Mevcut sekmeden devral" },
+    
+
+
+      
+        "config_treeBehavior_caption": { "message": "Ağaç Davranışı" },
+      
+        "config_successorTabControlLevel_caption": { "message": "Geçerli sekme son çocuk olarak kapatıldığında" },
+        "config_successorTabControlLevel_inTree": { "message": "Ağaçtaki önceki sekmeye odaklan" },
+        "config_successorTabControlLevel_simulateDefault": { "message": "Her zaman sonraki sekmeye odaklan (tarayıcının varsayılanı)" },
+        "config_successorTabControlLevel_never": { "message": "Odak kontrolünü asla yapma (tarayıcı veya diğer uzantının kontrolüne saygı göster)" },
+        "config_successorTabControlLevel_legacyDescription": { "message": "*\"browser.tabs.selectOwnerOnClose\"=\"true\" için tarayıcının yerleşik davranışı, bu yapılandırmadan önce çalışır." },
+        "config_simulateSelectOwnerOnClose_label": { "message": "Geçerli sekme kapatıldığında mümkünse odaklanmayı açan sekmeye geri taşı (yukarıdaki yapılandırmadan önce \"browser.tabs.selectOwnerOnClose\"=\"true\" için tarayıcının yerleşik davranışının simülasyonu)" },
+      
+        "config_fixupTreeOnTabVisibilityChanged_caption": { "message": "Diğer uzantılar tarafından sekmelerin görünürlüğü değiştirildiğinde" },
+        "config_fixupTreeOnTabVisibilityChanged_fix": { "message": "Ağaç yapısını görünür sekmelerle otomatik olarak düzelt (*Sekme gruplarını değiştirmek için başka bir uzantı kullanıyorsanız önerilir)" },
+        "config_fixupTreeOnTabVisibilityChanged_keep": { "message": "Gizli sekmeleri içeren ağaç yapısını koru (*Sekmelerin geçici görünürlüğünü değiştiren başka bir uzantı kullanıyorsanız önerilir)" },
+      
+        "config_autoCollapseExpandSubtreeOnAttach_label": { "message": "Yeni bir ağaç göründüğünde, diğerlerini otomatik olarak daralt" },
+        "config_autoCollapseExpandSubtreeOnSelect_label": { "message": "Bir sekme odaklandığında, ağacını genişlet ve diğerlerini otomatik olarak daralt" },
+        "config_autoCollapseExpandSubtreeOnSelectExceptActiveTabRemove_label": { "message": "Geçerli sekmenin kapatılması nedeniyle odaklanmanın hareketi hariç" },
+        "config_unfocusableCollapsedTab_label": { "message": "Daraltılmış bir ağacın altındaki bir sekme odaklandığında, ağacını otomatik olarak genişlet" },
+        "config_autoDiscardTabForUnexpectedFocus_label": { "message": "Sekmeler kazara odaklandığında ve odak hemen yönlendirildiğinde sekmeleri beklemeye (yüklenmemiş) alın" },
+        "config_avoidDiscardedTabToBeActivatedIfPossible_label": { "message": "Bekleyen (yüklenmemiş) sekmelerin, geçerli sekme kapandığında veya ağaç daraltıldığında kazara etkinleştirilmesini önle" },
+      
+        "config_treeDoubleClickBehavior_caption": { "message": "Bir sekmeye çift tıklama" },
+        "config_treeDoubleClickBehavior_toggleCollapsed": { "message": "Ağacı daralt/genişlet" },
+        "config_treeDoubleClickBehavior_toggleSticky": { "message": "Sekme çubuğu kenarlarına yapıştır / Sekme çubuğu kenarlarından çıkar" },
+        "config_treeDoubleClickBehavior_close": { "message": "Sekmeyi kapat" },
+        "config_treeDoubleClickBehavior_close_note": { "message": " (*\"browser.tabs.closeTabByDblclick\"=\"true\" için tarayıcının yerleşik davranışının simülasyonu)" },
+        "config_treeDoubleClickBehavior_none": { "message": "Hiçbir şey yapma" },
+      
+        "config_parentTabOperationBehaviorMode_caption": { "message": "Bir üst sekme kapatıldığında veya taşındığında" },
+        "config_parentTabOperationBehaviorMode_noteForPermanentlyConsistentBehaviors": { "message": "Bu bölümü yapılandırıp yapılandırmadığınıza bakılmaksızın, kenar çubuğunda bazı kalıcı tutarlı davranışlar vardır;\n･ Kapanmış Ağaç ile Üst Sekmeyi Kapat: Tüm Ağacı Kapat\n･ Kapanmış Ağaç ile Üst Sekmeyi Taşı: Tüm Ağacı Taşı\n･ Genişletilmiş Ağaç ile Üst Sekmeyi Taşı: \"Sürükle ve Bırak\" bölümü uyarınca davran" },
+      
+        "config_parentTabOperationBehaviorMode_parallel": { "message": "Tarayıcının yerel sekme çubuğunu Solo Sekme İşlem UI'si olarak kullanan önerilen ayar" },
+        "config_closeParentBehavior_insideSidebar": { "message": "Genişletilmiş Ağaç ile bir üst sekme kenar çubuğu üzerinden kapatıldığında," },
+        "config_closeParentBehavior_outsideSidebar": { "message": "Bir üst sekme (Ağacı Genişletilmiş veya Kapanmış olsun) tarayıcının yerel sekme çubuğu, klavye kısayolları veya diğer uzantılar üzerinden kapatıldığında," },
+        "config_moveParentBehavior_outsideSidebar": { "message": "Bir üst sekme (Ağacı Genişletilmiş veya Kapanmış olsun) tarayıcının yerel sekme çubuğu, klavye kısayolları veya diğer uzantılar üzerinden taşındığında," },
+      
+        "config_parentTabOperationBehaviorMode_consistent": { "message": "Tutarlı Sekme Davranışlarını TST altında kontrol edilen önerilen ayar" },
+        "config_parentTabOperationBehaviorMode_consistent_caption": { "message": "Genişletilmiş Ağaç ile bir üst sekme kapatıldığında/taşındığında," },
+        "config_parentTabOperationBehaviorMode_consistent_notes": { "message": "Sekmeler, yukarıda yapılandırıldığı gibi tutarlı bir şekilde davranır, tarayıcının yerel sekme çubuğu, klavye kısayolları veya diğer uzantılar üzerinden olsa bile." },
+      
+        "config_parentTabOperationBehaviorMode_custom": { "message": "Özel" },
+        "config_closeParentBehavior_insideSidebar_expanded_caption": { "message": "Kapat: Genişletilmiş Ağaç ile bir üst sekme kenar çubuğu üzerinden kapatıldığında," },
+        "config_closeParentBehavior_outsideSidebar_collapsed_caption": { "message": "Kapat: Kapanmış Ağaç ile bir üst sekme tarayıcının yerel sekme çubuğu, klavye kısayolları veya diğer uzantılar üzerinden kapatıldığında," },
+        "config_closeParentBehavior_outsideSidebar_expanded_caption": { "message": "Kapat: Genişletilmiş Ağaç ile bir üst sekme tarayıcının yerel sekme çubuğu, klavye kısayolları veya diğer uzantılar üzerinden kapatıldığında," },
+        "config_closeParentBehavior_noSidebar_collapsed_caption": { "message": "kenar çubuğu kapalıysa," },
+        "config_closeParentBehavior_noSidebar_expanded_caption": { "message": "kenar çubuğu kapalıysa," },
+        "config_moveParentBehavior_outsideSidebar_collapsed_caption": { "message": "Taşı: Kapanmış Ağaç ile bir üst sekme tarayıcının yerel sekme çubuğu, klavye kısayolları veya diğer uzantılar üzerinden taşındığında," },
+        "config_moveParentBehavior_outsideSidebar_expanded_caption": { "message": "Taşı: Genişletilmiş Ağaç ile bir üst sekme tarayıcının yerel sekme çubuğu, klavye kısayolları veya diğer uzantılar üzerinden taşındığında," },
+        "config_moveParentBehavior_noSidebar_collapsed_caption": { "message": "kenar çubuğu kapalıysa," },
+        "config_moveParentBehavior_noSidebar_expanded_caption": { "message": "kenar çubuğu kapalıysa," },
+      
+
+ 
+          "config_parentTabOperationBehavior_entireTree":           { "message": "Tüm Ağacı Kapat/Taşı" },
+          "config_closeParentBehavior_entireTree":                  { "message": "Tüm Ağacı Kapat" },
+          "config_moveParentBehavior_entireTree":                   { "message": "Tüm Ağacı Taşı" },
+          "config_parentTabOperationBehavior_replaceWithGroupTab":  { "message": "Kapatılan/taşınan ana sekmeyi Birleştirilmiş Sekmelerle değiştir" },
+          "config_closeParentBehavior_replaceWithGroupTab":         { "message": "Kapatılan ana sekmeyi Birleştirilmiş Sekmelerle değiştir" },
+          "config_moveParentBehavior_replaceWithGroupTab":          { "message": "Taşınan ana sekmeyi Birleştirilmiş Sekmelerle değiştir" },
+          "config_parentTabOperationBehavior_promoteFirst":         { "message": "Her zaman İlk Çocuğu yeni ana seviyeye yükselt" },
+          "config_closeParentBehavior_promoteFirst":                { "message": "Her zaman İlk Çocuğu yeni ana seviyeye yükselt" },
+          "config_moveParentBehavior_promoteFirst":                 { "message": "Her zaman İlk Çocuğu yeni ana seviyeye yükselt" },
+          "config_parentTabOperationBehavior_promoteAll":           { "message": "Her zaman Tüm Çocukları ana seviyeye yükselt" },
+          "config_closeParentBehavior_promoteAll":                  { "message": "Her zaman Tüm Çocukları ana seviyeye yükselt" },
+          "config_moveParentBehavior_promoteAll":                   { "message": "Her zaman Tüm Çocukları ana seviyeye yükselt" },
+          "config_parentTabOperationBehavior_promoteIntelligently": { "message": "İlk Çocuğu kök seviyeye yükselt, aksi takdirde Tüm Çocukları yükselt" },
+          "config_closeParentBehavior_promoteIntelligently":        { "message": "İlk Çocuğu kök seviyeye yükselt, aksi takdirde Tüm Çocukları yükselt" },
+          "config_moveParentBehavior_promoteIntelligently":         { "message": "İlk Çocuğu kök seviyeye yükselt, aksi takdirde Tüm Çocukları yükselt" },
+          "config_parentTabOperationBehavior_detach":               { "message": "Tüm Çocukları ağaçtan serbest bırak" },
+          "config_closeParentBehavior_detach":                      { "message": "Tüm Çocukları ağaçtan serbest bırak" },
+          "config_moveParentBehavior_detach":                       { "message": "Tüm Çocukları ağaçtan serbest bırak" },
+      
+        
+
+          "config_warnOnCloseTabs_label": { "message": "Birden fazla sekme kapatmaya çalıştığımda beni uyar" },
+          "config_warnOnCloseTabsByClosebox_label": { "message": "Normal bir tıklamayla birden fazla sekme kapatmaya çalıştığımda beni uyar" },
+          "config_warnOnCloseTabsWithListing_label": { "message": "Onaylama iletişim kutusunda kapanacak sekmeleri listele" },
+        
+          "config_insertNewChildAt_caption": { "message": "Kontrol edilmeyen durumlarda yeni alt sekmelerin varsayılan ekleme konumu" },
+          "config_insertNewChildAt_noControl": { "message": "Kontrol yok (tarayıcının veya diğer sekme uzantılarının kararına saygı göster)" },
+          "config_insertNewChildAt_nextToLastRelatedTab": { "message": "Son açılan alt sekmeye veya ebeveyne yanındaki" },
+          "config_insertNewChildAt_top": { "message": "Ağacın üstü (ebeveyne yanındaki)" },
+          "config_insertNewChildAt_end": { "message": "Ağacın sonu" },
+        
+        
+          "config_drag_caption": { "message": "Sürükle ve Bırak" },
+        
+          "config_tabDragBehavior_caption": { "message": "Kenar çubuğundan bir ebeveyn sekmesi sürüklendiğinde" },
+          "config_tabDragBehavior_description": { "message": "Tarayıcının kısıtlamaları nedeniyle sürükleme işlemine başladığınızda nasıl işleneceğini belirlemeniz gerekmektedir: sekmeler TST kenar çubuğunun dışında bırakıldığında." },
+          "config_tabDragBehavior_label": { "message": "Sürükle" },
+          "config_tabDragBehaviorShift_label": { "message": "Shift-Sürükle" },
+          "config_tabDragBehavior_label_behaviorInsideSidebar": { "message": "Kenar çubuğunun İçine Bırakma Davranışı" },
+          "config_tabDragBehavior_label_behaviorOutsideSidebar": { "message": "Kenar Çubuğunun Dışına Bırakma Davranışı" },
+          "config_tabDragBehavior_moveEntireTreeAlways": { "message": "Her zaman Tüm Ağacı Taşı" },
+          "config_tabDragBehavior_detachEntireTreeAlways": { "message": "Her zaman pencereden Tüm Ağacı ayır (ancak yer işareti oluşturulamaz)" },
+          "config_tabDragBehavior_bookmarkEntireTreeAlways": { "message": "Her zaman Tüm Ağaçtan bağlantı veya yer işareti oluştur (ancak pencereden ayıramazsınız)" },
+          "config_tabDragBehavior_moveSoloTabIfExpanded": { "message": "Yalnız Sekmeyi genişletilmişse veya Tüm Ağacı daraltılmışsa taşı" },
+          "config_tabDragBehavior_detachSoloTabIfExpanded": { "message": "Yalnız Sekmeyi genişletilmişse veya Tüm Ağacı daraltılmışsa pencereden ayır (ancak yer işareti oluşturulamaz)" },
+          "config_tabDragBehavior_bookmarkSoloTabIfExpanded": { "message": "Yalnız Sekmeyi genişletilmişse veya Tüm Ağacı daraltılmışsa bağlantı veya yer işareti oluştur (ancak pencereden ayıramazsınız)" },
+          "config_tabDragBehavior_doNothing": { "message": "Hiçbir şey yapma" },
+          "config_tabDragBehavior_noteForDragstartOutsideSidebar": { "message": "Tarayıcının doğal sekme çubuğundan bir ebeveyn sekme sürüklendiğinde, \"Ağaç Davranışı\" => \"Bir ebeveyn sekme kapatıldığında veya taşındığında\" bölümüne göre davranacaktır." },
+          "config_showTabDragBehaviorNotification_label": { "message": "Sürükleme sırasında kenar çubuğunun dışına bırakılan sekmeler hakkında ne olacağına dair bildirim göster" },
+        
+          "config_dropLinksOnTabBehavior_caption": { "message": "Bir bağlantı veya URL dizisi bir sekmeye bırakıldığında" },
+          "config_dropLinksOnTabBehavior_ask": { "message": "Her zaman nasıl işleyeceğimi sorma" },
+          "config_dropLinksOnTabBehavior_load": { "message": "Sekmeye yükle" },
+          "config_dropLinksOnTabBehavior_newtab": { "message": "Yeni alt sekme aç" },
+          "config_simulateTabsLoadInBackgroundInverted_label": { "message": "Bir bağlantıyı yeni bir sekmede açtığınızda hemen geçiş yap (*tarayıcının yerleşik seçeneği \"Bir bağlantı, resim veya medyayı yeni bir sekmede açtığınızda hemen geçiş yap\" simülasyonu (\"browser.tabs.loadInBackground\"))" },
+        
+          "config_insertDroppedTabsAt_caption": { "message": "Bir ebeveyne bırakılan çocukların ekleme konumu" },
+          "config_insertDroppedTabsAt_inherit": { "message": "Ebeveynden açılan yeni çocuklarla aynı şekilde işle" },
+          "config_insertDroppedTabsAt_first": { "message": "Ağacın üstü (ebeveyne yanındaki)" },
+          "config_insertDroppedTabsAt_end": { "message": "Ağacın sonu" },
+        
+          "config_autoExpandOnLongHoverDelay_before": { "message": "Sürüklerken üzerine gelerek daralan ağacı genişlet " },
+          "config_autoExpandOnLongHoverDelay_after": { "message": "msaniye" },
+          "config_autoExpandOnLongHoverRestoreIniitalState_label": { "message": "Sürükleme işlemi tamamlandıktan sonra daralan ağacı otomatik olarak daralt" },
+          "config_autoExpandIntelligently_label": { "message": "Daralan ağaç otomatik olarak genişlediğinde diğer ağaçları daralt" },
+          "config_ignoreTabDropNearSidebarArea_label": { "message": "Kenar çubuğu alanına yakın bir yere sekme bırakıldığında pencereyi ayırmayın (\"privacy.resistFingerprinting\"=\"true\" kullanıyorsanız bunu işaretlememenizi öneririz)" },
+        
+          "config_more_caption": { "message": "Daha Fazla..." },
+        
+          "config_shortcuts_caption": { "message": "Klavye kısayolları" },
+        
+          "config_requestPermissions_allUrls_ctrlTabTracking": { "message": "Klavye kısayollarıyla sekme odak değiştirirken daralan ağacı genişletmeyin ve daralan alt öğeleri atlayın. (*Web sayfalarında betikleri çalıştırmak için izin vermeniz gerekmektedir.)" },
+          "config_autoExpandOnTabSwitchingShortcutsDelay_before": { "message": "Aktif daralan ağacı Tab tuşuna basıldığında genişlet " },
+          "config_autoExpandOnTabSwitchingShortcutsDelay_after": { "message": "ms" },
+          "config_accelKey_label": { "message": "Klavye kısayolları için hızlandırıcı tuş (*Bu ayarı \"ui.key.accelKey\" ile eşleştirmeniz gerekmektedir):" },
+          "config_accelKey_auto": { "message": "Varsayılan (macOS=⌘, diğerleri=Ctrl)" },
+          "config_accelKey_alt": { "message": "Alt" },
+          "config_accelKey_control": { "message": "Ctrl/Kontrol" },
+          "config_accelKey_meta": { "message": "Meta/⌘" },
+        
+          "config_shortcuts_resetAll": { "message": "Tüm Kısayolları Sıfırla" },
+        
+        
+          "config_advanced_caption": { "message": "Gelişmiş" },
+        
+          "config_bookmarkTreeFolderName_before": { "message": "\"Bu Ağacı Yer İmleri Yap\" için klasör adı:" },
+          "config_bookmarkTreeFolderName_after": { "message": "\u200b" },
+          "config_bookmarkTreeFolderName_isDefault": { "message": "\"Bu Ağacı Yer İmleri Yap\" için varsayılan klasör adı" },
+          "config_bookmarkTreeFolderName_history": { "message": "Geçmiş Yer İmleri" },
+          "config_bookmarkTreeFolderName_bookmarksMenu": { "message": "Yer İmleri Menüsü" },
+          "config_bookmarkTreeFolderName_unfiledBookmarks": { "message": "Dosyaları olmayan yer işaretleri" },
+          "config_bookmarkTreeFolderName_other": { "message": "Diğer" },
+          "config_bookmarkTreeFolderName_humans": { "message": "İnsanlar" },
+        
+        
+          "config_menu_caption": { "message": "Menü" },
+        
+          "config_menu_label": { "message": "Etkin menüde birleştir" },
+          "config_menu_showTabs_empty": { "message": "Ağacı boşalt" },
+          "config_menu_showTabs_collapsed": { "message": "Daralmış ağaç" },
+          "config_menu_showTabs_descendants": { "message": "Alt öğeler (her durumda genişletilir)" },
+          "config_menu_showTabs_all": { "message": "Tümünü" },
+          "config_menu_showTabs_children": { "message": "Çocuk" },
+        
+        
+          "config_undoCloseTabBehavior_caption": { "message": "Son kapatılan sekmeleri geri aç" },
+        
+          "config_restoreLastRemovedTab_caption": { "message": "En son kaldırılan sekme seçiliyse geri yükle" },
+        
+          "config_nativeTabs_behavior_caption": { "message": "Geçiş tabanlı oturumu özelliği" },
+          "config_nativeTabs_behavior_applyOpenLinksInNewTab": { "message": "Yeni bir pencere ve sekmeye açılan bağlantıları otomatik olarak sekmelerde" },
+        
+          "config_autoCollapseWhenSwitchingTabs_caption": { "message": "Aktif sekmeye tıkladığında bir önceki sekmeyi otomatik olarak daralt" },
+        
+          "config_autoExpandOnTabSwitching_caption": { "message": "Aktif sekmeye tıkladığınızda bir önceki sekmeyi otomatik olarak genişlet" },
+        
+        
+          "config_group_menu": { "message": "Kolonlar menüsüne ekleyin" },
+        
+          "config_group_menu_groups": { "message": "Kolonlar" },
+          "config_group_menu_tabs": { "message": "Sekmeler" },
+          "config_group_menu_toolbar": { "message": "Araç çubuğu" },
+          "config_group_menu_sidebar": { "message": "Kenar çubuğu" },
+          "config_group_menu_menupopup": { "message": "Menü" },
+        
+        
+          "config_group_contextBookmarks": { "message": "Kenar çubuğundaki bağlantıları" },
+          "config_group_contextGroup": { "message": "Kenar çubuğundaki kolonları" },
+          "config_group_contextTab": { "message": "Kenar çubuğundaki sekmeleri" },
+          "config_group_contextNewtab": { "message": "Kenar çubuğundaki eklenti araçlarını" },
+        
+          "config_group_newtab": { "message": "Yeni sekme" },
+          "config_group_options": { "message": "Seçenekler" },
+        
+          "config_group_description": { "message": "Tüm ilgili ayarların genel bir açıklaması" },
+          "config_group_extended": { "message": "Kontroller ve başlıklar." },
+          "config_group_appearance": { "message": "Hızlandırıcıları ve giriş kısmını." },
+        
+        
+        
+  "config_defaultBookmarkParentId_label_before": { "message": "Yeni yer imlerini burada oluştur" },
+  "config_defaultBookmarkParentId_label_after": { "message": "\u200b" },
+
+  "config_supportTabsMultiselect_label": { "message": "Sekme çoklu seçim API'sini kullanarak sekme odaklanmasını kontrol et (*tarayıcının \"browser.tabs.multiselect\"=\"true\" yerleşik tercihi gereklidir)" },
+
+  "config_undoMultipleTabsClose_label": { "message": "\"Kapalı Sekmeyi Yeniden Aç\" komutuyla bir sekme geri yüklendiğinde, en son kapatılan sekme grubunu geri yükle" },
+
+  "config_scrollLines_label_before": { "message": "Yukarı veya aşağı kaydır " },
+  "config_scrollLines_label_after": { "message": "\"Satırlara Göre Sekmeleri Yukarı/Aşağı Kaydır\" kısayol komutları ile satırlar" },
+
+  "config_userStyleRules_label": { "message": "Kullanıcı Stil Sayfası (Tree Style Tab tarafından sağlanan içerikler için ek stil kuralları, örneğin yan panel)" },
+  "config_userStyleRules_description_before": { "message": "Daha fazla seçenek için, bkz. " },
+  "config_userStyleRules_description_link_label": { "message": "TST wiki'deki kod parçacıkları" },
+  "config_userStyleRules_description_after": { "message": " ayrıca." },
+  "config_userStyleRules_description_link_uri": { "message": "https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#for-version-2x" },
+  "config_userStyleRules_themeRules_description": { "message": "Mevcut tarayıcı temasına göre \"var()\" ile kullanılabilen aşağıdaki özel özellikler de mevcuttur:" },
+  "config_userStyleRules_themeRules_description_alphaVariations": { "message": "Rengin opaklığını \"--theme-colors-tab_background_text-30\" gibi bir sayı eki ile %10'luk dilimler halinde değiştirebilirsiniz (örneğin, bu durumda %30 opaklık anlamına gelir)." },
+  "config_userStyleRules_import": { "message": "Dosyadan Yükle" },
+  "config_userStyleRules_export": { "message": "Dosya Olarak Kaydet" },
+  "config_userStyleRules_overwrite_title": { "message": "Mevcut stil kurallarını değiştir?" },
+  "config_userStyleRules_overwrite_message": { "message": "Mevcut stil kurallarının tamamen yüklenen dosya ile değiştirilmesini istiyor musunuz?" },
+  "config_userStyleRules_overwrite_overwrite": { "message": "Hepsini Değiştir" },
+  "config_userStyleRules_overwrite_append": { "message": "Sona Ekle" },
+  "config_tooLargeUserStyleRulesCaution": { "message": "Çok uzun stil kuralları! Lütfen kısaltın." },
+  "config_userStyleRulesTheme_label": { "message": "Tema:" },
+  "config_userStyleRulesTheme_auto": { "message": "Otomatik" },
+  "config_userStyleRulesTheme_separator": { "message": "-----------------" },
+  "config_userStyleRulesTheme_default": { "message": "Varsayılan" },
+
+
+  "config_addons_caption": { "message": "Diğer Eklentiler Aracılığıyla Ekstra Özellikler" },
+
+  "config_addons_description_before": { "message": "Şunlar var: " },
+  "config_addons_description_link_label": { "message": "TST'yi genişleten uzantılar" },
+  "config_addons_description_after": { "message": ". Yan çubukta daha fazla özellik ihtiyacınız varsa bunları kontrol edin." },
+  "helper_addons_list_link_uri": { "message": "https://github.com/piroor/treestyletab/wiki/Helper-addons-extending-functionality-of-TST" },
+
+  "config_theme_description_before": { "message": "Şu anda yalnızca \"Düz\", \"Yan Çubuk\" ve \"Yüksek Kontrast\" dahili temaları mevcut. Dahili olmayan bir tema kullanmak isterseniz, örnekler için " },
+  "config_theme_description_link_label": { "message": "kod parçalarına" },
+  "config_theme_description_after": { "message": " bakın." },
+  "helper_theme_list_link_uri": { "message": "https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#restore-old-built-in-themes" },
+
+  "config_externaladdonpermissions_label": { "message": "Diğer Eklentilerden API Çağrısı için İzinler" },
+  "config_externaladdonpermissions_description": { "message": "Burada izin verilen uzantılar, tarayıcının kendisi tarafından bunlara erişim izni verilmediğinde bile, ayrıntılı sekme verilerine veya özel pencerelerdeki sekmelere Tree Style Tab'ın izinleri aracılığıyla erişebilir. <em>Lütfen güvenemediğiniz uzantılara izin vermeyin.</em>" },
+  "config_externalAddonPermissions_header_name": { "message": "Uzantı Adı" },
+  "config_externalAddonPermissions_header_permissions": { "message": "İzin Verilen Özel İşlemler" },
+  "config_externalAddonPermissions_header_incognito": { "message": "Özel Pencerelerden Bildirim Mesajları" },
+
+  "addon_containerBookmarks_label": { "message": "Konteyner Yer İmleri" },
+  "addon_containerBookmarks_uri": { "message": "https://addons.mozilla.org/firefox/addon/container-bookmarks/" },
+  "config_containerRedirectKey_label": { "message": "Yönlendirme Anahtarı (*Lütfen uzantının seçenek sayfasındakiyle aynı bir değer belirleyin):" },
+
+
+  "config_debug_caption": { "message": "Geliştirme" },
+
+  "config_link_startupPage_label": { "message": "Başlangıç ​​Sayfası" },
+  "config_link_groupPage_label":   { "message": "Grup Sekmesi İçin Sayfa" },
+  "config_link_tabbarPage_label":   { "message": "Sekme Çubuğu İçin Sayfa" },
+
+  "config_runTests_label": { "message": "Otomatik Testleri Çalıştır" },
+  "config_runTestsParameters_label": { "message": " / Çalıştırılacak testler (test adları veya düzenli ifadeler dizisi, örneğin \"testInheritMutedState,/^testHidden/,...\"):" },
+  "config_runBenchmark_label": { "message": "BenchMark Çalıştır" },
+  "config_enableLinuxBehaviors_label": { "message": "Linux özel davranışları etkinleştir" },
+  "config_enableMacOSBehaviors_label": { "message": "MacOS özel davranışları etkinleştir" },
+  "config_enableWindowsBehaviors_label": { "message": "Windows özel davranışları etkinleştir" },
+  "config_debug_label": { "message": "Hata ayıklama modu" },
+  "config_log_caption":               { "message": "Ayrıntılı günlükleme" },
+  "config_logTimestamp_label": { "message": "Zaman damgasıyla günlükleme" },
+  "config_logFor_common":     { "message": "Ortak modüllerden günlükler" },
+  "config_logFor_background": { "message": "Arka plan modüllerinden günlükler" },
+  "config_logFor_sidebar":    { "message": "Yan çubuk modüllerinden günlükler" },
+  "config_loggingQueries_label": { "message": "Sekmelerin sorgulanması günlüğü" },
+  "config_loggingConnectionMessages_label": { "message": "Dahili mesajlar günlüğü" },
+  "config_showLogsButton_label": { "message": "Günlükleri Göster" },
+  "config_simulateSVGContextFill_label": { "message": "SVG simülasyonu için çalıştırma hatası 1388193 ve 1421329'daki hata düzeltilerini simüle et (*Bu seçenek CPU kullanımını artırabilir. Bu seçeneği devre dışı bırakmak için, \"about:config\" üzerinden \"svg.context-properties.content.enabled\"'ı etkinleştirmeniz gerekebilir.)" },
+  "config_staticARIALabel_label": { "message": "Sekme öğeleri için statik ARIA etiketi kullan" },
+  "config_staticARIALabel_description": { "message": "*Lütfen konuşma tanıma sisteminizin bazı sekme işlemlerinden sonra sekme öğelerini kaçırması durumunda bunu deneyin." },
+  "config_useCachedTree_label": { "message": "Önbellek ile ağaç geri yükleme optimize et" },
+  "config_useCachedTree_description": { "message": "*Ağaç etrafındaki davranış dengesiz ise bu seçeneği işaretleme ve işaretleme işaretini kullanarak deneyin." },
+  "config_persistCachedTree_label": { "message": "Ağaç önbelleğini koru" },
+  "config_persistCachedTree_description": { "message": "*Tarayıcı başlangıç ​​süreci, işletmenin boyutunu optimize edebilir, ancak oturum dosyası boyutunu şişirir ve disk g/0 artar." },
+  "config_acceleratedTabCreation_label": { "message": "Yeni açılan sekmeler etrafındaki operasyonları hızlandır (*NOT: Sekmeler etrafındaki bir dengesiz tab görebilir." },
+ 
+    "config_maximumAcceptableDelayForTabDuplication_before": { "message": "Bir sekmenin kopyalanması şu kadar sürerse iptal et" },
+    "config_maximumAcceptableDelayForTabDuplication_after": { "message": "milisaniye veya daha fazla." },
+    "config_delayForDuplicatedTabDetection_label_before": { "message": "Yinelenen sekmeleri algılamak için gecikme:" },
+    "config_delayForDuplicatedTabDetection_label_after": { "message": "ms (eğer yinelenen sekmeler doğru algılanmıyorsa lütfen bu değeri artırın)" },
+    "config_delayForDuplicatedTabDetection_autoDetect": { "message": "Otomatik algıla" },
+    "config_delayForDuplicatedTabDetection_test": { "message": "Algılama testi" },
+    "config_delayForDuplicatedTabDetection_test_resultMessage": { "message": "$PERCENTAGE$% başarıyla algılandı.",
+      "placeholders": {
+        "percentage": { "content": "$1", "example": "50" }
+      }},
+    "config_labelOverflowStyle_caption": { "message": "Sekmelerin çok uzun etiketi:" },
+    "config_labelOverflowStyle_fade":    { "message": "Solma (Daha İyi Görünürlük)" },
+    "config_labelOverflowStyle_crop":    { "message": "\"..\" ile Kırp (Daha İyi Performans)" },
+  
+    "config_requestPermissions_bookmarks": { "message": "Yer işaretlerini okuma ve oluşturma izni ver" },
+    "config_requestPermissions_bookmarks_context": { "message": "Yer işaretlerinde bağlam menüsünü açmaya izin ver" },
+    "config_requestPermissions_tabHide":   { "message": "Tek tek sekmeleri göster/gizle izni ver (*İzinin gerçekten verilmiş olduğundan emin olmak için bu seçeneği işaretlemeyi kaldırıp yeniden işaretlemeniz gerekebilir.)" },
+  
+    "config_requestPermissions_fallbackToToolbarButton_title": { "message": "\"Tree Style Tab\" araç çubuğu düğmesine tıklayın" },
+    "config_requestPermissions_fallbackToToolbarButton_message": { "message": "Tarayıcının hatası nedeniyle bu ekran üzerinden izin isteyemezsiniz. Lütfen izin vermek için \"Tree Style Tab\" araç çubuğu düğmesine tıklayın." },
+  
+    "config_all_caption": { "message": "Tüm Yapılandırmalar" },
+ 
+  
+  "config_terms_delimiter": { "message": " " },
+
+    "tabContextMenu_newTab_label":      { "message": "Ye&ni Sekme" },
+  
+    "tabContextMenu_reload_label":      { "message": "Se&kme Yenile" },
+    "tabContextMenu_unblockAutoplay_label": { "message": "S&ekme Oynat" },
+    "tabContextMenu_mute_label":        { "message": "Sekmeyi &Sessize Al" },
+    "tabContextMenu_unmute_label":      { "message": "Sekmeyi Sessizden &Çıkar" },
+  
+    "tabContextMenu_pin_label":         { "message": "Sekmeyi &Sabitle" },
+    "tabContextMenu_unpin_label":       { "message": "Sekmeyi &Sabitlemeyi Kaldır" },
+    "tabContextMenu_duplicate_label":   { "message": "Sekmeyi &Çoğalt" },
+    "tabContextMenu_selectAllTabs_label": { "message": "Tüm Sekmeleri &Seç" },
+    "tabContextMenu_bookmark_label":    { "message": "Sekmeyi &Yer İmi Ekle…" },
+    "tabContextMenu_reopenInContainer_label":             { "message": "Yeni Kapsayıcıda &Aç" },
+    "tabContextMenu_reopenInContainer_noContainer_label": { "message": "&Kapsayıcı Yok" },
+    "tabContextMenu_moveTab_label":     { "message": "Sekmeyi &Taşı" },
+    "tabContextMenu_moveTabToStart_label": { "message": "Başa &Taşı" },
+    "tabContextMenu_moveTabToEnd_label":   { "message": "Sona &Taşı" },
+    "tabContextMenu_tearOff_label":     { "message": "Yeni &Pencerede Aç" },
+    "tabContextMenu_sendTabsToDevice_label": { "message": "Sekmeyi Cihaza &Gönder" },
+    "tabContextMenu_sendTabsToAllDevices_label": { "message": "Tüm Cihazlara Gönder" },
+    "tabContextMenu_manageSyncDevices_label": { "message": "Cihazları Yönet…" },
+    "tabContextMenu_shareTabURL_label":   { "message": "Sekme URL'sini &Paylaş" },
+    "tabContextMenu_shareTabURL_more_label":   { "message": "Daha Fazla…" },
+  
+    "tabContextMenu_closeDuplicatedTabs_label": { "message": "Yinelenen Sekmeleri &Kapat" },
+    "tabContextMenu_closeMultipleTabs_label":  { "message": "Birden Çok Sekmeyi &Kapat" },
+    "tabContextMenu_closeTabsToTop_label":  { "message": "Üstteki Sekmeleri Kapat" },
+    "tabContextMenu_closeTabsToBottom_label":  { "message": "Alttaki Sekmeleri Kapat" },
+    "tabContextMenu_closeOther_label":  { "message": "Diğer Sekmeleri &Kapat" },
+  
+    "tabContextMenu_undoClose_label":   { "message": "Kapatılan Sekmeyi &Yeniden Aç" },
+    "tabContextMenu_undoClose_label_multiple": { "message": "Kapatılan Sekmeleri &Yeniden Aç" },
+    "tabContextMenu_close_label":       { "message": "Sekmeyi &Kapat" },
+  
+    "tabContextMenu_reload_label_multiselected":      { "message": "Sekmeleri &Yenile" },
+    "tabContextMenu_unblockAutoplay_label_multiselected": { "message": "Sekmeleri &Oynat" },
+    "tabContextMenu_mute_label_multiselected":        { "message": "Sekmeleri &Sessize Al" },
+    "tabContextMenu_unmute_label_multiselected":      { "message": "Sekmeleri Sessizden &Çıkar" },
+  
+    "tabContextMenu_pin_label_multiselected":         { "message": "Sekmeleri &Sabitle" },
+    "tabContextMenu_unpin_label_multiselected":       { "message": "Sekmeleri &Sabitlemeyi Kaldır" },
+  
+    "tabContextMenu_duplicate_label_multiselected":   { "message": "Sekmeleri &Çoğalt" },
+  
+    "tabContextMenu_moveTab_label_multiselected": { "message": "Sekmeleri &Taşı" },
+    "tabContextMenu_sendTabsToDevice_label_multiselected": { "message": "Sekmeleri Cihaza &Gönder" },
+  
+    "tabContextMenu_reloadSelected_label":               { "message": "Seçilen Sekmeyi &Yenile" },
+    "tabContextMenu_reloadSelected_label_multiselected": { "message": "Seçilen Sekmeleri &Yenile" },
+  
+    "tabContextMenu_bookmark_label_multiselected":         { "message": "Seçilen Sekmeleri &Yer İmi Ekle…" },
+    "tabContextMenu_bookmarkSelected_label":               { "message": "Seçilen Sekmeyi Yer İmi Ekle…" },
+    "tabContextMenu_bookmarkSelected_label_multiselected": { "message": "Seçilen Sekmeleri Yer İmi Ekle…" },
+  
+    "tabContextMenu_close_label_multiselected":       { "message": "Seçilen Sekmeleri &Kapat" }
+}

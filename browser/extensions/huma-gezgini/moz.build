@@ -32,6 +32,7 @@ FINAL_TARGET_FILES.features["humagezgini@vastseablog.com"]["images"] += [
     "images/logo3.png",
     "images/logo4.png",
     "images/logo5.png",
+    "images/logo6.png",
 ]
 BROWSER_CHROME_MANIFESTS += ["tests/browser/browser.toml"]
 

@@ -1,11 +1,11 @@
 {
-  "name": "Artado",
+  "name": "Artadoo",
   "description": "Artado Arama Motoru",
   "manifest_version": 2,
   "version": "1.6",
   "browser_specific_settings": {
     "gecko": {
-      "id": "artado@search.mozilla.org"
+      "id": "artadoo@search.mozilla.org"
     }
   },
   "hidden": true,
