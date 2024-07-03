@@ -1,4 +1,5 @@
-# Hüma Web Tarayıcısı
+# Hüma Tarayıcısı
+![image](https://github.com/VastSea0/Huma/assets/144556903/13e56ba3-2023-4581-a2c8-0c88fdbb78fd)
 
 Hüma Tarayıcısı, ilk yerli web tarayıcısı olma hedefiyle özgür yazılım prensiplerine bağlı kalarak Pardus yazılım ağına(ekosistem,) katkıda bulunmak için geliştirilmiş bir web tarayıcısıdır.
 
@@ -113,10 +114,14 @@ Hüma Tarayıcısı'nı kullanmayı seçtiğiniz için teşekkür ederiz. Herhan
 ![image](https://github.com/VastSea0/Huma/assets/144556903/2899af51-c05b-43a7-bbd1-fa73e239abd8)
 ![image](https://github.com/VastSea0/Huma/assets/144556903/6e774006-e589-4e76-9e62-86d1f7f7be59)
 ![image](https://github.com/VastSea0/Huma/assets/144556903/82fa8f29-308a-468f-a7f2-f926762434d1)
+![image](https://github.com/VastSea0/Huma/assets/144556903/8ad01ec5-ff94-42af-a7da-06d7e804543f)
+ 
+
 
 **İletişim:** 
 - Instagram: [@marsstakiuzayliyim](https://www.instagram.com/marsstakiuzayliyim/)
 - Web Sitesi: [vastsea.com.tr](https://vastsea.com.tr)
+- Kişisel web Sitesi: [[Egehan](https://vastsea.com.tr)](https://egehan.netlify.app/)
 - Blog Sitesi: [vastseablog.com](https://vastseablog.com)
 - Instagram Hesabı: [@vastseaofficial](https://www.instagram.com/vastseaofficial/)
 
