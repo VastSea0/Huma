@@ -1,0 +1,98 @@
+/* Genel gövde stili */
+body {
+    width: 300px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Hafif gri arka plan rengi */
+    color: #333; /* Koyu gri yazı rengi */
+    margin: 0;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    border-radius: 10px;
+}
+
+/* Başlık stili */
+h1 {
+    user-select: none;
+    text-align: center;
+    font-size: 18px;
+    color: #0073e6; /* Mavi renk */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 img.logoMain {
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+}
+
+/* Grid düzeni ve hücre stili */
+.row {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border: 2px solid #ccc; /* Hafif gri kenarlık */
+    border-radius: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #fff; /* Beyaz arka plan rengi */
+    transition: transform 0.2s, background-color 0.2s; /* Geçiş animasyonu */
+    cursor: pointer;
+}
+
+.row:hover {
+    background-color: #e0e0e0; /* Hover durumda açık gri arka plan rengi */
+    transform: translateY(-2px); /* Hover durumda hafif yukarı kaldırma efekti */
+}
+
+/* Resim stili */
+img.logo {
+    padding: 10px;
+    width: 35px;
+    height: 35px; /* Boyutları eşitleme */
+    border-radius: 50%; /* Yuvarlak köşeler */
+    border: 1px solid #ddd; /* Hafif gri kenarlık */
+    background-color: #f9f9f9; /* Hafif gri arka plan rengi */
+}
+
+/* Metin stili */
+div.name {
+    padding: 10px;
+    margin: auto 0;
+    user-select: none;
+    font-size: 16px;
+    color: #555; /* Orta ton gri yazı rengi */
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Footer stili */
+span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #777; /* Açık gri yazı rengi */
+    margin-top: 20px;
+}
+/* Buton stili */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #005bb5;
+}

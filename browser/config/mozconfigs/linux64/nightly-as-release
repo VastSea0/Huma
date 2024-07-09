@@ -1,0 +1,5 @@
+. "$topsrcdir/browser/config/mozconfigs/linux64/nightly"
+
+ac_add_options --as-milestone=release
+ac_add_options --with-app-basename=huma
+ac_add_options --with-app-name=huma

@@ -1,0 +1,40 @@
+# -*- Mode: python; indent-tabs-mode: nil; tab-width: 40 -*-
+# vim: set filetype=python:
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# Eklenti yazar: Egehan KAHRAMAN...
+# Bu eklenti halka açık lisanslar altında lisanlanmaktadır
+# https://vastseablog.com
+
+DEFINES["MOZ_APP_VERSION"] = CONFIG["MOZ_APP_VERSION"]
+DEFINES["MOZ_APP_MAXVERSION"] = CONFIG["MOZ_APP_MAXVERSION"]
+
+FINAL_TARGET_FILES.features["humagezgini@vastseablog.com"] += [
+    "manifest.json",
+]
+
+FINAL_TARGET_FILES.features["humagezgini@vastseablog.com"]["popup"] += [
+    "popup/popup.css",
+    "popup/popup.html",
+    "popup/popup.js",
+]
+FINAL_TARGET_FILES.features["humagezgini@vastseablog.com"]["sidebar"] += [
+    "sidebar/sidebar.css",
+    "sidebar/sidebar.html",
+    "sidebar/sidebar.js",
+]
+
+FINAL_TARGET_FILES.features["humagezgini@vastseablog.com"]["images"] += [
+    "images/logo.png",
+    "images/logo1.png",
+    "images/logo2.png",
+    "images/logo3.png",
+    "images/logo4.png",
+    "images/logo5.png",
+    "images/logo6.png",
+]
+BROWSER_CHROME_MANIFESTS += ["tests/browser/browser.toml"]
+
+with Files("**"):
+    BUG_COMPONENT = ("Huma Gezgini Ext", "Tooling & Investigations")

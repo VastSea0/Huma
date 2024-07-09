@@ -1,0 +1,5 @@
+. "$topsrcdir/browser/config/mozconfigs/common"
+ac_add_options --enable-clang-plugin
+
+ac_add_options --with-app-basename=huma
+ac_add_options --with-app-name=huma
