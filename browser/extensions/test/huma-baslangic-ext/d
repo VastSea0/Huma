@@ -1,0 +1,502 @@
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+module.exports = {
+  mode: 'development', // Hata ayıklamak için 'development' modunu kullanın.
+  devtool: 'source-map', // Detaylı hata ayıklama bilgileri sağlar.
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
+        },
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images',
+            },
+          },
+        ],
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+    alias: {
+      components: path.resolve(__dirname, 'src/components'),
+      styles: path.resolve(__dirname, 'src/styles'),
+    },
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+      filename: 'index.html',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'public/manifest.json', to: 'manifest.json' },
+        { from: 'public/locales', to: 'locales' },
+      ],
+    }),
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000,
+  },
+}; {
+  "name": "new-tab-extension",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack serve --open",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "i18next": "^23.11.5",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-http-backend": "^2.5.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-draggable": "^4.4.6",
+    "react-i18next": "^14.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "babel-loader": "^8.3.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^6.11.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.2"
+  }
+}
+ import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './i18n';
+import './styles/styles.css';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <React.Suspense fallback="Loading...">
+      <App />
+    </React.Suspense>
+  </React.StrictMode>,
+  document.getElementById('root')
+); import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import Backend from 'i18next-http-backend';
+import LanguageDetector from 'i18next-browser-languagedetector';
+
+i18n
+  .use(Backend)
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: 'tr',
+    debug: true,
+    interpolation: {
+      escapeValue: false,
+    },
+    backend: {
+      loadPath: '/locales/{{lng}}/translation.json',
+    },
+  });
+
+export default i18n;  
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import Clock from './components/Clock';
+import SearchBar from './components/SearchBar';
+import WeatherWidget from './components/WeatherWidget';
+import NewsWidget from './components/NewsWidget';
+import SpaceFlightsWidget from './components/SpaceFlightsWidget';
+import InfoWidget from './components/InfoWidget';
+import SettingsPanel from './components/SettingsPanel';
+import BookmarksWidget from './components/BookmarksWidget';
+import SponsoredSitesWidget from './components/SponsoredSitesWidget';
+
+function App() {
+  const { t, i18n } = useTranslation();  
+  const [settings, setSettings] = useState({
+    
+    showClock: true,
+    showWeather: true,
+    showNews: true,
+    showSpaceFlights: true,
+    showInfo: true,
+    showBookmarks: true,
+    showSponsoredSites: true,
+    username: localStorage.getItem('username') || 'Kullanıcı',
+    clockSize: localStorage.getItem('clockSize') || '24',
+    language: localStorage.getItem('language') || 'tr',
+  });
+  const [showSettings, setShowSettings] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem('username', settings.username);
+    localStorage.setItem('clockSize', settings.clockSize);
+  }, [settings.username, settings.clockSize]);
+
+  const toggleWidget = (widgetName) => {
+    setSettings(prevSettings => ({
+      ...prevSettings,
+      [widgetName]: !prevSettings[widgetName]
+    }));
+  };
+
+  const updateUsername = (newUsername) => {
+    setSettings(prevSettings => ({
+      ...prevSettings,
+      username: newUsername
+    }));
+  };
+
+  const updateClockSize = (newClockSize) => {
+    setSettings(prevSettings => ({
+      ...prevSettings,
+      clockSize: newClockSize
+    }));
+  };
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    setSettings(prevSettings => ({ ...prevSettings, language: lang }));
+    localStorage.setItem('language', lang);
+  };
+
+  return (
+    <div className="app">
+      {settings.showClock && <Clock username={settings.username} clockSize={settings.clockSize} />}
+      <SearchBar />
+      <div className="widgets">
+        {settings.showInfo && <InfoWidget />}
+        {settings.showWeather && <WeatherWidget />}
+        {settings.showNews && <NewsWidget />}
+        {settings.showSpaceFlights && <SpaceFlightsWidget />}
+        {settings.showSponsoredSites && <SponsoredSitesWidget />}
+      </div>
+      <div className='bookmarks-row'>
+        {settings.showBookmarks && <BookmarksWidget />}
+      </div>
+      <button
+        className="settings-button"
+        onClick={() => setShowSettings(!showSettings)}
+      >
+        {t('settings')}
+      </button>
+      {showSettings && (
+        <SettingsPanel
+          settings={settings}
+          toggleWidget={toggleWidget}
+          updateUsername={updateUsername}
+          updateClockSize={updateClockSize}
+          onClose={() => setShowSettings(false)}
+          changeLanguage={changeLanguage}
+        />
+      )}
+    </div>
+  );
+}
+
+export default App; import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+
+const API_KEY = 'YOUR_API_KEY_HERE'; // OpenWeatherMap'ten bir API anahtarı alın ve buraya yerleştirin
+const API_URL = 'https://api.openweathermap.org/data/2.5/weather';
+
+const WeatherWidget = () => {
+  const { t } = useTranslation();
+  const [weather, setWeather] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchWeather = async (latitude, longitude) => {
+      try {
+        const response = await fetch(
+          `${API_URL}?lat=${latitude}&lon=${longitude}&units=metric&appid=${API_KEY}&lang=${t('language')}`
+        );
+        if (!response.ok) {
+          throw new Error('Weather data could not be retrieved.');
+        }
+        const data = await response.json();
+        setWeather(data);
+      } catch (err) {
+        setError(t('error.weather'));
+      }
+    };
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          fetchWeather(position.coords.latitude, position.coords.longitude);
+        },
+        (err) => {
+          setError(t('error.location'));
+        }
+      );
+    } else {
+      setError(t('error.browser'));
+    }
+  }, [t]);
+
+  if (error) {
+    return <div className="widget weather"><p>{error}</p></div>;
+  }
+
+  if (!weather) {
+    return <div className="widget weather"><p>{t('loading')}</p></div>;
+  }
+
+  const { main, weather: weatherDetails } = weather;
+
+  return (
+    <div className="widget weather">
+      <h2>{t('currentLocation')}</h2>
+      <div className="weather-info">
+        <img 
+          src={`http://openweathermap.org/img/wn/${weatherDetails[0].icon}@2x.png`} 
+          alt={weatherDetails[0].description} 
+        />
+        <div className="temperature">
+          <p>{Math.round(main.temp)}°C</p>
+          <p className="description">{weatherDetails[0].description}</p>
+        </div>
+      </div>
+      <div className="weather-details">
+        <p>{t('feelsLike')}: {Math.round(main.feels_like)}°C</p>
+        <p>{t('humidity')}: {main.humidity}%</p>
+        <p>{t('pressure')}: {main.pressure} hPa</p>
+      </div>
+    </div>
+  );
+};
+
+export default WeatherWidget; import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
+const Clock = ({ username, clockSize }) => {
+  const { t, i18n } = useTranslation();
+  const [time, setTime] = useState(new Date());
+  const [greeting, setGreeting] = useState('');
+
+  useEffect(() => {
+    const updateTime = () => {
+      const currentTime = new Date();
+      setTime(currentTime);
+      const currentHour = currentTime.getHours();
+      if (currentHour >= 6 && currentHour < 12) {
+        setGreeting(t('goodMorning'));
+      } else if (currentHour >= 12 && currentHour < 18) {
+        setGreeting(t('goodAfternoon'));
+      } else {
+        setGreeting(t('goodEvening'));
+      }
+    };
+
+    const interval = setInterval(updateTime, 1000);
+    return () => clearInterval(interval);
+  }, [t]);
+
+  return (
+    <div className="clock">
+      <h1 style={{ fontSize: `${clockSize}px` }}>
+        {time.toLocaleTimeString(i18n.language, { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
+      </h1>
+      <p>{greeting}, {username}</p>
+    </div>
+  );
+};
+
+export default Clock; // src/components/SponsoredSitesWidget.js
+import React from 'react';
+
+const SponsoredSitesWidget = () => {
+  const sponsoredSites = [
+    { name: 'Sponsor Site 1', url: 'https://www.sponsorsite1.com' },
+    { name: 'Sponsor Site 2', url: 'https://www.sponsorsite2.com' },
+  ];
+
+  return (
+    <div className="widget sponsored-sites">
+      <h2>Sponsorlu Siteler</h2>
+      <ul>
+        {sponsoredSites.map((site, index) => (
+          <li key={index}>
+            <a href={site.url} target="_blank" rel="noopener noreferrer">
+              <img src={`https://www.google.com/s2/favicons?domain=${site.url}`} alt={site.name} />
+              {site.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default SponsoredSitesWidget; import React from 'react';
+
+const SpaceFlightsWidget = () => {
+  return (
+    <div className="widget space-flights">
+      <h2>Space Flights</h2>
+      <ul>
+        <li>Yaogan-31 04 - China</li>
+        <li>Starlink-22 - SpaceX</li>
+        <li>CAS500-1 - Russia</li>
+      </ul>
+    </div>
+  );
+};
+
+export default SpaceFlightsWidget; import React, { useState } from 'react';
+
+function SettingsPanel({ settings, toggleWidget, updateUsername, updateClockSize, onClose }) {
+    const [tempUsername, setTempUsername] = useState(settings.username);
+    const [tempClockSize, setTempClockSize] = useState(settings.clockSize);  
+
+    const handleUsernameChange = (e) => {
+      setTempUsername(e.target.value);
+    };
+  
+    const handleUsernameSubmit = () => {
+      updateUsername(tempUsername);
+    };
+    
+    const handleSliderChange = (e) => {
+      setTempClockSize(e.target.value);
+      updateClockSize(tempClockSize);
+
+    };
+
+    const handleSliderSubmit = () => {
+        console.log("helo")
+    };
+
+  return (
+    <div className="settings-panel-p">
+      <h2>Ayarlar</h2>
+      <div className="setting-item">
+        <label>
+          Kullanıcı Adı:
+          <input
+            type="text"
+            value={tempUsername}
+            onChange={handleUsernameChange}
+          />
+        </label>
+        <button onClick={handleUsernameSubmit}>Kaydet</button>
+      </div>
+      <div className="setting-item">
+        <label>
+            Saat boyutu:
+            <input
+                type="range"
+                min="10"
+                max="100"
+                value={tempClockSize}
+                onChange={handleSliderChange}
+            />
+            
+        </label>
+      </div>
+      <div className="setting-item">
+        <label>
+          <input 
+            type="checkbox" 
+            checked={settings.showClock} 
+            onChange={() => toggleWidget('showClock')} 
+          />
+          Saat Göster
+        </label>
+      </div>
+      <div className="setting-item">
+        <label>
+          <input 
+            type="checkbox" 
+            checked={settings.showWeather} 
+            onChange={() => toggleWidget('showWeather')} 
+          />
+          Hava Durumu Göster
+        </label>
+      </div>
+      <div className="setting-item">
+        <label>
+          <input 
+            type="checkbox" 
+            checked={settings.showNews} 
+            onChange={() => toggleWidget('showNews')} 
+          />
+          Haberler Göster
+        </label>
+      </div>
+      <div className="setting-item">
+        <label>
+          <input 
+            type="checkbox" 
+            checked={settings.showSpaceFlights} 
+            onChange={() => toggleWidget('showSpaceFlights')} 
+          />
+          Uzay Uçuşları Göster
+        </label>
+      </div>
+      <div className="setting-item">
+        <label>
+          <input 
+            type="checkbox" 
+            checked={settings.showInfo} 
+            onChange={() => toggleWidget('showInfo')} 
+          />
+          Bilgi Göster
+        </label>
+      </div>
+      <button onClick={onClose}>Kapat</button>
+    </div>
+  );
+}
+
+export default SettingsPanel; import React from 'react';
+
+const SearchBar = () => {
+  const handleSearch = (e) => {
+    if (e.key === 'Enter') {
+      const query = e.target.value;
+      window.location.href = `https://www.google.com/search?q=${query}`;
+    }
+  };
+
+  return (
+    <div className="search-bar">
+      <input type="text" placeholder="Search with Google" onKeyDown={handleSearch} />
+    </div>
+  );
+};
+
+export default SearchBar;
+  
+ 

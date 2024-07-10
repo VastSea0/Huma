@@ -1,0 +1,281 @@
+/* components/BookmarksWidget.css */
+
+
+.bookmarks-widget {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 100%; /* Tam genişlik için ayarlandı */
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    overflow-x: auto; /* Yatay kaydırma için ayarlandı */
+  }
+  
+  .bookmarks-widget h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .bookmarks-list {
+    display: flex;
+    flex-wrap: nowrap; /* Yatay dizilim için ayarlandı */
+    gap: 20px; /* Kartlar arasındaki boşluk */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto; /* Yatay kaydırma için ayarlandı */
+  }
+  
+  .bookmark-item {
+    flex: 0 0 auto; /* Kartların sabit genişliği için ayarlandı */
+    width: 200px; /* Her bir kartın genişliği */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .bookmark-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bookmark-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+     
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .bookmark-link:hover {
+     
+    color: #e0e0e0;
+  }
+  
+  .bookmark-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+
+  
+
+.widgets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.bookmarks-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('../assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.clock {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.search-bar {
+  margin: 20px;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.widgets {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.widget {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 200px;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(10px);
+
+}
+
+
+.widget:hover {
+  background-color:rgba(255, 255, 255, 0.3) ;
+  backdrop-filter: blur(10px);
+
+}
+.widget h2 {
+  margin-top: 0;
+}
+
+.forecast, .news ul, .space-flights ul, .info ul, .bookmarks ul, .sponsored-sites ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news ul, .space-flights ul, .info ul {
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
+.bookmarks ul li, .sponsored-sites ul li {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.bookmarks ul li img, .sponsored-sites ul li img {
+  margin-right: 8px;
+}
+
+.add-bookmark {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.add-bookmark input {
+  margin: 4px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-bookmark button {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.add-bookmark button:hover {
+  background-color: #0056b3;
+}
+
+.settings-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.settings-panel {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.settings-panel-p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.edit-mode-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+button {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.settings-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.settings-button i {
+  color: white;
+}

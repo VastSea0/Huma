@@ -1,0 +1,10 @@
+{
+	"appName": {
+		"description": "The name of the app",
+		"message": "Hüma Başlangıç"
+	},
+	"appDescription": {
+		"description": "App description",
+		"message": "A customisable New Tab page, with widgets and beautiful backgrounds"
+	}
+}

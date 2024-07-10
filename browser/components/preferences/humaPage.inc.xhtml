@@ -1,0 +1,172 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+<!-- More From Mozilla panel -->
+
+<script src="chrome://browser/content/preferences/huma.js"/>
+<link rel="stylesheet" href="chrome://global/content/aboutHuma.css" type="text/css"/>
+<html:style>
+  /* Genel Stil */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Özellikler Bölümü */
+.feature-section {
+ 
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Kart Stili */
+.cart {
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.cart h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.cart p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Resim Stili */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Flex Container */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flex-item {
+  flex: 1 1 calc(50% - 20px);
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.flex-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+  </html:style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-wpOoh1gnZz7JcS3Fs8VPrF7x1b2E3JmbPwaCI7nFe9yBhvK4ztDtnyPdvKn7f5ow" crossorigin="anonymous"/>
+<html:template id="template-paneHuma">
+  <div id="humaCategory-header" hidden="true" data-category="paneHuma"></div>
+
+  <groupbox id="humaPageGroup" data-category="paneHuma" hidden="true">
+    <hbox style="display: flex; flex-direction: column; padding: 16px;">
+     
+      <html:h1 class="title">Özellikler</html:h1>
+      <html:p class="subtitle description-deemphasized">Hüma tarayıcısının özellikleri</html:p>
+      
+      <html:hr></html:hr>
+
+      <!-- Temel Özellikler -->
+      <html:div class="  mb-3">
+        <html:div class="cart-body">
+          <html:h2 class="cart-title">Temel özellikler</html:h2>
+          <html:p class="cart-text">Hüma, yerli ve açık kaynaklı bir web tarayıcısıdır. Firefox tabanlı olarak geliştirilen bu tarayıcı, gizlilik odaklı tasarımı ve özelleştirilebilir özellikleriyle öne çıkar. Hüma, kendi temasının yanı sıra sayfalar arasında gezinmeyi kolaylaştıran Hüma Gezgini, dikey sekme desteği, internetsiz çalışan Hüma Tarih ve Mitoloji sayfaları, dosya paylaşımı için 10MB sınırı olan Hüma Bulut ve Türkçe söz dizimine sahip betik yazma aracı Hüma Betik gibi özellikler sunar. Pardus ekosistemine katkı sağlamayı amaçlayan Hüma, Türk mitolojisi ve tarihi hakkında da bilgi içermektedir.</html:p>
+          <html:div class="alert alert-info" role="alert">
+            Hüma sürekli geliştirilmektedir, yeni özellikleri edinmek için tarayıcının güncel olduğundan emin olun.
+          </html:div>
+        </html:div>
+      </html:div>
+
+      <!-- Hüma Sekmeleri -->
+      <html:div class="cart mb-3">
+        <html:div class="cart-body">
+          <html:h2 class="cart-title">Hüma Sekmeleri</html:h2>
+          <html:img src="https://firebasestorage.googleapis.com/v0/b/vastsea-blog.appspot.com/o/mUj553KYSMNLQxdU68FR2cl0AFG3%2Fhumasekmeleri.png?alt=media&amp;token=f56918a9-1cb2-4a13-89cb-f71f5479d050" class="img-fluid" alt="Hüma Sekmeleri"/>
+          <html:p class="cart-text">Hüma Sekmeleri, Hüma Tarayıcısı için Yenilikçi Dikey Sekme Eklentisi</html:p>
+          <html:ul>
+            <html:li>Dikey Sekmeler: Web sitelerini dikey sekme düzeninde göstererek daha fazla sekme kullanımını optimize eder.</html:li>
+            <html:li>Özelleştirilebilirlik: Sekme genişlikleri, renk temaları ve düzen seçenekleriyle kullanıcıya tam kontrol sağlar.</html:li>
+            <html:li>Sekme Grupları: Sekmeleri gruplayarak benzer içeriklere sahip web sitelerini kolayca yönetebilme imkanı sunar.</html:li>
+            <html:li>Sürükle ve Bırak Desteği: Sekmeleri sürükleyerek yeniden düzenleme ve gruplama yapabilme kolaylığı sağlar.</html:li>
+            <html:li>Performans Odaklı: Hafif yapısıyla tarayıcı performansını olumsuz etkilemeden kullanıcıya yüksek performans sunar.</html:li>
+          </html:ul>
+        </html:div>
+      </html:div>
+
+      <!-- Hüma Gezgini -->
+      <html:div class="cart  mb-3">
+        <html:div class="cart-body">
+          <html:h2 class="cart-title">Hüma Gezgini</html:h2>
+          <html:img src="https://firebasestorage.googleapis.com/v0/b/vastsea-blog.appspot.com/o/mUj553KYSMNLQxdU68FR2cl0AFG3%2Fhumagezgini.png?alt=media&amp;token=f42dec79-8eb2-4ba6-aa7c-352387fc075a" class="img-fluid" alt="Hüma Gezgini"/>
+          <html:p class="cart-text">Hüma Gezgini, Hüma tarayıcısında yer imleri ve gezinti için güçlü bir eklentidir.</html:p>
+          <html:ul>
+            <html:li>Yer İmleri Yönetimi: Kolay erişim için yer imlerinizi düzenlemenizi ve yönetmenizi sağlar.</html:li>
+            <html:li>Bağlantı Keşfi: Hüma projesindeki bağlantıları keşfetme imkanı sunar, içeriği daha kolay bulmanızı sağlar.</html:li>
+            <html:li>Özelleştirme Seçenekleri: Eklentinin renk temasını değiştirerek kendi Hüma Gezgini temanızı oluşturabilirsiniz.</html:li>
+            <html:li>Kenar Çubuğu Entegrasyonu: Tarayıcınızın kenar çubuğunda kolay erişim için yer alır.</html:li>
+            <html:li>To-Do List Özelliği: Görev listesi oluşturup yönetmenize olanak tanır, tarayıcınızda daha düzenli çalışmanızı sağlar.</html:li>
+          </html:ul>
+        </html:div>
+      </html:div>
+
+      <!-- Hüma Başlangıç -->
+      <html:div class="cart mb-3">
+        <html:div class="cart-body">
+          <html:h2 class="cart-title">Hüma Başlangıç</html:h2>
+          <html:img src="https://firebasestorage.googleapis.com/v0/b/vastsea-blog.appspot.com/o/mUj553KYSMNLQxdU68FR2cl0AFG3%2FEkran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC_20240709_132443.png?alt=media&amp;token=46a63f7b-2d4f-4a32-987d-383d06acafa0" class="img-fluid" alt="Hüma Başlangıç"/>
+          <html:p class="cart-text">Hüma Başlangıç, Hüma tarayıcısının yeni sekme sayfasını kişiselleştirmenizi sağlayan güçlü bir eklentidir.</html:p>
+          <html:ul>
+            <html:li>Sürükle ve Bırak Widget'ları: Widget'ları bir ızgara üzerinde ekleyebilir, taşıyabilir, yeniden boyutlandırabilir ve yapılandırabilirsiniz.</html:li>
+            <html:li>Güzel Arka Planlar: Her 15 dakikada bir rastgele seçilmiş arka plan görüntüleri görürsünüz. Ayrıca düz bir renk, bir Unsplash koleksiyonu, bir RSS/Atom beslemesi veya özel bir arka plan resmi seçebilirsiniz.</html:li>
+            <html:li>Kişiselleştirilebilir: Arka planı, temayı değiştirebilir ve her widget'ı bağımsız olarak yapılandırabilirsiniz.</html:li>
+            <html:li>Çok Dilli: Fransızca, İspanyolca, İtalyanca, Portekizce, Malayca ve Türkçe dillerini destekler. Çeviriler, kullanıcılar tarafından katkı sağlanarak topluluk tarafından yönetilir.</html:li>
+            <html:li>Zengin Widget Seçenekleri: Hava durumu, yapılacaklar listesi, en çok ziyaret edilen siteler ve daha pek çok widget seçeneğiyle yeni sekme sayfanızı tamamen özelleştirebilirsiniz.</html:li>
+          </html:ul>
+          <p class="cart-text"><small class="text-muted">Hüma Başlangıç "Renewtab" eklentisinin bir çatalıdır, ilerleyen sürümlerde Hüma tarafından baştan yazılan eklenti ile değişecektir.</small></p>
+        </html:div>
+      </html:div>
+
+      <!-- Hüma Tarih ve Mitoloji -->
+      <html:div class="cart mb-3">
+        <html:div class="cart-body">
+          <html:h2 class="cart-title">Hüma Tarih ve Hüma Mitoloji</html:h2>
+          <html:img src="https://firebasestorage.googleapis.com/v0/b/vastsea-blog.appspot.com/o/mUj553KYSMNLQxdU68FR2cl0AFG3%2Fhumatarih.png?alt=media&amp;token=2fbe3363-42fd-48e1-991f-2fb6ff4417e8" class="img-fluid" alt="Hüma Tarih ve Mitoloji"/>
+          <html:p class="cart-text">Hüma Tarih ve Hüma Mitoloji sayfaları, Türk mitolojisi ve tarihini tanıtan kapsamlı bir internetsiz ansiklopedidir.</html:p>
+          <html:ul>
+            <html:li>Türk Mitolojisi ve Tarihi: Türk mitolojisi ve tarihi hakkında derinlemesine bilgiler sunar.</html:li>
+            <html:li>İnternetsiz Erişim: İnternet bağlantısı gerektirmeden, tarayıcı içerisinde yer alan bir bilgi kaynağıdır.</html:li>
+            <html:li>Genişleyen İçerik: Zamanla diğer milletlerin tarihi ve mitolojisi ile ilgili içeriklerin de eklenmesi planlanmaktadır.</html:li>
+          </html:ul>
+          <html:p class="cart-text"><small class="text-muted">Hüma Tarih ve Hüma Mitoloji sayfalarıyla geçmişe yolculuk yapın ve tarih ile mitolojinin zengin dünyasını keşfedin!</small></html:p>
+        </html:div>
+      </html:div>
+
+    </hbox>
+  </groupbox>
+</html:template>

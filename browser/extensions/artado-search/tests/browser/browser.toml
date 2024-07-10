@@ -1,0 +1,6 @@
+[DEFAULT]
+support-files = [
+  "test-artadosearch.html",
+]
+
+["search_engine_artado.js"] 

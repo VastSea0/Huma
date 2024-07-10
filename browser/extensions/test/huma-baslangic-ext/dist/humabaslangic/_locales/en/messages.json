@@ -1,0 +1,10 @@
+{
+    "extensionName": {
+      "message": "Hüma Start",
+      "description": "The name of the extension"
+    },
+    "extensionDescription": {
+      "message": "Customizable new tab for Hüma browser",
+      "description": "The description of the extension"
+    }
+  }

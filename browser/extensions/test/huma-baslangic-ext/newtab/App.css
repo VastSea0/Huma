@@ -1,0 +1,30 @@
+/* App.css */
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #f0f4f8;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .widgets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin-top: 20px;
+  }
+  
+  .bookmarks-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+ 
+  
+ 

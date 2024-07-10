@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "__MSG_extensionName__",
+    "description": "__MSG_extensionDescription__",
+    "version": "1.2",
+    "author": "Egehan KAHRAMAN",
+    "homepage_url": "https://github.com/vastsea0/artadosearch-ext",
+    "developer": {
+      "name": "Egehan",
+      "url": "https://egehan.netlify.app"
+    },
+    "chrome_settings_overrides": {
+      "search_provider": {
+        "name": "Artado",
+        "search_url":"https://www.artadosearch.com/search?i={searchTerms}",
+        "keyword": "@artado",
+        "favicon_url": "https://www.artadosearch.com/images/favicon.ico",
+        "is_default": true,
+        "encoding": "UTF-8"
+      }
+    },
+    "default_locale": "tr",
+
+    "applications": {
+    "gecko": {
+      "id": "artadosearch-ext@humatarayici.com",
+      "strict_min_version": "115.0"
+    }
+  }
+  }

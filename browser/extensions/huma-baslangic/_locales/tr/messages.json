@@ -1,0 +1,10 @@
+{
+	"appName": {
+		"message": "Hüma Başlangıç",
+		"description": "The name of the app"
+	},
+	"appDescription": {
+		"message": "Araçlar ve güzel arka planlar içeren, özelleştirilebilir bir Yeni Sekme sayfası",
+		"description": "App description"
+	}
+}

@@ -1,0 +1,50 @@
+# -*- Mode: python; indent-tabs-mode: nil; tab-width: 40 -*-
+# vim: set filetype=python:
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# Eklenti yazar: Egehan KAHRAMAN...
+# Bu eklenti halka açık lisanslar altında lisanlanmaktadır
+# https://humatarayici.com/docs
+
+DEFINES["MOZ_APP_VERSION"] = CONFIG["MOZ_APP_VERSION"]
+DEFINES["MOZ_APP_MAXVERSION"] = CONFIG["MOZ_APP_MAXVERSION"]
+
+FINAL_TARGET_FILES.features["humabaslangic@humatarayici.com"] += [
+    "manifest.json",
+]
+
+FINAL_TARGET_FILES.features["humabaslangic@humatarayici.com"]["app"] += [
+    "app/75371f53f06181df75f1.ttf",
+    "app/a8d6ac03c7b96b7acb62.ttf",
+    "app/accuweather.png",
+    "app/beb7fe13e61b9e683c37.ttf",
+    "app/browser-polyfill.min.js",
+    "app/icon.svg",
+    "app/icon_location.svg",
+    "app/index.html",
+    "app/locale.js",
+    "app/locale.js.map",
+    "app/main.css",
+    "app/main.css.map",
+    "app/main.js",
+    "app/main.js.map",
+    "app/onboarding_preset_focus.png",
+    "app/onboarding_preset_goals.png",
+    "app/onboarding_preset_grid.png",
+    "app/webext.html",
+ 
+]
+
+FINAL_TARGET_FILES.features["humabaslangic@humatarayici.com"]["_locales"]["en"] += [
+    "_locales/en/messages.json",
+]
+
+FINAL_TARGET_FILES.features["humabaslangic@humatarayici.com"]["_locales"]["tr"] += [
+    "_locales/tr/messages.json",
+] 
+
+BROWSER_CHROME_MANIFESTS += ["tests/browser/browser.toml"]
+
+with Files("**"):
+    BUG_COMPONENT = ("HumaBaslangic Ext", "Tooling & Investigations")

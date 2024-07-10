@@ -1,0 +1,254 @@
+/* huma.css */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header stili */
+header {
+  background-color: #0066cc;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Footer stili */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Anasayfa stil */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 1rem;
+  padding: 1rem;
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+.card .btn {
+  display: inline-block;
+  background-color: #0066cc;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-top: 1rem;
+}
+
+/* İçerik sayfası stil */
+.content-layout {
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  flex: 1;
+  max-width: 200px;
+}
+
+.content {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  flex: 3;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color: #0066cc;
+  font-size: 1.5rem;
+}
+
+aside {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  flex: 1;
+  max-width: 200px;
+}
+
+aside h2 {
+  font-size: 1.25rem;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+.card {
+  
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+}
+ 
+.bg-helo {
+  background: linear-gradient(
+    135deg,
+    #182255 13%, /* #182255 */
+    #24554C 33%,
+    #BB2B27 100%
+  );
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+}
+
+.footer {
+  width: 80px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.social-links a:hover {
+  color: #bbb;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+.header {
+  background: linear-gradient(
+  135deg,
+  #182255 13%, /*  #182255 */
+  #24554C 33%,
+  #BB2B27 100%
+
+);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+.content-layout {
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+}
+.content {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  flex: 3;
+}
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  flex: 1;
+  max-width: 200px;
+}
+
+
+.cart-t {
+  margin-bottom: 20%;
+  padding-bottom: 20%;
+}
+.list-group-div {
+  position: sticky;
+  top: 20px; /* Ekranın üstünden 20px aşağıda başlaması */
+   
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
+  z-index: 1000; /* Diğer öğelerin üstünde görünmesi için z-index ayarı */
+}
+
+.container {
+  width: 100%; /* Genişlik ayarı */
+  max-width: 800px; /* Maksimum genişlik ayarı */
+  margin: 20px auto; /* Kenar boşluğu ve otomatik ortalamak */
+  padding: 20px; /* İçerik içindeki kenar boşluğu */
+  
+}
+
+
+.list-group-item {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}

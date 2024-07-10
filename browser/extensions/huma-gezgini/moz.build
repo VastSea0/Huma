@@ -1,0 +1,113 @@
+# -*- Mode: python; indent-tabs-mode: nil; tab-width: 40 -*-
+# vim: set filetype=python:
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# Eklenti yazar: Egehan KAHRAMAN...
+# Bu eklenti halka açık lisanslar altında lisanlanmaktadır
+# https://humatarayici.com/docs
+
+DEFINES["MOZ_APP_MAXVERSION"] = CONFIG["MOZ_APP_MAXVERSION"]
+DEFINES["MOZ_APP_VERSION"] = CONFIG["MOZ_APP_VERSION"]
+
+FINAL_TARGET_FILES.features["humagezgini@humatarayici.com"] += [
+    "manifest.json",
+]
+
+FINAL_TARGET_FILES.features["humagezgini@humatarayici.com"]["images"] += [
+    "images/logo.png",
+    "images/logo1.png",
+    "images/logo2.png",
+    "images/logo3.png",
+    "images/logo4.png",
+    "images/logo5.png",
+    "images/logo6.png",
+]
+
+FINAL_TARGET_FILES.features["humagezgini@humatarayici.com"]["popup"] += [
+    "popup/popup.css",
+    "popup/popup.html",
+    "popup/popup.js",
+]
+
+FINAL_TARGET_FILES.features["humagezgini@humatarayici.com"]["sidebar"] += [
+    "sidebar/sidebar.css",
+    "sidebar/sidebar.html",
+    "sidebar/sidebar.js",
+]
+
+FINAL_TARGET_FILES.features["humagezgini@humatarayici.com"]["sidebar"]["html"] += [
+    "sidebar/html/404.html",
+    "sidebar/html/favicon.svg",
+    "sidebar/html/index.html",  # Yalnızca burada tanımlandı
+]
+
+FINAL_TARGET_FILES.features["humagezgini@humatarayici.com"]["sidebar"]["html"]["icerikler"]["sayfalar"]["huma-sayfalari"] += [
+    "sidebar/html/icerikler/sayfalar/huma-sayfalari/index.html",
+
+]
+FINAL_TARGET_FILES.features["humagezgini@humatarayici.com"]["sidebar"]["html"]["icerikler"]["sayfalar"]["turk-mitolojisi"] += [
+
+    "sidebar/html/icerikler/sayfalar/turk-mitolojisi/index.html",
+]
+FINAL_TARGET_FILES.features["humagezgini@humatarayici.com"]["sidebar"]["html"]["icerikler"]["sayfalar"]["turk-tarihi"] += [
+
+    "sidebar/html/icerikler/sayfalar/turk-tarihi/index.html",
+]
+
+FINAL_TARGET_FILES.features["humagezgini@humatarayici.com"]["sidebar"]["html"]["_astro"] += [
+    "sidebar/html/_astro/ec.1vui4.css",
+    "sidebar/html/_astro/ec.3zb7u.js",
+    "sidebar/html/_astro/hoisted.3wEPlVl3.js",
+    "sidebar/html/_astro/index.BWmINQbN.css",
+    "sidebar/html/_astro/ion-logo.a4Crm1tq.svg",
+    "sidebar/html/_astro/ion-logo.a4Crm1tq_Z1AHxh1.webp",
+    "sidebar/html/_astro/page.LS5KDvwX.js",
+    "sidebar/html/_astro/space-grotesk-latin-ext-wght-normal.OnFqUBEL.woff2",
+    "sidebar/html/_astro/space-grotesk-latin-wght-normal.5PZORFv8.woff2",
+    "sidebar/html/_astro/space-grotesk-vietnamese-wght-normal.D_Q6m-an.woff2",
+    "sidebar/html/_astro/space-mono-latin-400-normal.Co7bH5Hm.woff2",
+    "sidebar/html/_astro/space-mono-latin-400-normal.Dhx3fije.woff",
+    "sidebar/html/_astro/space-mono-latin-700-normal.DQ28t8ia.woff2",
+    "sidebar/html/_astro/space-mono-latin-700-normal.DVWAw1oV.woff",
+    "sidebar/html/_astro/space-mono-latin-ext-400-normal.CG3Wltlv.woff",
+    "sidebar/html/_astro/space-mono-latin-ext-400-normal.DR7a1phP.woff2",
+    "sidebar/html/_astro/space-mono-latin-ext-700-normal.DVvWKYIc.woff2",
+    "sidebar/html/_astro/space-mono-latin-ext-700-normal.rbeaugf4.woff",
+    "sidebar/html/_astro/space-mono-vietnamese-400-normal.C1gLLQHE.woff2",
+    "sidebar/html/_astro/space-mono-vietnamese-400-normal.C_cXB2U0.woff",
+    "sidebar/html/_astro/space-mono-vietnamese-700-normal.0hHzGqcB.woff2",
+    "sidebar/html/_astro/space-mono-vietnamese-700-normal.CkMttlPH.woff",
+    "sidebar/html/_astro/Tabs.astro_astro_type_script_index_0_lang.CCIyraCc.js",
+    "sidebar/html/_astro/ui-core.DRDIzgSq.js",
+]
+
+FINAL_TARGET_FILES.features["humagezgini@humatarayici.com"]["sidebar"]["html"]["pagefind"] += [
+    "sidebar/html/pagefind/pagefind-entry.json",
+    "sidebar/html/pagefind/pagefind-highlight.js",
+    "sidebar/html/pagefind/pagefind-modular-ui.css",
+    "sidebar/html/pagefind/pagefind-modular-ui.js",
+    "sidebar/html/pagefind/pagefind-ui.css",
+    "sidebar/html/pagefind/pagefind-ui.js",
+    "sidebar/html/pagefind/pagefind.en_2976a08f8a.pf_meta",
+    "sidebar/html/pagefind/pagefind.js",
+    "sidebar/html/pagefind/wasm.en.pagefind",
+    "sidebar/html/pagefind/wasm.unknown.pagefind",
+]
+
+FINAL_TARGET_FILES.features["humagezgini@humatarayici.com"]["sidebar"]["html"]["pagefind"]["fragment"] += [
+    "sidebar/html/pagefind/fragment/en_307d78a.pf_fragment",
+    "sidebar/html/pagefind/fragment/en_3488bde.pf_fragment",
+    "sidebar/html/pagefind/fragment/en_4b285b2.pf_fragment",
+    "sidebar/html/pagefind/fragment/en_92d89d8.pf_fragment",
+]
+
+FINAL_TARGET_FILES.features["humagezgini@humatarayici.com"]["sidebar"]["html"]["pagefind"]["index"] += [
+    "sidebar/html/pagefind/index/en_ff793a9.pf_index",
+]
+
+
+BROWSER_CHROME_MANIFESTS += ["tests/browser/browser.toml"]
+
+with Files("**"):
+    BUG_COMPONENT = ("Huma Gezgini Ext", "Tooling & Investigations")

@@ -1,0 +1,6 @@
+[DEFAULT]
+support-files = [
+  "test-humabaslangic.html",
+]
+
+["humabaslangic.js"] 

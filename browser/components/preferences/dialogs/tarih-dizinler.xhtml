@@ -1,0 +1,244 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" role="document" id="preferences-root" lang="tr" dir="ltr">
+
+<head>
+  <!-- @CSP: We should remove 'unsafe-inline' from style-src, see Bug 1579160 -->
+  <meta http-equiv="Content-Security-Policy" content="default-src chrome:; img-src chrome: moz-icon: https: blob: data:; style-src chrome: data: 'unsafe-inline'; object-src 'none'" />
+
+  <title data-l10n-id="huma-page-title"></title>
+
+  <meta name="color-scheme" content="light dark" />
+ 
+
+  
+  <link rel="stylesheet" href="chrome://browser/content/preferences/huma.css" />
+ 
+  <link
+  rel="stylesheet"
+  href="chrome://global/content/aboutHuma.css"
+  type="text/css"
+/>
+  <link rel="localization" href="branding/brand.ftl"/>
+  <link rel="localization" href="browser/browser.ftl"/>
+ 
+  <!-- Links below are only used for search-l10n-ids into subdialogs -->
+  <link rel="localization" href="browser/huma.ftl"/>
+ 
+  <link rel="shortcut icon" href="chrome://global/skin/icons/settings.svg"/>
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" />
+  <script src="chrome://browser/content/preferences/huma.js"/>
+  <script src="chrome://browser/content/preferences/tarih.js"/>
+
+ 
+</head>
+ 
+<html:body>
+    <html:div class="header nav bg-helo">
+        <html:h1>Hüma Tarih</html:h1>
+    </html:div>
+    <html:div class="container mt-5">
+        <html:div class="row">
+      
+            <html:nav class="col-md-3">
+            <html:div class="row">
+                <html:div class="list-group  list-group-div">
+                    <html:a href="#eski-turk-tarihi" class="list-group-item list-group-item-action" data-target="#eski-turk-tarihi">Eski Türk Tarihi</html:a>
+                    <html:a href="#orta-cag-turk-tarihi" class="list-group-item list-group-item-action" data-target="#orta-cag-turk-tarihi">Orta Çağ Türk Tarihi</html:a>
+                    <html:a href="#selcuklu-imparatorlugu" class="list-group-item list-group-item-action" data-target="#selcuklu-imparatorlugu">Selçuklu İmparatorluğu</html:a>
+                    <html:a href="#osmanli-imparatorlugu" class="list-group-item list-group-item-action" data-target="#osmanli-imparatorlugu">Osmanlı İmparatorluğu</html:a>
+                    <html:a href="#turkiye-cumhuriyeti" class="list-group-item list-group-item-action" data-target="#turkiye-cumhuriyeti">Türkiye Cumhuriyeti Dönemi</html:a>
+                </html:div>
+            </html:div>    
+            </html:nav>
+            
+            <html:div class="col-md-9">
+                <html:div class="card-h">
+                    <html:div class="card-body">
+                        <html:h1 class="card-title">Hüma Tarih</html:h1>
+                        <html:p class="card-text">Türklerin kökenlerinden Osmanlı İmparatorluğu'na, Türkiye Cumhuriyeti'ne uzanan büyük tarih.</html:p>
+                    </html:div>
+               
+                    <html:div   class="row ">
+                        <html:div class="cart-t mb-3 blr" id="eski-turk-tarihi">
+            
+                          <html:div class="card-body">
+                            <html:h5 class="card-title"  >Eski Türk Tarihi (MÖ 2000 - MS 630)</html:h5>
+                            <html:p id="shortContent" >
+                                Bu dönem, Orta Asya'da göçebe Türk boylarının ortaya çıkışından başlar ve Göktürk Devleti'nin kuruluşuna kadar uzanır. Hunlar, Göktürkler ve Uygurlar gibi önemli Türk boylarının egemenliği altında geçer.
+                            </html:p>
+                            <html:p id="fullContent">
+                                Bu dönem, Orta Asya'da göçebe Türk boylarının ortaya çıkışından başlar ve Göktürk Devleti'nin kuruluşuna kadar uzanır. Hunlar, Göktürkler ve Uygurlar gibi önemli Türk boylarının egemenliği altında geçer. Türk tarihindeki bu dönem, Türklerin Orta Asya'da güçlenmeye başladığı ve çeşitli devletler kurduğu önemli bir süreçtir.
+                                  <html:div class="blr">
+                                
+                                <html:h3>Yaşam Tarzları</html:h3>
+                                <html:p>
+                                    Türklerin yaşam tarzları genellikle göçebe ve savaşçı bir yaşam tarzı üzerine kurulmuştu. Bu dönemde Türkler, genellikle at üzerinde göçebe bir yaşam sürerlerdi. Hayvan yetiştiriciliği, avcılık ve göçebelik temel geçim kaynaklarıydı. Aile yapıları genellikle geniş ailelerden oluşurdu ve toplumları içinde klan veya boy yapıları önemli bir yer tutardı. Erkekler genellikle avlanma, savaşma ve hayvan bakımıyla uğraşırken, kadınlar da genellikle ev işleri, çocuk bakımı ve kabile içindeki sosyal işlerle meşguldüler.
+                                </html:p>
+                                <html:h3>Nereden Geldiler?</html:h3>
+                                <html:p>
+                                    Türklerin kökeni hakkında kesin bir bilgi olmamakla birlikte, çeşitli teoriler bulunmaktadır. Göçebe bir yaşam tarzına sahip olan Türkler, genellikle Orta Asya steplerinde ve Altay Dağları civarında yerleşik olmuşlardır. Yapılan arkeolojik bulgular ve dilbilimsel çalışmalar, Türklerin kökenlerinin Orta Asya'da olduğunu göstermektedir. Altay Dağları çevresi, Türk halklarının muhtemel kökenlerinden biri olarak kabul edilir. Ancak Türklerin yayılma ve göçleriyle birlikte Orta Asya'dan çeşitli yönlere doğru yayıldıkları bilinmektedir.
+                                </html:p>
+                                <html:h3>
+                                    Başarıları, Savaşları Ve Kayıpları
+                                </html:h3>
+                                <html:p>
+                                    Türkler, tarih boyunca pek çok başarıya imza atmış ve önemli savaşlara katılmışlardır. Özellikle Hun İmparatorluğu'nun yükselişi, Türk tarihinde önemli bir dönüm noktasıdır. Hunlar, Orta Asya'dan Avrupa'ya kadar geniş bir coğrafyada etkili olmuşlardır. Ancak zamanla Hun İmparatorluğu'nun parçalanmasıyla birlikte farklı Türk boyları farklı yönlere göç etmişler ve farklı imparatorluklar kurmuşlardır. Göktürkler, Uygurlar, Selçuklular gibi Türk devletleri, tarih boyunca Orta Asya ve çevresinde önemli rol oynamışlardır. Ancak bu dönemde Türkler, bazı savaşlarda zafer kazanmış olsalar da, bazı savaşlarda da önemli kayıplar yaşamışlardır. Özellikle Çin ve Orta Doğu'daki büyük imparatorluklarla yapılan mücadelelerde zaman zaman geri çekilmek zorunda kalmışlardır.
+                                </html:p>
+                                <html:h3>Kapanış</html:h3>
+                                <html:p>
+                                    Türklerin bu dönemi, Orta Asya'dan çıkarak farklı coğrafyalara yayıldıkları ve farklı Türk devletlerini kurdukları bir dönem olarak değerlendirilebilir. Bu dönemdeki Türk tarihi, Orta Asya'nın ve çevresinin siyasi ve kültürel tarihine büyük etkilerde bulunmuştur. Ayrıca, bu dönemdeki Türk devletleri, ticaretin ve kültürel alışverişin de önemli birer merkezi olmuşlardır. Ancak, bu süreçte bazı savaşlar ve çatışmalar da yaşanmış, Türk toplulukları bazı kayıplar vermişlerdir. Bu dönem, Türklerin tarih boyunca sahip oldukları göçebe yaşam tarzının ve savaşçı geleneğinin temellerinin atıldığı bir dönemdir.
+                                </html:p>
+                            </html:div>
+                              </html:p>
+                             
+                        </html:div>
+                        </html:div>
+                        <html:div class="cart-t mb-3 blr"  id="orta-cag-turk-tarihi">
+            
+                            <html:div class="card-body">
+                                <html:h5 class="card-title"  >Orta Çağ Türk Tarihi (MS 630 - 1299)</html:h5>
+                                <html:p>
+                                    Bu dönemde Göktürk Devleti'nin yıkılmasından sonra Orta Asya'da çeşitli Türk devletleri ve hanlıkları ortaya çıkar. Özellikle İslam'ın kabul edilmesiyle birlikte Türklerin İslam medeniyetine katkıları önem kazanır.
+                                
+                                  </html:p>
+                                  <html:div class="blr">
+                                     
+                                    <html:h3>Yaşam Tarzları</html:h3>
+                                    <html:p>
+                                        Orta Çağ'da Türklerin yaşam tarzı genellikle göçebe veya yarı göçebe olarak devam etmiştir. Göçebe yaşam tarzı, at yetiştiriciliği ve hayvancılık üzerine kurulmuştu. Otlak arayışı sebebiyle mevsimsel olarak göç ederlerdi. Ancak bazı Türk boyları yerleşik hayata geçerek şehirler kurmuş ve ticaret ile uğraşmışlardır. Özellikle Selçuklu İmparatorluğu döneminde, Türklerin yerleşik hayata geçmesi ve şehirlerin gelişmesi önemli bir özellikti. Ticaret, zanaat ve tarım da önemli geçim kaynakları haline gelmiştir.
+                                    </html:p>
+                                    <html:h3>Nereden Geldiler?</html:h3>
+                                    <html:p>
+                                        Orta Çağ'da Türkler, Orta Asya'dan çıkarak çeşitli coğrafyalara yayılmışlardır. Özellikle Göktürklerin ardından, Uygurlar, Selçuklular gibi Türk devletleri kurulmuştur. Selçuklu İmparatorluğu'nun kuruluşuyla birlikte Türkler, Orta Doğu ve Anadolu'da önemli bir güç haline gelmiştir. Ayrıca, Moğol istilası sonrasında Moğolların yönetimi altında Türk boyları da büyük göçlere maruz kalmıştır.
+                                    </html:p>
+                                    <html:h3>
+                                        Başarıları, Savaşları Ve Kayıpları
+                                    </html:h3>
+                                    <html:p>
+                                        Orta Çağ'da Türkler, birçok başarı elde etmiş ancak bazı kayıplar da yaşamışlardır. Selçuklu İmparatorluğu'nun kuruluşu ve genişlemesi, Türk tarihinde önemli bir dönem olarak kabul edilir. Özellikle Malazgirt Meydan Muharebesi (1071), Türklerin Anadolu'ya girişi ve Selçuklu Devleti'nin kuruluşu açısından büyük bir öneme sahiptir. Ancak Moğol istilası, Türk dünyasını derinden etkilemiş ve birçok Türk devleti yıkılmış veya zayıflamıştır. Bu dönemde Türkler, Anadolu'nun fethi, Orta Doğu'daki siyasi ve kültürel etkileriyle ön plana çıkmıştır.
+                                    </html:p>
+                                    <html:h3>Kapanış</html:h3>
+                                    <html:p>
+                                        Orta Çağ Türk Tarihi, Türklerin siyasi, kültürel ve toplumsal açıdan önemli gelişmeler yaşadığı bir dönemdir. Bu dönemde Türkler, Orta Asya'dan çıkarak geniş bir coğrafyaya yayılmış ve çeşitli medeniyetler kurmuşlardır. Ancak Moğol istilası gibi önemli olaylar Türk dünyasını derinden etkilemiş ve bazı Türk devletlerinin çöküşüne sebep olmuştur. Orta Çağ Türk Tarihi, Türklerin tarih boyunca yaşadığı dönüşümlerin ve zorlu mücadelelerin izlerini taşır.
+                                    </html:p>
+                                </html:div>
+                            </html:div>
+                        </html:div>
+                        <html:div class="cart-t mb-3 blr" id="selcuklu-imparatorlugu">
+            
+                            <html:div class="card-body">
+                                <html:h5 class="card-title"  >
+                                    Selçuklu İmparatorluğu (1040 - 1307)
+                                </html:h5>
+                                <html:p>
+                                    Türklerin İslam medeniyetindeki etkisi bu dönemde doruğa ulaşır. Anadolu'da kurulan Selçuklu Devleti, önemli bir Türk İslam medeniyeti inşa eder.
+                                    <html:div class="blr">
+                                  
+                                      <html:h3>Yaşam Tarzları</html:h3>
+                                      <html:p>
+                                          Selçuklu İmparatorluğu döneminde Türklerin yaşam tarzı, genellikle göçebe veya yarı göçebe yaşam tarzından yerleşik yaşam tarzına doğru bir dönüşüm geçirmişti. Özellikle imparatorluk merkezi olan İsfahan gibi büyük şehirler ticaret ve zanaatın geliştiği yerler haline gelmiştir. Selçuklu döneminde ticaret yollarının kontrolü ve geliştirilmesi büyük önem taşımıştır.
+                                      </html:p>
+                                      <html:h3>Nereden Geldiler?</html:h3>
+                                      <html:p>
+                                          Selçuklu Hanedanı, Oğuz Türklerine mensup bir boy olan Selçuklu Oğuzları'na dayanmaktadır. Bu boy, Orta Asya'dan göç ederek İran ve Anadolu'ya yerleşmiştir. Başlangıçta Horasan bölgesinde hakimiyet kuran Selçuklular, zamanla İran ve Anadolu'da genişlemişlerdir.
+                                      </html:p>
+                                      <html:h3>
+                                          Başarıları, Savaşları Ve Kayıpları
+                                      </html:h3>
+                                      <html:p>
+                                          Selçuklu İmparatorluğu, Orta Çağ'ın en güçlü ve etkili İslam devletlerinden biri olarak kabul edilir. Malazgirt Meydan Muharebesi (1071), Selçuklu İmparatorluğu'nun Anadolu'ya girişini sağlayarak Türklerin Anadolu'da yerleşmesine ve Anadolu Selçuklu Devleti'nin kuruluşuna zemin hazırlamıştır. Selçuklu İmparatorluğu, Abbâsî Halifeliği'nin desteğini alarak büyük topraklar fethetmiş, Orta Doğu'da ve Anadolu'da hakimiyet kurmuştur. Ancak zamanla Moğol istilası ve iç karışıklıklar imparatorluğun zayıflamasına ve sonunda çöküşüne neden olmuştur.
+                                      </html:p>
+                                      <html:h3>Kapanış</html:h3>
+                                      <html:p>
+                                          Selçuklu İmparatorluğu, Orta Çağ İslam dünyasının en önemli güçlerinden biri olarak tarih sahnesinde yerini almıştır. İmparatorluk, Orta Doğu ve Anadolu'da siyasi, kültürel ve ekonomik açıdan önemli gelişmelere öncülük etmiştir. Ancak Moğol istilası ve iç karışıklıklar, imparatorluğun çöküşüne ve Anadolu'da beylikler döneminin başlamasına yol açmıştır. Selçuklu İmparatorluğu'nun mirası, Orta Doğu ve Anadolu'nun tarihinde derin izler bırakmıştır ve Osmanlı İmparatorluğu'nun yükselişine zemin hazırlamıştır.
+                                      </html:p>
+                                  </html:div>
+                                  </html:p>
+                                
+                            </html:div>
+                        </html:div>
+                        <html:div class="cart-t mb-3 blr" id="osmanli-imparatorlugu">
+            
+                            <html:div class="card-body">
+                                <html:h5 class="card-title"  >
+                                    Osmanlı İmparatorluğu (1299 - 1922)
+                                </html:h5>
+                                <html:p>
+                                    Osmanlı Devleti'nin kuruluşuyla başlayan bu dönem, Türk tarihindeki en uzun ve etkili dönemdir. Balkanlar, Orta Doğu ve Kuzey Afrika'yı içine alan geniş bir coğrafyada hüküm sürmüşlerdir.
+                                    <html:div class="blr">
+                                      
+                                      <html:h3>Köken Ve Kuruluş</html:h3>
+                                      <html:p>
+                                          Osmanlı İmparatorluğu, Osman Gazi'nin liderliğindeki Osmanlı Beyliği'nin genişlemesiyle doğmuştur. Osmanlılar, Anadolu'nun batısında Bizans topraklarında güçlenmeye başladılar. Osmanlı Beyliği'nin kurucusu Osman Gazi, 1299 yılında Söğüt'te bağımsızlığını ilan etti ve bu tarih Osmanlı İmparatorluğu'nun resmi kuruluş tarihi olarak kabul edilir.
+                                      </html:p>
+                                      <html:h3>Genişleme Ve Yükseliş</html:h3>
+                                      <html:p>
+                                          Osmanlı İmparatorluğu, kuruluşundan itibaren sürekli olarak genişlemiştir. Osmanlılar, Anadolu'nun çeşitli bölgelerini fethettikten sonra Balkanlar'a yönelerek buraları fethetmişlerdir. İmparatorluk, Rumeli'ndeki fetihlerinin ardından İstanbul'u fethederek Bizans İmparatorluğu'nun sonunu getirmiştir. Ardından Orta Doğu, Kuzey Afrika ve Avrupa'nın birçok bölgesini fethederek büyük bir imparatorluk haline gelmiştir.
+                                      </html:p>
+                                      <html:h3>
+                                          Yönetim Ve Kültürel Miras
+                                      </html:h3>
+                                      <html:p>
+                                          Osmanlı İmparatorluğu, karmaşık bir yönetim yapısına sahipti. Merkezi yönetim İstanbul'da bulunurken, eyaletler ve vilayetler yerel yöneticiler tarafından idare edilirdi. Osmanlılar, farklı milletlerden ve dinden olan insanları barış içinde yaşamaya teşvik etmişlerdir. Bu da Osmanlı İmparatorluğu'nun çok kültürlü ve çok dilli bir yapıya sahip olmasını sağlamıştır. Ayrıca, Osmanlılar önemli bir kültürel miras bırakmıştır; mimari, edebiyat, musiki gibi birçok alanda önemli eserler vermişlerdir.
+                                      </html:p>
+                                      <html:h3>Geri Çekilme Ve Çöküş</html:h3>
+                                      <html:p>
+                                          Osmanlı İmparatorluğu, 17. yüzyıldan itibaren gerilemeye başlamıştır. İç isyanlar, dış saldırılar ve ekonomik sıkıntılar imparatorluğu zayıflatmıştır. 19. yüzyılda ise Avrupa'daki güç dengelerinin değişmesiyle birlikte imparatorluk daha da gerilemiş ve parçalanma süreci hızlanmıştır. Son olarak I. Dünya Savaşı'ndaki yenilgi ve işgal dönemi, imparatorluğun sonunu getirmiştir. Türkiye Cumhuriyeti'nin kuruluşuyla birlikte Osmanlı İmparatorluğu resmen sona ermiştir.
+                                          Osmanlı İmparatorluğu, tarih boyunca dünya siyasi ve kültürel tarihine büyük etkilerde bulunmuş, uzun ömürlü ve geniş topraklara sahip olan önemli bir imparatorluktur.
+                                      </html:p>
+                                  </html:div>
+                                </html:p>
+                       
+                            </html:div>
+                        </html:div>
+                        <html:hr />
+                        <html:div class="cart-t mb-3 blr" id="turkiye-cumhuriyeti">
+            
+                            <html:div class="card-body" >
+                                <html:h5 class="card-title"  >
+                                    Türkiye Cumhuriyeti Dönemi (1923 - günümüz)
+                                </html:h5>
+                                <html:p>
+                                    Osmanlı İmparatorluğu'nun çöküşüyle sonuçlanan dönemin ardından Türkiye Cumhuriyeti'nin kuruluşu gerçekleşir. Mustafa Kemal Atatürk liderliğindeki reformlarla modern bir Türk devleti inşa edilir.
+                                    <html:div class="blr">
+                                     
+                                      <html:h3>Türkiye Cumhuriyeti Dönemi (1923 - Günümüz)</html:h3>
+                                      <html:p>
+                                          Türkiye Cumhuriyeti'nin kuruluşu, Osmanlı İmparatorluğu'nun çöküşüyle sonuçlanan dönemde gerçekleşir ve modern Türkiye'nin temellerini atmıştır. 1923 yılında, Mustafa Kemal Atatürk önderliğindeki Türk Milli Mücadelesi'nin zaferiyle Türkiye'nin bugünkü sınırları içinde bağımsız bir cumhuriyet kurulur. Bu dönemde, Osmanlı İmparatorluğu'nun mirasıyla yüzleşilir ve yeni bir ulusal kimlik inşa edilir. Atatürk, devrimci ve laik bir yönetim anlayışıyla, Batılılaşma ve modernleşme hareketlerini başlatır.
+                                          </html:p>
+                                          <html:p>
+                                          Türkiye Cumhuriyeti'nin kuruluşundan sonra, ülke geniş kapsamlı bir reform programıyla karşı karşıya kalır. Bu reformlar, siyasi, sosyal, ekonomik ve kültürel alanlarda gerçekleştirilir. İlk olarak, ülkenin siyasi yapısı demokratik ilkeler ve laiklik ilkesi etrafında yeniden yapılandırılır. Meclis-i Mebusan yerine Türkiye Büyük Millet Meclisi kurulur ve çok partili siyasi sisteme geçiş yapılır. 
+                                          </html:p>
+                                          <html:p>
+                                          Eğitim sistemi de radikal bir dönüşüme uğrar. Yeni bir eğitim modeli benimsenir ve eğitim halka açılır. Okuryazarlık oranı artırılarak toplumun geniş kesimlerine eğitim imkanı sunulur. Ayrıca, dil reformu kapsamında Arap alfabesi yerine Latin alfabesi kabul edilir. 
+                                          </html:p>
+                                          <html:p>
+                                          Türkiye Cumhuriyeti'nin kuruluş döneminde, kadın haklarına da büyük önem verilir. Kadınların toplumsal ve siyasi hayatta aktif rol alması teşvik edilir ve kadınlara seçme ve seçilme hakkı tanınır.
+                                          </html:p>
+                                          <html:p>
+                                          Ekonomik alanda da önemli adımlar atılır. Sanayileşme ve tarım reformlarıyla ekonomik kalkınma hedeflenir. Büyük ölçekli sanayileşme projeleri başlatılarak ülkenin endüstriyel altyapısı güçlendirilir ve tarımsal üretim modernize edilir.
+                                          </html:p>
+                                          <html:p>
+                                          Bugün, Türkiye Cumhuriyeti, demokratik bir yönetimle, dinamik bir ekonomiye ve çeşitli kültürel yapılara sahip modern bir devlettir. Bu süreçteki reformlar, Türk toplumunu Batılı standartlarla uyumlu hale getirmiş ve Türkiye'yi uluslararası alanda saygın bir konuma taşımıştır.
+                                      </html:p>
+                                  </html:div>
+                                  </html:p>
+                               
+                            </html:div>
+                        </html:div>
+                    </html:div>
+            </html:div>
+            </html:div>
+            
+        </html:div>
+    </html:div>
+    
+    <html:div class="mt-5 footer footer-dark bg-dark">
+        <html:p class="text">© 2024 Hüma Tarih | Mitoloji. Tüm hakları saklıdır.</html:p>
+    </html:div>
+  
+    
+    
+</html:body>
+
+</html>
