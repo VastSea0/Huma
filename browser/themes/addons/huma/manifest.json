@@ -1,43 +1,84 @@
 {
-    "manifest_version": 2,
-    "version": "1.0",
-    "name": "H\u00fcma Tarayici Temasi",
-    "description": "Hüma web tarayıcısı için varsayılan tarayıcı teması",
-    "author": "Egehan",
-    "theme": {
-      "images": {
-        "additional_backgrounds": [
-          "0.svg",
-          "1.svg"
-        ]
-      },
-      "properties": {
-        "additional_backgrounds_alignment": [
-          "right center",
-          "right center"
-        ],
-        "additional_backgrounds_tiling": [
-          "no-repeat",
-          "no-repeat"
-        ]
-      },
-      "colors": {
-        "toolbar": "rgb(65, 137, 111)",
-        "toolbar_text": "rgb(255, 255, 255)",
-        "frame": "rgb(4, 251, 251)",
-        "tab_background_text": "rgb(255, 255, 255)",
-        "toolbar_field": "rgb(12, 159, 170)",
-        "toolbar_field_text": "rgb(255, 255, 255)",
-        "tab_line": "rgb(28, 34, 83)",
-        "popup": "rgb(177, 44, 36)",
-        "popup_text": "rgb(255, 255, 255)",
-        "ntp_background": "rgb(97, 218, 178)",
-        "tab_loading": "rgb(28, 34, 83)"
-      }
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Hüma Tarayıcı Teması",
+  "description": "Hüma web tarayıcısı için varsayılan tarayıcı teması",
+  "author": "Egehan",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "humatemasi@mozilla.org"
+    }
+  },
+  "theme": {
+    "colors": {
+      "tab_background_text": "#FDFDFD",
+      "tab_selected": "#4A90E2",
+      "tab_text": "#FDFDFD",
+      "icons": "#FFD700",
+      "frame": "#333333",
+      "frame_inactive": "#4A4A4A",
+      "popup": "#4A90E2",
+      "popup_text": "#FDFDFD",
+      "popup_border": "#FFA500",
+      "popup_highlight": "#FFA500",
+      "tab_line": "transparent",
+      "toolbar": "#333333",
+      "toolbar_top_separator": "transparent",
+      "toolbar_bottom_separator": "rgba(255, 255, 255, 0.1)",
+      "toolbar_field": "#4A90E2",
+      "toolbar_field_border": "transparent",
+      "toolbar_field_text": "#FDFDFD",
+      "toolbar_field_focus": "#FFA500",
+      "toolbar_text": "#FDFDFD",
+      "ntp_background": "#4A90E2",
+      "ntp_card_background": "#FFA500",
+      "ntp_text": "#FDFDFD",
+      "sidebar": "#333333",
+      "sidebar_text": "#FDFDFD",
+      "sidebar_border": "rgba(255, 255, 255, 0.1)",
+      "button": "#FFD700",
+      "button_hover": "#FFA500",
+      "button_active": "#32CD32",
+      "button_primary": "#4A90E2",
+      "button_primary_hover": "#FFA500",
+      "button_primary_active": "#FFD700",
+      "button_primary_color": "#333333",
+      "input_background": "#4A90E2",
+      "input_color": "#FDFDFD",
+      "input_border": "#FFA500",
+      "urlbar_popup_separator": "#FFA500",
+      "tab_icon_overlay_stroke": "#FFD700",
+      "tab_icon_overlay_fill": "#FDFDFD"
     },
-    "browser_specific_settings": {
-      "gecko": {
-        "id": "humatemasi@mozilla.org"
-      }
+    "properties": {
+      "color_scheme": "dark",
+      "panel_active": "color-mix(in srgb, currentColor 14%, transparent)",
+      "toolbar_field_icon_opacity": "1",
+      "zap_gradient": "linear-gradient(90deg, #4A90E2 0%, #FFA500 52.08%, #FFD700 100%)"
+    }
+  },
+  "theme_experiment": {
+    "stylesheet": "experiment.css",
+    "colors": {
+      "button": "--button-bgcolor",
+      "button_hover": "--button-hover-bgcolor",
+      "button_active": "--button-active-bgcolor",
+      "button_primary": "--button-primary-bgcolor",
+      "button_primary_hover": "--button-primary-hover-bgcolor",
+      "button_primary_active": "--button-primary-active-bgcolor",
+      "button_primary_color": "--button-primary-color",
+      "input_background": "--input-bgcolor",
+      "input_color": "--input-color",
+      "input_border": "--input-border-color",
+      "urlbar_popup_separator": "--urlbarView-separator-color",
+      "zoom_controls": "--zoom-controls-bgcolor",
+      "tab_icon_overlay_stroke": "--tab-icon-overlay-stroke",
+      "tab_icon_overlay_fill": "--tab-icon-overlay-fill"
+    },
+    "properties": {
+      "panel_active": "--arrowpanel-dimmed-further",
+      "toolbar_field_icon_opacity": "--urlbar-icon-fill-opacity",
+      "zap_gradient": "--panel-separator-zap-gradient"
     }
   }
+}
