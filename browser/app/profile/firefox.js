@@ -2034,10 +2034,10 @@ pref("toolkit.telemetry.bhrPing.enabled", true);
 pref("media.gmp-provider.enabled", true);
 
 // Enable Dynamic First-Party Isolation by default.
-pref("network.cookie.cookieBehavior", 5 /* BEHAVIOR_REJECT_TRACKER_AND_PARTITION_FOREIGN */);
+pref("network.cookie.cookieBehavior", 2 /* BEHAVIOR_REJECT_TRACKER_AND_PARTITION_FOREIGN */);
 
 // Enable Dynamic First-Party Isolation in the private browsing mode.
-pref("network.cookie.cookieBehavior.pbmode", 5 /* BEHAVIOR_REJECT_TRACKER_AND_PARTITION_FOREIGN */);
+pref("network.cookie.cookieBehavior.pbmode", 2 /* BEHAVIOR_REJECT_TRACKER_AND_PARTITION_FOREIGN */);
 
 // Enable fingerprinting blocking by default for all channels, only on desktop.
 pref("privacy.trackingprotection.fingerprinting.enabled", true);
@@ -2355,7 +2355,7 @@ pref("browser.migrate.preferences-entrypoint.enabled", true);
 pref("extensions.pocket.api", "api.getpocket.com");
 pref("extensions.pocket.bffApi", "firefox-api-proxy.cdn.mozilla.net");
 pref("extensions.pocket.bffRecentSaves", true);
-pref("extensions.pocket.enabled", true);
+pref("extensions.pocket.enabled", false);
 pref("extensions.pocket.oAuthConsumerKey", "40249-e88c401e1b1f2242d9e441c4");
 pref("extensions.pocket.oAuthConsumerKeyBff", "94110-6d5ff7a89d72c869766af0e0");
 pref("extensions.pocket.site", "getpocket.com");
@@ -2479,8 +2479,8 @@ pref("app.normandy.onsync_skew_sec", 600);
   pref("intl.multilingual.liveReloadBidirectional", false);
   pref("intl.multilingual.aboutWelcome.languageMismatchEnabled", true);
 #else
-  pref("intl.multilingual.enabled", false);
-  pref("intl.multilingual.downloadEnabled", false);
+  pref("intl.multilingual.enabled", true);
+  pref("intl.multilingual.downloadEnabled", true);
   pref("intl.multilingual.liveReload", false);
   pref("intl.multilingual.liveReloadBidirectional", false);
   pref("intl.multilingual.aboutWelcome.languageMismatchEnabled", false);
