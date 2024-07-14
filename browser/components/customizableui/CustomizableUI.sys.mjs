@@ -246,14 +246,14 @@ var CustomizableUIInternal = {
       "back-button",
       "forward-button",
       "stop-reload-button",
+      "sidebar-button",
       Services.policies.isAllowed("removeHomeButtonByDefault")
         ? null
         : "home-button",
       Services.prefs.getBoolPref("sidebar.revamp") ? "sidebar-button" : null,
-      "spring",
       "urlbar-container",
       "spring",
-      "save-to-pocket-button",
+      "search-container",
       "downloads-button",
       AppConstants.MOZ_DEV_EDITION ? "developer-button" : null,
       "fxa-toolbar-menu-button",
