@@ -1,70 +1,83 @@
 # Hüma Tarayıcısı
 ![image](https://github.com/VastSea0/Huma/assets/144556903/13e56ba3-2023-4581-a2c8-0c88fdbb78fd)
 
-Hüma Tarayıcısı, ilk yerli web tarayıcısı olma hedefiyle özgür yazılım prensiplerine bağlı kalarak Pardus yazılım ağına(ekosistem,) katkıda bulunmak için geliştirilmiş bir web tarayıcısıdır.
+Hüma Tarayıcı, özgür ve açık kaynak kodlu bir web tarayıcısıdır. Gizlilik odaklı olup, kullanıcı verilerini toplamaz. Dikey sekmeler ve çeşitli özelleştirme seçenekleri sunar. İnternet bağlantısı olmadan kullanılabilen statik sayfalar gibi özelliklerle donatılmıştır. 
 
 ## Hakkında
 
-Hüma, gizlilik odaklı tasarımıyla dikkat çeker ve kullanıcıların çevrimiçi gizliliğini korur. Hızlı, hafif ve özelleştirilebilir arayüzüyle topluluğunun ihtiyaçlarını karşılar.
+Hüma Tarayıcı, kullanıcı gizliliğini ve özgürlüğünü ön planda tutan, açık kaynak kodlu bir web tarayıcısıdır. İnternetin giderek daha fazla gözetim ve takip aracı haline geldiği günümüzde, Hüma Tarayıcı, kullanıcıların verilerini toplamaz ve internette gezinirken gizlilik sağlamayı hedefler. Bu tarayıcı, modern web standartlarına uygun olarak geliştirilmiş olup, kullanıcıların ihtiyaçlarına göre özelleştirebilecekleri esnek bir yapıya sahiptir. Dikey sekme düzeni, kullanıcıların daha kolay ve etkili bir şekilde sekmeleri yönetmelerine olanak tanırken, statik sayfa desteği, internet bağlantısı olmadan da bazı web sayfalarına erişim imkanı sunar. Hüma Tarayıcısının açık kaynak olması, geliştiricilerin ve meraklı kullanıcıların projeye katkıda bulunmalarına ve kodu incelemelerine olanak tanır. Kullanıcı deneyimini iyileştirmek için sürekli olarak güncellenen ve geliştirilen Hüma Tarayıcı, büyük teknoloji şirketlerinden bağımsız olarak, tek bir geliştirici ile büyümeye devam etmektedir. Kullanıcı gizliliği ve güvenliği konusundaki kararlılığı ile Hüma Tarayıcı, internet kullanıcılarına daha güvenli ve özgür bir gezinti deneyimi sunmayı amaçlar.
 
-Hüma projesi, Egehan'ın 2022 yılında Python ile QtWebEngine motorunu kullanarak ilk web tarayıcısını yapmasıyla başladı. "VastSea Browser" olarak adlandırılan bu tarayıcı, basit ve deneysel bir proje olduğundan günlük kullanıma uygun değildi. İlerleyen zamanlarda çeşitli deneysel projeler geliştirildi, ancak bunlar daha küçük ve karmaşık olmayan yapılardı. 2023 yılında Teknofest yarışmalarında Pardus için bir yarışma olduğunu öğrenen Egehan, Pardus için güçlü bir tarayıcı yapma fikrini düşündü. Ancak, Chromium projesi ile bir tarayıcı geliştirmek zorluğundan dolayı ertelendi. Bu süreçte "Füze Paket Yükleyicisi" adında bir proje geliştirdi, fakat teknik sorunlar nedeniyle proje askıya alındı. Bu esnada Hüma fikri tekrar doğdu.
+## Temel özellikler
 
-Hüma Egehan KAHRAMAN tarafından 2024 yılının Ocak ayında araştırılmaya başlanmıştır. Şubat ayında, başarısız olan Füze Paket Yükleyicisi projesinin iptali ile bu fikri gerçeğe dönüştürmek üzere çalışmalara başladı. İlk olarak Electron çerçevesi ile yazılan sürüm geliştirildi, ancak bunun yeterli olmayacağını düşünerek eş zamanlı olarak Firefox tabanlı bir tarayıcı yapmayı kavramaya çalıştı. Yaklaşık iki aylık araştırma ve geliştirme sonucunda, kaynak koddan derlenen ilk Firefox sürümü Şubat 2024'te ortaya çıktı. 27 Mart 2024 tarihinde ise temel gayesi olan Firefox çatalı olma yolunda ilk adımını atarak Firefox tarayıcısının bir çatalı olarak yeniden geliştirilmeye başlandı.
+Hüma, yerli ve açık kaynaklı bir web tarayıcısıdır. Firefox tabanlı olarak geliştirilen bu tarayıcı, gizlilik odaklı tasarımı ve özelleştirilebilir özellikleriyle öne çıkar. Hüma, kendi temasının yanı sıra sayfalar arasında gezinmeyi kolaylaştıran Hüma Gezgini, dikey sekme desteği, internetsiz çalışan Hüma Tarih ve Mitoloji sayfaları, dosya paylaşımı için 10MB sınırı olan Hüma Bulut ve Türkçe söz dizimine sahip betik yazma aracı Hüma Betik gibi özellikler sunar. Pardus ekosistemine katkı sağlamayı amaçlayan Hüma, Türk mitolojisi ve tarihi hakkında da bilgi içermektedir. 
+## Hüma sekmeleri
 
-Mayıs 2024 itibarıyla, Hüma'nın kararlı ve özgün olabilmesi için Egehan tüm gayretiyle çalışmakta ve bu projeyi Pardus ekosistemine kazandırmayı hedeflemektedir. Aynı zamanda Türklerin ilk web tarayıcısı olma misyon ve vizyonuna sahip olan bu tarayıcı, yüksek hedefleri benimseyerek durmadan gelişimini sürdürmektedir.
+<img src="https://firebasestorage.googleapis.com/v0/b/vastsea-blog.appspot.com/o/mUj553KYSMNLQxdU68FR2cl0AFG3%2Fhumasekmeleri.png?alt=media&token=f56918a9-1cb2-4a13-89cb-f71f5479d050" />
 
-### Hüma Destanı
-Hüma, Türk mitolojisinde önemli bir yere sahip efsanevi bir kuştur. Hüma'nın kanatları altında ebedi mutluluk ve sonsuz hayat sembolize edilir. Hüma'nın görüldüğüne inanılan kişi, sonsuz yaşam ve mutluluk vaadiyle dolu bir geleceğe sahip olacağına inanılırdı.
+Hüma Sekmeleri: Hüma Tarayıcısı için Yenilikçi Dikey Sekme Eklentisi
 
-Hüma Web Tarayıcısı özgür yazılım felsefesini benimsemiş tamamen açık kaynak ve özgür bir yazılımdır. Egehan KAHRAMAN tarafından 'Türklerin ilk Web Tarayıcısı' konsepti ile yazılmış olan bu yazılım Chromium tabanını kullanmıştır (Şu anda geliştirilen FireFox tabanını kullanır) İçerisinde bir çok özelliğin bulunduğu bu tarayıcı sizin verilerinizi her hangi bir yere göndermez, dağıtmaz veya satmazdır. Verileriniz sizinle güvenli kalır...
+Hüma Sekmeleri, Hüma tarayıcısında kullanıcı deneyimini büyük ölçüde iyileştiren bir dikey sekme eklentisidir. Geliştirilmiş kullanılabilirlik ve özelleştirme seçenekleri sunarak, web gezintisini daha verimli ve düzenli hale getirir.
 
-Hüma Web Tarayıcı özgür yazılımları tamamen destekler ve geliştirilmesine katkıda bulunmayı amaçlar bu nedenle GPL lisansı altında Kamuya açık olarak paylaşılmış bir yazılımdır.
-## 15 HAZİRAN 2024 HÜMA YAZISI:
-Bu proje, 2022 Aralık ve 2023 Ocak aylarında QtWebEngine kullanan oldukça basit bir deneyseldi. O zamanlar amacım sadece deneysel bir şey yapmak ve Python hakkında biraz daha bilgi edinmekti. 2023 Eylül ayına kadar hiçbir şey eklemedim, fakat daha sonra fark ettim ki Türklerin bir web tarayıcısı yoktu; sadece Android için bir tarayıcı vardı (açık kaynak olduğundan emin değilim, sanırım kapalı kaynak). Bu durumu düşünerek, Türkçe bir tarayıcı yapmak istedim. Bu tarayıcı sadece Türkçe olmayacaktı, aynı zamanda Türk mitolojisi ve tarihini araştırmak isteyenlere internetsiz erişim sağlayacak bir proje olacaktı.
 
-Projeye özgün bir şeyler eklemek konusunda çok titiz davrandım. Sadece Chromium veya Firefox'un adını değiştirip iki logo ekleyerek bir tarayıcı sunmak istemedim. Bu yüzden tarayıcıya çeşitli özellikler eklemeye başladım. İlk olarak Electron kullanan bir tarayıcı vardı, bu tarayıcı Anka adıyla Hüma'nın ilk kararlı sürümü olacaktı. Mart ayına kadar bu sürümü geliştirdim. Ancak, Anka adını Hüma olarak değiştirdim çünkü Anka adı her yerde kullanılmıştı ve herkes tarafından biliniyordu. Hüma ise mitolojimizi araştırırken öğrendiğim, pek duyulmamış bir kuştu. Hüma, cennet kuşu olarak geçer; cennette uçar ve arada insanlara görünür. Hüma'nın üzerinden geçtiği insanların yüceleceğine ve tahta geçeceğine inanılır. Böylece, en sonunda Anka adı Hüma olarak değiştirildi.
+Hüma Sekmeleri, Tree Style Tab eklentisinin ilhamını alarak geliştirilmiş ve Hüma tarayıcısıyla uyumlu hale getirilmiştir. Kullanıcı dostu arayüzü ve zengin özellikleriyle, web tarayıcınızı daha verimli bir hale getirmek için ideal bir seçimdir.
 
-Başından beri Firefox tabanlı bir tarayıcı yapmak istemiştim, ancak Electron'dan başlamak daha doğru oldu. Electron tabanlı sürümü geliştirirken Firefox'u derlemeyi denedim. İlk zamanlar hiçbir Firefox çatalını başarılı bir şekilde derleyemedim. Ancak, Electron tabanlı sürüme odaklanmayı bıraktığımda tüm çabamı Firefox'a verdim ve sonunda nasıl derleyeceğimi ve paketleyeceğimi öğrendim. İlerleyen zamanda, Electron tabanlı sürümde olan özellikleri bu sürüme ekledim ve sonunda ilk yerli web tarayıcımızın ilk gösterimlerini başarıyla tamamladım.
+Şimdi Hüma Sekmeleri'ni keşfedin ve web gezintisinde yeni bir düzene adım atın!
 
-Şu anda Hüma'nın başlıca özellikleri şunlardır:
-- **Kendi Teması:** Varsayılan olarak yüklü gelir.
-- **Hüma Gezgini:** Hüma'nın varsayılan eklentisidir. Hüma Gezgini, tarayıcının sayfaları arasında ve Hüma'nın alt projelerinde gezinmek, yer imlerine kolayca erişmek için kullanılır.
-- **Hüma Sekmeleri:** Dikey sekme özeliği 
-- **Hüma Tarih ve Hüma Mitoloji:** Bu sayfalar mitolojimizi ve tarihimiz tanıtan, internetsiz bir ansiklopedidir. Sayfalar tarayıcı içerisinde tutulur.
-- **Hüma Bulut:** Hüma tarayıcısı için geliştirilmiş bir bulut sistemidir. Dosyalar taşıyabilir, şu anda dosya başı sınır 10MB'dir.
-- **Hüma Betik:** Türkçe söz dizimine sahip betik yazmak isteyenler için bir web yorumcusudur. Webde çalışır ve şu anda sadece tek satır yazım biçimini destekler.
+### **Özellikler:**
 
-Hüma büyük çaplı bir proje olma hedefi güttüğü için şu anda tamamen bitmiş değildir. Hüma, açık kaynak ve özgür yazılımdır. Şu anda resmi bir web sitesi yoktur (yakında tamamlanacak ve yayınlanacak).
+- **Dikey Sekmeler:** Web sitelerini dikey sekme düzeninde göstererek daha fazla sekme kullanımını optimize eder.
+- **Özelleştirilebilirlik:** Sekme genişlikleri, renk temaları ve düzen seçenekleriyle kullanıcıya tam kontrol sağlar.
+- **Sekme Grupları:** Sekmeleri gruplayarak benzer içeriklere sahip web sitelerini kolayca yönetebilme imkanı sunar.
+- **Sürükle ve Bırak Desteği:** Sekmeleri sürükleyerek yeniden düzenleme ve gruplama yapabilme kolaylığı sağlar.
+- **Performans Odaklı: Hafif** yapısıyla tarayıcı performansını olumsuz etkilemeden kullanıcıya yüksek performans sunar.
 
-Hüma'nın diğer bir alt projesi ise Ak Ana'dır. (Ak Ana, Hüma adından önce düşündüğüm bir isimdi; Ak Ana, tanrıya yaratma fikrini veren bir tanrıçadır.) Ak Ana, örneğin WhatsApp gibi web sitelerini indirmemizi sağlayan PWA yöntemine bir alternatiftir. PWA, şu anda Firefox'ta olmayan bir özelliktir ve ben de Ak Ana ile bu PWA'yı sağlamayı amaçladım.
-
-# Hüma Özel Sayfaları
-
-## Hüma Türk Tarihi Web Sayfası
-Hüma içerisinde bulunan Türk Tarihini anlatan sabit sayfalar
-
-# Hüma Gezgini ve Teması
-
+ 
 ## Hüma Gezgini
 
-Hüma Gezgini, taraycınızda varsayılan olarak yüklü gelen bir eklentidir. Eklenti, yer imleriniz ve Hüma projesinin bağlantıları arasında gezinmenize yardımcı olurken aynı zamanda size bir tarayıcı rehberi olacaktır. Tarayıcınızda ki sayfalar arasında kolayca gezinebilmenizi sağlar ve özelleştirebilidir. Eklentiye erişebilmek için bilgisayar farenizden sağ tuşa basın ve çıkan menüden "Hüma Gezgini'ni aç" seçeneğini seçin. Kenar Çubuğunda eklentiniz görünecektir. Keyifli kullanmalar!
 
-## Hüma Teması
+<img src="https://firebasestorage.googleapis.com/v0/b/vastsea-blog.appspot.com/o/mUj553KYSMNLQxdU68FR2cl0AFG3%2Fhumagezgini.png?alt=media&token=f42dec79-8eb2-4ba6-aa7c-352387fc075a" />
 
-Hüma Teması, tarayıcınızda varsayılan olarak gelen bir temadır. Hoşunuza gitmediği durumlarda veya sıkıldığınızda yüzlerce tema arasından en uygun temayı bularak tarayıcınızı özgürce kullanabilirsiniz!
+**Hüma Gezgini: Hüma Tarayıcısında Yer İmleri ve Gezinti için Güçlü Eklenti**
 
-Özellikler:
+Hüma Gezgini, Hüma tarayıcısında varsayılan olarak bulunan kullanışlı bir eklentidir. Bu eklenti, yer imleriniz arasında kolayca gezinmenizi sağlarken Hüma projenizdeki bağlantıları keşfetmenize yardımcı olur. Aynı zamanda tarayıcınızda sayfalar arasında rahatça geçiş yapmanızı sağlayarak size bir tarayıcı rehberi sunar.
 
-    Yerli ve özgün bir web tarayıcısı
-    Firefox tabanlı
-    Güvenli ve hızlı
-    Türk Tarihi ve Türk Mitolojisi hakkında bilgi içeren statik yerel sayfalar
-    Hüma Bulut, Hüma Betik, Akana gibi Hüma araçları
-    Hüma Gezgini ve Hüma Sekmeleri ile üst düzey tarayıcı deneyimeleri
-    Çapraz platfom desteği
-    Özgür ve açık kaynak
-    
-     
+### **Özellikler:**
+- **Yer İmleri Yönetimi:** Kolay erişim için yer imlerinizi düzenlemenizi ve yönetmenizi sağlar.
+- **Bağlantı Keşfi:** Hüma projesindeki bağlantıları keşfetme imkanı sunar, içeriği daha kolay bulmanızı sağlar.
+- **Özelleştirme Seçenekleri:** Eklentinin renk temasını değiştirerek kendi Hüma Gezgini temanızı oluşturabilirsiniz.
+- **Kenar Çubuğu Entegrasyonu:** Tarayıcınızın kenar çubuğunda kolay erişim için yer alır.
+- **To-Do List Özelliği:** Görev listesi oluşturup yönetmenize olanak tanır, tarayıcınızda daha düzenli çalışmanızı sağlar.
+
+Hüma Gezgini, kullanıcı dostu arayüzü ve özelleştirme seçenekleriyle tarayıcınızın verimliliğini artırmak için tasarlanmıştır. Tarayıcınızı daha da kişiselleştirmek ve günlük web taramalarınızı yönetmek için ideal bir yardımcıdır.
+
+
+## Hüma Başlangıç
+
+<img src="https://firebasestorage.googleapis.com/v0/b/vastsea-blog.appspot.com/o/mUj553KYSMNLQxdU68FR2cl0AFG3%2FEkran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC_20240709_132443.png?alt=media&token=46a63f7b-2d4f-4a32-987d-383d06acafa0" />
+
+
+**Hüma Başlangıç: Kişiselleştirilebilir Yeni Sekme Sayfası**
+
+Hüma Başlangıç, Hüma tarayıcısının yeni sekme sayfasını kişiselleştirmenizi sağlayan güçlü bir eklentidir. Kullanıcı dostu arayüzü ve geniş özelleştirme seçenekleriyle tarayıcınızın verimliliğini artırmak ve tarayıcınızı kişiselleştirmek için idealdir.
+
+### **Özellikler:**
+- **Sürükle ve Bırak Widget'ları:** Widget'ları bir ızgara üzerinde ekleyebilir, taşıyabilir, yeniden boyutlandırabilir ve yapılandırabilirsiniz.
+- **Güzel Arka Planlar:** Her 15 dakikada bir rastgele seçilmiş arka plan görüntüleri görürsünüz. Ayrıca düz bir renk, bir Unsplash koleksiyonu, bir RSS/Atom beslemesi veya özel bir arka plan resmi seçebilirsiniz.
+- **Kişiselleştirilebilir:** Arka planı, temayı değiştirebilir ve her widget'ı bağımsız olarak yapılandırabilirsiniz.
+- **Çok Dilli:** Fransızca, İspanyolca, İtalyanca, Portekizce, Malayca ve Türkçe dillerini destekler. Çeviriler, kullanıcılar tarafından katkı sağlanarak topluluk tarafından yönetilir.
+- **Zengin Widget Seçenekleri:** Hava durumu, yapılacaklar listesi, en çok ziyaret edilen siteler ve daha pek çok widget seçeneğiyle yeni sekme sayfanızı tamamen özelleştirebilirsiniz.
+ 
+*Hüma Başlangıç "Renewtab" eklentisinin bir çatalıdır ilerleyen sürümlerde Hüma tarafından baştan yazılan eklenti ile değişecektir*
+## Hüma Tarih ve Hüma Mitoloji: İnternetsiz Ansiklopedi
+
+<img src="https://firebasestorage.googleapis.com/v0/b/vastsea-blog.appspot.com/o/mUj553KYSMNLQxdU68FR2cl0AFG3%2Fhumatarih.png?alt=media&token=2fbe3363-42fd-48e1-991f-2fb6ff4417e8" />
+Hüma Tarih ve Hüma Mitoloji sayfaları, Türk mitolojisi ve tarihini tanıtan kapsamlı bir internetsiz ansiklopedidir. Tarayıcınızda depolanan bu sayfalar, zengin içerikleri ile bilgiye kolay erişim sağlar ve zamanla diğer milletlere ve kategorilere ait içeriklerle genişleyecektir.
+
+### **Özellikler:**
+- **Türk Mitolojisi ve Tarihi:** Türk mitolojisi ve tarihi hakkında derinlemesine bilgiler sunar.
+- **İnternetsiz Erişim:** İnternet bağlantısı gerektirmeden, tarayıcı içerisinde yer alan bir bilgi kaynağıdır.
+- **Genişleyen İçerik:** Zamanla diğer milletlerin tarihi ve mitolojisi ile ilgili içeriklerin de eklenmesi planlanmaktadır.
+
 
 Sürümler:
 
@@ -72,7 +85,7 @@ Sürümler:
     Hüma-Electron: Electron ile yazılmış deneysel sürüm.
     Hüma (Firefox Çatalı): Asıl hedef olan ve şu anda üzerinde geliştirilmeye devam edilen Firefox çatalı sürüm.
 
-Kurulum:
+Geliştirme:
 
 Projeyi klonlayın:
 
@@ -110,6 +123,31 @@ Hüma Tarayıcısı'nın gelişmesine katkıda bulunmak istiyorsanız, lütfen p
 Teşekkürler!
 
 Hüma Tarayıcısı'nı kullanmayı seçtiğiniz için teşekkür ederiz. Herhangi bir sorunuz veya öneriniz varsa, lütfen bizimle iletişime geçmekten çekinmeyin.
+
+## **Sık Sorulan Sorular (SSS)**
+- **Hüma tarayıcısını nasıl özelleştirebilirim?**
+  - Hüma, eklentiler ve temalar aracılığıyla geniş ölçüde özelleştirilebilir. Kullanıcılar eklenti mağazasından farklı araçlar ve temalar indirebilirler.
+
+- **Hüma tarayıcısında güvenlik nasıl sağlanıyor?**
+  - Hüma, Firefox’un güçlü güvenlik altyapısını kullanır ve en güncel güvenlik yamalarını içerir.
+
+- **Hüma tarayıcısı hangi ekip tarafından geliştiriliyor?**
+  - Hüma, Egehan KAHRAMAN tarafından geliştiriyor. Henüz bir geliştirici ekibi yok bu nedenle tek kişi üzerinden geliştiriliyor ancak ilerleyen zamanlarda bir ekibin toplanması düşünülüyor.
+
+- **Hüma tarayıcısında dikey sekmeleri nasıl etkinleştirebilirim?**
+  - Hüma Sekmeleri eklentisi Hüma Gezgini eklentisi üzerinden "Hüma Sekmelerini edin" düğmesi ile edinilebilir.
+
+- **Hüma sadece bir tarayıcı değil derken ne kast etmek istiyorsunuz?**
+  - Hüma'nın sadece bir tarayıcı olmadığını aynı zamanda bir tepki olduğunu belirtmek istiyoruz. Bu tepki özgürlüğe karışmaya çalışılan şeylere verilen bir tepkidir. Kalıplaşmaya verilen bir tepkidir.
+
+- **Hüma doğa ve küresel ısıma gibi küresel çevre sorunlarına karşı nasıl bir yol izliyor?**
+  - Hüma doğayı son derece önemli gören ve her şeyin başlangıcı kabul eden bir felsefeye sahiptir. Doğaya karşı açılan her savaş mağlub olmaya mahkumdur. Bu nedenle doğa ile son derece uyumlu olup; doğanın bize değil, bizim doğaya uyum sağlamamız gerektiğini savunur.
+
+- **Hüma ilk ne zaman yazılmaya başlandı?**
+  - Hüma, ilk olarak 2022'de VastSea Browser adında bir deneysel olarak yazılmıştır ancak bu tarayıcı Hüma'nın değerlerini taşımadığından sadece deneysel bir iz olarak kalmıştır. Geçen zamanda ise 2023 yılında tekrardan yazılmaya başlanmış tarayıcı, geçen zamanda değer ve amaçlarını net bir şekilde belirlemiş ve bu yolda ilermeye devam etmiştir.
+
+- **Hüma tarayıcısının amacı nedir?**
+  - Hüma tarayıcısı, sadece bir web tarayıcısı olmanın ötesinde, özgürlüğün ve yeniliğin simgesi olarak tasarlanmış bir projedir. Hüma'nın temel amacı, kullanıcılarına özgür bir internet deneyimi sunmaktır. Özgürlüğü savunan Hüma, her koşulda bağımsızlığı ve bireysel kararı önemser. Kalıpların ötesinde, farklı dillerin ve kültürlerin değerini vurgulayan Hüma, Türk destanlarından esinlenerek ismini almıştır. Şeffaflık ilkesini benimseyen ve açık kaynak kodlu olan Hüma, kullanıcılarına güvenilir ve açık bir platform sunar. Hüma, özgürlüğü, bağımsız düşünceyi ve şeffaflığı merkezine alarak, daha iyi bir internet deneyimi sağlamayı hedefler.
 
 # Ekran Görüntüleri
 
