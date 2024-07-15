@@ -8,19 +8,19 @@
 
 ## AMO (Introduce Add-ons) onboarding screen strings
 
-amo-screen-title = Personalize your { -brand-short-name }
-amo-screen-subtitle = Add-ons are tiny apps that run in { -brand-short-name } and level up the way you browse — from ultimate privacy and safety to changing how { -brand-short-name } looks and behaves.
+amo-screen-title = { -brand-short-name }'yı kişiselleştirin
+amo-screen-subtitle = Eklentiler, { -brand-short-name } ile çalışan ve üstün gizlilik ve güvenlikten { -brand-short-name }'nın görünüşünü ve davranışını değiştirmeye kadar göz atma şeklinizi geliştiren küçük uygulamalardır.
 amo-screen-primary-cta = Explore staff-recommended add-ons
 
 ## Add-ons Picker screen strings
 
-amo-picker-title = Customize your { -brand-short-name }
-amo-picker-subtitle = Extensions are like apps for your browser, and they let you protect passwords, download videos, find deals, block annoying ads, change how your browser looks, and much more.
-amo-picker-install-button-label = Add to { -brand-short-name }
-amo-picker-install-complete-label = Installed
-amo-picker-collection-link = Explore more add-ons
+amo-picker-title = { -brand-short-name }'yı özelleştirin
+amo-picker-subtitle = Uzantılar tarayıcınız için uygulamalar gibidir ve şifreleri korumanıza, videolar indirmenize, fırsatlar bulmanıza, sinir bozucu reklamları engellemenize, tarayıcınızın görünümünü değiştirmenize ve çok daha fazlasına olanak tanır.
+amo-picker-install-button-label ={ -brand-short-name }'ya ekle
+amo-picker-install-complete-label =Kurulmuş
+amo-picker-collection-link = Daha fazla eklenti keşfedin
 
 # Button label for the experimental return to about:welcome toolbar button
 browser-aboutwelcome-button =
-    .label = Finish setup
-    .tooltiptext = Finish setting up { -brand-short-name }.
+    .label = Kurulumu bitir
+    .tooltiptext ={ -brand-short-name } kurulumunu tamamlayın.

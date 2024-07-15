@@ -70,7 +70,7 @@ Hüma Başlangıç, Hüma tarayıcısının yeni sekme sayfasını kişiselleşt
 *Hüma Başlangıç "Renewtab" eklentisinin bir çatalıdır ilerleyen sürümlerde Hüma tarafından baştan yazılan eklenti ile değişecektir*
 ## Hüma Tarih ve Hüma Mitoloji: İnternetsiz Ansiklopedi
 
-<img src="https://firebasestorage.googleapis.com/v0/b/vastsea-blog.appspot.com/o/mUj553KYSMNLQxdU68FR2cl0AFG3%2Fhumatarih.png?alt=media&token=2fbe3363-42fd-48e1-991f-2fb6ff4417e8" />
+<img src="https://forum.pardus.org.tr/uploads/default/original/2X/3/3c96516d93ff054ea6f9534aeb8f290789fd3c06.png" />
 Hüma Tarih ve Hüma Mitoloji sayfaları, Türk mitolojisi ve tarihini tanıtan kapsamlı bir internetsiz ansiklopedidir. Tarayıcınızda depolanan bu sayfalar, zengin içerikleri ile bilgiye kolay erişim sağlar ve zamanla diğer milletlere ve kategorilere ait içeriklerle genişleyecektir.
 
 ### **Özellikler:**
@@ -151,31 +151,26 @@ Hüma Tarayıcısı'nı kullanmayı seçtiğiniz için teşekkür ederiz. Herhan
 
 # Ekran Görüntüleri
 
-![Ekran Görüntüsü_20240606_013240](https://github.com/VastSea0/Huma/assets/144556903/da9d0e43-a203-49f1-bfe7-b05fe462f669)
-![image](https://github.com/VastSea0/Huma/assets/144556903/517245a7-d9a0-4efe-93ae-2d6a0c509126)
-![image](https://github.com/VastSea0/Huma/assets/144556903/c9e96df5-c06f-413c-8659-880c8c8323b2)
-![image](https://github.com/VastSea0/Huma/assets/144556903/7d36524b-cf12-4136-9ea4-3064923d2ec8)
-![image](https://github.com/VastSea0/Huma/assets/144556903/8b557b31-84f5-4cbb-89be-6aaf30a359f0)
-![image](https://github.com/VastSea0/Huma/assets/144556903/686ea2cb-4cb3-49f2-894f-e82c663ddcda)
+ 
+ 
+ 
+ 
+ 
 ![image](https://github.com/VastSea0/Huma/assets/144556903/2899af51-c05b-43a7-bbd1-fa73e239abd8)
 ![image](https://github.com/VastSea0/Huma/assets/144556903/6e774006-e589-4e76-9e62-86d1f7f7be59)
-![image](https://github.com/VastSea0/Huma/assets/144556903/82fa8f29-308a-468f-a7f2-f926762434d1)
-![image](https://github.com/VastSea0/Huma/assets/144556903/8ad01ec5-ff94-42af-a7da-06d7e804543f)
-![image](https://github.com/VastSea0/Huma/assets/144556903/67ef74ef-bd2d-487d-a3f9-9666597b9212)
+ 
+ 
 ![image](https://github.com/VastSea0/Huma/assets/144556903/1dac8ff1-7784-491b-ab6a-8ec8b9a5eda8)
-![image](https://github.com/VastSea0/Huma/assets/144556903/468019b8-c073-485f-ba16-bd2efb97ab21)
-![image](https://github.com/VastSea0/Huma/assets/144556903/31bcca7f-1493-435f-95b7-d4d98e72a768)
-![image](https://github.com/VastSea0/Huma/assets/144556903/73554fb8-cd20-43d7-b056-86a232580047)
+ 
+ 
 ![image](https://github.com/VastSea0/Huma/assets/144556903/05557953-1330-4f8a-94d5-2ff7995ef88e)
 ![image](https://github.com/VastSea0/Huma/assets/144556903/33c75725-47c7-4e6c-889e-916cc97971c8)
-
+![image](https://github.com/user-attachments/assets/9bed24da-45c6-43d1-9b0f-20276b9c7a63)
 
 **İletişim:** 
 - Instagram: [@marsstakiuzayliyim](https://www.instagram.com/marsstakiuzayliyim/)
-- Web Sitesi: [vastsea.com.tr](https://vastsea.com.tr)
-- Kişisel web Sitesi: [[Egehan](https://vastsea.com.tr)](https://egehan.netlify.app/)
-- Blog Sitesi: [vastseablog.com](https://humatarayici.com/docs)
-- Instagram Hesabı: [@vastseaofficial](https://www.instagram.com/vastseaofficial/)
-
- 
+- Kişisel web Sitesi: [Egehan](https://egehan.netlify.app/)
+- Web Sitesi: [Hüma Tarayici](https://humatarayici.com/)
+- Instagram Hesabı: [@humabrowser](https://www.instagram.com/humabrowser/)
+- X hesabı [X](https://x.com/humabrowser)
 

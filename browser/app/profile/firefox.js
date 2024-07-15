@@ -2034,10 +2034,10 @@ pref("toolkit.telemetry.bhrPing.enabled", true);
 pref("media.gmp-provider.enabled", true);
 
 // Enable Dynamic First-Party Isolation by default.
-pref("network.cookie.cookieBehavior", 2 /* BEHAVIOR_REJECT_TRACKER_AND_PARTITION_FOREIGN */);
+pref("network.cookie.cookieBehavior", 5 /* BEHAVIOR_REJECT_TRACKER_AND_PARTITION_FOREIGN */);
 
 // Enable Dynamic First-Party Isolation in the private browsing mode.
-pref("network.cookie.cookieBehavior.pbmode", 2 /* BEHAVIOR_REJECT_TRACKER_AND_PARTITION_FOREIGN */);
+pref("network.cookie.cookieBehavior.pbmode", 5 /* BEHAVIOR_REJECT_TRACKER_AND_PARTITION_FOREIGN */);
 
 // Enable fingerprinting blocking by default for all channels, only on desktop.
 pref("privacy.trackingprotection.fingerprinting.enabled", true);

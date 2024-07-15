@@ -346,7 +346,7 @@ onboarding-mobile-download-security-and-privacy-title = Cihazlarınız arasında
 onboarding-mobile-download-security-and-privacy-subtitle = Eşitleme yaptığınızda { -brand-short-name }; parolalarınızı, yer imlerinizi ve diğer verilerinizi şifreler. Ayrıca diğer cihazlarınızdaki sekmelere de erişebilirsiniz.
 # Gratitude screen
 onboarding-gratitude-security-and-privacy-title = { -brand-short-name } sizi koruyor
-onboarding-gratitude-security-and-privacy-subtitle = Mozilla Vakfı tarafından geliştirilen { -brand-short-name } tarayıcısını kullandığınız için teşekkür ederiz. Desteğinizle interneti herkes için daha güvenli ve daha erişilebilir bir yere dönüştürüyoruz.
+onboarding-gratitude-security-and-privacy-subtitle = Egehan tarafından geliştirilen { -brand-short-name } tarayıcısını kullandığınız için teşekkür ederiz. Desteğinizle motive olarak internetin özgürlüğü için verdiğimiz mücadeleye devam ediyoruz.
 
 ## New user time and familiarity survey strings
 
