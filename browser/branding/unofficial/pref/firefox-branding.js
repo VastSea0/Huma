@@ -5,8 +5,8 @@
 // This file contains branding-specific prefs.
 
 pref("startup.homepage_override_url", "https://humatarayici.com/docs");
-pref("startup.homepage_welcome_url", "https://humatarayici.com/docs");
-pref("startup.homepage_welcome_url.additional", "");
+pref("startup.homepage_welcome_url", "about:welcome");
+pref("startup.homepage_welcome_url.additional", "https://humatarayici.com/");
 // The time interval between checks for a new version (in seconds)
 pref("app.update.interval", 7200); // 2 hourss
 // Give the user x seconds to react before showing the big UI. default=12 hours

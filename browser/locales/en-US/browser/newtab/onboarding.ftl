@@ -339,13 +339,13 @@ onboarding-device-migration-primary-button-label = Giriş yap
 ## The following screens have been updated to use security and privacy focused strings:
 
 # Easy setup screen
-onboarding-easy-setup-security-and-privacy-title = Sizi güvende tutmayı seviyoruz
-onboarding-easy-setup-security-and-privacy-subtitle = Kâr amacı gütmeyen tarayıcımız, şirketlerin sizi web’de gizlice takip etmesini engelliyor.
+onboarding-easy-setup-security-and-privacy-title = Hüma sizin özgürlüğünüz ve gizliliğiniz için mücadele eder.
+onboarding-easy-setup-security-and-privacy-subtitle = Projemiz sizin özgürce ve güvenlice internette gezinmenizi sağlar.
 # Mobile download screen
 onboarding-mobile-download-security-and-privacy-title = Cihazlarınız arasında güvenle geçiş yapın
-onboarding-mobile-download-security-and-privacy-subtitle = Eşitleme yaptığınızda { -brand-short-name }; parolalarınızı, yer imlerinizi ve diğer verilerinizi şifreler. Ayrıca diğer cihazlarınızdaki sekmelere de erişebilirsiniz.
+onboarding-mobile-download-security-and-privacy-subtitle =  { -brand-short-name } Firefox ile uyumluluğu destekler. Bu sayede Firefox ile eşitleme yaptığınızda; parolalarınızı, yer imlerinizi ve diğer verilerinizi şifreler. Ayrıca diğer cihazlarınızdaki sekmelere de erişebilirsiniz.
 # Gratitude screen
-onboarding-gratitude-security-and-privacy-title = { -brand-short-name } sizi koruyor
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } sizi seviyor
 onboarding-gratitude-security-and-privacy-subtitle = Egehan tarafından geliştirilen { -brand-short-name } tarayıcısını kullandığınız için teşekkür ederiz. Desteğinizle motive olarak internetin özgürlüğü için verdiğimiz mücadeleye devam ediyoruz.
 
 ## New user time and familiarity survey strings

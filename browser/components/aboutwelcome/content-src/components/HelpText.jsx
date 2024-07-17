@@ -47,7 +47,7 @@ export const HelpText = props => {
     return (
       <Localized text={props.text}>
         <p className={`helptext ${props.position}`} />
-      </Localized>
+      </Localized> 
     );
   }
   return null;

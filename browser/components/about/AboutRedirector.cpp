@@ -113,11 +113,11 @@ static const RedirEntry kRedirMap[] = {
     {"home", "about:blank", ACTIVITY_STREAM_FLAGS},
     {"newtab", "chrome://browser/content/blanktab.html", ACTIVITY_STREAM_FLAGS},
    
-    {"contributors", "chrome://browser/content/huma.html",
-     nsIAboutModule::URI_SAFE_FOR_UNTRUSTED_CONTENT |
-         nsIAboutModule::URI_MUST_LOAD_IN_CHILD | nsIAboutModule::ALLOW_SCRIPT |
-         nsIAboutModule::URI_CAN_LOAD_IN_PRIVILEGEDABOUT_PROCESS |
-         },
+    //{"contributors", "chrome://browser/content/huma.html",
+    //nsIAboutModule::URI_SAFE_FOR_UNTRUSTED_CONTENT |
+    //    nsIAboutModule::URI_MUST_LOAD_IN_CHILD | nsIAboutModule::ALLOW_SCRIPT |
+    //    nsIAboutModule::URI_CAN_LOAD_IN_PRIVILEGEDABOUT_PROCESS |
+    //    },
     {"welcome", "about:blank",
      nsIAboutModule::URI_MUST_LOAD_IN_CHILD |
          nsIAboutModule::URI_CAN_LOAD_IN_PRIVILEGEDABOUT_PROCESS |

@@ -1484,7 +1484,7 @@ export const OnboardingMessageProvider = {
 
     if (!showSegmentation) {
       removeScreens(screen =>
-        screen.id?.startsWith("UPGRADE_DATA_RECOMMENDATION")
+        screen.id?.startsWith("UPGRAE_DATA_RECOMMENDATION")
       );
     }
 

@@ -10,7 +10,7 @@
 
 amo-screen-title = { -brand-short-name }'yı kişiselleştirin
 amo-screen-subtitle = Eklentiler, { -brand-short-name } ile çalışan ve üstün gizlilik ve güvenlikten { -brand-short-name }'nın görünüşünü ve davranışını değiştirmeye kadar göz atma şeklinizi geliştiren küçük uygulamalardır.
-amo-screen-primary-cta = Explore staff-recommended add-ons
+amo-screen-primary-cta = Önerilen eklentileri keşfedin
 
 ## Add-ons Picker screen strings
 
