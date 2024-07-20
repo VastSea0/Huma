@@ -131,6 +131,9 @@ Hüma Tarayıcısı'nı kullanmayı seçtiğiniz için teşekkür ederiz. Herhan
 - **Hüma tarayıcısında güvenlik nasıl sağlanıyor?**
   - Hüma, Firefox’un güçlü güvenlik altyapısını kullanır ve en güncel güvenlik yamalarını içerir.
 
+- **Hüma tarayıcısı ne kadar kaynak tüketir?**
+  - Hüma kaynak tüketimi konusunda Firefox tarayıcısı ile beraber gitmektedir. Gözle görülebilecek kaynak tüketimi değişiklikleri yoktur; yine de bu tüketim tarayıcı sürümüne, sekme sayısına, eklentisi sayısına vb bağlı değişebilir.
+
 - **Hüma tarayıcısı hangi ekip tarafından geliştiriliyor?**
   - Hüma, Egehan KAHRAMAN tarafından geliştiriyor. Henüz bir geliştirici ekibi yok bu nedenle tek kişi üzerinden geliştiriliyor ancak ilerleyen zamanlarda bir ekibin toplanması düşünülüyor.
 
