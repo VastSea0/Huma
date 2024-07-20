@@ -1,0 +1,58 @@
+<!--
+<splitter id="humabar-splitter" class="chromeclass-extrachrome" resizebefore="sibling" resizeafter="none" />
+
+-->
+
+<vbox id="humabar-box" class="chromeclass-extrachrome">
+    <box id="humabar-header" align="center" pack="center">
+      <image style="width: 32px; height: 32px;" src="chrome://branding/content/about-logo.png" role="presentation" />
+    </box>
+    <vbox flex="1" align="center" pack="center">
+      <html:p>Helo</html:p>
+      <toolbarbutton id="humabar-bookmarks-button" class="humabar-button"
+        oncommand="openWebPanel('chrome://browser/content/places/bookmarksSidebar.xhtml', 'Yerimleri')" tooltiptext="Yer İmleri Yöneticisini Aç">
+        <image class="humabar-button-icon" src="chrome://browser/skin/bookmark.svg" role="presentation" />
+      </toolbarbutton>
+  
+      <toolbarbutton id="humabar-history-button" label="Geçmiş"
+        oncommand="openWebPanel('chrome://browser/content/places/historySidebar.xhtml', 'Geçmiş');" class="humabar-button" tooltiptext="Geçmişi aç">
+        <image class="humabar-button-icon" src="chrome://browser/skin/history.svg" role="presentation" />
+      </toolbarbutton>
+  
+      <toolbarbutton id="humabar-sidebar-button" class="humabar-button" oncommand="SidebarController.hide();"
+        tooltiptext="Sidebar'ı Aç/Kapat">
+        <image class="humabar-button-icon" src="chrome://browser/skin/sidebars.svg" role="presentation" />
+      </toolbarbutton>
+  
+      <toolbarbutton id="humabar-private-browsing-button" class="humabar-button"
+        oncommand="OpenBrowserWindow({ private: true });" tooltiptext="Yeni Gizli Pencere Aç">
+        <image class="humabar-button-icon" src="chrome://browser/skin/privateBrowsing.svg" role="presentation" />
+      </toolbarbutton>
+  
+      <toolbarbutton id="humabar-downloads-button" class="humabar-button" 
+      oncommand="openWebPanel('about:downloads', 'İndirilenler');"
+        tooltiptext="İndirilenler">
+        <image class="humabar-button-icon" src="chrome://browser/skin/downloads/downloads.svg" role="presentation" />
+      </toolbarbutton>
+      <!--
+         <toolbarbutton id="humabar-protections-button" class="humabar-button" 
+      oncommand="openWebPanel('about:protections', 'Korumalar');"
+        tooltiptext="Korumalar">
+        <image class="humabar-button-icon" src="chrome://browser/skin/controlcenter/dashboard.svg" role="presentation" />
+      </toolbarbutton>
+      
+      <toolbarbutton id="humabar-web-button" class="humabar-button" tooltiptext="Web Sitesi Görüntüle"
+        oncommand="openWebPanel('https://www.example.com', 'Web Sitesi');">
+        <image class="humabar-button-icon" src="chrome://browser/skin/web.svg" role="presentation" />
+      </toolbarbutton>
+      -->
+   
+    </vbox>
+    <box id="humabar-footer" align="center" pack="center">
+      <toolbarbutton id="humabar-settings-button" class="humabar-button" oncommand="openPreferences();"
+        tooltiptext="Ayarları Aç">
+        <image class="humabar-button-icon" src="chrome://global/skin/icons/settings.svg" role="presentation" />
+      </toolbarbutton>
+    </box>
+  </vbox>
+  

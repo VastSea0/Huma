@@ -264,7 +264,7 @@ toolbarpaletteitem {
 
 :root[inDOMFullscreen] #navigator-toolbox,
 :root[inDOMFullscreen] #fullscr-toggler,
-:root[inDOMFullscreen] #sidebar-box,
+:root[inDOMFullscreen] #sidebar-box, 
 :root[inDOMFullscreen] #sidebar-splitter,
 :root[inFullscreen]:not([macOSNativeFullscreen]) toolbar:not([fullscreentoolbar=true]),
 :root[inFullscreen] .global-notificationbox {
@@ -1134,6 +1134,8 @@ printpreview-pagination:focus-within,
   width: 18em;
 }
 
+
+
 /* WebExtension Sidebars */
 #sidebar-box[sidebarcommand$="-sidebar-action"] > #sidebar-header > #sidebar-switcher-target > #sidebar-icon {
   list-style-image: var(--webextension-menuitem-image, inherit);
@@ -1336,3 +1338,241 @@ toolbar[keyNav=true]:not([collapsed=true], [customizing=true]) toolbartabstop {
 /**
  * End Dialogs
  */
+
+
+/*
+HümaBar Styles... 
+*/
+
+
+/* Koyu tema */
+@media (prefers-color-scheme: dark) {
+  #humabar-box {
+    background-color: rgba(40, 44, 52);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .humabar-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+
+  .humabar-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .humabar-button-icon {
+    fill: currentColor;
+    opacity: 0.8;
+  }
+
+  #humabar-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #humabar-box > vbox::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+ 
+
+ 
+}
+
+/* Açık tema */
+@media (prefers-color-scheme: light) {
+  #humabar-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .humabar-button {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000000;
+  }
+
+  .humabar-button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .humabar-button-icon {
+    fill: currentColor;
+    opacity: 0.8;
+  }
+
+  #humabar-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  #humabar-box > vbox::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+ 
+}
+
+/* Genel stiller */
+#humabar-header {
+  padding-top: 40px;
+}
+
+#humabar-box > vbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.humabar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.humabar-button-icon {
+  width: 24px;
+  height: 24px;
+  -moz-context-properties: fill;
+  transition: opacity 0.3s ease;
+}
+
+#humabar-footer {
+  margin-top: auto;
+  padding: 20px 0;
+}
+
+#humabar-footer .humabar-button {
+  margin: 0;
+}
+
+/* Opsiyonel: Yumuşak kaydırma efekti için */
+#humabar-box > vbox {
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* Genel stiller */
+#web-panel {
+  position: relative;
+  transition: height 0.5s ease, opacity 0.5s ease;
+  max-width: 18em;
+  overflow: hidden;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#web-panel.active {
+  height: 60%;
+  opacity: 1;
+}
+
+#web-content {
+  width: 100%;
+  height: 100%;
+}
+
+#web-panel-title {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#close-web-panel {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+#close-web-panel:hover {
+  color: #ff0000;
+}
+
+
+
+/* Koyu tema */
+@media (prefers-color-scheme: dark) {
+  #web-panel {
+    background-color: rgba(40, 44, 52, 0.9);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #web-panel-title {
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #web-content {
+    background-color: rgba(40, 44, 52, 0.9);
+  }
+
+  #close-web-panel {
+    color: white;
+  }
+
+  #web-panel button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+
+  #web-panel button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  #web-panel > vbox::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Açık tema */
+@media (prefers-color-scheme: light) {
+  #web-panel {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #web-panel-title {
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  #web-content {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  #close-web-panel {
+    color: black;
+  }
+
+  #web-panel button {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000000;
+  }
+
+  #web-panel button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  #web-panel > vbox::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
