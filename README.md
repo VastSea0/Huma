@@ -19,22 +19,22 @@
         - [ ] "moz-ext" url desteği
         - [ ] "http/s" url desteği
       - [x] Genel öğeler
-        - [] Öğeler düzenlenebilir
-          - [] Öğeler silinebilir
-          - [] Öğeler eklenebilir
+        - [ ] Öğeler düzenlenebilir
+          - [ ] Öğeler silinebilir
+          - [ ] Öğeler eklenebilir
         - [x] Öğeler listelenir
-        - [] Öğelerin yeri değiştirlebilir
-      - [] Özel öğeler (Çeviri, not alma++)
-        - [] Öğeler düzenlenebilir
-          - [] Öğeler silinebilir
-          - [] Öğeler eklenebilir
-        - [] Öğeler listelenir
-        - [] Öğelerin yeri değiştirlebilir
+        - [ ] Öğelerin yeri değiştirlebilir
+      - [ ] Özel öğeler (Çeviri, not alma++)
+        - [ ] Öğeler düzenlenebilir
+          - [ ] Öğeler silinebilir
+          - [ ] Öğeler eklenebilir
+        - [ ] Öğeler listelenir
+        - [ ] Öğelerin yeri değiştirlebilir
       - [x] Eklenti listesi
         - [x] Eklentileri listeler
         - [x] Eklentileri açar ("moz-ext" urlleri açılana kadar eklentiler görünür değildir)
       - [ ] Ayarlar sayfasından yönetilebilir
-    - [] PWA destekler
+    - [ ] PWA destekler
     - [x] Eklentiler
       - [x] Hüma gezgini
         - [x] Sidebar
