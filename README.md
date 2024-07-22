@@ -1,4 +1,75 @@
 # Hüma Tarayıcısı
+
+## TO-DO
+
+- [x] Tarayıcı
+    - [x] Grafik
+      - [X] Logolar
+      - [ ] Hoş geldiniz sayfası logoları
+    - [x] Çeviri
+      - [x] Her dil için çeviri dosyaları
+      - [ ] Çoklu dil destekli derleme
+    - [ ] Temalar
+      - [x] Hüma teması
+      - [ ] Lepton teması
+    - [x] Hüma Kenar Çubuğu
+      - [x] web panel
+        - [x] "about" url desteği
+        - [x] "chrome" url desteği
+        - [ ] "moz-ext" url desteği
+        - [ ] "http/s" url desteği
+      - [x] Genel öğeler
+        - [] Öğeler düzenlenebilir
+          - [] Öğeler silinebilir
+          - [] Öğeler eklenebilir
+        - [x] Öğeler listelenir
+        - [] Öğelerin yeri değiştirlebilir
+      - [] Özel öğeler (Çeviri, not alma++)
+        - [] Öğeler düzenlenebilir
+          - [] Öğeler silinebilir
+          - [] Öğeler eklenebilir
+        - [] Öğeler listelenir
+        - [] Öğelerin yeri değiştirlebilir
+      - [x] Eklenti listesi
+        - [x] Eklentileri listeler
+        - [x] Eklentileri açar ("moz-ext" urlleri açılana kadar eklentiler görünür değildir)
+      - [ ] Ayarlar sayfasından yönetilebilir
+    - [] PWA destekler
+    - [x] Eklentiler
+      - [x] Hüma gezgini
+        - [x] Sidebar
+          - [x] yer imleri ve notlar
+              - [ ] Drag & Drop
+              - [ ] Not düzenle & yer immi düzenle
+              - [ ] Not sil & Not yer immi sil
+          - [x] Hüma bağlantıları 
+              - [ ] Bağlantı düzenleme   
+              - [ ] Bağlantı Kaldırma  
+          - [ ] Sekronizasyon 
+        - [x] Hüma Sayfaları
+          - [x] Hesap makinesi
+              - [ ] Kişiselleştirme seçenekleri
+          - [x] Yerimmi yöneticisi
+              - [X] yer immi silme
+              - [ ] yer immi düzenleme
+              - [ ] Drag & Drop
+          - [x] Yapılacaklar listesi yöneticisi
+              - [X] öğe silme
+              - [ ] öğe düzenleme
+              - [ ] öğeleri kategorize etme
+              - [ ] Drag & Drop
+          - [x] Hüma Sayfaları ana sayfa
+              - [x] ön izlemeler
+              - [ ] widget desteği
+              - [ ] Kişiselleştirme seçenekleri
+        - [ ] Hüma İçerik Kaydetme
+          - [ ] İçerik indirme
+          - [ ] İçerik düzenleme
+          - [ ] İçerik silme
+          - [ ] Sekronizasyon 
+
+
+
 ![image](https://github.com/VastSea0/Huma/assets/144556903/13e56ba3-2023-4581-a2c8-0c88fdbb78fd)
 
 Hüma Tarayıcı, özgür ve açık kaynak kodlu bir web tarayıcısıdır. Gizlilik odaklı olup, kullanıcı verilerini toplamaz. Dikey sekmeler ve çeşitli özelleştirme seçenekleri sunar. İnternet bağlantısı olmadan kullanılabilen statik sayfalar gibi özelliklerle donatılmıştır. 
