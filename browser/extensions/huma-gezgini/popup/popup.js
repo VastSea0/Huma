@@ -4,6 +4,22 @@ browser.contextMenus.create({
   contexts: ["all"] // Her tür içerik için görünsün
 });
 
+chrome.contextMenus.create({
+  id: "savePage",
+  title: "Bu Sayfayı Okumlarına Kaydet",
+  contexts: ["page"]
+});
+ 
+
+//  Butona tıklandığında sayfayı kaydetmesi için gereken mesajı gönder
+chrome.contextMenus.onClicked.addListener((info, tab) => {
+  if (info.menuItemId === "savePage") {
+    chrome.tabs.sendMessage(tab.id, { action: "savePage" });
+
+  }
+});
+
+
 // Menu öğesine tıklama olayı ekleyin
 browser.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === "humaContextMenu") {
@@ -62,3 +78,30 @@ document.getElementById("open-sidebar").addEventListener("click", () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const contentList = document.getElementById('contentList');
+
+  chrome.storage.local.get({ savedPages: [] }, (result) => {
+    const savedPages = result.savedPages;
+
+    savedPages.forEach(page => {
+      const div = document.createElement('div');
+      div.className = 'content-item';
+      div.textContent = page.title;
+      div.dataset.id = page.id;
+
+      div.addEventListener('click', () => {
+        chrome.tabs.create({ url: chrome.runtime.getURL('/apps/content.html') }, (tab) => {
+          chrome.tabs.onUpdated.addListener(function listener(tabId, changeInfo) {
+            if (tabId === tab.id && changeInfo.status === 'complete') {
+              chrome.tabs.onUpdated.removeListener(listener);
+              chrome.tabs.sendMessage(tab.id, { action: 'loadContent', content: page });
+            }
+          });
+        });
+      });
+
+      contentList.appendChild(div);
+    });
+  });
+});

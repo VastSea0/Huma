@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Sayfa Kaydetici Eklentisi",
+    "version": "1.0",
+    "permissions": ["contextMenus", "storage", "activeTab"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "icons/icon.png"
+      }
+    },
+    "icons": {
+      "48": "icons/icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

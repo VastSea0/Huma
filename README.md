@@ -3,26 +3,33 @@
 ## TO-DO
 
 - [x] Tarayıcı
-    - [x] Grafik
-      - [X] Logolar
+    - [x] Grafik (0a4)
+      - [X] Logolar (0a4)
       - [ ] Hoş geldiniz sayfası logoları
-    - [x] Çeviri
-      - [x] Her dil için çeviri dosyaları
+    - [x] Çeviri (0a7)
+      - [x] Her dil için çeviri dosyaları (0a7)
       - [ ] Çoklu dil destekli derleme
-    - [ ] Temalar
-      - [x] Hüma teması
+    - [x] Temalar (0a3)
+      - [x] Hüma teması (0a3)
       - [ ] Lepton teması
-    - [x] Hüma Kenar Çubuğu
-      - [x] web panel
-        - [x] "about" url desteği
-        - [x] "chrome" url desteği
+    - [ ] Hüma Ansiklopedi
+      - [x] Hüma Tarih (0a5)
+        - [x] Türk Tarihi (0a5)
+        - [x] Diğer Milletler Tarihi 
+      - [x] Hüma Mitoloji (0a14)
+        - [x] Türk Mitolojisi (0a14)
+        - [x] Diğer Milletler Mitolojileri 
+    - [x] Hüma Kenar Çubuğu (0a15)
+      - [x] web panel (0a15)
+        - [x] "about" url desteği (0a15)
+        - [x] "chrome" url desteği (0a15)
         - [ ] "moz-ext" url desteği
         - [ ] "http/s" url desteği
-      - [x] Genel öğeler
+      - [x] Genel öğeler (0a15)
         - [ ] Öğeler düzenlenebilir
           - [ ] Öğeler silinebilir
           - [ ] Öğeler eklenebilir
-        - [x] Öğeler listelenir
+        - [x] Öğeler listelenir (0a15)
         - [ ] Öğelerin yeri değiştirlebilir
       - [ ] Özel öğeler (Çeviri, not alma++)
         - [ ] Öğeler düzenlenebilir
@@ -30,43 +37,44 @@
           - [ ] Öğeler eklenebilir
         - [ ] Öğeler listelenir
         - [ ] Öğelerin yeri değiştirlebilir
-      - [x] Eklenti listesi
-        - [x] Eklentileri listeler
-        - [x] Eklentileri açar ("moz-ext" urlleri açılana kadar eklentiler görünür değildir)
+      - [x] Eklenti listesi (0a15)
+        - [x] Eklentileri listeler (0a15)
+        - [x] Eklentileri açar ("moz-ext" urlleri açılana  kadar eklentiler görünür değildir) (0a15)
       - [ ] Ayarlar sayfasından yönetilebilir
     - [ ] PWA destekler
     - [x] Eklentiler
-      - [x] Hüma gezgini
-        - [x] Sidebar
-          - [x] yer imleri ve notlar
+      - [x] Hüma gezgini (0a11)
+        - [x] Sidebar (0a11)
+          - [x] yer imleri ve notlar (0a11)  
               - [ ] Drag & Drop
               - [ ] Not düzenle & yer immi düzenle
-              - [ ] Not sil & Not yer immi sil
-          - [x] Hüma bağlantıları 
+              - [ ] Not sil & Not yer immi sil 
+          - [x] Hüma bağlantıları  (0a11)
               - [ ] Bağlantı düzenleme   
               - [ ] Bağlantı Kaldırma  
           - [ ] Sekronizasyon 
-        - [x] Hüma Sayfaları
-          - [x] Hesap makinesi
+        - [x] Hüma Sayfaları (0a15)
+          - [x] Hesap makinesi (0a15)
               - [ ] Kişiselleştirme seçenekleri
-          - [x] Yerimmi yöneticisi
-              - [X] yer immi silme
+          - [x] Yerimmi yöneticisi (0a15)
+              - [X] yer immi silme (0a15)
               - [ ] yer immi düzenleme
               - [ ] Drag & Drop
-          - [x] Yapılacaklar listesi yöneticisi
-              - [X] öğe silme
+          - [x] Yapılacaklar listesi yöneticisi (0a15)
+              - [X] öğe silme (0a15)
               - [ ] öğe düzenleme
               - [ ] öğeleri kategorize etme
               - [ ] Drag & Drop
-          - [x] Hüma Sayfaları ana sayfa
-              - [x] ön izlemeler
+          - [x] Hüma Sayfaları ana sayfa (0a15)
+              - [x] ön izlemeler (0a15)
               - [ ] widget desteği
               - [ ] Kişiselleştirme seçenekleri
-        - [ ] Hüma İçerik Kaydetme
-          - [ ] İçerik indirme
+        - [+] Hüma İçerik Kaydetme (0a15)
+          - [+] İçerik indirme (0a15)
           - [ ] İçerik düzenleme
-          - [ ] İçerik silme
+          - [+] İçerik silme (0a15)
           - [ ] Sekronizasyon 
+          - [ ] İçerileri kategorize etmek 
 
 
 

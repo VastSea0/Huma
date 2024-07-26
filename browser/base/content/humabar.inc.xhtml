@@ -1,6 +1,6 @@
-<!--
+<!-- Kenar çubuğu (sidebar) HTML şablonu 
 <splitter id="humabar-splitter" class="chromeclass-extrachrome" resizebefore="sibling" resizeafter="none" />
-
+ 
 -->
 
 <vbox id="humabar-box" class="chromeclass-extrachrome">
@@ -28,25 +28,51 @@
         oncommand="OpenBrowserWindow({ private: true });" tooltiptext="Yeni Gizli Pencere Aç">
         <image class="humabar-button-icon" src="chrome://browser/skin/privateBrowsing.svg" role="presentation" />
       </toolbarbutton>
-  
+      
       <toolbarbutton id="humabar-downloads-button" class="humabar-button" 
-      oncommand="openWebPanel('about:downloads', 'İndirilenler');"
+        oncommand="openWebPanel('about:downloads', 'İndirilenler');"
         tooltiptext="İndirilenler">
         <image class="humabar-button-icon" src="chrome://browser/skin/downloads/downloads.svg" role="presentation" />
       </toolbarbutton>
-      <!--
-         <toolbarbutton id="humabar-protections-button" class="humabar-button" 
-      oncommand="openWebPanel('about:protections', 'Korumalar');"
+
+  
+    
+      
+      <vbox id="humabar-extensions-container" flex="1" align="center" pack="center">
+        <label value="Eklentiler"></label>
+        <vbox id="humabar-extensions-list"></vbox>
+      </vbox>
+     
+      
+    
+      
+     
+      <toolbarbutton id="refresh-extensions-button" class="humabar-button" 
+                    oncommand="refreshExtensions();" tooltiptext="Eklentileri Yenile">
+        <image class="humabar-button-icon" src="chrome://browser/skin/reload.svg" role="presentation" />
+      </toolbarbutton>
+
+ 
+      <!-- 
+      
+      Diğer toolbarbutonlar 
+
+
+
+      <toolbarbutton id="humabar-todo-button" class="humabar-button" 
+        oncommand="openWebPanel('chrome://browser/content/humaBarNoteContainer.html', 'Yapılacaklar');"
+        tooltiptext="Yapılacaklar listesi">
+        <image class="humabar-button-icon" src="chrome://branding/content/about-logo.png" role="presentation" />
+      </toolbarbutton>
+
+      <toolbarbutton id="humabar-protections-button" class="humabar-button" 
+        oncommand="openWebPanel('about:protections', 'Korumalar');"
         tooltiptext="Korumalar">
         <image class="humabar-button-icon" src="chrome://browser/skin/controlcenter/dashboard.svg" role="presentation" />
       </toolbarbutton>
       
-      <toolbarbutton id="humabar-web-button" class="humabar-button" tooltiptext="Web Sitesi Görüntüle"
-        oncommand="openWebPanel('https://www.example.com', 'Web Sitesi');">
-        <image class="humabar-button-icon" src="chrome://browser/skin/web.svg" role="presentation" />
-      </toolbarbutton>
-      -->
-   
+    -->
+      
     </vbox>
     <box id="humabar-footer" align="center" pack="center">
       <toolbarbutton id="humabar-settings-button" class="humabar-button" oncommand="openPreferences();"
@@ -54,5 +80,4 @@
         <image class="humabar-button-icon" src="chrome://global/skin/icons/settings.svg" role="presentation" />
       </toolbarbutton>
     </box>
-  </vbox>
-  
+</vbox>

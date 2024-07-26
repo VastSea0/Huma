@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Hüma Gezgini",
-  "version": "1.5",
+  "version": "1.8",
   "description": "Hüma Web Tarayıcısı için Hüma Gezgini",
   "browser_specific_settings": {
     "gecko": {
@@ -9,7 +9,7 @@
       "strict_min_version": "88.0a1"
     }
   },
-
+  "author": "Egehan KAHRAMAN",
   "icons": {
     "48": "images/logo.png",
     "128": "images/logo.png"
@@ -41,7 +41,15 @@
       "activeTab",
       "tabs",
       "bookmarks",
+      "storage",
       "contextMenus"
+  ],
+  "options_page": "apps/ayarlar.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["apps/content.js"]
+    }
   ],
   "sidebar_action": {
     "default_panel": "sidebar/sidebar.html",  

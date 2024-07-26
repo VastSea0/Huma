@@ -14,36 +14,39 @@
     <!-- Ayar butonu -->
     <button id="settingsButton">Ayarlar</button>
 
+   <!--
+    <a href="/apps/ayarlar.html" target="_blank">Ayarlar</a>
+    --> 
+    
+
     <!-- Ayarların yapılacağı modal -->
     <div id="settingsModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Ayarlar</h2>
-            <label for="bgColor">Arka Plan Rengi:</label>
-            <input type="color" id="bgColor">
-            <label for="textColor">Yazı Rengi:</label>
-            <input type="color" id="textColor">
-            <label for="buttonColor">Buton Rengi:</label>
-            <input type="color" id="buttonColor">
-            <label for="classColor">Item Rengi:</label>
-            <input type="color" id="classColor">
+            
+            <div class="row" id="humabetik"> <!-- Hüma Betik yerine şu anda bu var-->
+                <img class="logo" src="/images/logo.png" alt="HB">
+                <div class="name">Renkleri yapılandır</div>
+            </div>
+           
+            <h3>JSON Konfigürasyonu</h3>
+            <textarea id="settingsTextarea" rows="10" cols="50"></textarea>
             <button id="saveSettings">Kaydet</button>
         </div>
     </div>
 
     <!-- Sabit bağlantılar -->
+    <div class="row" id="humaayarlar">  
+        <img class="logo" src="/images/logo.png" alt="HB">
+        <div class="name">Hüma Gezgini'ni yapılandır</div>
+    </div>
     <div class="row" id="humabulut">
         <img class="logo" src="/images/logo1.png" alt="HB">
         <div class="name">Hüma Bulut</div>
     </div>
-    <div class="row" id="humabetik">
-        <img class="logo" src="/images/logo2.png" alt="HB">
-        <div class="name">Hüma Betik</div>
-    </div>
-    <div class="row" id="vastseablog">
-        <img class="logo" src="/images/logo4.png" alt="V">
-        <div class="name">VastSea Blog</div>
-    </div>
+  
+  
     <div class="row" id="verasis">
         <img class="logo" src="/images/logo3.png" alt="VB">
         <div class="name">VERASİS</div>
@@ -64,10 +67,11 @@
         <img class="logo" src="/images/logo.png" alt="HT">
         <div class="name">Hüma Tarih</div>
     </div>
-    <div class="row" id="all">
-        <img class="logo" src="/images/logo.png" alt="hepsi">
-        <div class="name">Hepsine git</div>
+    <div class="row" id="huma-pages">
+        <img class="logo" src="/images/logo.png" alt="HT">
+        <div class="name">Hüma Sayfalarına git</div>
     </div>
+ 
     
     <!-- Yer imleri bölümü -->
     <h2>Yer İmleri</h2>

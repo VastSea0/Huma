@@ -6,48 +6,48 @@ const DEFAULT_SITES_MAP = new Map([
   // This first item is the global list fallback for any unexpected geos
   [
     "",
-    "https://humatarayici.com/docs/ ,https://www.artadosearch.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
+    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
 
      
   ],
   [
     "US",
-    "https://humatarayici.com/docs/ ,https://www.artadosearch.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
+    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
 
   ],
   [
     "CA",
-    "https://humatarayici.com/docs/ ,https://www.artadosearch.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
+    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
 
   ],
   [
     "DE",
-    "https://humatarayici.com/docs/ ,https://www.artadosearch.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
+    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
 
   ],
   [
     "PL",
-    "https://humatarayici.com/docs/ ,https://www.artadosearch.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
+    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
 
   ],
   [
     "RU",
-    "https://humatarayici.com/docs/ ,https://www.artadosearch.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
+    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
 
   ],
   [
     "GB",
-    "https://humatarayici.com/docs/ ,https://www.artadosearch.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
+    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
 
   ],
   [
     "FR",
-    "https://humatarayici.com/docs/ ,https://www.artadosearch.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
+    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
 
   ],
   [
     "CN",
-    "https://humatarayici.com/docs/ ,https://www.artadosearch.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
+    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
 
   ],
 ]);

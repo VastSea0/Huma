@@ -1,0 +1,66 @@
+body{
+    background-color:#60AD7E;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.hesap-makinesi{
+    background: rgba(255, 255, 255, 0.2); /* Yarı saydam beyaz arka plan */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); /* Arka planı bulanıklaştırma */
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+.result{
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2); /* Yarı saydam beyaz arka plan */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); /* Arka planı bulanıklaştırma */
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+button{
+    margin: 3px;
+    background: rgba(255, 255, 255, 0.2); /* Yarı saydam beyaz arka plan */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); /* Arka planı bulanıklaştırma */
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50px;
+    height: 50px;
+  
+}
+button:hover{
+    margin: 3px;
+    background: rgba(131, 32, 32, 0.2); /* Yarı saydam beyaz arka plan */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); /* Arka planı bulanıklaştırma */
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50px;
+    height: 50px;
+  
+}
+.buttons{
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(131, 32, 32, 0.2); /* Yarı saydam beyaz arka plan */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); /* Arka planı bulanıklaştırma */
+    -webkit-backdrop-filter: blur(10px);
+  
+}

@@ -1,15 +1,10 @@
-
-  <vbox id="web-panel" hidden="true" style="width: 18em;" flex="1">
-    <!--
-    <box>
-      <label id="web-panel-title" class="web-panel-title"></label>
-      <button id="close-web-panel" onclick="closeWebPanel()">
-          <image src="chrome://browser/skin/back.svg" />
-      </button>
-    </box>   
-    --> 
-
-    <browser id="web-content" autoscroll="false" disablehistory="true" disablefullscreen="true" tooltip="aHTMLTooltip" />
-  </vbox>
-  
+<!-- Web panel için alan -->
+<vbox id="web-panel" hidden="true" flex="1">
+  <hbox>
+    <toolbarbutton id="close-web-panel"  oncommand="closeWebPanel();" class="close-icon tabbable" data-l10n-id="sidebar-close-button" />
+    <label id="web-panel-title" flex="1"></label>
+  </hbox>
  
+  <browser id="web-content"   autoscroll="false" disablehistory="true" disablefullscreen="true" tooltip="aHTMLTooltip" />
+
+</vbox>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayarlar</title>
+    <link rel="stylesheet" href="ayarlar.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#helo" class="menu-item"> <h2>  Hüma Gezgini'ni Yapılandır</h2></a>
+       
+        <a href="#kaydedilen-icerikler" class="menu-item">Kaydedilen İçerikleri Düzenle</a>
+        <a href="#kenarcubugu" class="menu-item">Kenar Çubuğunu yapılandır</a>
+    </div>
+    <div class="container">
+        <h1>Hüma Gezgini Gelişmiş Ayarlar</h1>
+        <div id="helo" class="content-section">
+            <h2>Hoşgeldiniz!</h2>
+            <p>Hüma Gezgini'nin ayarlar sayfasına hoş geldiniz. Buradan, tarayıcınızın görünümünü ve işlevselliğini özelleştirebilirsiniz. Renk temalarını ayarlayabilir, yer imlerinizi yönetebilir ve kişisel notlarınızı ekleyebilirsiniz. Ayarlarınızı yaptıktan sonra, değişikliklerinizi kaydetmek için "Kaydet" butonuna tıklamayı unutmayın.</p>
+            <p>Yardım veya geri bildirim için, lütfen <a href="mailto:bilgi@humatarayici.com">bize ulaşın</a>. Size yardımcı olmaktan memnuniyet duyarız!</p>
+        </div>
+        
+        <div id="kaydedilen-icerikler" class="content-section">
+            <h2>Kaydedilen İçerikler</h2>
+            <p>
+                Hüma'ya kaydettiğin içerikler bu sayfada yer alır. Burada artık gerek kalmayan içerikleri silebilirsin
+            </p>
+            <div id="contentList"></div>
+        </div>
+        <div id="kenarcubugu" class="content-section">
+            <h2>helo</h2>
+             
+            <div class="modal-content">
+              
+                <h2>Ayarlar</h2>
+                <label for="bgColor">Arka Plan Rengi:</label>
+                <input type="color" id="bgColor">
+                <label for="textColor">Yazı Rengi:</label>
+                <input type="color" id="textColor">
+                <label for="buttonColor">Buton Rengi:</label>
+                <input type="color" id="buttonColor">
+                <label for="classColor">Item Rengi:</label>
+                <input type="color" id="classColor">
+                <button id="saveSettings">Kaydet</button>
+           <textarea id="settingsTextarea" rows="10" cols="50"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="ayarlar.js"></script>
+</body>
+</html>

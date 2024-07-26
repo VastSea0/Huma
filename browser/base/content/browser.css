@@ -1384,7 +1384,7 @@ HümaBar Styles...
 /* Açık tema */
 @media (prefers-color-scheme: light) {
   #humabar-box {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255);
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -1510,7 +1510,7 @@ HümaBar Styles...
 /* Koyu tema */
 @media (prefers-color-scheme: dark) {
   #web-panel {
-    background-color: rgba(40, 44, 52, 0.9);
+    background-color: rgba(40, 44, 52);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -1521,7 +1521,7 @@ HümaBar Styles...
   }
 
   #web-content {
-    background-color: rgba(40, 44, 52, 0.9);
+    background-color: rgba(40, 44, 52);
   }
 
   #close-web-panel {
@@ -1545,7 +1545,7 @@ HümaBar Styles...
 /* Açık tema */
 @media (prefers-color-scheme: light) {
   #web-panel {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255);
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -1556,7 +1556,7 @@ HümaBar Styles...
   }
 
   #web-content {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255);
   }
 
   #close-web-panel {
