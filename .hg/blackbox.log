@@ -1,0 +1,29 @@
+2024-07-28 16:33:08.695 beypazari @0000000000000000000000000000000000000000 (62519)> log --template '{rev}:{node}
+' -r 'last(public() and ::., 500)'
+2024-07-28 16:33:08.714 beypazari @0000000000000000000000000000000000000000 (62519)> log --template '{rev}:{node}
+' -r 'last(public() and ::., 500)' exited 0 after 0.16 seconds
+2024-07-28 16:33:49.797 beypazari @0000000000000000000000000000000000000000 (62930)> config
+2024-07-28 16:33:49.803 beypazari @0000000000000000000000000000000000000000 (62930)> config exited 0 after 0.08 seconds
+2024-07-28 16:33:57.416 beypazari @0000000000000000000000000000000000000000 (63223)> log --template '{rev}:{node}
+' -r 'last(public() and ::., 500)'
+2024-07-28 16:33:57.434 beypazari @0000000000000000000000000000000000000000 (63223)> log --template '{rev}:{node}
+' -r 'last(public() and ::., 500)' exited 0 after 0.09 seconds
+2024-07-28 16:35:24.198 beypazari @0000000000000000000000000000000000000000 (63886)> config
+2024-07-28 16:35:24.202 beypazari @0000000000000000000000000000000000000000 (63886)> config exited 0 after 0.07 seconds
+2024-07-28 16:35:36.270 beypazari @0000000000000000000000000000000000000000 (64224)> --config 'extensions.purge=' purge --all -I 'glob:**.py[cdo]' -I 'glob:**/__pycache__'
+2024-07-28 16:35:38.389 beypazari @0000000000000000000000000000000000000000 (64224)> Watchman unavailable: timed out waiting for response, while executing (b'watch', b'/home/beypazari/Masa\xc3\xbcst\xc3\xbc/Yazilim/HumaBrowserSourceCode/mozilla-unified')
+2024-07-28 16:35:45.576 beypazari @0000000000000000000000000000000000000000 (64224)> --config 'extensions.purge=' purge --all -I 'glob:**.py[cdo]' -I 'glob:**/__pycache__' exited 0 after 9.38 seconds
+2024-07-28 16:38:42.781 beypazari @0000000000000000000000000000000000000000 (65379)> config
+2024-07-28 16:38:42.785 beypazari @0000000000000000000000000000000000000000 (65379)> config exited 0 after 0.09 seconds
+2024-07-28 16:38:51.231 beypazari @0000000000000000000000000000000000000000 (65667)> log --template '{rev}:{node}
+' -r 'last(public() and ::., 500)'
+2024-07-28 16:38:51.255 beypazari @0000000000000000000000000000000000000000 (65667)> log --template '{rev}:{node}
+' -r 'last(public() and ::., 500)' exited 0 after 0.10 seconds
+2024-07-28 16:43:46.455 beypazari @a9f0952d79a4097d8d7f3daa05533fea8a74c8c9 (67975)> log --template '{rev}:{node}
+' -r 'last(public() and ::., 500)'
+2024-07-28 16:43:46.595 beypazari @a9f0952d79a4097d8d7f3daa05533fea8a74c8c9 (67975)> log --template '{rev}:{node}
+' -r 'last(public() and ::., 500)' exited 0 after 0.38 seconds
+2024-07-28 16:43:54.163 beypazari @a9f0952d79a4097d8d7f3daa05533fea8a74c8c9 (68061)> -R '/home/beypazari/Masaüstü/Yazilim/HumaBrowserSourceCode/mozilla-unified' path default
+2024-07-28 16:43:54.195 beypazari @a9f0952d79a4097d8d7f3daa05533fea8a74c8c9 (68061)> -R '/home/beypazari/Masaüstü/Yazilim/HumaBrowserSourceCode/mozilla-unified' path default exited 0 after 1.62 seconds
+2024-07-28 16:43:55.622 beypazari @a9f0952d79a4097d8d7f3daa05533fea8a74c8c9 (68089)> -R '/home/beypazari/Masaüstü/Yazilim/HumaBrowserSourceCode/mozilla-unified' parent '--template={node}'
+2024-07-28 16:43:55.686 beypazari @a9f0952d79a4097d8d7f3daa05533fea8a74c8c9 (68089)> -R '/home/beypazari/Masaüstü/Yazilim/HumaBrowserSourceCode/mozilla-unified' parent '--template={node}' exited 0 after 0.55 seconds
