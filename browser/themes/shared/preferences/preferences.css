@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: column;
 
-  --main-pane-width: 664px;
+ --main-pane-width: 750px;
 }
 
 /*
@@ -63,6 +63,31 @@
 #mainPrefPane {
   width: 100%;
   padding: 0;
+  /*background-color: #484848;*/
+  border-radius: 15px;
+  padding: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  #mainPrefPane {
+    width: 100%;
+    padding: 0;
+    background-color: #484848;
+    border-radius: 15px;
+    padding: 20px;
+  }
+}
+
+/* Açık tema */
+@media (prefers-color-scheme: light) {
+
+  #mainPrefPane {
+    width: 100%;
+    padding: 0;
+    background-color: #e8dede;
+    border-radius: 15px;
+    padding: 20px;
+  }
 }
 
 groupbox[data-category] {
@@ -201,11 +226,7 @@ radio {
 
 /* Category List */
 
-#categories {
-  overflow: visible;
-  min-height: auto;
-  padding: 1px; /* Adding padding around richlistitem in order to make entire keyboard focusing outline visible */
-}
+ 
 
 #category-general > .category-icon {
   list-style-image: url("chrome://browser/skin/preferences/category-general.svg");
@@ -236,11 +257,18 @@ radio {
 }
 
 #category-more-from-huma > .category-icon {
-  list-style-image: url("chrome://browser/skin/preferences/huma-logo.svg");
+  list-style-image: url("chrome://global/skin/icons/developer.svg");
 }
 
+#humabar > .category-icon {
+  list-style-image: url("chrome://browser/skin/sidebars-right.svg");
+}
+#category-humabar > .category-icon {
+  list-style-image: url("chrome://browser/skin/sidebars-right.svg");
+}
 .huma-icon {
-  list-style-image: url("chrome://browser/skin/preferences/huma-logo.svg");
+  list-style-image: url("chrome://global/skin/icons/developer.svg");
+  image: url("chrome://global/skin/icons/developer.svg");
 }
 
 
@@ -1545,4 +1573,131 @@ richlistitem .text-link:hover {
     /* override the Linux only toolkit rule */
     appearance: none;
   }
+}
+
+
+
+:root {
+  --zen-settings-secondary-background: light-dark(#F2F4F4, color-mix(in srgb, var(--zen-primary-color) 10%, black 90%));
+}
+
+.main-content {
+  background: var(--zen-settings-secondary-background);
+  padding-top: 60px !important;
+}
+
+.pane-container {
+  margin: auto;
+}
+
+groupbox {
+  background: light-dark(white, color-mix(in srgb, var(--zen-primary-color) 10%, #1b1b1b 90%));
+  padding-inline: unset !important;
+  padding: 20px 30px !important;
+  margin-bottom: 0 !important;
+  position: relative;
+}
+
+.subcategory + groupbox,
+#noFxaAccount,
+#hasFxaAccount {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 5px;
+}
+
+groupbox:has(+ script),
+groupbox:last-of-type,
+groupbox:has(+ .subcategory) {
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+}
+
+.sticky-inner-container{
+  display: none !important;
+}
+
+.subcategory  {
+  border-top: none !important;
+}
+
+.navigation {
+  padding: 50px;
+}
+
+groupbox button {
+  border-radius: 5px !important;
+  padding: 5px 10px !important;
+}
+
+groupbox button,
+groupbox menulist {
+  background-color: light-dark(#f1f1f1, #363636) !important;
+  color: light-dark(black, white) !important;
+}
+
+groupbox h2 {
+  opacity: .7;
+  font-size: 15px;
+}
+
+#categories {
+  margin: 0 !important;
+}
+
+#categories > .category {
+  margin-left: 0 !important;
+  min-height: 40px !important;
+  position: relative;
+  padding-inline: 20px !important;
+
+}
+
+#categories > .category[selected]::before {
+  content: "";
+  display: block;
+  height: 70%;
+  width: 5px;
+  background-color: var(--zen-primary-color);
+  position: absolute;
+  left: -3px;
+  border-radius: 5px;
+}
+
+#languagesGroup::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+  margin: 10px 0;
+  transform: translateY(-50%);
+  position: absolute;
+  top: -5px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  left: 0;
+}
+
+#searchInput {
+  width: 100% !important;
+  border: none;
+  outline: none;
+  min-height: 40px;
+  border-radius: 10px;
+  background: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+  padding-inline: 15px;
+}
+
+.textbox-search-sign {
+  margin-right: 15px;
+}
+
+.sidebar-footer-list {
+  margin-left: 0 !important;
+}
+
+.category-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }

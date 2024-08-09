@@ -26,13 +26,7 @@ export const BuiltInThemeConfig = new Map([
       path: "resource://builtin-themes/light/",
     },
   ],
-  [
-    "humatemasit@mozilla.org",
-    {
-      version: "1.0",
-      path: "resource://builtin-themes/huma/",
-    },
-  ],
+ 
   [
     "firefox-compact-dark@mozilla.org",
     {

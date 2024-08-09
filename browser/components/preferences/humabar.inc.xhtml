@@ -1,0 +1,72 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+<!-- More From Mozilla panel -->
+
+<script src="chrome://browser/content/preferences/humabar.js"/>
+<script src="chrome://browser/content/HumaSidebarManager.mjs"/>
+
+<html:style>
+    .humabar-buttons {
+    
+        border: none;
+        
+        text-align: left;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5px 0;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      .humabar-buttons:hover {
+     
+        transform: scale(1.02);
+      }
+      .humabar-buttons:active {
+       
+        transform: scale(0.98);
+      }
+      .delete-button {
+        background-color: red;
+        border: none;
+         
+        padding: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .delete-button:hover {
+        background-color: darkred;
+      }
+      .button-container {
+        display: flex;
+        align-items: center;
+      }
+ 
+    .humabar-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        vertical-align: middle;
+        fill: currentColor;
+    }
+      </html:style>
+<html:template id="template-paneHumaBar">
+  <div id="humaCategory-header" hidden="true" data-category="paneHumaBar"></div>
+
+  <groupbox id="humaBarPageGroup" data-category="paneHumaBar" hidden="true">
+    <hbox style="display: flex; flex-direction: column; padding: 16px;">
+        <html:h1>
+        Helo
+        </html:h1>
+        <vbox mode="icons" flex="1" id="huma-sidebar-panels-sites-container"  >
+          
+        </vbox>
+    </hbox>
+  </groupbox>
+</html:template>

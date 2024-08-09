@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE window>
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        id="humaWebPanel"
+        headerparent="humaWebPanelDialog"
+        style="min-width: 40em;">
+<dialog id="humaWebPanelDialog"
+        buttons="accept, cancel">
+
+  <linkset>
+    <html:link
+    rel="localization"
+    href="browser/browser.ftl"
+  />
+    <html:link rel="stylesheet" href="chrome://global/skin/global.css" />
+    <html:link
+      rel="stylesheet"
+      href="chrome://global/content/commonDialog.css"
+    />
+    <html:link rel="stylesheet" href="chrome://global/skin/commonDialog.css" />
+
+   
+     
+  </linkset>
+
+  <script src="chrome://browser/content/places/humaWebPanel.js"/>
+
+  <label data-l10n-id="huma-new-web-panel-url"
+    control="humaNWP_url"></label> 
+  <html:input id="humaNWP_url"
+        type="url" onchange="gHumaWebPanel.handleURLChange(this);"/>
+
+  <hbox flex="1" style="margin: 10px 5px;">
+    <html:input id="humaNWP_userAgent"
+          type="checkbox"/>
+    <label id="wiki-link" data-l10n-id="huma-new-web-panel-user-agent"
+      control="humaNWP_userAgent" oncommand="windows.open('https://github.com/VastSea0/Huma/wiki/H%C3%BCma-Web-Uygulamalar%C4%B1-B%C3%B6lmesi#kullan%C4%B1m')" href="https://github.com/VastSea0/Huma/wiki/H%C3%BCma-Web-Uygulamalar%C4%B1-B%C3%B6lmesi#kullan%C4%B1m"  for="humaNWP_userAgent"/>
+  </hbox>
+
+</dialog>
+</window>
