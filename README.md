@@ -12,6 +12,14 @@
     - [x] Temalar (0a3)
       - [x] Hüma teması (0a3)
       - [ ] Lepton teması
+    - [x] Stiller
+      - [ ] sayfalar
+        -[x] Ayarlar sayfası
+          - [x] Genel stiller
+            - [] kişiselleştirme
+          - [x] Kategoriler
+            - [x] Kategori iconları
+            - [x] Kategori stilleri
     - [ ] Hüma Ansiklopedi
       - [x] Hüma Tarih (0a5)
         - [x] Türk Tarihi (0a5)
@@ -23,8 +31,10 @@
       - [x] web panel (0a15)
         - [x] "about" url desteği (0a15)
         - [x] "chrome" url desteği (0a15)
-        - [ ] "moz-ext" url desteği
-        - [ ] "http/s" url desteği
+        - [x] "moz-ext" url desteği (0a16)
+        - [x] "http/s" url desteği (0a16)
+        - [x] WebApp ekleme (0a16)
+        - [x] WebApp kaldırma (0a16)
       - [x] Genel öğeler (0a15)
         - [ ] Öğeler düzenlenebilir
           - [ ] Öğeler silinebilir
@@ -45,36 +55,41 @@
     - [x] Eklentiler
       - [x] Hüma gezgini (0a11)
         - [x] Sidebar (0a11)
-          - [x] yer imleri ve notlar (0a11)  
-              - [ ] Drag & Drop
-              - [ ] Not düzenle & yer immi düzenle
-              - [ ] Not sil & Not yer immi sil 
-          - [x] Hüma bağlantıları  (0a11)
-              - [ ] Bağlantı düzenleme   
-              - [ ] Bağlantı Kaldırma  
-          - [ ] Sekronizasyon 
+            - [x] yer imleri ve notlar (0a11)  
+                - [ ] Drag & Drop
+                - [ ] Not düzenle & yer immi düzenle
+                - [ ] Not sil & Not yer immi sil 
+            - [x] Hüma bağlantıları  (0a11)
+                - [ ] Bağlantı düzenleme   
+                - [ ] Bağlantı Kaldırma  
+            - [ ] Sekronizasyon 
         - [x] Hüma Sayfaları (0a15)
-          - [x] Hesap makinesi (0a15)
-              - [ ] Kişiselleştirme seçenekleri
-          - [x] Yerimmi yöneticisi (0a15)
-              - [X] yer immi silme (0a15)
-              - [ ] yer immi düzenleme
-              - [ ] Drag & Drop
-          - [x] Yapılacaklar listesi yöneticisi (0a15)
-              - [X] öğe silme (0a15)
-              - [ ] öğe düzenleme
-              - [ ] öğeleri kategorize etme
-              - [ ] Drag & Drop
-          - [x] Hüma Sayfaları ana sayfa (0a15)
-              - [x] ön izlemeler (0a15)
-              - [ ] widget desteği
-              - [ ] Kişiselleştirme seçenekleri
-        - [+] Hüma İçerik Kaydetme (0a15)
-          - [+] İçerik indirme (0a15)
-          - [ ] İçerik düzenleme
-          - [+] İçerik silme (0a15)
-          - [ ] Sekronizasyon 
-          - [ ] İçerileri kategorize etmek 
+            - [x] Hesap makinesi (0a15)
+                - [ ] Kişiselleştirme seçenekleri
+            - [x] Yerimmi yöneticisi (0a15)
+                - [X] yer immi silme (0a15)
+                - [ ] yer immi düzenleme
+                - [ ] Drag & Drop
+            - [x] Yapılacaklar listesi yöneticisi (0a15)
+                - [X] öğe silme (0a15)
+                - [ ] öğe düzenleme
+                - [ ] öğeleri kategorize etme
+                - [ ] Drag & Drop
+            - [x] Hüma Sayfaları ana sayfa (0a15)
+                - [x] ön izlemeler (0a15)
+                - [ ] widget desteği
+                - [ ] Kişiselleştirme seçenekleri
+        - [x] Hüma İçerik Kaydetme (0a15)
+            - [x] İçerik indirme (0a15)
+            - [ ] İçerik düzenleme
+            - [x] İçerik silme (0a15)
+            - [ ] Sekronizasyon 
+            - [ ] İçerileri kategorize etmek  
+        - [x] Hüma Gözlem Odası (0a16)
+            - [x] Gözlem verileri grafiği (0a16)
+            - [x] Veri silme (0a16)
+            - [ ] Sekronizasyon 
+            - [ ] Verileri kategorize etmek
 
 
 
