@@ -25,3 +25,5 @@ browser.jar:
     content/browser/places/interactionsViewer.html       (metadataViewer/interactionsViewer.html)
     content/browser/places/interactionsViewer.js         (metadataViewer/interactionsViewer.js)
 #endif
+    content/browser/places/humaWebPanel.xhtml            (content/humaWebPanel.xhtml)
+    content/browser/places/humaWebPanel.js               (content/humaWebPanel.js)
