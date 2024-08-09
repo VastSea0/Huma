@@ -103,7 +103,8 @@ Hüma Tarayıcı, kullanıcı gizliliğini ve özgürlüğünü ön planda tutan
 
 ## Temel özellikler
 
-Hüma, yerli ve açık kaynaklı bir web tarayıcısıdır. Firefox tabanlı olarak geliştirilen bu tarayıcı, gizlilik odaklı tasarımı ve özelleştirilebilir özellikleriyle öne çıkar. Hüma, kendi temasının yanı sıra sayfalar arasında gezinmeyi kolaylaştıran Hüma Gezgini, dikey sekme desteği, internetsiz çalışan Hüma Tarih ve Mitoloji sayfaları, dosya paylaşımı için 10MB sınırı olan Hüma Bulut ve Türkçe söz dizimine sahip betik yazma aracı Hüma Betik gibi özellikler sunar. Pardus ekosistemine katkı sağlamayı amaçlayan Hüma, Türk mitolojisi ve tarihi hakkında da bilgi içermektedir. 
+Hüma, yerli ve açık kaynaklı bir web tarayıcısıdır. Firefox tabanlı olarak geliştirilen bu tarayıcı, gizlilik odaklı tasarımı ve özelleştirilebilir özellikleriyle öne çıkar. Hüma, kendi temasının yanı sıra sayfalar arasında gezinmeyi kolaylaştıran Hüma Gezgini, dikey sekme desteği, internetsiz çalışan Hüma Tarih ve Mitoloji sayfaları, dosya paylaşımı için 10MB sınırı olan Hüma Bulut ve Türkçe söz dizimine sahip betik yazma aracı Hüma Betik gibi özellikler sunar. 
+
 ## Hüma sekmeleri
 
 <img src="https://firebasestorage.googleapis.com/v0/b/vastsea-blog.appspot.com/o/mUj553KYSMNLQxdU68FR2cl0AFG3%2Fhumasekmeleri.png?alt=media&token=f56918a9-1cb2-4a13-89cb-f71f5479d050" />
@@ -145,23 +146,11 @@ Hüma Gezgini, Hüma tarayıcısında varsayılan olarak bulunan kullanışlı b
 Hüma Gezgini, kullanıcı dostu arayüzü ve özelleştirme seçenekleriyle tarayıcınızın verimliliğini artırmak için tasarlanmıştır. Tarayıcınızı daha da kişiselleştirmek ve günlük web taramalarınızı yönetmek için ideal bir yardımcıdır.
 
 
-## Hüma Başlangıç
-
-<img src="https://firebasestorage.googleapis.com/v0/b/vastsea-blog.appspot.com/o/mUj553KYSMNLQxdU68FR2cl0AFG3%2FEkran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC_20240709_132443.png?alt=media&token=46a63f7b-2d4f-4a32-987d-383d06acafa0" />
+## Hüma Kenar Çubuğu
 
 
-**Hüma Başlangıç: Kişiselleştirilebilir Yeni Sekme Sayfası**
 
-Hüma Başlangıç, Hüma tarayıcısının yeni sekme sayfasını kişiselleştirmenizi sağlayan güçlü bir eklentidir. Kullanıcı dostu arayüzü ve geniş özelleştirme seçenekleriyle tarayıcınızın verimliliğini artırmak ve tarayıcınızı kişiselleştirmek için idealdir.
 
-### **Özellikler:**
-- **Sürükle ve Bırak Widget'ları:** Widget'ları bir ızgara üzerinde ekleyebilir, taşıyabilir, yeniden boyutlandırabilir ve yapılandırabilirsiniz.
-- **Güzel Arka Planlar:** Her 15 dakikada bir rastgele seçilmiş arka plan görüntüleri görürsünüz. Ayrıca düz bir renk, bir Unsplash koleksiyonu, bir RSS/Atom beslemesi veya özel bir arka plan resmi seçebilirsiniz.
-- **Kişiselleştirilebilir:** Arka planı, temayı değiştirebilir ve her widget'ı bağımsız olarak yapılandırabilirsiniz.
-- **Çok Dilli:** Fransızca, İspanyolca, İtalyanca, Portekizce, Malayca ve Türkçe dillerini destekler. Çeviriler, kullanıcılar tarafından katkı sağlanarak topluluk tarafından yönetilir.
-- **Zengin Widget Seçenekleri:** Hava durumu, yapılacaklar listesi, en çok ziyaret edilen siteler ve daha pek çok widget seçeneğiyle yeni sekme sayfanızı tamamen özelleştirebilirsiniz.
- 
-*Hüma Başlangıç "Renewtab" eklentisinin bir çatalıdır ilerleyen sürümlerde Hüma tarafından baştan yazılan eklenti ile değişecektir*
 ## Hüma Tarih ve Hüma Mitoloji: İnternetsiz Ansiklopedi
 
 <img src="https://forum.pardus.org.tr/uploads/default/original/2X/3/3c96516d93ff054ea6f9534aeb8f290789fd3c06.png" />
@@ -253,11 +242,11 @@ Hüma Tarayıcısı'nı kullanmayı seçtiğiniz için teşekkür ederiz. Herhan
  
  
  
-![image](https://github.com/VastSea0/Huma/assets/144556903/2899af51-c05b-43a7-bbd1-fa73e239abd8)
-![image](https://github.com/VastSea0/Huma/assets/144556903/6e774006-e589-4e76-9e62-86d1f7f7be59)
+![image](https://pbs.twimg.com/media/GUjKcWRWIAAvCz5?format=jpg&name=large)
+![image](https://pbs.twimg.com/media/GUjI2inWkAApH3R?format=jpg&name=large)
  
  
-![image](https://github.com/VastSea0/Huma/assets/144556903/1dac8ff1-7784-491b-ab6a-8ec8b9a5eda8)
+![image](https://pbs.twimg.com/media/GUjLGHMWwAEvEQG?format=jpg&name=large)
  
  
 ![image](https://github.com/VastSea0/Huma/assets/144556903/05557953-1330-4f8a-94d5-2ff7995ef88e)
