@@ -34,7 +34,7 @@ const PREFS_BEFORE_SECTIONS = () => [
       titleString: "home-prefs-shortcuts-header",
       descString: "home-prefs-shortcuts-description",
       get nestedPrefs() {
-        return Services.prefs.getBoolPref("browser.topsites.useRemoteSetting")
+        return Services.prefs.getBoolPref("browser.topsites.useRemoteSetting") && false
           ? [
               {
                 name: "showSponsoredTopSites",

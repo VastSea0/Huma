@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="chrome://global/skin/design-system/tokens-brand.css">
     <link rel="stylesheet" href="chrome://browser/content/contentSearchUI.css" />
     <link rel="stylesheet" href="chrome://activity-stream/content/css/activity-stream.css" />
+    <script src="chrome://browser/content/HumaThemeModifier.js"></script>
   </head>
   <!-- Cached: {{ CACHE_TIME }} -->
   <body class="activity-stream">

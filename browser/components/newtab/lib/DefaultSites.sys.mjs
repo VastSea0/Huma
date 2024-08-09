@@ -6,49 +6,39 @@ const DEFAULT_SITES_MAP = new Map([
   // This first item is the global list fallback for any unexpected geos
   [
     "",
-    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
-
-     
+    "https://www.youtube.com/,https://www.facebook.com/,https://www.wikipedia.org/,https://www.reddit.com/,https://www.amazon.com/,https://twitter.com/",
   ],
   [
     "US",
-    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
-
+    "https://www.youtube.com/,https://www.facebook.com/,https://www.amazon.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
   ],
   [
     "CA",
-    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
-
+    "https://www.youtube.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://www.amazon.ca/,https://twitter.com/",
   ],
   [
     "DE",
-    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
-
+    "https://www.youtube.com/,https://www.facebook.com/,https://www.amazon.de/,https://www.ebay.de/,https://www.wikipedia.org/,https://www.reddit.com/",
   ],
   [
     "PL",
-    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
-
+    "https://www.youtube.com/,https://www.facebook.com/,https://allegro.pl/,https://www.wikipedia.org/,https://www.olx.pl/,https://www.wykop.pl/",
   ],
   [
     "RU",
-    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
-
+    "https://vk.com/,https://www.youtube.com/,https://ok.ru/,https://www.avito.ru/,https://www.aliexpress.com/,https://www.wikipedia.org/",
   ],
   [
     "GB",
-    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
-
+    "https://www.youtube.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.amazon.co.uk/,https://www.bbc.co.uk/,https://www.ebay.co.uk/",
   ],
   [
     "FR",
-    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
-
+    "https://www.youtube.com/,https://www.facebook.com/,https://www.wikipedia.org/,https://www.amazon.fr/,https://www.leboncoin.fr/,https://twitter.com/",
   ],
   [
     "CN",
-    "https://humatarayici.com/ ,https://egehan.netlify.app/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/",
-
+    "https://www.baidu.com/,https://www.zhihu.com/,https://www.ifeng.com/,https://weibo.com/,https://www.ctrip.com/,https://www.iqiyi.com/",
   ],
 ]);
 

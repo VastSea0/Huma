@@ -1,10 +1,5 @@
 [
   {
-    "domains": ["vastseablog.com", "vastsea.com.tr", "opensoda.vercell.app","humatarayici.com"],
-    "image_url": "images/about-logo.png",
-    "favicon_url": "images/about-logo.png"
-  },
-  {
     "domains": ["adidas.co.uk", "adidas.de", "adidas.fr"],
     "image_url": "images/adidas@2x.png",
     "favicon_url": "favicons/adidas.png"

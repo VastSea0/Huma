@@ -4,8 +4,12 @@
 
 import { connect } from "react-redux";
 import { LinkMenu } from "content-src/components/LinkMenu/LinkMenu";
+import { LocationSearch } from "content-src/components/Weather/LocationSearch";
 import { actionCreators as ac, actionTypes as at } from "common/Actions.mjs";
 import React from "react";
+
+const VISIBLE = "visible";
+const VISIBILITY_CHANGE_EVENT = "visibilitychange";
 
 export class _Weather extends React.PureComponent {
   constructor(props) {
@@ -14,11 +18,129 @@ export class _Weather extends React.PureComponent {
       contextMenuKeyboard: false,
       showContextMenu: false,
       url: "https://example.com",
+      impressionSeen: false,
+      errorSeen: false,
+    };
+    this.setImpressionRef = element => {
+      this.impressionElement = element;
+    };
+    this.setErrorRef = element => {
+      this.errorElement = element;
     };
     this.onClick = this.onClick.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
     this.onUpdate = this.onUpdate.bind(this);
     this.onProviderClick = this.onProviderClick.bind(this);
+  }
+
+  componentDidMount() {
+    const { props } = this;
+
+    if (!props.dispatch) {
+      return;
+    }
+
+    if (props.document.visibilityState === VISIBLE) {
+      // Setup the impression observer once the page is visible.
+      this.setImpressionObservers();
+    } else {
+      // We should only ever send the latest impression stats ping, so remove any
+      // older listeners.
+      if (this._onVisibilityChange) {
+        props.document.removeEventListener(
+          VISIBILITY_CHANGE_EVENT,
+          this._onVisibilityChange
+        );
+      }
+
+      this._onVisibilityChange = () => {
+        if (props.document.visibilityState === VISIBLE) {
+          // Setup the impression observer once the page is visible.
+          this.setImpressionObservers();
+          props.document.removeEventListener(
+            VISIBILITY_CHANGE_EVENT,
+            this._onVisibilityChange
+          );
+        }
+      };
+      props.document.addEventListener(
+        VISIBILITY_CHANGE_EVENT,
+        this._onVisibilityChange
+      );
+    }
+  }
+
+  componentWillUnmount() {
+    // Remove observers on unmount
+    if (this.observer && this.impressionElement) {
+      this.observer.unobserve(this.impressionElement);
+    }
+    if (this.observer && this.errorElement) {
+      this.observer.unobserve(this.errorElement);
+    }
+    if (this._onVisibilityChange) {
+      this.props.document.removeEventListener(
+        VISIBILITY_CHANGE_EVENT,
+        this._onVisibilityChange
+      );
+    }
+  }
+
+  setImpressionObservers() {
+    if (this.impressionElement) {
+      this.observer = new IntersectionObserver(this.onImpression.bind(this));
+      this.observer.observe(this.impressionElement);
+    }
+    if (this.errorElement) {
+      this.observer = new IntersectionObserver(this.onError.bind(this));
+      this.observer.observe(this.errorElement);
+    }
+  }
+
+  onImpression(entries) {
+    if (this.state) {
+      const entry = entries.find(e => e.isIntersecting);
+
+      if (entry) {
+        if (this.impressionElement) {
+          this.observer.unobserve(this.impressionElement);
+        }
+
+        this.props.dispatch(
+          ac.OnlyToMain({
+            type: at.WEATHER_IMPRESSION,
+          })
+        );
+
+        // Stop observing since element has been seen
+        this.setState({
+          impressionSeen: true,
+        });
+      }
+    }
+  }
+
+  onError(entries) {
+    if (this.state) {
+      const entry = entries.find(e => e.isIntersecting);
+
+      if (entry) {
+        if (this.errorElement) {
+          this.observer.unobserve(this.errorElement);
+        }
+
+        this.props.dispatch(
+          ac.OnlyToMain({
+            type: at.WEATHER_LOAD_ERROR,
+          })
+        );
+
+        // Stop observing since element has been seen
+        this.setState({
+          errorSeen: true,
+        });
+      }
+    }
   }
 
   openContextMenu(isKeyBoard) {
@@ -71,7 +193,7 @@ export class _Weather extends React.PureComponent {
 
     const { showContextMenu } = this.state;
 
-    const WEATHER_SUGGESTION = this.props.Weather.suggestions?.[0];
+    const { props } = this;
 
     const {
       className,
@@ -79,21 +201,24 @@ export class _Weather extends React.PureComponent {
       dispatch,
       eventSource,
       shouldSendImpressionStats,
-    } = this.props;
-    const { props } = this;
+      Prefs,
+      Weather,
+    } = props;
+
+    const WEATHER_SUGGESTION = Weather.suggestions?.[0];
     const isContextMenuOpen = this.state.activeCard === index;
 
     const outerClassName = [
       "weather",
       className,
-      isContextMenuOpen && "active",
+      isContextMenuOpen && !Weather.searchActive && "active",
       props.placeholder && "placeholder",
+      Weather.searchActive && "search",
     ]
       .filter(v => v)
       .join(" ");
 
-    const showDetailedView =
-      this.props.Prefs.values["weather.display"] === "detailed";
+    const showDetailedView = Prefs.values["weather.display"] === "detailed";
 
     // Note: The temperature units/display options will become secondary menu items
     const WEATHER_SOURCE_CONTEXT_MENU_OPTIONS = [
@@ -110,10 +235,11 @@ export class _Weather extends React.PureComponent {
       "OpenLearnMoreURL",
     ];
 
-    // Only return the widget if we have data. Otherwise, show error state
-    if (WEATHER_SUGGESTION) {
+    if (Weather.searchActive) {
+      return <LocationSearch outerClassName={outerClassName} />;
+    } else if (WEATHER_SUGGESTION) {
       return (
-        <div className={outerClassName}>
+        <div ref={this.setImpressionRef} className={outerClassName}>
           <div className="weatherCard">
             <a
               data-l10n-id="newtab-weather-see-forecast"
@@ -140,7 +266,7 @@ export class _Weather extends React.PureComponent {
                 </div>
                 <div className="weatherCityRow">
                   <span className="weatherCity">
-                    {WEATHER_SUGGESTION.city_name}
+                    {Weather.locationData.city}
                   </span>
                 </div>
                 {showDetailedView ? (
@@ -201,17 +327,18 @@ export class _Weather extends React.PureComponent {
               </button>
             </div>
           </div>
-          <span
-            data-l10n-id="newtab-weather-sponsored"
-            data-l10n-args='{"provider": "AccuWeather"}'
-            className="weatherSponsorText"
-          ></span>
+          <span className="weatherSponsorText">
+            <span
+              data-l10n-id="newtab-weather-sponsored"
+              data-l10n-args='{"provider": "AccuWeather"}'
+            ></span>
+          </span>
         </div>
       );
     }
 
     return (
-      <div className={outerClassName}>
+      <div ref={this.setErrorRef} className={outerClassName}>
         <div className="weatherNotAvailable">
           <span className="icon icon-small-spacer icon-info-critical" />{" "}
           <span data-l10n-id="newtab-weather-error-not-available"></span>
@@ -224,4 +351,6 @@ export class _Weather extends React.PureComponent {
 export const Weather = connect(state => ({
   Weather: state.Weather,
   Prefs: state.Prefs,
+  IntersectionObserver: globalThis.IntersectionObserver,
+  document: globalThis.document,
 }))(_Weather);
