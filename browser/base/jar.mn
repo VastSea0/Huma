@@ -105,3 +105,4 @@ browser.jar:
 
 # L10n resources and overrides.
 % override chrome://global/locale/appstrings.properties chrome://browser/locale/appstrings.properties
+#include content/huma-scripts.jar.inc.mn

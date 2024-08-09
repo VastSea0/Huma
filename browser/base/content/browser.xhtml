@@ -127,6 +127,7 @@
   Services.scriptloader.loadSubScript("chrome://browser/content/search/searchbar.js", this);
   Services.scriptloader.loadSubScript("chrome://browser/content/shopping/shopping-sidebar.js", this);
 
+
   window.onload = gBrowserInit.onLoad.bind(gBrowserInit);
   window.onunload = gBrowserInit.onUnload.bind(gBrowserInit);
   window.onclose = WindowIsClosing;
@@ -141,11 +142,13 @@
   window.addEventListener("DOMContentLoaded",
     gBrowserInit.onDOMContentLoaded.bind(gBrowserInit), { once: true });
 </script>
+#include huma-scripts.inc.xhtml
 </head>
 <html:body xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 # All sets except for popupsets (commands, keys, and stringbundles)
 # *must* go into the browser-sets.inc file so that they can be shared with other
 # top level windows in macWindow.inc.xhtml.
+
 #include browser-sets.inc
 
 #include main-popupset.inc.xhtml

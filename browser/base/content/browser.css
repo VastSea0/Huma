@@ -1,7 +1,3 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-
 @namespace html url("http://www.w3.org/1999/xhtml");
 
 :root,
@@ -13,6 +9,7 @@ body {
   overflow: clip;
 }
 
+
 :root {
   text-rendering: optimizeLegibility;
   min-height: 95px;
@@ -22,6 +19,13 @@ body {
   --browser-stack-z-index-devtools-splitter: 1;
   --browser-stack-z-index-dialog-stack: 2;
   --browser-stack-z-index-rdm-toolbar: 3;
+  --huma-sidebar-width: 300px;
+  --huma-sidebar-max-width: 720px;
+ 
+  --huma-sidebar-header-height: 10px;
+  --huma-sidebar-footer-height: 30px;
+ 
+  --huma-sidebar-transition-duration: 0.3s;
 }
 
 :root:-moz-locale-dir(rtl) {
@@ -1334,7 +1338,6 @@ toolbar[keyNav=true]:not([collapsed=true], [customizing=true]) toolbartabstop {
 :root[window-modal-open] .browserStack > .dialogStack {
   visibility: hidden;
 }
-
 /**
  * End Dialogs
  */
@@ -1418,8 +1421,10 @@ HümaBar Styles...
 /* Genel stiller */
 #humabar-header {
   padding-top: 40px;
+  
 }
-
+ 
+ 
 #humabar-box > vbox {
   display: flex;
   flex-direction: column;
@@ -1462,117 +1467,180 @@ HümaBar Styles...
   scrollbar-width: thin;
 }
 
-/* Genel stiller */
-#web-panel {
-  position: relative;
-  transition: height 0.5s ease, opacity 0.5s ease;
-  max-width: 18em;
-  overflow: hidden;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#web-panel.active {
-  height: 60%;
-  opacity: 1;
-}
-
-#web-content {
-  width: 100%;
-  height: 100%;
-}
-
-#web-panel-title {
-  padding: 10px 0;
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-#close-web-panel {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  width: 24px;
-  height: 24px;
-  color: inherit;
-  transition: color 0.3s ease;
-}
-
-#close-web-panel:hover {
-  color: #ff0000;
-}
-
+ 
 
 
 /* Koyu tema */
 @media (prefers-color-scheme: dark) {
-  #web-panel {
-    background-color: rgba(40, 44, 52);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+ 
+  #huma-sidebar-web-panel-browser-containers {
+    flex: 1;
+    background-color: #2A2A2E;
+   
+    
   }
-
-  #web-panel-title {
-    color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  #huma-sidebar-web-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #2A2A2E;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
   }
-
-  #web-content {
-    background-color: rgba(40, 44, 52);
-  }
-
-  #close-web-panel {
-    color: white;
-  }
-
-  #web-panel button {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-  }
-
-  #web-panel button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-
-  #web-panel > vbox::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.3);
+  #huma-sidebar-web-panel-splitter {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    height: 100%;
+    width: 4px;
+    cursor: ew-resize;
+    background-color: black ;
   }
 }
 
 /* Açık tema */
 @media (prefers-color-scheme: light) {
-  #web-panel {
-    background-color: rgba(255, 255, 255);
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  #web-panel-title {
-    color: black;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  #web-content {
-    background-color: rgba(255, 255, 255);
-  }
-
-  #close-web-panel {
-    color: black;
-  }
-
-  #web-panel button {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #000000;
-  }
-
-  #web-panel button:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
+ 
 
   #web-panel > vbox::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.3);
   }
+  #huma-sidebar-web-panel-browser-containers {
+    flex: 1;
+    background-color: rgba(255, 255, 255);
+   
+    
+  }
+  #huma-sidebar-web-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255);
+    padding-left: 10px;
+    padding-top: 10px;
+    
+  }
+   
+#huma-sidebar-web-panel-splitter {
+  position: absolute;
+  top: 0;
+  left: -4px;
+  height: 100%;
+  width: 4px;
+  cursor: ew-resize;
+  background-color:rgba(255, 255, 255) ;
+}
+
+}
+
+/** Sidebar view */
+#huma-sidebar-web-panel-wrapper {
+  height: 100%;
+  width: 450px;
+  max-width:  750px;
+  min-width:  250px;
+  display: flex;
+  flex-direction: column;
+ 
+   
+}
+
+#huma-sidebar-web-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+ 
+  padding-left: 10px;
+  padding-top: 10px;
+  
+}
+
+#huma-sidebar-web-header {
+  max-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+.web-panel-button-group {
+  max-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+#huma-sidebar-web-panel-title {
+  font-size: 16px;
+  text-align: center;
+  flex: 1;
+  overflow: hidden;
+ 
+  white-space: nowrap;
+   
+}
+
+
+
+#huma-sidebar-web-panel browser[huma-sidebar-id] {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+ 
+}
+
+ 
+ 
+ 
+ 
+
+ 
+#huma-sidebar-web-panel-splitter {
+
+  appearance: none;
+  width: 6px;
+  background-color: -moz-dialog;
+  border: 1px ThreeDShadow;
+  border-style: none solid;
+  
+}
+
+ 
+ 
+
+#humabar-box   {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  max-width: 50px;
+  min-width: 40px;
+}
+
+
+ 
+ 
+
+.huma-sidebar-panel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.huma-sidebar-introduction-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #2A2A2E;
 }
