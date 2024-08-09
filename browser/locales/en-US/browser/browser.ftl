@@ -1020,3 +1020,11 @@ popup-warning-button =
 #   $popupURI (String): the URI for the pop-up window
 popup-show-popup-menuitem =
     .label = “{ $popupURI }” penceresini göster
+
+ua-link = https://github.com/VastSea0/Huma/wiki/H%C3%BCma-Web-Uygulamalar%C4%B1-B%C3%B6lmesi#kullan%C4%B1m
+huma-sidebar-introduction-title = Hüma'ya hoşgeldin!
+huma-sidebar-introduction-description = Burayı yeni mi gördün? Burada harika "WebApp"lerin çalışacaklar... \n Eğer bir görünütülenmede bir sorun olursa lütfen Ev düğmesine tıkla, her hangi bir sorunda bize ulaşmaktan çekinme
+huma-new-web-panel-url = Özel URL gir.
+huma-new-web-panel-user-agent =  Mobil görünüme sahip mi olacak?
+
+huma-web-side-panel-context-add-to-panel = Bu siteyi panele ekle

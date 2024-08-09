@@ -205,6 +205,7 @@ function init_all() {
   register_module("panePrivacy", gPrivacyPane);
   register_module("paneContainers", gContainersPane);
   register_module("paneHuma", gMoreFromHuma);
+  register_module("paneHumaBar", gHumaBar);
 
   if (Services.prefs.getBoolPref("browser.translations.newSettingsUI.enable")) {
     register_module("paneTranslations", gTranslationsPane);

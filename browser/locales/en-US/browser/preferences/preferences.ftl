@@ -526,7 +526,21 @@ home-new-windows-tabs-description2 = Giriş sayfanızı, yeni pencereleri ve yen
 
 home-homepage-mode-label = Giriş sayfası ve yeni pencereler
 home-newtabs-mode-label = Yeni sekmeler
-huma-ozel-sayfalari = Hüma'dan daha fazlası
+
+pane-humabar-title = Kenar Çubuğunu Düzenle
+
+pane-huma-title = Hüma hakkında
+
+category-humabar =
+    .tooltiptext = { pane-humabar-title }
+
+category-more-from-huma =
+    .tooltiptext = { pane-huma-title }
+
+ 
+
+
+ 
 home-newtabs-mode-label-huma = Hüma Türk Tarihi Kitabı CLT1 - Deneysel (PDF)
 home-newtabs-mode-label-huma-on-new-tab = Hüma Türk Tarihi Web Sayfası
 huma-tarih = Hüma Tarih ve Mitoloji Kütüphanesi
