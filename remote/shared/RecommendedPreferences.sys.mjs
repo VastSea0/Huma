@@ -137,7 +137,7 @@ const COMMON_PREFERENCES = new Map([
   //
   // These should also be set in the profile prior to starting Firefox,
   // as it is picked up at runtime.
-  ["browser.shell.checkDefaultBrowser", false],
+  ["browser.shell.checkDefaultBrowser", true],
 
   // Disable session restore infobar
   ["browser.startup.couldRestoreSession.count", -1],
