@@ -14,7 +14,7 @@ ChromeUtils.defineESModuleGetters(this, {
 });
 
 const EN_US_TOPSITES =
-  "https://www.youtube.com/,https://www.facebook.com/,https://www.amazon.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/";
+  "https://humatarayici.com/docs/ ,https://www.artadosearch.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/";
 
 function snapshotHistograms() {
   Services.telemetry.clearScalars();
