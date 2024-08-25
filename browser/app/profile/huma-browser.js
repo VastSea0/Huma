@@ -80,6 +80,23 @@ pref('browser.migrate.vivaldi.enabled', true);
 pref('browser.migrate.opera-gx.enabled', true);
 pref('browser.migrate.opera.enabled', true);
 
- 
+// Look N Feel Prefs
+pref('huma.preference.colors', "{\"palette1\":{\"paletteName\":\"Leylak\",\"backgroundColor\":\"#B7A3E0\",\"pagePaneColor\":\"#9370DB\"},\"palette2\":{\"paletteName\":\"Safran\",\"backgroundColor\":\"#F1C66F\",\"pagePaneColor\":\"#DAA520\"},\"palette3\":{\"paletteName\":\"G�ky�z�\",\"backgroundColor\":\"#6C9DCE\",\"pagePaneColor\":\"#4682B4\"},\"palette4\":{\"paletteName\":\"F\u0131st\u0131k\",\"backgroundColor\":\"#5BD99A\",\"pagePaneColor\":\"#3CB371\"},\"palette5\":{\"paletteName\":\"Mercan\",\"backgroundColor\":\"#E68989\",\"pagePaneColor\":\"#CD5C5C\"},\"palette6\":{\"paletteName\":\"Bordo\",\"backgroundColor\":\"#B21818\",\"pagePaneColor\":\"#8B0000\"},\"palette7\":{\"paletteName\":\"Turkuaz\",\"backgroundColor\":\"#5AD1C9\",\"pagePaneColor\":\"#20B2AA\"},\"palette8\":{\"paletteName\":\"Lavanta\",\"backgroundColor\":\"#B17BB6\",\"pagePaneColor\":\"#8E4585\"},\"palette9\":{\"paletteName\":\"Kivi\",\"backgroundColor\":\"#8FBF4D\",\"pagePaneColor\":\"#6B8E23\"}}");
+pref('huma.preference.page.palette', "{\"palette\":[{\"backgroundColor\":\"#B7A3E0\",\"pagePaneColor\":\"#9370DB\"}]");
 
- 
+pref('huma.preference.humabar.mode', "ince");
+
+pref('huma.tabs.vertical.right-side', false);
+pref('huma.view.sidebar-expanded.on-hover', false);
+pref('huma.view.compact', false);
+pref('huma.view.sidebar-expanded', false);
+pref('huma.tabs.vertical', true);
+
+
+pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+pref("general.smoothScroll.msdPhysics.enabled", true);
+pref("ui.key.menuAccessKeyFocuses", false);
+pref("extensions.pocket.enabled", false);
+pref("browser.tabs.closeWindowWithLastTab", false);
+pref("layout.css.backdrop-filter.enabled", true);
+pref("browser.urlbar.trimHttps", true);
