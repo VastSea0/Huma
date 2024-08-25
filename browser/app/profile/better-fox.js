@@ -156,18 +156,7 @@ pref("dom.private-attribution.submission.enabled", false);
 /****************************************************************************
  * SECTION: PESKYFOX                                                        *
 ****************************************************************************/
-/** MOZILLA UI ***/
-pref("browser.privatebrowsing.vpnpromourl", "");
-pref("extensions.getAddons.showPane", false);
-pref("extensions.htmlaboutaddons.recommendations.enabled", false);
-pref("browser.discovery.enabled", false);
-pref("browser.shell.checkDefaultBrowser", false);
-pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
-pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
-pref("browser.preferences.moreFromMozilla", false);
-pref("browser.tabs.tabmanager.enabled", false);
-pref("browser.aboutConfig.showWarning", false);
-pref("browser.aboutwelcome.enabled", false);
+ 
 
 /** THEME ADJUSTMENTS ***/
 pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
