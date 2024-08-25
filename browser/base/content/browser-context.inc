@@ -131,6 +131,8 @@
       <menuseparator id="context-sep-sendlinktodevice" class="sync-ui-item"
                 hidden="true"/>
       <menuseparator id="context-sep-copylink"/>
+     
+
       <menuitem id="context-media-play"
                 data-l10n-id="main-context-menu-media-play"
                 oncommand="gContextMenu.mediaCommand('play');"/>
@@ -143,6 +145,31 @@
       <menuitem id="context-media-unmute"
                 data-l10n-id="main-context-menu-media-unmute"
                 oncommand="gContextMenu.mediaCommand('unmute');"/>
+
+
+      <menu id="context-humaAddToWebPanel" data-l10n-id="main-context-menu-humabar">
+        <menupopup>
+            <menuitem id="context-humaAddToWebPanel"
+                data-l10n-id="main-context-menu-humabar-reload"
+                oncommand="gContextMenu.humaContext('reload-humabar');"/>
+            <menuitem id="context-humaAddToWebPanel"
+                data-l10n-id="main-context-menu-humabar-open"
+                oncommand="gContextMenu.humaContext('open-humabar');"/>
+            <menuitem id="context-humaAddToWebPanel"
+                data-l10n-id="main-context-menu-humabar-close"
+                oncommand="gContextMenu.humaContext('close-humabar');"/>
+            <menuitem id="context-humaAddToWebPanel"
+                data-l10n-id="main-context-menu-humabar-min"
+                oncommand="gContextMenu.humaContext('minimize-humabar');"/>
+            <menuitem id="context-humaAddToWebPanel"
+                data-l10n-id="main-context-menu-humabar-max"
+                oncommand="gContextMenu.humaContext('maximize-humabar');"/>
+        </menupopup>
+      </menu>
+
+
+     
+
       <menu id="context-media-playbackrate" data-l10n-id="main-context-menu-media-play-speed-2">
         <menupopup>
           <menuitem id="context-media-playbackrate-050x"
