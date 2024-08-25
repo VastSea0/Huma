@@ -21,7 +21,8 @@ ChromeUtils.defineESModuleGetters(this, {
 });
 
 const EN_US_TOPSITES =
-  "https://www.youtube.com/,https://www.facebook.com/,https://www.amazon.com/,https://www.reddit.com/";
+"https://humatarayici.com/docs/ ,https://www.artadosearch.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.wikipedia.org/,https://twitter.com/";
+
 const OUR_TOPSITE_URL = "https://example.com/";
 const REF_TOPSITE_URL = OUR_TOPSITE_URL + "#someref";
 const TOPSITES_COUNT = EN_US_TOPSITES.split(",").length + 1;
