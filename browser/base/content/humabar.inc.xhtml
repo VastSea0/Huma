@@ -10,38 +10,39 @@
     <vbox id="huma-sidebar-web-panel-browser-containers">
       <vbox id="huma-sidebar-introduction-panel" hidden="true" >
         <vbox class="huma-sidebar-home-panel">
+          <!--
           <html:center>
             <image class="humabar-button-icon" src="chrome://branding/content/about-logo.png" role="presentation" />
           </html:center>
         
           <html:h1 data-l10n-id="huma-sidebar-introduction-title"/>
-          <html:p data-l10n-id="huma-sidebar-introduction-description"/>
-
+          <html:p data-l10n-id="huma-sidebar-introduction-description"/> 
+          -->
         </vbox>
       
       </vbox>
     </vbox>
-    <hbox class="web-panel-button-group">
-      <toolbarbutton id="huma-sidebar-web-panel-back" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.back();">
-        <image style="width: 32px; height: 32px;" src="chrome://browser/skin/back.svg" role="presentation" />
+    <hbox id="web-panel-button-group" class="web-panel-button-group">
+      <toolbarbutton  style="width: 48px; height: 48px; padding-left: 10px"  id="huma-sidebar-web-panel-back" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.back();">
+        <image style="width: 32px; height: 32px;" class="humabar-button-icon" src="chrome://browser/skin/back.svg" role="presentation" />
 
       </toolbarbutton> 
-      <toolbarbutton id="huma-sidebar-web-panel-forward" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.forward();">
+      <toolbarbutton  style="width: 48px; height: 48px; padding-left: 10px"   id="huma-sidebar-web-panel-forward" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.forward();">
       <image style="width: 32px; height: 32px;" src="chrome://browser/skin/forward.svg" role="presentation" />
         
       </toolbarbutton>
-      <toolbarbutton id="huma-sidebar-web-panel-reload" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.reload();">
-      <image style="width: 32px; height: 32px;" src="chrome://global/skin/icons/reload.svg" role="presentation" />
+      <toolbarbutton  style="width: 48px; height: 48px; padding-left: 10px"  id="huma-sidebar-web-panel-reload" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.reload();">
+      <image style="width: 32px; height: 32px;" class="humabar-button-icon" src="chrome://global/skin/icons/reload.svg" role="presentation" />
         
       </toolbarbutton>
 
-      <toolbarbutton id="huma-sidebar-web-panel-home" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.home();">
-      <image style="width: 32px; height: 32px;" src="chrome://browser/skin/home.svg" role="presentation" />
+      <toolbarbutton  style="width: 48px; height: 48px; padding-left: 10px"   id="huma-sidebar-web-panel-home" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.home();">
+      <image style="width: 32px; height: 32px;" class="humabar-button-icon" src="chrome://browser/skin/home.svg" role="presentation"  />
         
       </toolbarbutton>
 <!--<toolbarbutton id="huma-sidebar-web-panel-pinned" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.togglePinned(this);"/>-->
-      <toolbarbutton id="huma-sidebar-web-panel-close" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.close();">
-      <image style="width: 32px; height: 32px;" src="chrome://global/skin/icons/close.svg" role="presentation" />
+      <toolbarbutton  style="width: 48px; height: 48px; padding-left: 10px"  id="huma-sidebar-web-panel-close" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.close();">
+      <image style="width: 32px; height: 32px;" class="humabar-button-icon" src="chrome://global/skin/icons/close.svg" role="presentation" />
         
       </toolbarbutton>
       
@@ -53,107 +54,73 @@
 
 
 
-<vbox id="humabar-box" class="chromeclass-extrachrome">
-  <toolbarbutton id="humabar-settings-button" class="humabar-button" oncommand="openPreferences();"
-  tooltiptext="Ayarları Aç">
-  <image class="humabar-button-icon" src="chrome://global/skin/icons/settings.svg" role="presentation" />
-</toolbarbutton>
-    <vbox flex="1"  id="humabar-items" pack="center">
-      
-      
-
-      <html:p>Helo</html:p>
-      <!-- 
-      <toolbarbutton id="huma-sidebar-web-panel-close" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.toggle();">
- 
-        <image class="humabar-button-icon" src="chrome://branding/content/about-logo.png" role="presentation" />
-      </toolbarbutton>
-      <toolbarbutton id="huma-sidebar-web-panel-close" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.open();">
- 
-        <image class="humabar-button-icon" src="chrome://branding/content/about-logo.png" role="presentation" />
-      </toolbarbutton>
-  -->
-      
-   
-  
-
-  
+<vbox id="humabar-box" class="chromeclass-extrachrome" align="center" >
+<html:div id="hbbox">
+  <vbox flex="1"  id="humabar-items"  align="center" pack="center">
     
-        
-       
-      
-      <toolbarbutton id="humabar-bookmarks-button" class="humabar-button"
-      oncommand="gHumaBrowserManagerSidebar.openWebPanel('chrome://browser/content/places/bookmarksSidebar.xhtml', 'Yerimleri')" tooltiptext="Yer İmleri Yöneticisini Aç">
-      <image class="humabar-button-icon" src="chrome://browser/skin/bookmark.svg" role="presentation" />
-    </toolbarbutton>
+    <toolbarbutton id="humabar-settings-button" class="humabar-button" oncommand="openPreferences();"
+    tooltiptext="Ayarları Aç">
+    <image class="humabar-button-icon" src="chrome://global/skin/icons/settings.svg" role="presentation" />
+  </toolbarbutton>
+    <!-- 
+    <toolbarbutton id="huma-sidebar-web-panel-close" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.toggle();">
 
-    <toolbarbutton id="humabar-history-button" label="Geçmiş"
-      oncommand="gHumaBrowserManagerSidebar.openWebPanel('chrome://browser/content/places/historySidebar.xhtml', 'Geçmiş');" class="humabar-button" tooltiptext="Geçmişi aç">
-      <image class="humabar-button-icon" src="chrome://browser/skin/history.svg" role="presentation" />
-    </toolbarbutton>
-
-    
-    <toolbarbutton id="humabar-downloads-button" class="humabar-button" 
-      oncommand="gHumaBrowserManagerSidebar.openWebPanel('about:downloads', 'İndirilenler');"
-      tooltiptext="İndirilenler">
-      <image class="humabar-button-icon" src="chrome://browser/skin/downloads/downloads.svg" role="presentation" />
-    </toolbarbutton>
-    
-      <toolbarbutton  id="huma-sidebar-add-panel-button" class=" chromeclass-toolbar-additional humabar-button"  onclick="gHumaBrowserManagerSidebar._openAddPanelDialog();" >
-        <image class="humabar-button-icon" src="chrome://global/skin/icons/plus.svg" role="presentation" />
-        
-      </toolbarbutton> 
-      <html:hr />
-      <vbox id="humabar-extensions-container" flex="1" align="center" pack="center">
-        <label value="Eklentiler"></label>
-        <vbox id="humabar-extensions-list"></vbox>
-      </vbox>
-     
-      <toolbarbutton id="refresh-extensions-button" class="humabar-button" 
-                    oncommand="gHumaBrowserManagerSidebar.populateExtensionsList();" tooltiptext="Eklentileri Yenile">
-                    <image style="width: 32px; height: 32px;" src="chrome://global/skin/icons/reload.svg" role="presentation" />
-
-
-
-      </toolbarbutton>
-  
-       <!-- 
-
-      Diğer toolbarbutonlar 
-
-      <toolbarbutton id="humabar-todo-button" class="humabar-button" 
-      oncommand="gHumaBrowserManagerSidebar.openWebPanel('chrome://browser/content/humaBarNoteContainer.html', 'Yapılacaklar');"
-      tooltiptext="Yapılacaklar listesi">
       <image class="humabar-button-icon" src="chrome://branding/content/about-logo.png" role="presentation" />
     </toolbarbutton>
+    <toolbarbutton id="huma-sidebar-web-panel-close" class="toolbarbutton-1 humabar-button chromeclass-toolbar-additional" oncommand="gHumaBrowserManagerSidebar.open();">
 
-    
-    <toolbarbutton id="humabar-todo-button" class="humabar-button" 
-    oncommand="gHumaBrowserManagerSidebar.openWebPanel('https://google.com', 'helo');"
-    tooltiptext="Yapılacaklar listesi">
-    <image class="humabar-button-icon" src="chrome://branding/content/about-logo.png" role="presentation" />
+      <image class="humabar-button-icon" src="chrome://branding/content/about-logo.png" role="presentation" />
+    </toolbarbutton>
+-->
+  
+    <toolbarbutton id="humabar-bookmarks-button" class="humabar-button"
+    oncommand="gHumaBrowserManagerSidebar.openWebPanel('chrome://browser/content/places/bookmarksSidebar.xhtml', 'Yerimleri')" tooltiptext="Yer İmleri Yöneticisini Aç">
+    <image class="humabar-button-icon" src="chrome://browser/skin/bookmark.svg" role="presentation" />
   </toolbarbutton>
 
+  <toolbarbutton id="humabar-history-button" label="Geçmiş"
+    oncommand="gHumaBrowserManagerSidebar.openWebPanel('chrome://browser/content/places/historySidebar.xhtml', 'Geçmiş');" class="humabar-button" tooltiptext="Geçmişi aç">
+    <image class="humabar-button-icon" src="chrome://browser/skin/history.svg" role="presentation" />
+  </toolbarbutton>
 
-      <toolbarbutton id="humabar-todo-button" class="humabar-button" 
-        oncommand="gHumaBrowserManagerSidebar.openWebPanel('chrome://browser/content/humaBarNoteContainer.html', 'Yapılacaklar');"
-        tooltiptext="Yapılacaklar listesi">
-        <image class="humabar-button-icon" src="chrome://branding/content/about-logo.png" role="presentation" />
+  
+  <toolbarbutton id="humabar-downloads-button" class="humabar-button" 
+    oncommand="gHumaBrowserManagerSidebar.openWebPanel('about:downloads', 'İndirilenler');"
+    tooltiptext="İndirilenler">
+    <image class="humabar-button-icon" src="chrome://browser/skin/downloads/downloads.svg" role="presentation" />
+  </toolbarbutton>
+  
+  
+    <vbox id="humabar-extensions-container" flex="1" align="center" pack="center">
+    
+      <vbox id="humabar-extensions-list"></vbox>
+      <toolbarbutton id="refresh-extensions-button" class="humabar-button" 
+      oncommand="gHumaBrowserManagerSidebar.populateExtensionsList();" tooltiptext="Eklentileri Yenile">
+      <image src="chrome://global/skin/icons/reload.svg" role="presentation" />
       </toolbarbutton>
+    
+    
+    </vbox>
+  
 
-      <toolbarbutton id="humabar-protections-button" class="humabar-button" 
-        oncommand="gHumaBrowserManagerSidebar.openWebPanel('about:protections', 'Korumalar');"
-        tooltiptext="Korumalar">
-        <image class="humabar-button-icon" src="chrome://browser/skin/controlcenter/dashboard.svg" role="presentation" />
-      </toolbarbutton>
+  <vbox mode="icons" flex="1" id="huma-sidebar-panels-sites-container"  pack="center"  align="center" >
+    
+  </vbox>
+
+  <vbox flex="1"  id="humabar-item-settings" pack="center" align="center"  >
+    <toolbarbutton  id="huma-sidebar-add-panel-button" class=" chromeclass-toolbar-additional humabar-button"  onclick="gHumaBrowserManagerSidebar._openAddPanelDialog();" >
+      <image class="humabar-button-icon" src="chrome://global/skin/icons/plus.svg" role="presentation" />
       
-    -->
-      
-    </vbox>
-    <box id="humabar-footer" align="center" pack="center">
-     
-    </box>
-    <vbox mode="icons" flex="1" id="huma-sidebar-panels-sites-container"  >
-          
-    </vbox>
+    </toolbarbutton>
+  </vbox>
+
+  
+  </vbox>
+ 
+ 
+  
+  
+
+</html:div>
+    
 </vbox>

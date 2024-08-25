@@ -4,69 +4,93 @@
 
 <!-- More From Mozilla panel -->
 
-<script src="chrome://browser/content/preferences/humabar.js"/>
+
 <script src="chrome://browser/content/HumaSidebarManager.mjs"/>
 
+<script src="chrome://browser/content/preferences/humabar.js" />
+<script src="chrome://browser/content/nsContextMenu.js" />
+
+
 <html:style>
-    .humabar-buttons {
-    
-        border: none;
-        
-        text-align: left;
-        padding: 10px 20px;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 5px 0;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: background-color 0.3s, transform 0.3s;
-      }
-      .humabar-buttons:hover {
-     
-        transform: scale(1.02);
-      }
-      .humabar-buttons:active {
-       
-        transform: scale(0.98);
-      }
-      .delete-button {
-        background-color: red;
-        border: none;
-         
-        padding: 10px;
-        margin-left: 10px;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-      }
-      .delete-button:hover {
-        background-color: darkred;
-      }
-      .button-container {
-        display: flex;
-        align-items: center;
-      }
+  .humabar-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .humabar-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding: 8px 0;
+  }
+  .humabar-cell {
+    flex: 1;
+    padding: 0 8px;
+  }
+  .humabar-buttons {
+    text-align: left;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #2a2a2e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  .humabar-buttons:hover {
+    background-color: #38383d;
+  }
+  .icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    margin: 0 2px;
+    color: #fff;
+  }
+  .icon-button:hover {
+    background-color: #38383d;
+  }
+  .create-button {
+    margin-top: 16px;
+    padding: 8px 16px;
+    background-color: #0060df;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .create-button:hover {
+    background-color: #003eaa;
+  }
+</html:style>
  
-    .humabar-icon {
-        width: 24px;
-        height: 24px;
-        margin-right: 10px;
-        vertical-align: middle;
-        fill: currentColor;
-    }
-      </html:style>
 <html:template id="template-paneHumaBar">
   <div id="humaCategory-header" hidden="true" data-category="paneHumaBar"></div>
-
   <groupbox id="humaBarPageGroup" data-category="paneHumaBar" hidden="true">
     <hbox style="display: flex; flex-direction: column; padding: 16px;">
-        <html:h1>
-        Helo
-        </html:h1>
-        <vbox mode="icons" flex="1" id="huma-sidebar-panels-sites-container"  >
+      <html:h1>Kenar Çubuğunu Düzenle</html:h1>
+      <html:h3>WebApp'leri düzenle</html:h3>
+      <html:div class="humabar-table" id="huma-sidebar-panels-sites-container">
+        <!-- Table rows will be dynamically inserted here -->
+      </html:div>
+       
+    </hbox>
+    <hbox style="display: flex; flex-direction: column; padding: 16px;">
+      <html:h3>Genişlik kipi</html:h3>
+      <html:div class="humabar-table" >
+        <html:div class="humabar-row" id="row" >
           
-        </vbox>
+        </html:div> 
+ 
+        
+
+      </html:div>
+       
     </hbox>
   </groupbox>
 </html:template>
+
+ 
