@@ -9,8 +9,6 @@ DIRS += [
     "screenshots",
     "webcompat",
     "huma-gezgini",
-    "huma-baslangic",
-    "artado-search",
     "report-site-issue",
     "pictureinpicture",
     "search-detection",
