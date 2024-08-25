@@ -48,3 +48,5 @@ treechildren::-moz-tree-image(checked) {
 treechildren::-moz-tree-image(partial) {
   list-style-image: url("chrome://global/skin/icons/check-partial.svg");
 }
+
+ 

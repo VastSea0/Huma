@@ -167,6 +167,7 @@
   skin/classic/browser/device-vr.svg                  (../shared/icons/device-vr.svg)
   skin/classic/browser/edit-cut.svg                   (../shared/icons/edit-cut.svg)
   skin/classic/browser/edit-paste.svg                 (../shared/icons/edit-paste.svg)
+  skin/classic/browser/eye-hide.svg                   (../shared/icons/eye-hide.svg)
   skin/classic/browser/fingerprint.svg                (../shared/icons/fingerprint.svg)
   skin/classic/browser/firefox-view.svg               (../shared/icons/firefox-view.svg)
   skin/classic/browser/flame.svg                      (../shared/icons/flame.svg)
@@ -176,6 +177,7 @@
   skin/classic/browser/fullscreen-exit.svg            (../shared/icons/fullscreen-exit.svg)
   skin/classic/browser/history.svg                    (../shared/icons/history.svg)
   skin/classic/browser/home.svg                       (../shared/icons/home.svg)
+  skin/classic/browser/humabar.svg                   (../shared/icons/humabar.svg)
   skin/classic/browser/import.svg                     (../shared/icons/import.svg)
 #ifndef MOZ_WIDGET_GTK
   skin/classic/browser/import-export.svg              (../shared/icons/import-export.svg)
