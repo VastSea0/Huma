@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renk Paleti Se�ici</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            transition: background-color 0.3s;
+        }
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            transition: background-color 0.3s;
+        }
+    
+        .palette-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .palette {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+       
+            box-shadow: 3px 0 7px rgba(0,0,0,0.5);
+        }
+        .palette-half {
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            padding: 5px;
+        }
+        .palette-name {
+            margin-top: 5px;
+            text-align: center;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .content-box {
+            background-color: #f1e9e9;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Kenar �ubu\u011fu</h2>
+        <ul>
+            <li>Men� �\u011fesi 1</li>
+            <li>Men� �\u011fesi 2</li>
+            <li>Men� �\u011fesi 3</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="content-box">
+            <h1>Renk Paleti Se�ici</h1>
+            <div class="palette-list" id="paletteList"></div>
+        </div>
+    </div>
+
+
+    <script>
+        const palettes ={
+  "palette1": {
+    "paletteName": "Leylak",
+    "backgroundColor": "#B7A3E0",
+    "pagePaneColor": "#9370DB"
+  },
+  "palette2": {
+    "paletteName": "Safran",
+    "backgroundColor": "#F1C66F",
+    "pagePaneColor": "#DAA520"
+  },
+  "palette3": {
+    "paletteName": "Gökyüzü",
+    "backgroundColor": "#6C9DCE",
+    "pagePaneColor": "#4682B4"
+  },
+  "palette4": {
+    "paletteName": "Fıstık",
+    "backgroundColor": "#5BD99A",
+    "pagePaneColor": "#3CB371"
+  },
+  "palette5": {
+    "paletteName": "Mercan",
+    "backgroundColor": "#E68989",
+    "pagePaneColor": "#CD5C5C"
+  },
+  "palette6": {
+    "paletteName": "Bordo",
+    "backgroundColor": "#B21818",
+    "pagePaneColor": "#8B0000"
+  },
+  "palette7": {
+    "paletteName": "Turkuaz",
+    "backgroundColor": "#5AD1C9",
+    "pagePaneColor": "#20B2AA"
+  },
+  "palette8": {
+    "paletteName": "Lavanta",
+    "backgroundColor": "#B17BB6",
+    "pagePaneColor": "#8E4585"
+  },
+  "palette9": {
+    "paletteName": "Kivi",
+    "backgroundColor": "#8FBF4D",
+    "pagePaneColor": "#6B8E23"
+  },
+  "palette10": {
+    "paletteName": "Gül Rengi",
+    "backgroundColor": "#F6C1C1",
+    "pagePaneColor": "#F4A7A7"
+  },
+  "palette11": {
+    "paletteName": "Mavi Yeşil",
+    "backgroundColor": "#A2D9CE",
+    "pagePaneColor": "#76C7C0"
+  },
+  "palette12": {
+    "paletteName": "Turuncu",
+    "backgroundColor": "#F5B05F",
+    "pagePaneColor": "#F4A33A"
+  },
+  "palette13": {
+    "paletteName": "Koyu Mor",
+    "backgroundColor": "#9A5D9D",
+    "pagePaneColor": "#8E3A77"
+  },
+  "palette14": {
+    "paletteName": "Deniz Mavisi",
+    "backgroundColor": "#8ABFDF",
+    "pagePaneColor": "#5D9BD1"
+  }
+}
+
+
+
+        const paletteList = document.getElementById('paletteList');
+
+        for (const [key, palette] of Object.entries(palettes)) {
+            const paletteElement = document.createElement('div');
+            paletteElement.className = 'palette';
+            paletteElement.innerHTML = `
+                <div class="palette-half" style="background-color: ${palette.backgroundColor};"></div>
+                <div class="palette-half" style="background-color: ${palette.pagePaneColor};"></div>
+
+            `;
+            paletteElement.addEventListener('click', () => applyPalette(palette));
+            paletteList.appendChild(paletteElement);
+        }
+
+        function applyPalette(palette) {
+            document.body.style.backgroundColor = palette.backgroundColor;
+            document.querySelector('.sidebar').style.backgroundColor = palette.pagePaneColor;
+            document.querySelector('.content-box').style.backgroundColor = palette.pagePaneColor;
+        }
+    </script>
+</body>
+</html>
