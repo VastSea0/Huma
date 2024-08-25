@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE window>
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        id="humaWebPanelSettings"
+        headerparent="humaWebPanelSettingsDialog"
+        style="min-width: 40em;">
+<dialog id="humaWebPanelSettingsDialog"
+        buttons="accept, cancel">
+
+  <linkset>
+    <html:link
+    rel="localization"
+    href="browser/browser.ftl"
+  />
+    <html:link rel="stylesheet" href="chrome://global/skin/global.css" />
+    <html:link
+      rel="stylesheet"
+      href="chrome://global/content/commonDialog.css"
+    />
+    <html:link rel="stylesheet" href="chrome://global/skin/commonDialog.css" />
+
+   
+     
+  </linkset>
+
+  <script src="chrome://browser/content/places/humaWebPanel.js"/>
+<script src="chrome://browser/content/nsContextMenu.js" />
+<hbox style="display: flex; flex-direction: column; padding: 16px;">
+      <html:h3>Genişlik kipi</html:h3>
+      <html:div class="humabar-table" >
+        <html:div class="humabar-row" >
+          <html:div   class="humabar-cell">
+
+            <toolbarbutton class="icon-button" id="kip-kalin" onclick="gHumaBrowserManagerSidebar._maximizeHumaBar();">
+              <html:img style="width: 64px; height: 64px;"  src="chrome://browser/skin/sidebars-right.svg" ></html:img>
+
+             Geniş Kipe Geç
+            </toolbarbutton>
+            </html:div>
+            <html:div   class="humabar-cell">
+
+            <toolbarbutton class="icon-button" id="kip-kapali"  oncommand="gHumaBrowserManagerSidebar._closeHumaBar();" >
+              <html:img style="width: 64px; height: 64px;"  src="chrome://browser/skin/eye-hide.svg" ></html:img>
+
+             Görünmez kipe geç
+            </toolbarbutton>
+            </html:div>
+
+            <html:div class="humabar-cell">
+           
+            <toolbarbutton class="icon-button" id="kip-ince" oncommand="gHumaBrowserManagerSidebar._minizmizeHumaBar();">
+              İnce Kipe Geç
+            </toolbarbutton>
+          </html:div>
+          
+        </html:div> 
+
+
+      </html:div>
+       
+    </hbox>
+
+</dialog>
+</window>

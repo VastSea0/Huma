@@ -1,0 +1,53 @@
+<splitter id="huma-vt-sidebar-web-panel-splitter"></splitter>
+<box id="huma-vt-sidebar-web-panel-wrapper"   >
+  <box id="huma-vt-sidebar-web-panel" class="chromeclass-extrachrome"  >
+    <vbox mode="icons" flex="1" id="huma-vt-sidebar-web-header" style="max-height: 60px; padding-top: 20px;">
+   
+      <hbox id="huma-vt-sidebar-web-panel-title" flex="1">
+      </hbox>
+     
+    </vbox>
+    <vbox id="huma-vt-sidebar-web-panel-browser-containers">
+      <vbox id="huma-vt-sidebar-introduction-panel"  >
+        <vbox class="huma-vt-sidebar-home-panel">
+          <!--
+          <html:center>
+            <image class="humabar-button-icon" src="chrome://branding/content/about-logo.png" role="presentation" />
+          </html:center>
+        
+          <html:h1 data-l10n-id="huma-vt-sidebar-introduction-title"/>
+          <html:p data-l10n-id="huma-vt-sidebar-introduction-description"/> 
+          -->
+        </vbox>
+      
+      </vbox>
+    </vbox>
+
+  </box>
+</box>
+
+
+
+<vbox id="huma-vtbar-box" class="chromeclass-extrachrome" align="center" >
+ 
+  <vbox flex="1"  id="huma-vtbar-items"  align="center" pack="center">
+    
+ 
+    
+   
+  
+    <vbox id="huma-vtbar-extensions-container" flex="1" align="center" pack="center">
+    
+      <vbox id="huma-vtbar-extensions-list"></vbox>
+      <toolbarbutton id="refresh-extensions-button" class="huma-vtbar-button" 
+      oncommand="gHumaVTBrowserManagerSidebar.populateExtensionsList();" tooltiptext="Eklentileri Yenile">
+      <image src="chrome://global/skin/icons/reload.svg" role="presentation" />
+      </toolbarbutton>
+    
+    
+    </vbox>
+
+  </vbox>
+ 
+    
+</vbox>
