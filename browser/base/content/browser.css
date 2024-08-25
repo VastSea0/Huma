@@ -1436,8 +1436,8 @@ HümaBar Styles...
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
   margin: 10px 0;
   border: none;
   border-radius: 12px;
@@ -1479,6 +1479,12 @@ HümaBar Styles...
    
     
   }
+  #huma-vt-sidebar-web-panel-browser-containers {
+    flex: 1;
+    background-color: #2A2A2E;
+   
+    
+  }
   #huma-sidebar-web-panel {
     flex: 1;
     display: flex;
@@ -1509,6 +1515,12 @@ HümaBar Styles...
     background-color: rgba(0, 0, 0, 0.3);
   }
   #huma-sidebar-web-panel-browser-containers {
+    flex: 1;
+    background-color: rgba(255, 255, 255);
+   
+    
+  }
+  #huma-vt-sidebar-web-panel-browser-containers {
     flex: 1;
     background-color: rgba(255, 255, 255);
    
@@ -1560,8 +1572,33 @@ HümaBar Styles...
   
 }
 
+/** Sidebar view */
+#huma--vt-sidebar-web-panel-wrapper {
+  height: 100%;
+  width: 450px;
+  max-width:  750px;
+  min-width:  250px;
+  display: flex;
+  flex-direction: column;
+ 
+   
+}
+
+#huma-vt-sidebar-web-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+ 
+  padding-left: 10px;
+  padding-top: 10px;
+  
+}
+
+
+
 #huma-sidebar-web-header {
-  max-height: 50px;
+  max-height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1569,10 +1606,16 @@ HümaBar Styles...
   
 }
 .web-panel-button-group {
-  max-height: 50px;
+  max-height: 78px;
   display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
   justify-content: center;
   align-items: center;
+  background-color: #424252;
+ 
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
  
   
 }
@@ -1583,6 +1626,7 @@ HümaBar Styles...
   overflow: hidden;
  
   white-space: nowrap;
+ 
    
 }
 
@@ -1591,11 +1635,22 @@ HümaBar Styles...
 #huma-sidebar-web-panel browser[huma-sidebar-id] {
   height: 100%;
   width: 100%;
-  border-radius: 20px;
+ 
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
  
 }
 
  
+#huma-vt-sidebar-web-panel browser[huma-vt-sidebar-id] {
+  height: 100%;
+  width: 100%;
+ 
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+ 
+}
+
  
  
  
@@ -1617,8 +1672,8 @@ HümaBar Styles...
 #humabar-box   {
   overflow-y: auto;
   scrollbar-width: thin;
-  max-width: 50px;
-  min-width: 40px;
+  /* max-width: 60px;
+  min-width: 32px; */
 }
 
 
@@ -1629,8 +1684,8 @@ HümaBar Styles...
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
   margin: 10px 0;
   border: none;
   border-radius: 12px;
@@ -1641,6 +1696,21 @@ HümaBar Styles...
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 15px;
+   
+ 
+ 
   background-color: #2A2A2E;
 }
+
+#huma-sidebar-panels-sites-container {
+  height: max-content;
+}
+#humabar-items {
+  height: max-content;
+}
+#humabar-item-settings {
+  max-height: 48px;
+}
+
+
+ 
