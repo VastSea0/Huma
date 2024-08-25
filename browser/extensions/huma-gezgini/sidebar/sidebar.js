@@ -42,9 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
         browser.tabs.create({ url: "https://egehan.netlify.app" });
     });
 
-    loadNotes();
+ 
 
-    document.getElementById("addNoteButton").addEventListener("click", addNote);
+  
  
 });
 
@@ -80,6 +80,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Renklerin yüklenmesi
     loadSettings();
+    loadNotes();
+
+    document.getElementById("addNoteButton").addEventListener('click', () => {
+        console.log("biri bana tıkladı >_<")
+        let noteContent = document.getElementById("noteContent").value;
+    
+        if (noteContent) {
+            let notes = JSON.parse(localStorage.getItem("notes")) || [];
+            notes.push({ content: noteContent });
+            localStorage.setItem("notes", JSON.stringify(notes));
+    
+            document.getElementById("noteContent").value = ""; // Alanı temizle
+            loadNotes();
+        } else {
+            alert("Lütfen notunuzu yazın.");
+        }
+    });
 });
 
 // LocalStorage'dan renkleri yükleyip uygulayan fonksiyon
@@ -229,6 +246,7 @@ function loadNotes() {
 }
 
 function addNote() {
+    console.log("biri bana tıkladı >_<")
     let noteContent = document.getElementById("noteContent").value;
 
     if (noteContent) {

@@ -33,7 +33,11 @@
         - [x] İçerik silme (0a15)
         - [ ] Sekronizasyon 
         - [ ] İçerileri kategorize etmek  
-
+    - [x] Hüma Gözlem Odası (0a16)
+        - [x] Gözlem verileri grafiği (0a16)
+        - [x] Veri silme (0a16)
+        - [ ] Sekronizasyon 
+        - [ ] Verileri kategorize etmek
 
 
 

@@ -12,13 +12,22 @@
        
         <a href="#kaydedilen-icerikler" class="menu-item">Kaydedilen İçerikleri Düzenle</a>
         <a href="#kenarcubugu" class="menu-item">Kenar Çubuğunu yapılandır</a>
+
+        <a href="#gozlem" class="menu-item"> Hüma Gözlem Odası</a>
+       
+        <a href="#bugun" class="menu-item">Bu gün</a>
+        <a href="#verilerim" class="menu-item">Haftalık verin</a>
+         
     </div>
     <div class="container">
         <h1>Hüma Gezgini Gelişmiş Ayarlar</h1>
         <div id="helo" class="content-section">
             <h2>Hoşgeldiniz!</h2>
-            <p>Hüma Gezgini'nin ayarlar sayfasına hoş geldiniz. Buradan, tarayıcınızın görünümünü ve işlevselliğini özelleştirebilirsiniz. Renk temalarını ayarlayabilir, yer imlerinizi yönetebilir ve kişisel notlarınızı ekleyebilirsiniz. Ayarlarınızı yaptıktan sonra, değişikliklerinizi kaydetmek için "Kaydet" butonuna tıklamayı unutmayın.</p>
+            <p>Hüma Gezgini'nin ayarlar sayfasına hoş geldiniz. Buradan, tarayıcınızın görünümünü ve işlevselliğini özelleştirebilirsiniz. Renk temalarını ayarlayabilir, yer imlerinizi yönetebilir, tarayıcı gözlem istatistiklerini alabilir ve kişisel notlarınızı ekleyebilirsiniz. Ayarlarınızı yaptıktan sonra, değişikliklerinizi kaydetmek için "Kaydet" butonuna tıklamayı unutmayın.</p>
             <p>Yardım veya geri bildirim için, lütfen <a href="mailto:bilgi@humatarayici.com">bize ulaşın</a>. Size yardımcı olmaktan memnuniyet duyarız!</p>
+            <p>
+                Unutma verilerin şu anda sadece Hüma tarayıcında bulunuyor yani buda verilerinin sadece senin kişisel bilgisayarında depolandığı anlamına gelir.
+            </p>
         </div>
         
         <div id="kaydedilen-icerikler" class="content-section">
@@ -29,8 +38,8 @@
             <div id="contentList"></div>
         </div>
         <div id="kenarcubugu" class="content-section">
-            <h2>helo</h2>
-             
+          
+        
             <div class="modal-content">
               
                 <h2>Ayarlar</h2>
@@ -42,11 +51,87 @@
                 <input type="color" id="buttonColor">
                 <label for="classColor">Item Rengi:</label>
                 <input type="color" id="classColor">
+
                 <button id="saveSettings">Kaydet</button>
+<hr />
            <textarea id="settingsTextarea" rows="10" cols="50"></textarea>
             </div>
         </div>
+        <div id="gozlem" class="content-section">
+            <h2>Hoşgeldiniz!</h2>
+            <p>Hüma Gözlem Odası, Hüma Gezgin tarayıcınız için geliştirilmiş, alışkanlıklarınızı yönetmenize ve internet kullanımınızı daha bilinçli hale getirmenize yardımcı olacak güçlü bir eklentidir. Bu eklenti, ziyaret ettiğiniz web sitelerini ve bu sitelerde geçirdiğiniz süreyi detaylı bir şekilde izler, günlük ve haftalık istatistikler sunar.</p>
+            <p>
+                Hüma Gözlem Odası, internet alışkanlıklarınızı anlamanızı ve bu alışkanlıkları iyileştirmenizi sağlar, böylece çevrimiçi zamanınızı daha verimli bir şekilde yönetebilirsiniz. 
+            </p>
+            <p>Yardım veya geri bildirim için, lütfen <a href="mailto:bilgi@humatarayici.com">bize ulaşın</a>. Size yardımcı olmaktan memnuniyet duyarız!</p>
+            <h4> Odaları gez</h4>
+            <a href="#bugun" class="menu-item">Bu gün</a>
+        <a href="#verilerim" class="menu-item">Haftalık verin</a>
+        </div>
+        
+        <div id="bugun" class="content-section">
+            <h2>Verilerim</h2>
+            <p>
+                Merhaba! Seni burada görmek çok güzel. Bu odada bu hafta içerisinde gezindiğin İnternet sayfaları hakkında gözlem verilerini göreceksin.
+            </p>
+            <p>
+                Unutma verilerin şu anda sadece Hüma tarayıcında bulunuyor yani buda verilerinin sadece senin kişisel bilgisayarında depolandığı anlamına gelir.
+            </p>
+            <div class="card">
+
+                Bu gün gezindiğin alan adları
+                <button id="yenile-btn">
+                    Yenile
+                </button>
+                <ul id="sites-list">
+                    
+                </ul>
+                <div id="contentList"></div>
+              
+            </div>
+        </div>
+        <div id="verilerim" class="content-section">
+            <div id="btn-group">
+
+            </div>
+            <div class=" ">
+                <canvas class="card-canvas" id="myChart" style="width:100%;max-width:700px"></canvas>
+
+                <!--
+                <canvas id="chart" width="500" height="400" style="border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></canvas>
+                
+                -->
+                <h2>JSON Verisi  </h2>
+                <p>Gözlem verilerini kimse ile paylaşma</p>    
+
+
+                <textarea id="text-area"></textarea>
+                 
+        </div>
     </div>
+    <div id="local" class="content-section">
+        <div id="btn-group">
+
+        </div>
+        <div >
+             
+            <h2>JSON Verisi  </h2>
+            <textarea id="text-area-notes"></textarea>
+            <textarea id="text-area"></textarea>
+           <textarea id="settingsTextarea" rows="10" cols="50"></textarea>
+           <div id="contentList"></div>
+
+
+             
+    </div>
+</div>
+    <footer>
+        <span style="color: white "> <center>Egehan KAHRAMAN tarafından sevgi ile</center> </span>
+    </footer>
+    <script src="./background.js" >
+    </script>
+    <script src="chart.js">
+    </script>
     <script src="ayarlar.js"></script>
 </body>
 </html>

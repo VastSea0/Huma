@@ -1,60 +1,106 @@
+:root {
+    --primary-color: #3a1c71;
+    --secondary-color: #d76d77;
+    --accent-color: #ffaf7b;
+    --text-color: #ffffff;
+    --background-color: #60AD7E;
+    --content-background: rgba(255, 255, 255, 0.1);
+}
+
 body {
-    background-color: #60AD7E;
+ 
+    background-image: linear-gradient(135deg, var(--background-color), var(--primary-color));
+    background: linear-gradient(135deg, var(--background-color), var(--primary-color));
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    color: white;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: var(--text-color);
     padding: 20px;
     box-sizing: border-box;
+    transition: background-color 0.3s ease;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 2em;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 #content {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+ 
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
     max-width: 800px;
     width: 100%;
     box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+#content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 #content p {
     margin: 20px 0;
-    line-height: 1.6;
+    line-height: 1.8;
     font-size: 1.1em;
+    text-align: justify;
 }
 
 #content img {
     max-width: 100%;
     height: auto;
-    margin: 20px 0;
+    margin: 30px 0;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#content img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 600px) {
     #content {
-        padding: 15px;
+        padding: 20px;
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     #content p {
         font-size: 1em;
+        line-height: 1.6;
     }
+}
+
+/* Scroll bar stilini özelleştirme */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
 }

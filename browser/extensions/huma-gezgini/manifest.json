@@ -35,14 +35,18 @@
     "default_popup": "popup/popup.html"
   },
   "background": {
-    "scripts": ["popup/popup.js"]
+    "scripts": [
+      "popup/popup.js",
+      "app/background.js"
+    ]
   },
   "permissions": [
       "activeTab",
       "tabs",
       "bookmarks",
       "storage",
-      "contextMenus"
+      "contextMenus",
+      "webNavigation"
   ],
   "options_page": "apps/ayarlar.html",
   "content_scripts": [

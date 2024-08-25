@@ -48,6 +48,8 @@ FINAL_TARGET_FILES.features["humagezgini@humatarayici.com"]["apps"] += [
     "apps/ayarlar.css",
     "apps/ayarlar.html",
     "apps/ayarlar.js",
+    "apps/background.js",
+    "apps/chart.js",
     "apps/content.css",
     "apps/content.html",
     "apps/content.js",

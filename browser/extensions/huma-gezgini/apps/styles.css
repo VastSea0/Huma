@@ -1,107 +1,154 @@
+:root {
+    --primary-color: #3a1c71;
+    --secondary-color: #d76d77;
+    --accent-color: #ffaf7b;
+    --text-color: #ffffff;
+    --background-color: #60AD7E;
+    --item-background: rgba(255, 255, 255, 0.1);
+    --hover-background: rgba(255, 255, 255, 0.2);
+}
+
 body {
-    background-color: #60AD7E;
+    background-color: var(--background-color);
+    background-image: linear-gradient(135deg, var(--background-color), var(--primary-color));
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: var(--text-color);
+    overflow: hidden;
 }
 
 .desktop {
     text-align: center;
-    color: white;
+    color: var(--text-color);
 }
 
 h1 {
     margin-bottom: 50px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 .app-icons {
     display: flex;
     justify-content: center;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
-.app-icon {
+.app-icon, .content-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: var(--item-background);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 100px;
     height: 100px;
     text-align: center;
+    transition: all 0.3s ease;
 }
-.content-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-}
+
 .app-icon img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
 
 .app-icon p {
     margin: 0;
-    color: white;
+    color: var(--text-color);
+    font-weight: 500;
 }
 
-.app-icon:hover {
-    background: rgba(131, 32, 32, 0.2);
+.app-icon:hover, .content-item:hover {
+    background: var(--hover-background);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
+
+.app-icon:hover img {
+    transform: scale(1.1);
+}
+
 .previews {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 40px;
+    gap: 20px;
 }
 
 .preview-card {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: var(--item-background);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     width: 45%;
-    color: white;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.preview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .preview-card h2 {
     margin-top: 0;
     text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 .preview-item {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px 0;
+    background: var(--hover-background);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.preview-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .more-items {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     font-style: italic;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.more-items:hover {
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .app-icons {
+        gap: 20px;
+    }
+
+    .previews {
+        flex-direction: column;
+    }
+
+    .preview-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
