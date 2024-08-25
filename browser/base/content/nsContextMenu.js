@@ -2472,6 +2472,32 @@
    mediaCommand(command, data) {
      this.actor.mediaCommand(this.targetIdentifier, command, data);
    }
+
+   humaContext(command, data) {
+    switch(command){
+      case "minimize-humabar":
+        gHumaBrowserManagerSidebar._minizmizeHumaBar();
+        break;
+      case "maximize-humabar":
+        gHumaBrowserManagerSidebar._maximizeHumaBar();
+        break;
+      case "close-humabar":
+        gHumaBrowserManagerSidebar._closeHumaBar();
+        break;
+      case "open-humabar":
+        gHumaBrowserManagerSidebar._openHumaBar();
+        break;
+      case "reload-humabar":
+         
+          gHumaBrowserManagerSidebar.populateExtensionsList();
+          break;
+      default:
+        gHumaBrowserManagerSidebar._openHumaBar();
+        break;
+    };
+  
+  }
+
  
    copyMediaLocation() {
      var clipboard = Cc["@mozilla.org/widget/clipboardhelper;1"].getService(
