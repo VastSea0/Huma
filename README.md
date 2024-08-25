@@ -16,11 +16,12 @@
       - [ ] sayfalar
         -[x] Ayarlar sayfası
           - [x] Genel stiller
-            - [] kişiselleştirme
+            - [x] kişiselleştirme (0b1)
+              - [x] Kurulu tema ile uyumlu renk alır (0b1)
           - [x] Kategoriler
             - [x] Kategori iconları
             - [x] Kategori stilleri
-    - [ ] Hüma Ansiklopedi
+    - [ ] Hüma Ansiklopedi (0b1: belki iptal edilir)
       - [x] Hüma Tarih (0a5)
         - [x] Türk Tarihi (0a5)
         - [x] Diğer Milletler Tarihi 
@@ -49,8 +50,9 @@
         - [ ] Öğelerin yeri değiştirlebilir
       - [x] Eklenti listesi (0a15)
         - [x] Eklentileri listeler (0a15)
-        - [x] Eklentileri açar ("moz-ext" urlleri açılana  kadar eklentiler görünür değildir) (0a15)
-      - [ ] Ayarlar sayfasından yönetilebilir
+        - [x] Eklentileri açar  (0a15)
+      - [x] Ayarlar sayfasından yönetilebilir (0b1)
+        - [x] Tema ile uyumlu renk alır (0b1)
     - [ ] PWA destekler
     - [x] Eklentiler
       - [x] Hüma gezgini (0a11)
