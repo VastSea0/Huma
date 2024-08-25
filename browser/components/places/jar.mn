@@ -27,3 +27,4 @@ browser.jar:
 #endif
     content/browser/places/humaWebPanel.xhtml            (content/humaWebPanel.xhtml)
     content/browser/places/humaWebPanel.js               (content/humaWebPanel.js)
+    content/browser/places/humabar-settings.xhtml        (content/humabar-settings.xhtml)
